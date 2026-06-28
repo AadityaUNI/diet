@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Progress, ProgressTrack, ProgressIndicator } from "@/components/ui/progress";
+import { Progress } from "@/components/ui/progress";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 
@@ -341,11 +341,10 @@ export default function Home() {
                         </span>
                       </div>
                       
-                     <Progress value={(m.value / m.max) * 100}>
-                      <ProgressTrack>
-                        <ProgressIndicator className={`bg-[${m.color}]`} />
-                      </ProgressTrack>
-                      </Progress>
+                     <Progress 
+  value={(m.value / m.max) * 100} 
+  indicatorColor={m.color} 
+/>
                     </div>
                   ))}
                 </div>

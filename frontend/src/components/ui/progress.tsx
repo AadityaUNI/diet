@@ -8,8 +8,9 @@ function Progress({
   className,
   children,
   value,
+  indicatorColor,
   ...props
-}: ProgressPrimitive.Root.Props) {
+}: ProgressPrimitive.Root.Props & { indicatorColor?: string }) {
   return (
     <ProgressPrimitive.Root
       value={value}
@@ -17,11 +18,13 @@ function Progress({
       className={cn("flex flex-wrap gap-3", className)}
       {...props}
     >
-      {children}
-      <ProgressTrack>
-        <ProgressIndicator />
-      </ProgressTrack>
-    </ProgressPrimitive.Root>
+      {/* 2. Conditionally use children, otherwise render default track with custom color */}
+      {children ? children : (
+        <ProgressTrack>
+          <ProgressIndicator style={indicatorColor ? { backgroundColor: indicatorColor } : undefined} />
+        </ProgressTrack>
+      )}
+      </ProgressPrimitive.Root>
   )
 }
 

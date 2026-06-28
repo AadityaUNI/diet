@@ -1,0 +1,2502 @@
+[
+  {
+    "name": "Perly",
+    "region": "IN",
+    "calories": 97.0,
+    "protein_g": 8.0,
+    "carbs_g": 9.4,
+    "fat_g": 3.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "6111242100992"
+  },
+  {
+    "name": "Quaker",
+    "region": "IN",
+    "calories": 374.0,
+    "protein_g": 11.0,
+    "carbs_g": 60.0,
+    "fat_g": 8.0,
+    "fiber_g": 9.0,
+    "open_food_facts_id": "5000108478119"
+  },
+  {
+    "name": "Bisleri 1ltr MADE IN INDIA",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906017290040"
+  },
+  {
+    "name": "Amul Masti Spiced Buttermilk 200ml",
+    "region": "IN",
+    "calories": 28.5,
+    "protein_g": 1.5,
+    "carbs_g": 1.8,
+    "fat_g": 1.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262200196"
+  },
+  {
+    "name": "Storia 100% Tender Coconut Water 1L",
+    "region": "IN",
+    "calories": 20.0,
+    "protein_g": 0.1,
+    "carbs_g": 4.9,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904272600291"
+  },
+  {
+    "name": "Oats",
+    "region": "IN",
+    "calories": 407.0,
+    "protein_g": 11.8,
+    "carbs_g": 68.5,
+    "fat_g": 9.5,
+    "fiber_g": 10.0,
+    "open_food_facts_id": "8901491103794"
+  },
+  {
+    "name": "Packaged Drinking Water",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8902080504060"
+  },
+  {
+    "name": "Wild Pacific Red Salmon",
+    "region": "IN",
+    "calories": 151.0,
+    "protein_g": 20.4,
+    "carbs_g": 0.0,
+    "fat_g": 7.8,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5000171010025"
+  },
+  {
+    "name": "Muesli Fruit, Nut & Seeds",
+    "region": "IN",
+    "calories": 955.0,
+    "protein_g": 8.1,
+    "carbs_g": 80.0,
+    "fat_g": 5.1,
+    "fiber_g": 6.4,
+    "open_food_facts_id": "8901499010513"
+  },
+  {
+    "name": "100% Pure Coconut Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901088000451"
+  },
+  {
+    "name": "Moong Dal",
+    "region": "IN",
+    "calories": 476.0,
+    "protein_g": 21.31,
+    "carbs_g": 50.66,
+    "fat_g": 20.93,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904004403725"
+  },
+  {
+    "name": "Modern 100% Whole Wheat Bread",
+    "region": "IN",
+    "calories": 264.44,
+    "protein_g": 8.78,
+    "carbs_g": 43.54,
+    "fat_g": 2.73,
+    "fiber_g": 6.4,
+    "open_food_facts_id": "8904043551548"
+  },
+  {
+    "name": "Smith & Jones Ginger Garlic Paste",
+    "region": "IN",
+    "calories": 11.0,
+    "protein_g": 0.6,
+    "carbs_g": 2.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901595873258"
+  },
+  {
+    "name": "Muesli dark chocolate cranberry",
+    "region": "IN",
+    "calories": 437.0,
+    "protein_g": 12.3,
+    "carbs_g": 67.0,
+    "fat_g": 13.3,
+    "fiber_g": 9.4,
+    "open_food_facts_id": "8908005144632"
+  },
+  {
+    "name": "Farm Fresh Sahi Plain Yoghurt",
+    "region": "IN",
+    "calories": 61.8,
+    "protein_g": 3.5,
+    "carbs_g": 5.2,
+    "fat_g": 3.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904083303077"
+  },
+  {
+    "name": "malai paneer fresh",
+    "region": "IN",
+    "calories": 312.0,
+    "protein_g": 20.0,
+    "carbs_g": 4.0,
+    "fat_g": 24.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262180115"
+  },
+  {
+    "name": "High Protein Oats Chocolate",
+    "region": "IN",
+    "calories": 392.0,
+    "protein_g": 25.0,
+    "carbs_g": 54.6,
+    "fat_g": 8.0,
+    "fiber_g": 9.6,
+    "open_food_facts_id": "8906136651968"
+  },
+  {
+    "name": "Knorr Schezwan Sauce 200 g",
+    "region": "IN",
+    "calories": 134.0,
+    "protein_g": 1.7,
+    "carbs_g": 18.7,
+    "fat_g": 6.0,
+    "fiber_g": 2.3,
+    "open_food_facts_id": "8901030987007"
+  },
+  {
+    "name": "Storia Tender Coconut Water",
+    "region": "IN",
+    "calories": 20.0,
+    "protein_g": 0.1,
+    "carbs_g": 5.1,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904272600154"
+  },
+  {
+    "name": "Yoga bar 23G protein muesli + choco almond + cranberry",
+    "region": "IN",
+    "calories": 386.0,
+    "protein_g": 23.0,
+    "carbs_g": 53.1,
+    "fat_g": 10.7,
+    "fiber_g": 7.5,
+    "open_food_facts_id": "8904335601869"
+  },
+  {
+    "name": "Fine ground sea salt almond flour crackers, sea salt",
+    "region": "IN",
+    "calories": 500.0,
+    "protein_g": 10.0,
+    "carbs_g": 60.0,
+    "fat_g": 26.7,
+    "fiber_g": 6.67,
+    "open_food_facts_id": "0856069005209"
+  },
+  {
+    "name": "Coconut oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901088000345"
+  },
+  {
+    "name": "FOOD",
+    "region": "IN",
+    "calories": 217.0,
+    "protein_g": 19.7,
+    "carbs_g": 0.1,
+    "fat_g": 21.3,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5000232192202"
+  },
+  {
+    "name": "Amul Fresh Cream",
+    "region": "IN",
+    "calories": 34.8,
+    "protein_g": 3.28,
+    "carbs_g": 4.99,
+    "fat_g": 0.19,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262151863"
+  },
+  {
+    "name": "Amul Taaza 1ltr",
+    "region": "IN",
+    "calories": 58.2,
+    "protein_g": 3.0,
+    "carbs_g": 4.8,
+    "fat_g": 3.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262150064"
+  },
+  {
+    "name": "Zero Maida Whole Wheat Bread",
+    "region": "IN",
+    "calories": 241.4,
+    "protein_g": 13.41,
+    "carbs_g": 43.97,
+    "fat_g": 1.32,
+    "fiber_g": 6.31,
+    "open_food_facts_id": "8908009059185"
+  },
+  {
+    "name": "Panchathanthra mix",
+    "region": "IN",
+    "calories": 142.21,
+    "protein_g": 1.32,
+    "carbs_g": 10.52,
+    "fat_g": 10.52,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904004402834"
+  },
+  {
+    "name": "Coconut Water",
+    "region": "IN",
+    "calories": 24.78,
+    "protein_g": 0.19,
+    "carbs_g": 5.6,
+    "fat_g": 0.18,
+    "fiber_g": 0.85,
+    "open_food_facts_id": "8904258701707"
+  },
+  {
+    "name": "Coke Classic",
+    "region": "IN",
+    "calories": 80.0,
+    "protein_g": 3.0,
+    "carbs_g": 9.6,
+    "fat_g": 3.3,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0850006000012"
+  },
+  {
+    "name": "Peanut Butter Crunchy",
+    "region": "IN",
+    "calories": 612.0,
+    "protein_g": 25.7,
+    "carbs_g": 20.3,
+    "fat_g": 49.5,
+    "fiber_g": 8.6,
+    "open_food_facts_id": "8901030980053"
+  },
+  {
+    "name": "Kelloggs",
+    "region": "IN",
+    "calories": 397.5,
+    "protein_g": 8.0,
+    "carbs_g": 80.0,
+    "fat_g": 6.0,
+    "fiber_g": 5.0,
+    "open_food_facts_id": "8901499010483"
+  },
+  {
+    "name": "Peanut Butter - Crunchy",
+    "region": "IN",
+    "calories": 612.5,
+    "protein_g": 26.0,
+    "carbs_g": 19.0,
+    "fat_g": 49.0,
+    "fiber_g": 4.2,
+    "open_food_facts_id": "8904320015404"
+  },
+  {
+    "name": "Natural Peanut Butter Crunch",
+    "region": "IN",
+    "calories": 625.0,
+    "protein_g": 30.0,
+    "carbs_g": 18.0,
+    "fat_g": 49.0,
+    "fiber_g": 6.0,
+    "open_food_facts_id": "8906127550010"
+  },
+  {
+    "name": "Yoga Bar Super Muesli 0% Added Sugar",
+    "region": "IN",
+    "calories": 370.0,
+    "protein_g": 15.0,
+    "carbs_g": 60.0,
+    "fat_g": 10.5,
+    "fiber_g": 15.1,
+    "open_food_facts_id": "8908005144618"
+  },
+  {
+    "name": "Peanut butter",
+    "region": "IN",
+    "calories": 619.0,
+    "protein_g": 26.0,
+    "carbs_g": 22.7,
+    "fat_g": 48.0,
+    "fiber_g": 4.0,
+    "open_food_facts_id": "8901512144805"
+  },
+  {
+    "name": "High protein super oats chocolate",
+    "region": "IN",
+    "calories": 457.77,
+    "protein_g": 22.0,
+    "carbs_g": 51.34,
+    "fat_g": 18.6,
+    "fiber_g": 11.6,
+    "open_food_facts_id": "8906127550850"
+  },
+  {
+    "name": "Amul gee",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262030243"
+  },
+  {
+    "name": "Amul Masti",
+    "region": "IN",
+    "calories": 65.0,
+    "protein_g": 4.0,
+    "carbs_g": 4.6,
+    "fat_g": 3.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262200622"
+  },
+  {
+    "name": "Peanut Butter All Natural Creamy Unsweetened",
+    "region": "IN",
+    "calories": 639.0,
+    "protein_g": 30.0,
+    "carbs_g": 18.0,
+    "fat_g": 49.0,
+    "fiber_g": 9.0,
+    "open_food_facts_id": "8908010900063"
+  },
+  {
+    "name": "Refined Sunflower Oil",
+    "region": "IN",
+    "calories": 899.35,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 99.93,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904422710894"
+  },
+  {
+    "name": "Rice Bran Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906007280693"
+  },
+  {
+    "name": "Protein Oats",
+    "region": "IN",
+    "calories": 393.47,
+    "protein_g": 27.04,
+    "carbs_g": 55.01,
+    "fat_g": 8.15,
+    "fiber_g": 9.75,
+    "open_food_facts_id": "0641837433199"
+  },
+  {
+    "name": "Almond Milk Unsweetened 137 Degrees",
+    "region": "IN",
+    "calories": 33.33,
+    "protein_g": 1.11,
+    "carbs_g": 0.56,
+    "fat_g": 2.78,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8854761951413"
+  },
+  {
+    "name": "100% Rolled Oats",
+    "region": "IN",
+    "calories": 387.5,
+    "protein_g": 12.5,
+    "carbs_g": 66.5,
+    "fat_g": 8.25,
+    "fiber_g": 10.0,
+    "open_food_facts_id": "8904335601951"
+  },
+  {
+    "name": "SUPER RING cheese rings 60G",
+    "region": "IN",
+    "calories": 570.0,
+    "protein_g": 6.67,
+    "carbs_g": 46.67,
+    "fat_g": 43.33,
+    "fiber_g": 6.67,
+    "open_food_facts_id": "9556023331597"
+  },
+  {
+    "name": "Greek Yogurt",
+    "region": "IN",
+    "calories": 77.8,
+    "protein_g": 8.0,
+    "carbs_g": 6.5,
+    "fat_g": 2.2,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904083302292"
+  },
+  {
+    "name": "slice",
+    "region": "IN",
+    "calories": 50.0,
+    "protein_g": 0.0,
+    "carbs_g": 12.5,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8902080404117"
+  },
+  {
+    "name": "Pasteurised Cow Milk",
+    "region": "IN",
+    "calories": 67.2,
+    "protein_g": 3.1,
+    "carbs_g": 4.7,
+    "fat_g": 4.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908000794054"
+  },
+  {
+    "name": "Nutri Delite Crunchies",
+    "region": "IN",
+    "calories": 386.0,
+    "protein_g": 6.6,
+    "carbs_g": 82.5,
+    "fat_g": 2.4,
+    "fiber_g": 7.6,
+    "open_food_facts_id": "8903363007643"
+  },
+  {
+    "name": "Iced Latté",
+    "region": "IN",
+    "calories": 56.0,
+    "protein_g": 2.2,
+    "carbs_g": 8.6,
+    "fat_g": 1.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "89080528"
+  },
+  {
+    "name": "Oxycool",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908000703018"
+  },
+  {
+    "name": "Catch Black Salt",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901192001207"
+  },
+  {
+    "name": "Saffola oats",
+    "region": "IN",
+    "calories": 369.0,
+    "protein_g": 12.6,
+    "carbs_g": 66.8,
+    "fat_g": 8.0,
+    "fiber_g": 10.4,
+    "open_food_facts_id": "8901088155496"
+  },
+  {
+    "name": "Dal Makhani",
+    "region": "IN",
+    "calories": 91.0,
+    "protein_g": 5.1,
+    "carbs_g": 9.1,
+    "fat_g": 2.9,
+    "fiber_g": 4.2,
+    "open_food_facts_id": "8901047816208"
+  },
+  {
+    "name": "Peanut butter Creamy",
+    "region": "IN",
+    "calories": 612.5,
+    "protein_g": 25.0,
+    "carbs_g": 19.0,
+    "fat_g": 49.0,
+    "fiber_g": 4.19,
+    "open_food_facts_id": "8904320015398"
+  },
+  {
+    "name": "Aashirvaad Superior MP Atta",
+    "region": "IN",
+    "calories": 338.0,
+    "protein_g": 10.7,
+    "carbs_g": 76.0,
+    "fat_g": 1.3,
+    "fiber_g": 10.4,
+    "open_food_facts_id": "8901725016838"
+  },
+  {
+    "name": "High Protein Muesli",
+    "region": "IN",
+    "calories": 390.0,
+    "protein_g": 24.0,
+    "carbs_g": 56.0,
+    "fat_g": 8.0,
+    "fiber_g": 10.0,
+    "open_food_facts_id": "8906136651982"
+  },
+  {
+    "name": "Amul Ghee 1ltr",
+    "region": "IN",
+    "calories": 897.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 99.7,
+    "fiber_g": 1.39,
+    "open_food_facts_id": "8901262030151"
+  },
+  {
+    "name": "Diced Cheese",
+    "region": "IN",
+    "calories": 289.0,
+    "protein_g": 23.0,
+    "carbs_g": 2.0,
+    "fat_g": 21.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262020558"
+  },
+  {
+    "name": "Butter School Pack",
+    "region": "IN",
+    "calories": 724.0,
+    "protein_g": 1.0,
+    "carbs_g": 0.0,
+    "fat_g": 80.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262010207"
+  },
+  {
+    "name": "Dark Chocolate Peanut Butter with added Whey",
+    "region": "IN",
+    "calories": 637.5,
+    "protein_g": 25.0,
+    "carbs_g": 21.88,
+    "fat_g": 50.0,
+    "fiber_g": 6.25,
+    "open_food_facts_id": "8904327601969"
+  },
+  {
+    "name": "Fruit Yogurt Blueberry",
+    "region": "IN",
+    "calories": 103.5,
+    "protein_g": 3.6,
+    "carbs_g": 15.3,
+    "fat_g": 3.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904083302100"
+  },
+  {
+    "name": "Heritage Total Curd",
+    "region": "IN",
+    "calories": 58.0,
+    "protein_g": 3.3,
+    "carbs_g": 4.3,
+    "fat_g": 3.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904089920490"
+  },
+  {
+    "name": "Farmley Makhana Munchies",
+    "region": "IN",
+    "calories": 429.5,
+    "protein_g": 7.7,
+    "carbs_g": 76.1,
+    "fat_g": 9.7,
+    "fiber_g": 3.6,
+    "open_food_facts_id": "8906163830640"
+  },
+  {
+    "name": "Protein Lassi - Rose Flavour",
+    "region": "IN",
+    "calories": 53.5,
+    "protein_g": 7.5,
+    "carbs_g": 6.0,
+    "fat_g": 0.85,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262153348"
+  },
+  {
+    "name": "activ 100% Coconut water",
+    "region": "IN",
+    "calories": 20.0,
+    "protein_g": 0.0,
+    "carbs_g": 5.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901207037795"
+  },
+  {
+    "name": "brown rice",
+    "region": "IN",
+    "calories": 350.0,
+    "protein_g": 9.7,
+    "carbs_g": 75.0,
+    "fat_g": 2.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901537074354"
+  },
+  {
+    "name": "MYFITNESS Peanut Butter - Chocolate",
+    "region": "IN",
+    "calories": 200.7,
+    "protein_g": 8.4,
+    "carbs_g": 7.1,
+    "fat_g": 15.4,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904327600955"
+  },
+  {
+    "name": "Bakarwadi",
+    "region": "IN",
+    "calories": 106.4,
+    "protein_g": 1.4,
+    "carbs_g": 9.4,
+    "fat_g": 6.8,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0846203081695"
+  },
+  {
+    "name": "Californian Almond",
+    "region": "IN",
+    "calories": 597.19,
+    "protein_g": 19.33,
+    "carbs_g": 21.72,
+    "fat_g": 48.11,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906019771400"
+  },
+  {
+    "name": "Un-junked Dates",
+    "region": "IN",
+    "calories": 366.23,
+    "protein_g": 1.87,
+    "carbs_g": 77.0,
+    "fat_g": 5.63,
+    "fiber_g": 6.23,
+    "open_food_facts_id": "8906166360229"
+  },
+  {
+    "name": "Kinley Mineral Water 1ltr",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901764082405"
+  },
+  {
+    "name": "Amul Pasteurized Butter",
+    "region": "IN",
+    "calories": 714.29,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 78.57,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262010016"
+  },
+  {
+    "name": "Amul Taaza Milky Milk",
+    "region": "IN",
+    "calories": 29.0,
+    "protein_g": 1.5,
+    "carbs_g": 2.35,
+    "fat_g": 1.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262260121"
+  },
+  {
+    "name": "Amul Butter",
+    "region": "IN",
+    "calories": 724.0,
+    "protein_g": 1.0,
+    "carbs_g": 0.0,
+    "fat_g": 80.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262010320"
+  },
+  {
+    "name": "Amul Gold Milky Milk",
+    "region": "IN",
+    "calories": 87.0,
+    "protein_g": 3.1,
+    "carbs_g": 5.0,
+    "fat_g": 6.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262260107"
+  },
+  {
+    "name": "Amul Taaza 200ml",
+    "region": "IN",
+    "calories": 58.0,
+    "protein_g": 3.0,
+    "carbs_g": 4.8,
+    "fat_g": 3.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262150088"
+  },
+  {
+    "name": "Amul pasteurised butter",
+    "region": "IN",
+    "calories": 724.0,
+    "protein_g": 1.0,
+    "carbs_g": 0.0,
+    "fat_g": 80.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262010023"
+  },
+  {
+    "name": "Sundrop Peanut Butter Regular",
+    "region": "IN",
+    "calories": 610.0,
+    "protein_g": 27.9,
+    "carbs_g": 19.8,
+    "fat_g": 49.0,
+    "fiber_g": 11.0,
+    "open_food_facts_id": "8901512881205"
+  },
+  {
+    "name": "Premium kachi ghani pure mustard oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906007280969"
+  },
+  {
+    "name": "Haldiram moong dal",
+    "region": "IN",
+    "calories": 476.0,
+    "protein_g": 21.31,
+    "carbs_g": 50.66,
+    "fat_g": 20.93,
+    "fiber_g": 7.52,
+    "open_food_facts_id": "8904004403732"
+  },
+  {
+    "name": "Paneer",
+    "region": "IN",
+    "calories": 283.0,
+    "protein_g": 16.1,
+    "carbs_g": 5.1,
+    "fat_g": 22.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904083300021"
+  },
+  {
+    "name": "Peanut Butter Regular Creamy",
+    "region": "IN",
+    "calories": 647.0,
+    "protein_g": 26.8,
+    "carbs_g": 15.2,
+    "fat_g": 55.0,
+    "fiber_g": 7.8,
+    "open_food_facts_id": "8901512144706"
+  },
+  {
+    "name": "UAE by",
+    "region": "IN",
+    "calories": 330.91,
+    "protein_g": 2.73,
+    "carbs_g": 80.0,
+    "fat_g": 0.44,
+    "fiber_g": 6.91,
+    "open_food_facts_id": "6291100213146"
+  },
+  {
+    "name": "sprite",
+    "region": "IN",
+    "calories": 24.5,
+    "protein_g": 0.0,
+    "carbs_g": 6.1,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "3948764032400"
+  },
+  {
+    "name": "Idly & Dosa Batter",
+    "region": "IN",
+    "calories": 138.0,
+    "protein_g": 1.74,
+    "carbs_g": 29.32,
+    "fat_g": 1.61,
+    "fiber_g": 1.85,
+    "open_food_facts_id": "8906020580015"
+  },
+  {
+    "name": "Peanut Butter Regular",
+    "region": "IN",
+    "calories": 647.0,
+    "protein_g": 26.8,
+    "carbs_g": 15.2,
+    "fat_g": 55.0,
+    "fiber_g": 7.8,
+    "open_food_facts_id": "8901512881106"
+  },
+  {
+    "name": "dark chocolate peanut butter",
+    "region": "IN",
+    "calories": 590.0,
+    "protein_g": 17.7,
+    "carbs_g": 42.0,
+    "fat_g": 39.1,
+    "fiber_g": 10.0,
+    "open_food_facts_id": "8906143890107"
+  },
+  {
+    "name": "Nutty Fruity Muesli",
+    "region": "IN",
+    "calories": 380.0,
+    "protein_g": 8.9,
+    "carbs_g": 79.8,
+    "fat_g": 4.4,
+    "fiber_g": 7.3,
+    "open_food_facts_id": "8902710500752"
+  },
+  {
+    "name": "knorr Thick tomato soup",
+    "region": "IN",
+    "calories": 27.65,
+    "protein_g": 0.43,
+    "carbs_g": 5.59,
+    "fat_g": 0.43,
+    "fiber_g": 0.37,
+    "open_food_facts_id": "8901030900105"
+  },
+  {
+    "name": "Soya sticks",
+    "region": "IN",
+    "calories": 554.0,
+    "protein_g": 7.46,
+    "carbs_g": 45.0,
+    "fat_g": 38.21,
+    "fiber_g": 5.26,
+    "open_food_facts_id": "8904004400236"
+  },
+  {
+    "name": "Regular Peanui Butter",
+    "region": "IN",
+    "calories": 642.0,
+    "protein_g": 26.0,
+    "carbs_g": 20.0,
+    "fat_g": 51.0,
+    "fiber_g": 5.0,
+    "open_food_facts_id": "8901512141705"
+  },
+  {
+    "name": "maggi",
+    "region": "IN",
+    "calories": 83.0,
+    "protein_g": 0.8,
+    "carbs_g": 19.9,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901058001181"
+  },
+  {
+    "name": "Nutrela Soya chunks  220gm",
+    "region": "IN",
+    "calories": 354.0,
+    "protein_g": 53.0,
+    "carbs_g": 34.0,
+    "fat_g": 0.8,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906032011019"
+  },
+  {
+    "name": "Paper boat coconut water 200ml pet",
+    "region": "IN",
+    "calories": 17.94,
+    "protein_g": 0.21,
+    "carbs_g": 4.05,
+    "fat_g": 0.15,
+    "fiber_g": 0.25,
+    "open_food_facts_id": "8906080601248"
+  },
+  {
+    "name": "Fortune Soya Chunks-225g",
+    "region": "IN",
+    "calories": 343.0,
+    "protein_g": 52.5,
+    "carbs_g": 31.5,
+    "fat_g": 0.8,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906007283144"
+  },
+  {
+    "name": "MTR POHA 60 g",
+    "region": "IN",
+    "calories": 249.0,
+    "protein_g": 4.8,
+    "carbs_g": 40.3,
+    "fat_g": 7.2,
+    "fiber_g": 1.8,
+    "open_food_facts_id": "8901042967325"
+  },
+  {
+    "name": "Hatsun Curd",
+    "region": "IN",
+    "calories": 67.0,
+    "protein_g": 4.0,
+    "carbs_g": 6.0,
+    "fat_g": 3.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904057395503"
+  },
+  {
+    "name": "Fortune Soya Health Refined Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906007280037"
+  },
+  {
+    "name": "Dr. Oetker Funfoods Peanut Butter",
+    "region": "IN",
+    "calories": 636.4,
+    "protein_g": 25.6,
+    "carbs_g": 20.3,
+    "fat_g": 50.3,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906002008544"
+  },
+  {
+    "name": "alphonso mango juice",
+    "region": "IN",
+    "calories": 41.7,
+    "protein_g": 0.45,
+    "carbs_g": 10.43,
+    "fat_g": 0.0,
+    "fiber_g": 0.91,
+    "open_food_facts_id": "8904258700540"
+  },
+  {
+    "name": "Tata water 1ltr",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8903754000062"
+  },
+  {
+    "name": "Myfitness Chocolate peanut butter",
+    "region": "IN",
+    "calories": 615.62,
+    "protein_g": 25.0,
+    "carbs_g": 18.75,
+    "fat_g": 46.88,
+    "fiber_g": 6.25,
+    "open_food_facts_id": "8904327600931"
+  },
+  {
+    "name": "Superior MP Atta",
+    "region": "IN",
+    "calories": 338.0,
+    "protein_g": 10.7,
+    "carbs_g": 76.0,
+    "fat_g": 1.3,
+    "fiber_g": 10.4,
+    "open_food_facts_id": "8901725121747"
+  },
+  {
+    "name": "Bisleri Water 250ml",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906017290026"
+  },
+  {
+    "name": "Kitty Brown Bread",
+    "region": "IN",
+    "calories": 248.41,
+    "protein_g": 10.2,
+    "carbs_g": 46.3,
+    "fat_g": 2.49,
+    "fiber_g": 6.35,
+    "open_food_facts_id": "8902027006169"
+  },
+  {
+    "name": "Curd",
+    "region": "IN",
+    "calories": 60.0,
+    "protein_g": 3.7,
+    "carbs_g": 4.4,
+    "fat_g": 3.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906036670212"
+  },
+  {
+    "name": "chocolate cranberry museli",
+    "region": "IN",
+    "calories": 438.0,
+    "protein_g": 12.3,
+    "carbs_g": 67.0,
+    "fat_g": 13.2,
+    "fiber_g": 9.5,
+    "open_food_facts_id": "8904335600343"
+  },
+  {
+    "name": "Amul Lactose Free250ml",
+    "region": "IN",
+    "calories": 59.2,
+    "protein_g": 3.0,
+    "carbs_g": 4.8,
+    "fat_g": 3.12,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262151726"
+  },
+  {
+    "name": "Millet muesli",
+    "region": "IN",
+    "calories": 390.0,
+    "protein_g": 11.5,
+    "carbs_g": 59.6,
+    "fat_g": 11.7,
+    "fiber_g": 7.9,
+    "open_food_facts_id": "8908002984965"
+  },
+  {
+    "name": "Muesli+",
+    "region": "IN",
+    "calories": 417.5,
+    "protein_g": 13.0,
+    "carbs_g": 70.0,
+    "fat_g": 9.5,
+    "fiber_g": 7.5,
+    "open_food_facts_id": "8904335600336"
+  },
+  {
+    "name": "Muesli Fruit & Nut",
+    "region": "IN",
+    "calories": 344.0,
+    "protein_g": 8.2,
+    "carbs_g": 70.0,
+    "fat_g": 2.2,
+    "fiber_g": 6.3,
+    "open_food_facts_id": "8906014903592"
+  },
+  {
+    "name": "Dr. Oetker Peanut Butter",
+    "region": "IN",
+    "calories": 642.0,
+    "protein_g": 26.3,
+    "carbs_g": 19.3,
+    "fat_g": 51.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906002006236"
+  },
+  {
+    "name": "Myfitness Peanut Butter",
+    "region": "IN",
+    "calories": 637.0,
+    "protein_g": 23.0,
+    "carbs_g": 24.0,
+    "fat_g": 50.0,
+    "fiber_g": 9.0,
+    "open_food_facts_id": "8904327600924"
+  },
+  {
+    "name": "100% Whole Wheat Brown Bread",
+    "region": "IN",
+    "calories": 245.0,
+    "protein_g": 8.3,
+    "carbs_g": 50.7,
+    "fat_g": 2.0,
+    "fiber_g": 4.4,
+    "open_food_facts_id": "8901063338593"
+  },
+  {
+    "name": "mixture",
+    "region": "IN",
+    "calories": 267.0,
+    "protein_g": 7.69,
+    "carbs_g": 22.29,
+    "fat_g": 15.12,
+    "fiber_g": 5.68,
+    "open_food_facts_id": "8904004401011"
+  },
+  {
+    "name": "Ruchi gold Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906032010012"
+  },
+  {
+    "name": "Whole Leaves Cactus",
+    "region": "IN",
+    "calories": 340.0,
+    "protein_g": 8.0,
+    "carbs_g": 80.0,
+    "fat_g": 0.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "0012345678905"
+  },
+  {
+    "name": "Protein Buttermilk",
+    "region": "IN",
+    "calories": 54.0,
+    "protein_g": 7.5,
+    "carbs_g": 4.0,
+    "fat_g": 0.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262152952"
+  },
+  {
+    "name": "Slim 'n' Trim",
+    "region": "IN",
+    "calories": 46.0,
+    "protein_g": 3.2,
+    "carbs_g": 5.0,
+    "fat_g": 1.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262260152"
+  },
+  {
+    "name": "MARCO CRUNCHY PEANUT BUTTER",
+    "region": "IN",
+    "calories": 209.0,
+    "protein_g": 8.0,
+    "carbs_g": 6.0,
+    "fat_g": 17.0,
+    "fiber_g": 1.0,
+    "open_food_facts_id": "8908004415177"
+  },
+  {
+    "name": "LaxmiNarayan Patal Poha Chiwda (Indian snack)",
+    "region": "IN",
+    "calories": 475.1,
+    "protein_g": 16.37,
+    "carbs_g": 60.27,
+    "fat_g": 19.14,
+    "fiber_g": 14.18,
+    "open_food_facts_id": "8902050000028"
+  },
+  {
+    "name": "Namaste India",
+    "region": "IN",
+    "calories": 73.18,
+    "protein_g": 3.52,
+    "carbs_g": 7.8,
+    "fat_g": 3.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908001700184"
+  },
+  {
+    "name": "Mustard Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906007280945"
+  },
+  {
+    "name": "Aquafina",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8902080504046"
+  },
+  {
+    "name": "Taboulé à l'orientale",
+    "region": "IN",
+    "calories": 204.0,
+    "protein_g": 4.3,
+    "carbs_g": 25.0,
+    "fat_g": 9.3,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "3700009272466"
+  },
+  {
+    "name": "Noix de cajou nature",
+    "region": "IN",
+    "calories": 581.0,
+    "protein_g": 18.0,
+    "carbs_g": 27.0,
+    "fat_g": 44.0,
+    "fiber_g": 3.3,
+    "open_food_facts_id": "5400141297171"
+  },
+  {
+    "name": "Huile D'olive  Vierge extra",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "3336590080045"
+  },
+  {
+    "name": "Rolled Oats",
+    "region": "IN",
+    "calories": 410.9,
+    "protein_g": 12.0,
+    "carbs_g": 68.3,
+    "fat_g": 10.0,
+    "fiber_g": 9.5,
+    "open_food_facts_id": "8906112662414"
+  },
+  {
+    "name": "Chocolate Peanut Butter",
+    "region": "IN",
+    "calories": 635.0,
+    "protein_g": 23.0,
+    "carbs_g": 23.27,
+    "fat_g": 50.0,
+    "fiber_g": 6.4,
+    "open_food_facts_id": "8904320075446"
+  },
+  {
+    "name": "Amul Protein Blueberry Shake",
+    "region": "IN",
+    "calories": 69.0,
+    "protein_g": 10.0,
+    "carbs_g": 9.5,
+    "fat_g": 0.75,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262153331"
+  },
+  {
+    "name": "Malabar Parota",
+    "region": "IN",
+    "calories": 300.0,
+    "protein_g": 9.71,
+    "carbs_g": 36.7,
+    "fat_g": 14.35,
+    "fiber_g": 1.85,
+    "open_food_facts_id": "8906020580121"
+  },
+  {
+    "name": "Gatorade zero sugar lemon lime",
+    "region": "IN",
+    "calories": 1.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8902080002344"
+  },
+  {
+    "name": "Amul Curd",
+    "region": "IN",
+    "calories": 53.0,
+    "protein_g": 3.0,
+    "carbs_g": 3.5,
+    "fat_g": 3.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262202381"
+  },
+  {
+    "name": "Danedar Ghee",
+    "region": "IN",
+    "calories": 898.92,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 99.88,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906056450320"
+  },
+  {
+    "name": "Omega-3 Fish Oil",
+    "region": "IN",
+    "calories": 9.71,
+    "protein_g": 0.02,
+    "carbs_g": 0.44,
+    "fat_g": 0.87,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904355400190"
+  },
+  {
+    "name": "Ghee",
+    "region": "IN",
+    "calories": 897.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 99.7,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906010360085"
+  },
+  {
+    "name": "Masti Dahi",
+    "region": "IN",
+    "calories": 65.0,
+    "protein_g": 4.0,
+    "carbs_g": 4.6,
+    "fat_g": 3.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262200035"
+  },
+  {
+    "name": "Peanut Spread Creamy",
+    "region": "IN",
+    "calories": 624.0,
+    "protein_g": 26.0,
+    "carbs_g": 20.0,
+    "fat_g": 50.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262010511"
+  },
+  {
+    "name": "Alpino Super Oats Chocolate",
+    "region": "IN",
+    "calories": 445.0,
+    "protein_g": 22.0,
+    "carbs_g": 52.2,
+    "fat_g": 16.4,
+    "fiber_g": 11.3,
+    "open_food_facts_id": "8906127551086"
+  },
+  {
+    "name": "Pure Ghee",
+    "region": "IN",
+    "calories": 897.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 99.7,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906036670878"
+  },
+  {
+    "name": "SAFOLA ACTIVE - MULTI-SOURCE EDIBLE OIL",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901088034593"
+  },
+  {
+    "name": "Dark Chocolate And Cranberry Muesli",
+    "region": "IN",
+    "calories": 408.0,
+    "protein_g": 12.0,
+    "carbs_g": 69.0,
+    "fat_g": 11.6,
+    "fiber_g": 10.0,
+    "open_food_facts_id": "8904335600329"
+  },
+  {
+    "name": "Full Cream Milk",
+    "region": "IN",
+    "calories": 85.0,
+    "protein_g": 3.2,
+    "carbs_g": 4.7,
+    "fat_g": 6.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904057395770"
+  },
+  {
+    "name": "date sweetened peanut butter",
+    "region": "IN",
+    "calories": 637.0,
+    "protein_g": 24.3,
+    "carbs_g": 22.0,
+    "fat_g": 50.3,
+    "fiber_g": 8.0,
+    "open_food_facts_id": "8906143890145"
+  },
+  {
+    "name": "DoodhShakti Ghee",
+    "region": "IN",
+    "calories": 897.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 99.7,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901542002090"
+  },
+  {
+    "name": "soya drink",
+    "region": "IN",
+    "calories": 34.4,
+    "protein_g": 3.22,
+    "carbs_g": 1.78,
+    "fat_g": 1.67,
+    "fiber_g": 1.11,
+    "open_food_facts_id": "8901071732796"
+  },
+  {
+    "name": "Whole Wheat Loaf",
+    "region": "IN",
+    "calories": 253.0,
+    "protein_g": 10.0,
+    "carbs_g": 49.0,
+    "fat_g": 2.0,
+    "fiber_g": 10.0,
+    "open_food_facts_id": "8906076132640"
+  },
+  {
+    "name": "apis ROYAL ZAHIDI 500g",
+    "region": "IN",
+    "calories": 365.0,
+    "protein_g": 1.8,
+    "carbs_g": 89.1,
+    "fat_g": 0.0,
+    "fiber_g": 7.1,
+    "open_food_facts_id": "8906135092021"
+  },
+  {
+    "name": "Chocolate Peanut butter smooth",
+    "region": "IN",
+    "calories": 628.0,
+    "protein_g": 28.1,
+    "carbs_g": 17.5,
+    "fat_g": 49.4,
+    "fiber_g": 8.44,
+    "open_food_facts_id": "8904327600351"
+  },
+  {
+    "name": "Protein Muesli",
+    "region": "IN",
+    "calories": 386.0,
+    "protein_g": 23.0,
+    "carbs_g": 53.1,
+    "fat_g": 10.7,
+    "fiber_g": 7.5,
+    "open_food_facts_id": "8904335603405"
+  },
+  {
+    "name": "Atta Shakti",
+    "region": "IN",
+    "calories": 243.0,
+    "protein_g": 9.9,
+    "carbs_g": 45.6,
+    "fat_g": 2.34,
+    "fiber_g": 8.4,
+    "open_food_facts_id": "8904043551555"
+  },
+  {
+    "name": "VEEBA CREAMY PEANUT BUTTER",
+    "region": "IN",
+    "calories": 638.0,
+    "protein_g": 26.0,
+    "carbs_g": 21.0,
+    "fat_g": 50.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906069401104"
+  },
+  {
+    "name": "Happilo Arabian Dates",
+    "region": "IN",
+    "calories": 286.67,
+    "protein_g": 2.67,
+    "carbs_g": 77.33,
+    "fat_g": 0.67,
+    "fiber_g": 9.33,
+    "open_food_facts_id": "8906081126900"
+  },
+  {
+    "name": "Shubham",
+    "region": "IN",
+    "calories": 74.0,
+    "protein_g": 3.3,
+    "carbs_g": 4.8,
+    "fat_g": 4.6,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906036670090"
+  },
+  {
+    "name": "Roasted chana",
+    "region": "IN",
+    "calories": 374.5,
+    "protein_g": 22.5,
+    "carbs_g": 61.0,
+    "fat_g": 4.5,
+    "fiber_g": 12.0,
+    "open_food_facts_id": "8906161390719"
+  },
+  {
+    "name": "GREEK YOGURT natural",
+    "region": "IN",
+    "calories": 63.53,
+    "protein_g": 7.65,
+    "carbs_g": 4.71,
+    "fat_g": 2.24,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906059635007"
+  },
+  {
+    "name": "26g High Protein Oats Dark Chocolate",
+    "region": "IN",
+    "calories": 364.0,
+    "protein_g": 26.0,
+    "carbs_g": 57.3,
+    "fat_g": 5.9,
+    "fiber_g": 11.1,
+    "open_food_facts_id": "8904335603429"
+  },
+  {
+    "name": "Farmley Makhana Peri Peri",
+    "region": "IN",
+    "calories": 475.0,
+    "protein_g": 7.8,
+    "carbs_g": 63.4,
+    "fat_g": 19.8,
+    "fiber_g": 11.2,
+    "open_food_facts_id": "8906120100830"
+  },
+  {
+    "name": "Idhayam Sesame Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 99.9,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904001800237"
+  },
+  {
+    "name": "Moti",
+    "region": "IN",
+    "calories": 58.0,
+    "protein_g": 3.0,
+    "carbs_g": 4.8,
+    "fat_g": 3.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262151368"
+  },
+  {
+    "name": "DiSano Peanut Butter Crunchy",
+    "region": "IN",
+    "calories": 639.0,
+    "protein_g": 28.3,
+    "carbs_g": 18.0,
+    "fat_g": 49.0,
+    "fiber_g": 9.0,
+    "open_food_facts_id": "8904320059651"
+  },
+  {
+    "name": "Real active 100% orange juice",
+    "region": "IN",
+    "calories": 44.0,
+    "protein_g": 0.0,
+    "carbs_g": 11.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901888005397"
+  },
+  {
+    "name": "Zero Maida Pizza Base",
+    "region": "IN",
+    "calories": 239.7,
+    "protein_g": 13.4,
+    "carbs_g": 43.51,
+    "fat_g": 1.34,
+    "fiber_g": 6.39,
+    "open_food_facts_id": "8908009059291"
+  },
+  {
+    "name": "Muesli 0% Added Sugar",
+    "region": "IN",
+    "calories": 382.0,
+    "protein_g": 9.3,
+    "carbs_g": 77.6,
+    "fat_g": 5.2,
+    "fiber_g": 6.4,
+    "open_food_facts_id": "8901499010476"
+  },
+  {
+    "name": "Figaro Olive Oil",
+    "region": "IN",
+    "calories": 821.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 91.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8410125245170"
+  },
+  {
+    "name": "Anmol Gold Coconut Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901207038334"
+  },
+  {
+    "name": "Good Life MP Sharbati Atta",
+    "region": "IN",
+    "calories": 321.0,
+    "protein_g": 10.6,
+    "carbs_g": 64.2,
+    "fat_g": 1.5,
+    "fiber_g": 11.4,
+    "open_food_facts_id": "8902901029857"
+  },
+  {
+    "name": "Modern Sandwich Supreme Bread",
+    "region": "IN",
+    "calories": 254.0,
+    "protein_g": 7.9,
+    "carbs_g": 51.0,
+    "fat_g": 2.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904043552644"
+  },
+  {
+    "name": "Ragi Flour",
+    "region": "IN",
+    "calories": 322.0,
+    "protein_g": 7.1,
+    "carbs_g": 66.8,
+    "fat_g": 18.0,
+    "fiber_g": 8.5,
+    "open_food_facts_id": "8902901225914"
+  },
+  {
+    "name": "Skyr Yogurt",
+    "region": "IN",
+    "calories": 99.5,
+    "protein_g": 12.0,
+    "carbs_g": 9.5,
+    "fat_g": 1.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904083302483"
+  },
+  {
+    "name": "Ginger Garlic Paste",
+    "region": "IN",
+    "calories": 35.0,
+    "protein_g": 0.87,
+    "carbs_g": 5.3,
+    "fat_g": 1.2,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901786761005"
+  },
+  {
+    "name": "Super Soft Paneer",
+    "region": "IN",
+    "calories": 291.0,
+    "protein_g": 17.0,
+    "carbs_g": 4.2,
+    "fat_g": 23.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906016411453"
+  },
+  {
+    "name": "Saras Dahi",
+    "region": "IN",
+    "calories": 58.0,
+    "protein_g": 3.2,
+    "carbs_g": 4.6,
+    "fat_g": 3.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906009440682"
+  },
+  {
+    "name": "Alu Methi",
+    "region": "IN",
+    "calories": 83.0,
+    "protein_g": 1.6,
+    "carbs_g": 8.1,
+    "fat_g": 4.9,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901042957104"
+  },
+  {
+    "name": "Impact Why Protein Isolate & Concentrate",
+    "region": "IN",
+    "calories": 368.89,
+    "protein_g": 53.38,
+    "carbs_g": 32.44,
+    "fat_g": 2.84,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906133026240"
+  },
+  {
+    "name": "Soya Chocolate Flavor Drink",
+    "region": "IN",
+    "calories": 77.3,
+    "protein_g": 3.2,
+    "carbs_g": 12.3,
+    "fat_g": 1.4,
+    "fiber_g": 1.2,
+    "open_food_facts_id": "8901071302111"
+  },
+  {
+    "name": "mini soya chunks",
+    "region": "IN",
+    "calories": 316.0,
+    "protein_g": 52.9,
+    "carbs_g": 31.7,
+    "fat_g": 0.9,
+    "fiber_g": 15.3,
+    "open_food_facts_id": "8906007283090"
+  },
+  {
+    "name": "Ketofy Zero Sugar",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0787099822569"
+  },
+  {
+    "name": "Zero Maida Protein Bread",
+    "region": "IN",
+    "calories": 246.0,
+    "protein_g": 15.2,
+    "carbs_g": 42.5,
+    "fat_g": 1.64,
+    "fiber_g": 4.92,
+    "open_food_facts_id": "8908009059246"
+  },
+  {
+    "name": "Brown Bread",
+    "region": "IN",
+    "calories": 244.0,
+    "protein_g": 7.78,
+    "carbs_g": 47.2,
+    "fat_g": 2.68,
+    "fiber_g": 5.38,
+    "open_food_facts_id": "8904043551586"
+  },
+  {
+    "name": "Heritage Spiced Buttermilk",
+    "region": "IN",
+    "calories": 21.0,
+    "protein_g": 1.1,
+    "carbs_g": 1.8,
+    "fat_g": 1.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904089975377"
+  },
+  {
+    "name": "Yoga Bar Super Muesli",
+    "region": "IN",
+    "calories": 367.0,
+    "protein_g": 9.7,
+    "carbs_g": 73.0,
+    "fat_g": 6.2,
+    "fiber_g": 9.5,
+    "open_food_facts_id": "8904335602910"
+  },
+  {
+    "name": "Multi Grain High Fibre Bread",
+    "region": "IN",
+    "calories": 310.55,
+    "protein_g": 11.21,
+    "carbs_g": 54.31,
+    "fat_g": 3.09,
+    "fiber_g": 10.27,
+    "open_food_facts_id": "8906001387114"
+  },
+  {
+    "name": "Go Desi Ice Popz",
+    "region": "IN",
+    "calories": 72.1,
+    "protein_g": 0.02,
+    "carbs_g": 18.3,
+    "fat_g": 0.0,
+    "fiber_g": 0.12,
+    "open_food_facts_id": "8906108893549"
+  },
+  {
+    "name": "Coconut Water with Litchi",
+    "region": "IN",
+    "calories": 22.0,
+    "protein_g": 0.0,
+    "carbs_g": 5.6,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8909081006197"
+  },
+  {
+    "name": "Saffolamayo90 g",
+    "region": "IN",
+    "calories": 262.0,
+    "protein_g": 0.0,
+    "carbs_g": 9.2,
+    "fat_g": 25.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901088081191"
+  },
+  {
+    "name": "Mother dairy classic dahi",
+    "region": "IN",
+    "calories": 62.0,
+    "protein_g": 3.7,
+    "carbs_g": 5.0,
+    "fat_g": 3.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901648022169"
+  },
+  {
+    "name": "Rajbhog natural jaggery",
+    "region": "IN",
+    "calories": 385.0,
+    "protein_g": 0.4,
+    "carbs_g": 75.0,
+    "fat_g": 0.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9427142488021"
+  },
+  {
+    "name": "Prostar 100% Whey Protein",
+    "region": "IN",
+    "calories": 400.0,
+    "protein_g": 83.3,
+    "carbs_g": 6.7,
+    "fat_g": 3.3,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0099071001498"
+  },
+  {
+    "name": "Emami Healthy & Tasty Refined Sunflower Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901248270212"
+  },
+  {
+    "name": "B Natural Select Tender Coconut Water",
+    "region": "IN",
+    "calories": 21.0,
+    "protein_g": 0.0,
+    "carbs_g": 5.2,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901725008307"
+  },
+  {
+    "name": "Heritage A-One Spiced Buttermilk",
+    "region": "IN",
+    "calories": 21.8,
+    "protein_g": 1.2,
+    "carbs_g": 2.0,
+    "fat_g": 1.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904089993807"
+  },
+  {
+    "name": "Dark Chocolate Peanut Spread - Crunchy",
+    "region": "IN",
+    "calories": 590.29,
+    "protein_g": 17.71,
+    "carbs_g": 42.0,
+    "fat_g": 39.14,
+    "fiber_g": 10.0,
+    "open_food_facts_id": "8906143890152"
+  },
+  {
+    "name": "Mother Dairy Ultimate Dahi",
+    "region": "IN",
+    "calories": 75.0,
+    "protein_g": 3.7,
+    "carbs_g": 5.0,
+    "fat_g": 4.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901648097983"
+  },
+  {
+    "name": "Whole Wheat Bread",
+    "region": "IN",
+    "calories": 241.49,
+    "protein_g": 13.47,
+    "carbs_g": 43.91,
+    "fat_g": 1.33,
+    "fiber_g": 6.31,
+    "open_food_facts_id": "8908009059154"
+  },
+  {
+    "name": "Barramundi",
+    "region": "IN",
+    "calories": 88.5,
+    "protein_g": 18.58,
+    "carbs_g": 0.0,
+    "fat_g": 1.33,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0890150002678"
+  },
+  {
+    "name": "AMUL PURE GHEE",
+    "region": "IN",
+    "calories": 897.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 99.7,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262030366"
+  },
+  {
+    "name": "Multi Grain Bread",
+    "region": "IN",
+    "calories": 504.0,
+    "protein_g": 19.2,
+    "carbs_g": 94.0,
+    "fat_g": 8.6,
+    "fiber_g": 13.0,
+    "open_food_facts_id": "8901063343276"
+  },
+  {
+    "name": "Probiotic Buttermilk",
+    "region": "IN",
+    "calories": 27.9,
+    "protein_g": 1.37,
+    "carbs_g": 2.78,
+    "fat_g": 1.26,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908003249490"
+  },
+  {
+    "name": "Greek Yoghurt",
+    "region": "IN",
+    "calories": 80.2,
+    "protein_g": 8.6,
+    "carbs_g": 6.5,
+    "fat_g": 2.2,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904083302438"
+  },
+  {
+    "name": "Wonderland California In-Shell Walnuts 1kg",
+    "region": "IN",
+    "calories": 654.0,
+    "protein_g": 15.0,
+    "carbs_g": 14.0,
+    "fat_g": 65.0,
+    "fiber_g": 7.0,
+    "open_food_facts_id": "8906095120079"
+  },
+  {
+    "name": "Crunchy Dark Chocolate Peanut Butter",
+    "region": "IN",
+    "calories": 620.0,
+    "protein_g": 21.5,
+    "carbs_g": 30.5,
+    "fat_g": 47.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904335601005"
+  },
+  {
+    "name": "Health Mix",
+    "region": "IN",
+    "calories": 360.0,
+    "protein_g": 10.0,
+    "carbs_g": 76.0,
+    "fat_g": 4.0,
+    "fiber_g": 10.0,
+    "open_food_facts_id": "8906008350852"
+  },
+  {
+    "name": "Max Protein Dark Choco Crunchy Spread Peanut Butter",
+    "region": "IN",
+    "calories": 593.0,
+    "protein_g": 18.0,
+    "carbs_g": 38.0,
+    "fat_g": 41.0,
+    "fiber_g": 4.0,
+    "open_food_facts_id": "8906009536477"
+  },
+  {
+    "name": "Zero Maida Kulcha Bread",
+    "region": "IN",
+    "calories": 244.31,
+    "protein_g": 12.74,
+    "carbs_g": 42.83,
+    "fat_g": 2.74,
+    "fiber_g": 6.34,
+    "open_food_facts_id": "8908009059345"
+  },
+  {
+    "name": "Fruit And Nuts Supermix",
+    "region": "IN",
+    "calories": 434.0,
+    "protein_g": 14.0,
+    "carbs_g": 36.0,
+    "fat_g": 26.0,
+    "fiber_g": 4.3,
+    "open_food_facts_id": "8906080603358"
+  },
+  {
+    "name": "Bread",
+    "region": "IN",
+    "calories": 273.93,
+    "protein_g": 10.48,
+    "carbs_g": 54.14,
+    "fat_g": 1.05,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8906001388319"
+  },
+  {
+    "name": "Kellogg's Corn flakes original",
+    "region": "IN",
+    "calories": 378.0,
+    "protein_g": 6.7,
+    "carbs_g": 86.9,
+    "fat_g": 1.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901499008893"
+  },
+  {
+    "name": "Sid's Farm Cow Milk",
+    "region": "IN",
+    "calories": 68.0,
+    "protein_g": 3.4,
+    "carbs_g": 5.15,
+    "fat_g": 3.6,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8905694508240"
+  },
+  {
+    "name": "Peanut Butter Chocolate",
+    "region": "IN",
+    "calories": 609.38,
+    "protein_g": 25.0,
+    "carbs_g": 21.88,
+    "fat_g": 46.88,
+    "fiber_g": 6.25,
+    "open_food_facts_id": "8904221697693"
+  },
+  {
+    "name": "Chia Seeds (Raw)",
+    "region": "IN",
+    "calories": 449.0,
+    "protein_g": 19.9,
+    "carbs_g": 36.0,
+    "fat_g": 32.7,
+    "fiber_g": 34.3,
+    "open_food_facts_id": "8906112662667"
+  },
+  {
+    "name": "Bambino Vermicelli",
+    "region": "IN",
+    "calories": 381.0,
+    "protein_g": 10.5,
+    "carbs_g": 82.5,
+    "fat_g": 1.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8901242114406"
+  },
+  {
+    "name": "Pintola Wholegrain brown rice cakes unsalted",
+    "region": "IN",
+    "calories": 378.0,
+    "protein_g": 7.9,
+    "carbs_g": 81.0,
+    "fat_g": 2.2,
+    "fiber_g": 7.1,
+    "open_food_facts_id": "8908010900636"
+  },
+  {
+    "name": "MDH BIRYANI MASALA",
+    "region": "IN",
+    "calories": 256.0,
+    "protein_g": 8.6,
+    "carbs_g": 67.7,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8902167000362"
+  },
+  {
+    "name": "Multigrain Dosa",
+    "region": "IN",
+    "calories": 388.6,
+    "protein_g": 13.0,
+    "carbs_g": 72.0,
+    "fat_g": 5.4,
+    "fiber_g": 8.0,
+    "open_food_facts_id": "8901042964478"
+  },
+  {
+    "name": "Aarambh Danedar Assam Tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904132917064"
+  },
+  {
+    "name": "Good Life Fard Dates 500gm",
+    "region": "IN",
+    "calories": 312.0,
+    "protein_g": 2.4,
+    "carbs_g": 72.7,
+    "fat_g": 0.3,
+    "fiber_g": 9.1,
+    "open_food_facts_id": "8904132929135"
+  },
+  {
+    "name": "Eggon White Grade A White Eggs",
+    "region": "IN",
+    "calories": 128.0,
+    "protein_g": 13.3,
+    "carbs_g": 0.67,
+    "fat_g": 8.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5060204123672"
+  },
+  {
+    "name": "TruNativ Raw Whey Isolate Unflavored",
+    "region": "IN",
+    "calories": 377.14,
+    "protein_g": 86.86,
+    "carbs_g": 3.14,
+    "fat_g": 2.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908012987178"
+  },
+  {
+    "name": "toasted millet muesli dark chocolate and orange peel",
+    "region": "IN",
+    "calories": 465.8,
+    "protein_g": 9.3,
+    "carbs_g": 67.4,
+    "fat_g": 17.7,
+    "fiber_g": 4.3,
+    "open_food_facts_id": "0784927149447"
+  },
+  {
+    "name": "Zero Maida Super Multi Grain Bread",
+    "region": "IN",
+    "calories": 240.91,
+    "protein_g": 13.1,
+    "carbs_g": 43.62,
+    "fat_g": 1.55,
+    "fiber_g": 6.9,
+    "open_food_facts_id": "8908009059321"
+  },
+  {
+    "name": "Country Delight Low Malai Milk",
+    "region": "IN",
+    "calories": 57.0,
+    "protein_g": 3.2,
+    "carbs_g": 4.5,
+    "fat_g": 3.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906117360995"
+  },
+  {
+    "name": "Saras Chhach",
+    "region": "IN",
+    "calories": 31.0,
+    "protein_g": 2.4,
+    "carbs_g": 2.1,
+    "fat_g": 1.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906009440569"
+  },
+  {
+    "name": "Spiced Butter Milk",
+    "region": "IN",
+    "calories": 21.6,
+    "protein_g": 1.2,
+    "carbs_g": 1.5,
+    "fat_g": 1.2,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904083308065"
+  },
+  {
+    "name": "Almond milk unsweetened",
+    "region": "IN",
+    "calories": 16.0,
+    "protein_g": 0.6,
+    "carbs_g": 0.3,
+    "fat_g": 1.4,
+    "fiber_g": 0.3,
+    "open_food_facts_id": "0841541001220"
+  },
+  {
+    "name": "Finger Millet Vermicelli",
+    "region": "IN",
+    "calories": 164.0,
+    "protein_g": 5.0,
+    "carbs_g": 36.0,
+    "fat_g": 0.0,
+    "fiber_g": 2.0,
+    "open_food_facts_id": "8906042150074"
+  },
+  {
+    "name": "Muesli",
+    "region": "IN",
+    "calories": 425.4,
+    "protein_g": 13.5,
+    "carbs_g": 68.1,
+    "fat_g": 10.9,
+    "fiber_g": 11.5,
+    "open_food_facts_id": "8906112662803"
+  },
+  {
+    "name": "8906069406154",
+    "region": "IN",
+    "calories": 335.51,
+    "protein_g": 0.0,
+    "carbs_g": 46.04,
+    "fat_g": 16.73,
+    "fiber_g": 3.27,
+    "open_food_facts_id": "8906069406154"
+  },
+  {
+    "name": "Low Fat Paneer",
+    "region": "IN",
+    "calories": 156.0,
+    "protein_g": 17.0,
+    "carbs_g": 4.0,
+    "fat_g": 8.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906084521597"
+  },
+  {
+    "name": "Nutty Gritties Omani Dates",
+    "region": "IN",
+    "calories": 289.0,
+    "protein_g": 2.4,
+    "carbs_g": 74.0,
+    "fat_g": 0.4,
+    "fiber_g": 8.0,
+    "open_food_facts_id": "8904150208403"
+  },
+  {
+    "name": "Shredded Mozzarella Cheese",
+    "region": "IN",
+    "calories": 289.0,
+    "protein_g": 22.4,
+    "carbs_g": 2.6,
+    "fat_g": 21.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904083311010"
+  },
+  {
+    "name": "Soulfull Millet muesli",
+    "region": "IN",
+    "calories": 405.0,
+    "protein_g": 8.8,
+    "carbs_g": 80.0,
+    "fat_g": 5.7,
+    "fiber_g": 8.7,
+    "open_food_facts_id": "8906113490894"
+  },
+  {
+    "name": "Fortune sun lite refined sunflower oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906007280235"
+  },
+  {
+    "name": "Extra Virgin Olive Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906136781856"
+  },
+  {
+    "name": "Aashirvaad Organic Whole Wheat Atta",
+    "region": "IN",
+    "calories": 343.0,
+    "protein_g": 10.6,
+    "carbs_g": 77.6,
+    "fat_g": 1.6,
+    "fiber_g": 10.6,
+    "open_food_facts_id": "8901725019730"
+  },
+  {
+    "name": "Date Sweetened Peanut Butter Crunchy",
+    "region": "IN",
+    "calories": 637.0,
+    "protein_g": 24.3,
+    "carbs_g": 22.0,
+    "fat_g": 50.3,
+    "fiber_g": 8.0,
+    "open_food_facts_id": "8906143890091"
+  },
+  {
+    "name": "McCain Chilli Garlic Potato Pops",
+    "region": "IN",
+    "calories": 174.4,
+    "protein_g": 3.0,
+    "carbs_g": 23.5,
+    "fat_g": 7.6,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906000610626"
+  },
+  {
+    "name": "Jivo Rice Bran Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8905604002059"
+  },
+  {
+    "name": "Pro Clean Whey Chocolate Flavour",
+    "region": "IN",
+    "calories": 389.0,
+    "protein_g": 71.4,
+    "carbs_g": 12.0,
+    "fat_g": 6.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904335604396"
+  },
+  {
+    "name": "Sago",
+    "region": "IN",
+    "calories": 358.0,
+    "protein_g": 0.2,
+    "carbs_g": 88.7,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8902901226690"
+  },
+  {
+    "name": "Super T Milk",
+    "region": "IN",
+    "calories": 68.0,
+    "protein_g": 3.1,
+    "carbs_g": 4.7,
+    "fat_g": 4.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901648001904"
+  },
+  {
+    "name": "Amul Calci+ Milk",
+    "region": "IN",
+    "calories": 58.0,
+    "protein_g": 4.48,
+    "carbs_g": 6.48,
+    "fat_g": 1.48,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901262153416"
+  },
+  {
+    "name": "More Choice Zahidi Dates",
+    "region": "IN",
+    "calories": 327.0,
+    "protein_g": 2.27,
+    "carbs_g": 78.48,
+    "fat_g": 0.42,
+    "fiber_g": 7.83,
+    "open_food_facts_id": "8903023013281"
+  },
+  {
+    "name": "Lite Fit Milk",
+    "region": "IN",
+    "calories": 33.0,
+    "protein_g": 3.1,
+    "carbs_g": 5.0,
+    "fat_g": 0.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904089994354"
+  },
+  {
+    "name": "High Protein Paneer",
+    "region": "IN",
+    "calories": 189.8,
+    "protein_g": 25.0,
+    "carbs_g": 6.7,
+    "fat_g": 7.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904083322856"
+  },
+  {
+    "name": "77 Green Dosa Flour",
+    "region": "IN",
+    "calories": 370.0,
+    "protein_g": 11.0,
+    "carbs_g": 77.0,
+    "fat_g": 2.0,
+    "fiber_g": 5.0,
+    "open_food_facts_id": "8906034562427"
+  },
+  {
+    "name": "evocus water",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904406118883"
+  },
+  {
+    "name": "Coriander Chutney",
+    "region": "IN",
+    "calories": 155.91,
+    "protein_g": 2.63,
+    "carbs_g": 7.38,
+    "fat_g": 12.88,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906020580169"
+  },
+  {
+    "name": "High Protein Milk",
+    "region": "IN",
+    "calories": 64.0,
+    "protein_g": 10.4,
+    "carbs_g": 5.2,
+    "fat_g": 0.16,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908024361393"
+  }
+]

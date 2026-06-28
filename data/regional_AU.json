@@ -1,0 +1,2502 @@
+[
+  {
+    "name": "Country Grains",
+    "region": "AU",
+    "calories": 250.82,
+    "protein_g": 11.01,
+    "carbs_g": 43.15,
+    "fat_g": 4.21,
+    "fiber_g": 4.5,
+    "open_food_facts_id": "9339423007978"
+  },
+  {
+    "name": "Arrabbiata",
+    "region": "AU",
+    "calories": 60.0,
+    "protein_g": 1.4,
+    "carbs_g": 5.5,
+    "fat_g": 3.1,
+    "fiber_g": 2.2,
+    "open_food_facts_id": "8076809513388"
+  },
+  {
+    "name": "Penne Rigate No. 73 Durum Wheat Semolina Pasta",
+    "region": "AU",
+    "calories": 359.0,
+    "protein_g": 13.0,
+    "carbs_g": 71.0,
+    "fat_g": 2.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8076802085738"
+  },
+  {
+    "name": "Fusilli N°98",
+    "region": "AU",
+    "calories": 359.0,
+    "protein_g": 13.0,
+    "carbs_g": 71.0,
+    "fat_g": 2.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8076802085981"
+  },
+  {
+    "name": "Tomato passata",
+    "region": "AU",
+    "calories": 36.0,
+    "protein_g": 1.6,
+    "carbs_g": 5.1,
+    "fat_g": 0.5,
+    "fiber_g": 1.5,
+    "open_food_facts_id": "80042563"
+  },
+  {
+    "name": "NAPOLETANA",
+    "region": "AU",
+    "calories": 72.0,
+    "protein_g": 1.4,
+    "carbs_g": 6.2,
+    "fat_g": 3.7,
+    "fiber_g": 1.8,
+    "open_food_facts_id": "8076809513692"
+  },
+  {
+    "name": "Tomatenpulp in stukjes",
+    "region": "AU",
+    "calories": 25.0,
+    "protein_g": 1.2,
+    "carbs_g": 3.9,
+    "fat_g": 0.2,
+    "fiber_g": 1.32,
+    "open_food_facts_id": "8005110413520"
+  },
+  {
+    "name": "PIPE RIGATE N°91",
+    "region": "AU",
+    "calories": 359.0,
+    "protein_g": 13.0,
+    "carbs_g": 71.0,
+    "fat_g": 2.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8076802085912"
+  },
+  {
+    "name": "Passata Tomato Purée",
+    "region": "AU",
+    "calories": 36.0,
+    "protein_g": 1.6,
+    "carbs_g": 5.1,
+    "fat_g": 0.5,
+    "fiber_g": 0.3,
+    "open_food_facts_id": "8005110171710"
+  },
+  {
+    "name": "DATE SYRUP",
+    "region": "AU",
+    "calories": 300.0,
+    "protein_g": 5.0,
+    "carbs_g": 70.0,
+    "fat_g": 0.0,
+    "fiber_g": 10.0,
+    "open_food_facts_id": "6297000361321"
+  },
+  {
+    "name": "Capellini No. 1",
+    "region": "AU",
+    "calories": 359.0,
+    "protein_g": 13.0,
+    "carbs_g": 71.0,
+    "fat_g": 2.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8076800195019"
+  },
+  {
+    "name": "Spaghettini N°3",
+    "region": "AU",
+    "calories": 359.0,
+    "protein_g": 13.0,
+    "carbs_g": 71.0,
+    "fat_g": 2.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8076800195033"
+  },
+  {
+    "name": "Durum Wheat Semolina Pasta",
+    "region": "AU",
+    "calories": 359.0,
+    "protein_g": 13.0,
+    "carbs_g": 71.0,
+    "fat_g": 2.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8076808150072"
+  },
+  {
+    "name": "Passata di Pomodoro",
+    "region": "AU",
+    "calories": 36.0,
+    "protein_g": 1.6,
+    "carbs_g": 5.1,
+    "fat_g": 0.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8005110630408"
+  },
+  {
+    "name": "Ricotta",
+    "region": "AU",
+    "calories": 87.0,
+    "protein_g": 3.3,
+    "carbs_g": 6.3,
+    "fat_g": 5.0,
+    "fiber_g": 2.0,
+    "open_food_facts_id": "8076809521543"
+  },
+  {
+    "name": "Rice Pudding",
+    "region": "AU",
+    "calories": 93.0,
+    "protein_g": 3.1,
+    "carbs_g": 15.6,
+    "fat_g": 2.0,
+    "fiber_g": 0.5,
+    "open_food_facts_id": "5000354800931"
+  },
+  {
+    "name": "PURE BASMATI RICE",
+    "region": "AU",
+    "calories": 143.2,
+    "protein_g": 2.9,
+    "carbs_g": 28.2,
+    "fat_g": 1.9,
+    "fiber_g": 0.7,
+    "open_food_facts_id": "5011157888101"
+  },
+  {
+    "name": "Paradajky lúpané",
+    "region": "AU",
+    "calories": 41.0,
+    "protein_g": 1.2,
+    "carbs_g": 6.9,
+    "fat_g": 0.6,
+    "fiber_g": 1.6,
+    "open_food_facts_id": "8005110060007"
+  },
+  {
+    "name": "POLPA",
+    "region": "AU",
+    "calories": 12.38,
+    "protein_g": 1.2,
+    "carbs_g": 3.9,
+    "fat_g": 0.2,
+    "fiber_g": 1.2,
+    "open_food_facts_id": "8005110172106"
+  },
+  {
+    "name": "CORN THINS",
+    "region": "AU",
+    "calories": 383.33,
+    "protein_g": 10.0,
+    "carbs_g": 71.11,
+    "fat_g": 3.33,
+    "fiber_g": 7.22,
+    "open_food_facts_id": "9322969000015"
+  },
+  {
+    "name": "Evian Natural Mineral Water 2yrs prod",
+    "region": "AU",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "3068320014067"
+  },
+  {
+    "name": "Weet-Bix Caramel Crunch Flavour",
+    "region": "AU",
+    "calories": 353.44,
+    "protein_g": 12.4,
+    "carbs_g": 65.9,
+    "fat_g": 1.3,
+    "fiber_g": 12.9,
+    "open_food_facts_id": "9300652010794"
+  },
+  {
+    "name": "Wholegrain Basmati Rice",
+    "region": "AU",
+    "calories": 129.64,
+    "protein_g": 2.8,
+    "carbs_g": 23.3,
+    "fat_g": 2.1,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "5011157888132"
+  },
+  {
+    "name": "Tomate y Badilico",
+    "region": "AU",
+    "calories": 64.0,
+    "protein_g": 1.6,
+    "carbs_g": 7.6,
+    "fat_g": 2.6,
+    "fiber_g": 1.9,
+    "open_food_facts_id": "8076809513739"
+  },
+  {
+    "name": "Orecchiette Collezione",
+    "region": "AU",
+    "calories": 359.0,
+    "protein_g": 13.0,
+    "carbs_g": 71.0,
+    "fat_g": 2.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8076809519977"
+  },
+  {
+    "name": "Weet-Bix",
+    "region": "AU",
+    "calories": 339.05,
+    "protein_g": 12.26,
+    "carbs_g": 65.81,
+    "fat_g": 4.19,
+    "fiber_g": 12.9,
+    "open_food_facts_id": "9300652010374"
+  },
+  {
+    "name": "Original Tikka Masala",
+    "region": "AU",
+    "calories": 138.0,
+    "protein_g": 2.6,
+    "carbs_g": 9.9,
+    "fat_g": 9.3,
+    "fiber_g": 2.0,
+    "open_food_facts_id": "5052675040206"
+  },
+  {
+    "name": "Strawberry Fruit Spread",
+    "region": "AU",
+    "calories": 200.0,
+    "protein_g": 0.0,
+    "carbs_g": 50.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0084380957444"
+  },
+  {
+    "name": "Lait Demi-écrémé",
+    "region": "AU",
+    "calories": 47.0,
+    "protein_g": 3.3,
+    "carbs_g": 4.8,
+    "fat_g": 1.6,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "26006079"
+  },
+  {
+    "name": "Madras Lentils",
+    "region": "AU",
+    "calories": 107.14,
+    "protein_g": 3.86,
+    "carbs_g": 12.28,
+    "fat_g": 3.86,
+    "fiber_g": 3.86,
+    "open_food_facts_id": "0782733000020"
+  },
+  {
+    "name": "Wild Pacific Red Salmon",
+    "region": "AU",
+    "calories": 151.0,
+    "protein_g": 20.4,
+    "carbs_g": 0.0,
+    "fat_g": 7.8,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5000171010025"
+  },
+  {
+    "name": "Base per Bolognese",
+    "region": "AU",
+    "calories": 68.0,
+    "protein_g": 1.3,
+    "carbs_g": 6.0,
+    "fat_g": 4.0,
+    "fiber_g": 1.5,
+    "open_food_facts_id": "8076809513654"
+  },
+  {
+    "name": "Greek Style Yoghurt",
+    "region": "AU",
+    "calories": 119.0,
+    "protein_g": 4.24,
+    "carbs_g": 4.8,
+    "fat_g": 9.44,
+    "fiber_g": 0.53,
+    "open_food_facts_id": "9300658228537"
+  },
+  {
+    "name": "Harissa Paste",
+    "region": "AU",
+    "calories": 72.0,
+    "protein_g": 2.9,
+    "carbs_g": 11.0,
+    "fat_g": 1.0,
+    "fiber_g": 2.5,
+    "open_food_facts_id": "6194049100044"
+  },
+  {
+    "name": "Vita-Weat 9 Grains",
+    "region": "AU",
+    "calories": 410.73,
+    "protein_g": 11.76,
+    "carbs_g": 62.61,
+    "fat_g": 9.24,
+    "fiber_g": 13.45,
+    "open_food_facts_id": "9310072014753"
+  },
+  {
+    "name": "Colman mint sause",
+    "region": "AU",
+    "calories": 120.0,
+    "protein_g": 1.8,
+    "carbs_g": 25.0,
+    "fat_g": 0.5,
+    "fiber_g": 1.85,
+    "open_food_facts_id": "8714100536186"
+  },
+  {
+    "name": "Rice Cakes Salted",
+    "region": "AU",
+    "calories": 373.13,
+    "protein_g": 8.57,
+    "carbs_g": 72.86,
+    "fat_g": 2.86,
+    "fiber_g": 7.14,
+    "open_food_facts_id": "20083892"
+  },
+  {
+    "name": "kombucha",
+    "region": "AU",
+    "calories": 2.0,
+    "protein_g": 0.5,
+    "carbs_g": 1.6,
+    "fat_g": 0.5,
+    "fiber_g": 0.5,
+    "open_food_facts_id": "9350271000164"
+  },
+  {
+    "name": "Greek Yogurt",
+    "region": "AU",
+    "calories": 56.0,
+    "protein_g": 9.31,
+    "carbs_g": 4.0,
+    "fat_g": 0.19,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310653102626"
+  },
+  {
+    "name": "Grissini Nature Vita Vigor",
+    "region": "AU",
+    "calories": 396.0,
+    "protein_g": 12.0,
+    "carbs_g": 74.0,
+    "fat_g": 5.0,
+    "fiber_g": 3.5,
+    "open_food_facts_id": "8007900000255"
+  },
+  {
+    "name": "The Pumpkin & Spinach",
+    "region": "AU",
+    "calories": 209.0,
+    "protein_g": 3.4,
+    "carbs_g": 27.0,
+    "fat_g": 9.5,
+    "fiber_g": 2.3,
+    "open_food_facts_id": "5391528181070"
+  },
+  {
+    "name": "Almond Milk Unsweetened",
+    "region": "AU",
+    "calories": 16.0,
+    "protein_g": 0.6,
+    "carbs_g": 0.3,
+    "fat_g": 1.4,
+    "fiber_g": 0.3,
+    "open_food_facts_id": "9300652803495"
+  },
+  {
+    "name": "The Cheeseburger Bowl",
+    "region": "AU",
+    "calories": 142.33,
+    "protein_g": 13.67,
+    "carbs_g": 13.8,
+    "fat_g": 3.3,
+    "fiber_g": 0.67,
+    "open_food_facts_id": "4006381333627"
+  },
+  {
+    "name": "Cherry tomatoes",
+    "region": "AU",
+    "calories": 28.0,
+    "protein_g": 1.2,
+    "carbs_g": 4.4,
+    "fat_g": 0.0,
+    "fiber_g": 1.2,
+    "open_food_facts_id": "8005110550508"
+  },
+  {
+    "name": "Greek Yogurt Nonfat Plain",
+    "region": "AU",
+    "calories": 53.33,
+    "protein_g": 9.33,
+    "carbs_g": 4.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0894700010014"
+  },
+  {
+    "name": "Classic Butter Chicken",
+    "region": "AU",
+    "calories": 254.0,
+    "protein_g": 3.3,
+    "carbs_g": 8.9,
+    "fat_g": 7.7,
+    "fiber_g": 1.7,
+    "open_food_facts_id": "5052675000224"
+  },
+  {
+    "name": "Mutti Knuste Tomater Datterini 300g",
+    "region": "AU",
+    "calories": 30.0,
+    "protein_g": 0.9,
+    "carbs_g": 5.4,
+    "fat_g": 0.4,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8005110000454"
+  },
+  {
+    "name": "Original Green Tea with Honey",
+    "region": "AU",
+    "calories": 19.0,
+    "protein_g": 0.0,
+    "carbs_g": 5.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0613008730734"
+  },
+  {
+    "name": "Oat",
+    "region": "AU",
+    "calories": 46.4,
+    "protein_g": 0.84,
+    "carbs_g": 6.32,
+    "fat_g": 1.92,
+    "fiber_g": 0.4,
+    "open_food_facts_id": "9300652809985"
+  },
+  {
+    "name": "Tomater Hele Økologisk 400g Mutti",
+    "region": "AU",
+    "calories": 22.0,
+    "protein_g": 1.1,
+    "carbs_g": 3.6,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8005110413544"
+  },
+  {
+    "name": "Peanut Butter",
+    "region": "AU",
+    "calories": 623.59,
+    "protein_g": 23.9,
+    "carbs_g": 11.8,
+    "fat_g": 52.5,
+    "fiber_g": 7.0,
+    "open_food_facts_id": "9352042002148"
+  },
+  {
+    "name": "Blueberry & Blackcurrant  Cordial",
+    "region": "AU",
+    "calories": 21.0,
+    "protein_g": 0.0,
+    "carbs_g": 5.2,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5022019560202"
+  },
+  {
+    "name": "Pasta Sauce Bolognese",
+    "region": "AU",
+    "calories": 51.0,
+    "protein_g": 1.2,
+    "carbs_g": 5.6,
+    "fat_g": 3.0,
+    "fiber_g": 1.4,
+    "open_food_facts_id": "8005110004704"
+  },
+  {
+    "name": "Original Crackers",
+    "region": "AU",
+    "calories": 466.67,
+    "protein_g": 13.33,
+    "carbs_g": 66.67,
+    "fat_g": 16.67,
+    "fiber_g": 10.0,
+    "open_food_facts_id": "0897580000106"
+  },
+  {
+    "name": "Brilliant Beetroot",
+    "region": "AU",
+    "calories": 39.0,
+    "protein_g": 1.0,
+    "carbs_g": 8.5,
+    "fat_g": 0.1,
+    "fiber_g": 2.42,
+    "open_food_facts_id": "5060054134033"
+  },
+  {
+    "name": "RIGATONI N°89",
+    "region": "AU",
+    "calories": 359.0,
+    "protein_g": 13.0,
+    "carbs_g": 71.0,
+    "fat_g": 2.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8076802085899"
+  },
+  {
+    "name": "Paxo Sage & Onion Stuffing Mix",
+    "region": "AU",
+    "calories": 122.22,
+    "protein_g": 3.78,
+    "carbs_g": 22.44,
+    "fat_g": 1.56,
+    "fiber_g": 2.22,
+    "open_food_facts_id": "5000354909702"
+  },
+  {
+    "name": "Soy",
+    "region": "AU",
+    "calories": 65.2,
+    "protein_g": 3.2,
+    "carbs_g": 5.12,
+    "fat_g": 3.52,
+    "fiber_g": 0.32,
+    "open_food_facts_id": "9300652510911"
+  },
+  {
+    "name": "TAHINA",
+    "region": "AU",
+    "calories": 700.0,
+    "protein_g": 27.0,
+    "carbs_g": 10.0,
+    "fat_g": 60.0,
+    "fiber_g": 5.9,
+    "open_food_facts_id": "5281117012536"
+  },
+  {
+    "name": "Chipotle Salsa",
+    "region": "AU",
+    "calories": 32.0,
+    "protein_g": 1.0,
+    "carbs_g": 6.2,
+    "fat_g": 0.4,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5060321390315"
+  },
+  {
+    "name": "Peanut Butter Crunchy",
+    "region": "AU",
+    "calories": 603.89,
+    "protein_g": 26.33,
+    "carbs_g": 11.33,
+    "fat_g": 49.0,
+    "fiber_g": 9.0,
+    "open_food_facts_id": "9421901881009"
+  },
+  {
+    "name": "Peanut Butter Smooth",
+    "region": "AU",
+    "calories": 625.76,
+    "protein_g": 5.3,
+    "carbs_g": 2.5,
+    "fat_g": 11.7,
+    "fiber_g": 1.5,
+    "open_food_facts_id": "9352042002131"
+  },
+  {
+    "name": "Cheese Dip with Breadsticks",
+    "region": "AU",
+    "calories": 262.86,
+    "protein_g": 10.57,
+    "carbs_g": 25.43,
+    "fat_g": 13.14,
+    "fiber_g": 1.14,
+    "open_food_facts_id": "3073780810661"
+  },
+  {
+    "name": "Corn Thins Multigrain",
+    "region": "AU",
+    "calories": 453.33,
+    "protein_g": 10.6,
+    "carbs_g": 72.1,
+    "fat_g": 3.4,
+    "fiber_g": 6.8,
+    "open_food_facts_id": "9322969000039"
+  },
+  {
+    "name": "Mutti Pulpa Tomatenfruchtfleisch mit Knobi",
+    "region": "AU",
+    "calories": 26.0,
+    "protein_g": 1.2,
+    "carbs_g": 3.9,
+    "fat_g": 0.2,
+    "fiber_g": 1.22,
+    "open_food_facts_id": "8005110170461"
+  },
+  {
+    "name": "Bavette n.13",
+    "region": "AU",
+    "calories": 359.0,
+    "protein_g": 13.0,
+    "carbs_g": 71.0,
+    "fat_g": 2.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8076800195132"
+  },
+  {
+    "name": "Lait Entier",
+    "region": "AU",
+    "calories": 65.0,
+    "protein_g": 3.3,
+    "carbs_g": 4.8,
+    "fat_g": 3.6,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "26006017"
+  },
+  {
+    "name": "Peanut Butter - Smooth",
+    "region": "AU",
+    "calories": 603.89,
+    "protein_g": 26.33,
+    "carbs_g": 11.33,
+    "fat_g": 49.0,
+    "fiber_g": 6.67,
+    "open_food_facts_id": "9421901881160"
+  },
+  {
+    "name": "PULPE FINE DE TOMATES POLPA",
+    "region": "AU",
+    "calories": 26.0,
+    "protein_g": 1.2,
+    "carbs_g": 3.9,
+    "fat_g": 0.2,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8005110170423"
+  },
+  {
+    "name": "Medjool Dates",
+    "region": "AU",
+    "calories": 282.0,
+    "protein_g": 1.96,
+    "carbs_g": 82.17,
+    "fat_g": 0.22,
+    "fiber_g": 8.7,
+    "open_food_facts_id": "0097923002365"
+  },
+  {
+    "name": "Natural Yoghurt",
+    "region": "AU",
+    "calories": 114.72,
+    "protein_g": 3.3,
+    "carbs_g": 3.8,
+    "fat_g": 9.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310354980516"
+  },
+  {
+    "name": "Pâte de curry rouge",
+    "region": "AU",
+    "calories": 29.0,
+    "protein_g": 0.5,
+    "carbs_g": 4.0,
+    "fat_g": 0.9,
+    "fiber_g": 1.3,
+    "open_food_facts_id": "9556041780629"
+  },
+  {
+    "name": "Extra Creamy Oat",
+    "region": "AU",
+    "calories": 50.48,
+    "protein_g": 0.64,
+    "carbs_g": 6.2,
+    "fat_g": 2.48,
+    "fiber_g": 0.36,
+    "open_food_facts_id": "9300652811643"
+  },
+  {
+    "name": "Nuttelex with Olive Oil",
+    "region": "AU",
+    "calories": 580.78,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 65.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310421000154"
+  },
+  {
+    "name": "Weet-Bix Bites Wild Berry",
+    "region": "AU",
+    "calories": 318.18,
+    "protein_g": 10.0,
+    "carbs_g": 71.11,
+    "fat_g": 0.8,
+    "fiber_g": 8.44,
+    "open_food_facts_id": "9300652801286"
+  },
+  {
+    "name": "LAVAZZA QUALITÀ ROSSA",
+    "region": "AU",
+    "calories": 1.0,
+    "protein_g": 0.2,
+    "carbs_g": 0.3,
+    "fat_g": 0.0,
+    "fiber_g": 7.23,
+    "open_food_facts_id": "8000070053526"
+  },
+  {
+    "name": "Biscottes Au froment",
+    "region": "AU",
+    "calories": 391.0,
+    "protein_g": 11.0,
+    "carbs_g": 72.0,
+    "fat_g": 5.6,
+    "fiber_g": 4.5,
+    "open_food_facts_id": "26042855"
+  },
+  {
+    "name": "CHUNK STYLE TUNA IN OLIVE OIL BLEND",
+    "region": "AU",
+    "calories": 126.47,
+    "protein_g": 18.0,
+    "carbs_g": 1.0,
+    "fat_g": 7.7,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300462348575"
+  },
+  {
+    "name": "Basilico",
+    "region": "AU",
+    "calories": 64.0,
+    "protein_g": 1.6,
+    "carbs_g": 7.6,
+    "fat_g": 2.6,
+    "fiber_g": 1.9,
+    "open_food_facts_id": "8076809513456"
+  },
+  {
+    "name": "long grain white rice",
+    "region": "AU",
+    "calories": 136.0,
+    "protein_g": 1.6,
+    "carbs_g": 6.4,
+    "fat_g": 8.0,
+    "fiber_g": 1.0,
+    "open_food_facts_id": "13006339"
+  },
+  {
+    "name": "PÂTE DE CURRY VERT THAÏ",
+    "region": "AU",
+    "calories": 130.0,
+    "protein_g": 0.4,
+    "carbs_g": 4.0,
+    "fat_g": 0.8,
+    "fiber_g": 1.39,
+    "open_food_facts_id": "9556041780612"
+  },
+  {
+    "name": "Vita-Weat Original",
+    "region": "AU",
+    "calories": 402.69,
+    "protein_g": 11.34,
+    "carbs_g": 65.55,
+    "fat_g": 7.14,
+    "fiber_g": 13.87,
+    "open_food_facts_id": "9310072004051"
+  },
+  {
+    "name": "Soy Milk",
+    "region": "AU",
+    "calories": 58.1,
+    "protein_g": 4.1,
+    "carbs_g": 5.4,
+    "fat_g": 2.2,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9312336049013"
+  },
+  {
+    "name": "Rice Krispies",
+    "region": "AU",
+    "calories": 393.33,
+    "protein_g": 7.0,
+    "carbs_g": 86.0,
+    "fat_g": 1.2,
+    "fiber_g": 2.9,
+    "open_food_facts_id": "5059319023472"
+  },
+  {
+    "name": "Dash Grapefruit Sparkling Water",
+    "region": "AU",
+    "calories": 2.12,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5060489730732"
+  },
+  {
+    "name": "Huile de sésame Ayam™",
+    "region": "AU",
+    "calories": 899.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9556041010863"
+  },
+  {
+    "name": "Spreadable Original Soft",
+    "region": "AU",
+    "calories": 616.63,
+    "protein_g": 1.0,
+    "carbs_g": 1.2,
+    "fat_g": 68.4,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310052122515"
+  },
+  {
+    "name": "CREAMY BLUE",
+    "region": "AU",
+    "calories": 431.0,
+    "protein_g": 13.2,
+    "carbs_g": 0.0,
+    "fat_g": 41.6,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5740200001012"
+  },
+  {
+    "name": "Linda McCartney Deep Country Pies 2pk",
+    "region": "AU",
+    "calories": 236.0,
+    "protein_g": 5.4,
+    "carbs_g": 21.0,
+    "fat_g": 14.0,
+    "fiber_g": 1.9,
+    "open_food_facts_id": "5060045388384"
+  },
+  {
+    "name": "L'Or Lungo Profondo",
+    "region": "AU",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8711000360316"
+  },
+  {
+    "name": "REAL MAYONNAISE",
+    "region": "AU",
+    "calories": 707.14,
+    "protein_g": 1.43,
+    "carbs_g": 1.43,
+    "fat_g": 78.57,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5000184321842"
+  },
+  {
+    "name": "Fiery Goan Curry",
+    "region": "AU",
+    "calories": 186.0,
+    "protein_g": 1.9,
+    "carbs_g": 9.0,
+    "fat_g": 15.0,
+    "fiber_g": 2.6,
+    "open_food_facts_id": "5052675000248"
+  },
+  {
+    "name": "Crema e Gusto",
+    "region": "AU",
+    "calories": 1.0,
+    "protein_g": 0.2,
+    "carbs_g": 0.3,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8000070053472"
+  },
+  {
+    "name": "Pure Harvest Organic Natures Soy Milk Malt Free imp",
+    "region": "AU",
+    "calories": 48.32,
+    "protein_g": 3.0,
+    "carbs_g": 1.5,
+    "fat_g": 3.4,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9312231221231"
+  },
+  {
+    "name": "Céleri rémoulade",
+    "region": "AU",
+    "calories": 93.0,
+    "protein_g": 1.0,
+    "carbs_g": 3.7,
+    "fat_g": 7.6,
+    "fiber_g": 3.37,
+    "open_food_facts_id": "26007120"
+  },
+  {
+    "name": "Beurre de cacahuète",
+    "region": "AU",
+    "calories": 629.0,
+    "protein_g": 25.0,
+    "carbs_g": 12.0,
+    "fat_g": 52.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9317772107266"
+  },
+  {
+    "name": "Biała Trufla",
+    "region": "AU",
+    "calories": 882.0,
+    "protein_g": 0.25,
+    "carbs_g": 0.0,
+    "fat_g": 97.9,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "80481508"
+  },
+  {
+    "name": "Spring Water",
+    "region": "AU",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "93563062"
+  },
+  {
+    "name": "All Natural Yogurt Light",
+    "region": "AU",
+    "calories": 79.2,
+    "protein_g": 5.52,
+    "carbs_g": 5.6,
+    "fat_g": 3.92,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300658404146"
+  },
+  {
+    "name": "SMOOTH PEANUT BUTTER",
+    "region": "AU",
+    "calories": 583.17,
+    "protein_g": 25.0,
+    "carbs_g": 13.5,
+    "fat_g": 49.0,
+    "fiber_g": 8.0,
+    "open_food_facts_id": "9310885115500"
+  },
+  {
+    "name": "Fusilli 40",
+    "region": "AU",
+    "calories": 355.0,
+    "protein_g": 13.0,
+    "carbs_g": 72.0,
+    "fat_g": 1.7,
+    "fiber_g": 2.53,
+    "open_food_facts_id": "8005121000405"
+  },
+  {
+    "name": "Pipa De Girasol Gigante Sal",
+    "region": "AU",
+    "calories": 590.0,
+    "protein_g": 32.5,
+    "carbs_g": 6.6,
+    "fat_g": 46.0,
+    "fiber_g": 10.0,
+    "open_food_facts_id": "4056489800637"
+  },
+  {
+    "name": "Greek Yogurt Vanilla Bean",
+    "region": "AU",
+    "calories": 93.75,
+    "protein_g": 12.4,
+    "carbs_g": 15.2,
+    "fat_g": 4.2,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310653103999"
+  },
+  {
+    "name": "Dark Peanut Butter Crunchy",
+    "region": "AU",
+    "calories": 581.0,
+    "protein_g": 25.0,
+    "carbs_g": 13.5,
+    "fat_g": 49.0,
+    "fiber_g": 8.0,
+    "open_food_facts_id": "9310885115586"
+  },
+  {
+    "name": "Giant beans in tomato sauce",
+    "region": "AU",
+    "calories": 115.0,
+    "protein_g": 5.0,
+    "carbs_g": 11.0,
+    "fat_g": 4.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5201051002219"
+  },
+  {
+    "name": "Cornflakes",
+    "region": "AU",
+    "calories": 389.0,
+    "protein_g": 8.0,
+    "carbs_g": 81.4,
+    "fat_g": 1.71,
+    "fiber_g": 4.29,
+    "open_food_facts_id": "9310055537224"
+  },
+  {
+    "name": "Chocolate Protein+ Peanut Butter",
+    "region": "AU",
+    "calories": 554.49,
+    "protein_g": 30.0,
+    "carbs_g": 18.0,
+    "fat_g": 40.5,
+    "fiber_g": 8.5,
+    "open_food_facts_id": "9310885116217"
+  },
+  {
+    "name": "Natural Wraps",
+    "region": "AU",
+    "calories": 344.0,
+    "protein_g": 10.8,
+    "carbs_g": 56.0,
+    "fat_g": 1.6,
+    "fiber_g": 2.8,
+    "open_food_facts_id": "0789673000080"
+  },
+  {
+    "name": "Protein Smoothie Banana Honey + Cinnamon",
+    "region": "AU",
+    "calories": 60.0,
+    "protein_g": 7.06,
+    "carbs_g": 4.4,
+    "fat_g": 1.51,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9336243005009"
+  },
+  {
+    "name": "Linguine 14",
+    "region": "AU",
+    "calories": 355.0,
+    "protein_g": 13.0,
+    "carbs_g": 72.0,
+    "fat_g": 1.7,
+    "fiber_g": 2.95,
+    "open_food_facts_id": "8005121000146"
+  },
+  {
+    "name": "Crumpets",
+    "region": "AU",
+    "calories": 198.0,
+    "protein_g": 6.4,
+    "carbs_g": 37.0,
+    "fat_g": 1.4,
+    "fiber_g": 2.2,
+    "open_food_facts_id": "9310043003014"
+  },
+  {
+    "name": "Greek Style All Natural Yogurt",
+    "region": "AU",
+    "calories": 119.2,
+    "protein_g": 4.24,
+    "carbs_g": 4.8,
+    "fat_g": 9.44,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300658114663"
+  },
+  {
+    "name": "Illy INTENSO Bold Roast",
+    "region": "AU",
+    "calories": 1.0,
+    "protein_g": 0.2,
+    "carbs_g": 0.3,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8003753918198"
+  },
+  {
+    "name": "PERFECTLY FIRM TOFU",
+    "region": "AU",
+    "calories": 49.55,
+    "protein_g": 14.8,
+    "carbs_g": 7.6,
+    "fat_g": 3.93,
+    "fiber_g": 6.2,
+    "open_food_facts_id": "9339687095230"
+  },
+  {
+    "name": "Greek Style Natural Yoghurt",
+    "region": "AU",
+    "calories": 65.33,
+    "protein_g": 3.3,
+    "carbs_g": 3.8,
+    "fat_g": 9.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310354980202"
+  },
+  {
+    "name": "Cruskits Rye",
+    "region": "AU",
+    "calories": 342.11,
+    "protein_g": 1.4,
+    "carbs_g": 6.7,
+    "fat_g": 0.3,
+    "fiber_g": 2.1,
+    "open_food_facts_id": "9310072019888"
+  },
+  {
+    "name": "Risoni N°26",
+    "region": "AU",
+    "calories": 363.29,
+    "protein_g": 11.5,
+    "carbs_g": 72.25,
+    "fat_g": 2.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8076800315264"
+  },
+  {
+    "name": "Multi-Grain+",
+    "region": "AU",
+    "calories": 366.67,
+    "protein_g": 10.7,
+    "carbs_g": 70.2,
+    "fat_g": 4.4,
+    "fiber_g": 8.9,
+    "open_food_facts_id": "9300652014396"
+  },
+  {
+    "name": "LIGHT RYE BREAD",
+    "region": "AU",
+    "calories": 55.77,
+    "protein_g": 9.2,
+    "carbs_g": 43.1,
+    "fat_g": 2.9,
+    "fiber_g": 4.3,
+    "open_food_facts_id": "9310128002314"
+  },
+  {
+    "name": "Sliced Mixed Grain Bread",
+    "region": "AU",
+    "calories": 255.3,
+    "protein_g": 7.9,
+    "carbs_g": 40.14,
+    "fat_g": 3.38,
+    "fiber_g": 3.76,
+    "open_food_facts_id": "9310023146113"
+  },
+  {
+    "name": "Pure Sesame Oil",
+    "region": "AU",
+    "calories": 819.0,
+    "protein_g": 0.0,
+    "carbs_g": 1.0,
+    "fat_g": 91.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0077521941013"
+  },
+  {
+    "name": "organic ramen",
+    "region": "AU",
+    "calories": 346.56,
+    "protein_g": 10.5,
+    "carbs_g": 70.8,
+    "fat_g": 1.2,
+    "fiber_g": 6.6,
+    "open_food_facts_id": "0837328000050"
+  },
+  {
+    "name": "Sultana Bran",
+    "region": "AU",
+    "calories": 345.23,
+    "protein_g": 9.56,
+    "carbs_g": 62.89,
+    "fat_g": 2.89,
+    "fiber_g": 15.11,
+    "open_food_facts_id": "9310055105904"
+  },
+  {
+    "name": "Organic Chick Peas",
+    "region": "AU",
+    "calories": 106.67,
+    "protein_g": 7.47,
+    "carbs_g": 14.27,
+    "fat_g": 0.27,
+    "fiber_g": 3.27,
+    "open_food_facts_id": "9300633227272"
+  },
+  {
+    "name": "FULL CREAM Pure Milk",
+    "region": "AU",
+    "calories": 63.0,
+    "protein_g": 3.2,
+    "carbs_g": 4.8,
+    "fat_g": 3.4,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300639500041"
+  },
+  {
+    "name": "Organic Kombucha Raspberry Lemonade",
+    "region": "AU",
+    "calories": 2.8,
+    "protein_g": 0.4,
+    "carbs_g": 0.4,
+    "fat_g": 0.4,
+    "fiber_g": 0.4,
+    "open_food_facts_id": "9350271000126"
+  },
+  {
+    "name": "Super Sweet Corn",
+    "region": "AU",
+    "calories": 72.04,
+    "protein_g": 15.7,
+    "carbs_g": 1.0,
+    "fat_g": 0.6,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300462346120"
+  },
+  {
+    "name": "Salt Reduced Spreadable Butter",
+    "region": "AU",
+    "calories": 736.14,
+    "protein_g": 0.9,
+    "carbs_g": 0.9,
+    "fat_g": 82.4,
+    "fiber_g": 1.39,
+    "open_food_facts_id": "9415007002079"
+  },
+  {
+    "name": "Crunchy Peanut Butter",
+    "region": "AU",
+    "calories": 594.0,
+    "protein_g": 26.9,
+    "carbs_g": 15.6,
+    "fat_g": 46.0,
+    "fiber_g": 7.7,
+    "open_food_facts_id": "9421903938008"
+  },
+  {
+    "name": "100% Natural Crunchy Peanut Butter",
+    "region": "AU",
+    "calories": 714.63,
+    "protein_g": 25.0,
+    "carbs_g": 13.5,
+    "fat_g": 49.0,
+    "fiber_g": 6.5,
+    "open_food_facts_id": "9310885115517"
+  },
+  {
+    "name": "Traditional Wholemeal Bread",
+    "region": "AU",
+    "calories": 219.89,
+    "protein_g": 8.1,
+    "carbs_g": 40.6,
+    "fat_g": 2.6,
+    "fiber_g": 5.4,
+    "open_food_facts_id": "9310128002499"
+  },
+  {
+    "name": "Liquid Breakfast",
+    "region": "AU",
+    "calories": 72.0,
+    "protein_g": 3.5,
+    "carbs_g": 9.5,
+    "fat_g": 1.8,
+    "fiber_g": 1.8,
+    "open_food_facts_id": "9300652809961"
+  },
+  {
+    "name": "Passata Rossoro de Toscane",
+    "region": "AU",
+    "calories": 31.0,
+    "protein_g": 1.2,
+    "carbs_g": 5.5,
+    "fat_g": 0.5,
+    "fiber_g": 1.2,
+    "open_food_facts_id": "8005110002083"
+  },
+  {
+    "name": "Tomaten geschält San Marzano",
+    "region": "AU",
+    "calories": 22.0,
+    "protein_g": 1.1,
+    "carbs_g": 3.6,
+    "fat_g": 0.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8005110060083"
+  },
+  {
+    "name": "Creamy Vanilla Flavoured Yoghurt",
+    "region": "AU",
+    "calories": 10.38,
+    "protein_g": 5.4,
+    "carbs_g": 11.8,
+    "fat_g": 4.8,
+    "fiber_g": 0.4,
+    "open_food_facts_id": "9310354890006"
+  },
+  {
+    "name": "Cottage Cheese",
+    "region": "AU",
+    "calories": 82.0,
+    "protein_g": 12.0,
+    "carbs_g": 4.3,
+    "fat_g": 1.8,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310161005006"
+  },
+  {
+    "name": "Vegemite 40% less salt",
+    "region": "AU",
+    "calories": 186.5,
+    "protein_g": 21.6,
+    "carbs_g": 16.8,
+    "fat_g": 1.7,
+    "fiber_g": 8.8,
+    "open_food_facts_id": "9352042004234"
+  },
+  {
+    "name": "Greek Style Yogurt with a hint of Vanilla Bean",
+    "region": "AU",
+    "calories": 131.2,
+    "protein_g": 4.0,
+    "carbs_g": 11.2,
+    "fat_g": 8.8,
+    "fiber_g": 0.16,
+    "open_food_facts_id": "9300658407765"
+  },
+  {
+    "name": "Traditional Hommus",
+    "region": "AU",
+    "calories": 315.0,
+    "protein_g": 7.0,
+    "carbs_g": 16.5,
+    "fat_g": 25.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9317444003711"
+  },
+  {
+    "name": "Wheat Biscuits",
+    "region": "AU",
+    "calories": 308.39,
+    "protein_g": 12.9,
+    "carbs_g": 65.48,
+    "fat_g": 1.29,
+    "fiber_g": 10.65,
+    "open_food_facts_id": "4061462110801"
+  },
+  {
+    "name": "Weet-Bix Gluten Free",
+    "region": "AU",
+    "calories": 373.33,
+    "protein_g": 12.3,
+    "carbs_g": 69.7,
+    "fat_g": 3.6,
+    "fiber_g": 6.8,
+    "open_food_facts_id": "9300652804874"
+  },
+  {
+    "name": "Spicy Chilli Crisp",
+    "region": "AU",
+    "calories": 717.0,
+    "protein_g": 5.9,
+    "carbs_g": 9.6,
+    "fat_g": 71.1,
+    "fiber_g": 1.84,
+    "open_food_facts_id": "6921804720410"
+  },
+  {
+    "name": "Farfalle Nr. 65",
+    "region": "AU",
+    "calories": 359.0,
+    "protein_g": 12.5,
+    "carbs_g": 71.2,
+    "fat_g": 2.0,
+    "fiber_g": 3.0,
+    "open_food_facts_id": "8076808060654"
+  },
+  {
+    "name": "Verdure mediterranee 400g eu cross",
+    "region": "AU",
+    "calories": 74.0,
+    "protein_g": 1.5,
+    "carbs_g": 6.6,
+    "fat_g": 4.2,
+    "fiber_g": 2.1,
+    "open_food_facts_id": "8076809583749"
+  },
+  {
+    "name": "Aldi butter Dairy Blend",
+    "region": "AU",
+    "calories": 616.63,
+    "protein_g": 2.0,
+    "carbs_g": 2.0,
+    "fat_g": 68.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "4088700057254"
+  },
+  {
+    "name": "TUNA WITH CHILLI",
+    "region": "AU",
+    "calories": 156.89,
+    "protein_g": 24.16,
+    "carbs_g": 1.64,
+    "fat_g": 11.67,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300462348216"
+  },
+  {
+    "name": "Creamed Cottage Cheese",
+    "region": "AU",
+    "calories": 93.0,
+    "protein_g": 11.3,
+    "carbs_g": 6.3,
+    "fat_g": 2.4,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300633485085"
+  },
+  {
+    "name": "Light Greek style natural yoghurt",
+    "region": "AU",
+    "calories": 76.67,
+    "protein_g": 6.0,
+    "carbs_g": 7.84,
+    "fat_g": 2.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310645103358"
+  },
+  {
+    "name": "Rogan Josh  préparation",
+    "region": "AU",
+    "calories": 157.0,
+    "protein_g": 2.5,
+    "carbs_g": 9.6,
+    "fat_g": 12.0,
+    "fiber_g": 1.6,
+    "open_food_facts_id": "5052675060204"
+  },
+  {
+    "name": "Simply Granola Crunchy Oat & Honey",
+    "region": "AU",
+    "calories": 417.78,
+    "protein_g": 10.89,
+    "carbs_g": 66.0,
+    "fat_g": 10.89,
+    "fiber_g": 6.22,
+    "open_food_facts_id": "5010477349651"
+  },
+  {
+    "name": "organic BROWN RICE CAKES original",
+    "region": "AU",
+    "calories": 379.75,
+    "protein_g": 8.0,
+    "carbs_g": 82.0,
+    "fat_g": 2.1,
+    "fiber_g": 4.2,
+    "open_food_facts_id": "9415748004554"
+  },
+  {
+    "name": "Rolled Oats Traditional",
+    "region": "AU",
+    "calories": 375.84,
+    "protein_g": 12.75,
+    "carbs_g": 56.75,
+    "fat_g": 9.25,
+    "fiber_g": 9.25,
+    "open_food_facts_id": "9310060011030"
+  },
+  {
+    "name": "Full Cream Milk",
+    "region": "AU",
+    "calories": 62.0,
+    "protein_g": 3.4,
+    "carbs_g": 4.4,
+    "fat_g": 3.4,
+    "fiber_g": 0.4,
+    "open_food_facts_id": "9300601186945"
+  },
+  {
+    "name": "Pulse Pasta",
+    "region": "AU",
+    "calories": 325.92,
+    "protein_g": 23.0,
+    "carbs_g": 58.0,
+    "fat_g": 2.0,
+    "fiber_g": 6.0,
+    "open_food_facts_id": "9310155009300"
+  },
+  {
+    "name": "ORGANIC BLACK BEANS",
+    "region": "AU",
+    "calories": 35.5,
+    "protein_g": 5.33,
+    "carbs_g": 15.07,
+    "fat_g": 0.67,
+    "fiber_g": 3.87,
+    "open_food_facts_id": "9339687011278"
+  },
+  {
+    "name": "TUNA",
+    "region": "AU",
+    "calories": 80.0,
+    "protein_g": 26.0,
+    "carbs_g": 0.71,
+    "fat_g": 9.86,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9350177000152"
+  },
+  {
+    "name": "Houmous",
+    "region": "AU",
+    "calories": 170.0,
+    "protein_g": 6.9,
+    "carbs_g": 16.0,
+    "fat_g": 7.1,
+    "fiber_g": 7.0,
+    "open_food_facts_id": "5281117011775"
+  },
+  {
+    "name": "Sauce piment ail et gingembre Ayam™",
+    "region": "AU",
+    "calories": 12.0,
+    "protein_g": 0.1,
+    "carbs_g": 2.8,
+    "fat_g": 0.0,
+    "fiber_g": 0.02,
+    "open_food_facts_id": "9311627604382"
+  },
+  {
+    "name": "plant-based meatballs",
+    "region": "AU",
+    "calories": 177.78,
+    "protein_g": 16.67,
+    "carbs_g": 10.0,
+    "fat_g": 7.78,
+    "fiber_g": 3.33,
+    "open_food_facts_id": "0842234000971"
+  },
+  {
+    "name": "Spaghetti Ristorante 8",
+    "region": "AU",
+    "calories": 358.0,
+    "protein_g": 13.0,
+    "carbs_g": 72.0,
+    "fat_g": 1.7,
+    "fiber_g": 2.53,
+    "open_food_facts_id": "8005121000085"
+  },
+  {
+    "name": "Coconut Cream",
+    "region": "AU",
+    "calories": 285.71,
+    "protein_g": 3.14,
+    "carbs_g": 4.0,
+    "fat_g": 28.57,
+    "fiber_g": 9.0,
+    "open_food_facts_id": "9311627010190"
+  },
+  {
+    "name": "Vanilla Yoghurt",
+    "region": "AU",
+    "calories": 56.76,
+    "protein_g": 15.2,
+    "carbs_g": 6.1,
+    "fat_g": 0.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9344962001738"
+  },
+  {
+    "name": "Tehina",
+    "region": "AU",
+    "calories": 666.0,
+    "protein_g": 24.0,
+    "carbs_g": 2.0,
+    "fat_g": 60.0,
+    "fiber_g": 11.0,
+    "open_food_facts_id": "7290000572109"
+  },
+  {
+    "name": "Smunchy Protein Peanut Butter",
+    "region": "AU",
+    "calories": 670.0,
+    "protein_g": 32.0,
+    "carbs_g": 13.0,
+    "fat_g": 42.1,
+    "fiber_g": 9.1,
+    "open_food_facts_id": "9310885115852"
+  },
+  {
+    "name": "BUTTERSOFT Salted Spreadable Butter",
+    "region": "AU",
+    "calories": 726.58,
+    "protein_g": 1.0,
+    "carbs_g": 1.0,
+    "fat_g": 82.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9415007002062"
+  },
+  {
+    "name": "Natural Greek Style Yoghurt",
+    "region": "AU",
+    "calories": 107.13,
+    "protein_g": 0.65,
+    "carbs_g": 5.59,
+    "fat_g": 9.41,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300662874973"
+  },
+  {
+    "name": "Lurpack Garlic Butter",
+    "region": "AU",
+    "calories": 696.0,
+    "protein_g": 1.2,
+    "carbs_g": 2.9,
+    "fat_g": 75.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5740902895803"
+  },
+  {
+    "name": "Whole Milk Yoghurt",
+    "region": "AU",
+    "calories": 79.59,
+    "protein_g": 5.0,
+    "carbs_g": 5.7,
+    "fat_g": 4.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310354940008"
+  },
+  {
+    "name": "Pate de curry jaune thai",
+    "region": "AU",
+    "calories": 124.0,
+    "protein_g": 2.8,
+    "carbs_g": 0.9,
+    "fat_g": 8.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9556041780346"
+  },
+  {
+    "name": "HIGH FIBRE WHOLEMEAL SLICED BREAD",
+    "region": "AU",
+    "calories": 249.25,
+    "protein_g": 9.46,
+    "carbs_g": 39.05,
+    "fat_g": 3.11,
+    "fiber_g": 7.43,
+    "open_food_facts_id": "9310023136657"
+  },
+  {
+    "name": "Farms Elderflower & Rose Cordial",
+    "region": "AU",
+    "calories": 19.6,
+    "protein_g": 0.0,
+    "carbs_g": 4.7,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5022019590209"
+  },
+  {
+    "name": "Nuttelex Original",
+    "region": "AU",
+    "calories": 678.78,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 63.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310421000017"
+  },
+  {
+    "name": "Greek yoghurt",
+    "region": "AU",
+    "calories": 128.0,
+    "protein_g": 4.93,
+    "carbs_g": 5.53,
+    "fat_g": 9.73,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "4088700164204"
+  },
+  {
+    "name": "chicken dinosaurs",
+    "region": "AU",
+    "calories": 286.0,
+    "protein_g": 12.3,
+    "carbs_g": 20.4,
+    "fat_g": 16.8,
+    "fiber_g": 1.9,
+    "open_food_facts_id": "4061461431198"
+  },
+  {
+    "name": "Crispy flakes of whole wheat and wheat bran",
+    "region": "AU",
+    "calories": 429.6,
+    "protein_g": 12.2,
+    "carbs_g": 77.7,
+    "fat_g": 3.6,
+    "fiber_g": 18.8,
+    "open_food_facts_id": "9310055536517"
+  },
+  {
+    "name": "Voss Vann Still 800ml",
+    "region": "AU",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0682430611744"
+  },
+  {
+    "name": "Olio",
+    "region": "AU",
+    "calories": 822.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 91.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8001876020019"
+  },
+  {
+    "name": "Vanilla Bean Yogurt",
+    "region": "AU",
+    "calories": 121.0,
+    "protein_g": 4.9,
+    "carbs_g": 13.6,
+    "fat_g": 4.2,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "4088700091982"
+  },
+  {
+    "name": "Cornichons",
+    "region": "AU",
+    "calories": 33.0,
+    "protein_g": 1.4,
+    "carbs_g": 5.1,
+    "fat_g": 0.2,
+    "fiber_g": 1.3,
+    "open_food_facts_id": "40804613"
+  },
+  {
+    "name": "Pickled Dill Cucumbers",
+    "region": "AU",
+    "calories": 32.9,
+    "protein_g": 0.5,
+    "carbs_g": 6.6,
+    "fat_g": 0.5,
+    "fiber_g": 0.29,
+    "open_food_facts_id": "5900397734272"
+  },
+  {
+    "name": "TADHUNHOUSE",
+    "region": "AU",
+    "calories": 238.1,
+    "protein_g": 8.69,
+    "carbs_g": 40.0,
+    "fat_g": 2.86,
+    "fiber_g": 7.11,
+    "open_food_facts_id": "9339423003482"
+  },
+  {
+    "name": "Voss Eau mineral water",
+    "region": "AU",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0682430400102"
+  },
+  {
+    "name": "Yaki nori for sushi",
+    "region": "AU",
+    "calories": 277.25,
+    "protein_g": 44.4,
+    "carbs_g": 36.6,
+    "fat_g": 4.7,
+    "fiber_g": 1.9,
+    "open_food_facts_id": "9310432400103"
+  },
+  {
+    "name": "Crunchy Oat Clusters Chunky Nut",
+    "region": "AU",
+    "calories": 464.44,
+    "protein_g": 10.2,
+    "carbs_g": 58.3,
+    "fat_g": 20.3,
+    "fiber_g": 6.1,
+    "open_food_facts_id": "5010477341273"
+  },
+  {
+    "name": "HEINZ BEANZ THE ONE FOR ALL ENGLISH RECIPE",
+    "region": "AU",
+    "calories": 84.86,
+    "protein_g": 4.8,
+    "carbs_g": 13.0,
+    "fat_g": 0.5,
+    "fiber_g": 4.2,
+    "open_food_facts_id": "9300657234874"
+  },
+  {
+    "name": "Hommus Classic",
+    "region": "AU",
+    "calories": 249.76,
+    "protein_g": 8.0,
+    "carbs_g": 12.9,
+    "fat_g": 18.8,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9346321000000"
+  },
+  {
+    "name": "Sweet potato Crispbread",
+    "region": "AU",
+    "calories": 377.63,
+    "protein_g": 6.67,
+    "carbs_g": 84.0,
+    "fat_g": 1.33,
+    "fiber_g": 1.33,
+    "open_food_facts_id": "0720516025730"
+  },
+  {
+    "name": "tomato paste",
+    "region": "AU",
+    "calories": 364.0,
+    "protein_g": 4.0,
+    "carbs_g": 15.2,
+    "fat_g": 0.4,
+    "fiber_g": 4.0,
+    "open_food_facts_id": "9300633340049"
+  },
+  {
+    "name": "Salted Spreadable Butter",
+    "region": "AU",
+    "calories": 726.58,
+    "protein_g": 1.0,
+    "carbs_g": 1.0,
+    "fat_g": 81.6,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310053103643"
+  },
+  {
+    "name": "Traditional Halloumi Cheese",
+    "region": "AU",
+    "calories": 300.0,
+    "protein_g": 20.0,
+    "carbs_g": 1.4,
+    "fat_g": 24.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5290093000659"
+  },
+  {
+    "name": "Organic Almond Unsweetened",
+    "region": "AU",
+    "calories": 29.4,
+    "protein_g": 0.6,
+    "carbs_g": 2.92,
+    "fat_g": 1.72,
+    "fiber_g": 0.4,
+    "open_food_facts_id": "9312231001215"
+  },
+  {
+    "name": "MasterFoods Salt Reduced Tomato Sauce | 475mL",
+    "region": "AU",
+    "calories": 74.1,
+    "protein_g": 1.4,
+    "carbs_g": 15.6,
+    "fat_g": 0.2,
+    "fiber_g": 1.5,
+    "open_food_facts_id": "9310012049142"
+  },
+  {
+    "name": "Natural Coconut Yoghurt",
+    "region": "AU",
+    "calories": 129.3,
+    "protein_g": 0.9,
+    "carbs_g": 6.5,
+    "fat_g": 9.7,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9336243008291"
+  },
+  {
+    "name": "Spreadable",
+    "region": "AU",
+    "calories": 680.0,
+    "protein_g": 0.5,
+    "carbs_g": 0.6,
+    "fat_g": 75.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5740900403604"
+  },
+  {
+    "name": "DRY ROASTED EDAMAME WITH SEA SALT",
+    "region": "AU",
+    "calories": 334.61,
+    "protein_g": 34.46,
+    "carbs_g": 20.78,
+    "fat_g": 19.18,
+    "fiber_g": 12.99,
+    "open_food_facts_id": "0011152463292"
+  },
+  {
+    "name": "Pizza Funghi",
+    "region": "AU",
+    "calories": 232.0,
+    "protein_g": 8.3,
+    "carbs_g": 22.0,
+    "fat_g": 12.0,
+    "fiber_g": 2.2,
+    "open_food_facts_id": "4001724819103"
+  },
+  {
+    "name": "100% jus de pomme",
+    "region": "AU",
+    "calories": 45.0,
+    "protein_g": 0.5,
+    "carbs_g": 11.0,
+    "fat_g": 0.5,
+    "fiber_g": 0.23,
+    "open_food_facts_id": "26001036"
+  },
+  {
+    "name": "Wild Pacific Pink Salmon",
+    "region": "AU",
+    "calories": 155.0,
+    "protein_g": 23.0,
+    "carbs_g": 0.0,
+    "fat_g": 7.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5000171010254"
+  },
+  {
+    "name": "cheese and herb puffs",
+    "region": "AU",
+    "calories": 451.0,
+    "protein_g": 11.0,
+    "carbs_g": 68.0,
+    "fat_g": 15.0,
+    "fiber_g": 2.8,
+    "open_food_facts_id": "5024121837302"
+  },
+  {
+    "name": "The Kale & Quinoa",
+    "region": "AU",
+    "calories": 221.33,
+    "protein_g": 4.5,
+    "carbs_g": 21.9,
+    "fat_g": 10.5,
+    "fiber_g": 2.7,
+    "open_food_facts_id": "5391528181056"
+  },
+  {
+    "name": "Tomatillo Salsa",
+    "region": "AU",
+    "calories": 30.4,
+    "protein_g": 1.2,
+    "carbs_g": 5.4,
+    "fat_g": 0.2,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5060321390308"
+  },
+  {
+    "name": "Almond",
+    "region": "AU",
+    "calories": 29.4,
+    "protein_g": 0.6,
+    "carbs_g": 3.6,
+    "fat_g": 1.4,
+    "fiber_g": 0.32,
+    "open_food_facts_id": "9300652803020"
+  },
+  {
+    "name": "Mixed Grain",
+    "region": "AU",
+    "calories": 248.57,
+    "protein_g": 8.4,
+    "carbs_g": 42.7,
+    "fat_g": 3.6,
+    "fiber_g": 4.0,
+    "open_food_facts_id": "9310128002543"
+  },
+  {
+    "name": "Dolminades",
+    "region": "AU",
+    "calories": 133.0,
+    "protein_g": 2.1,
+    "carbs_g": 10.0,
+    "fat_g": 9.0,
+    "fiber_g": 2.0,
+    "open_food_facts_id": "5201051001076"
+  },
+  {
+    "name": "Bolognese with Chunky Tomato, Garlic & Herbs",
+    "region": "AU",
+    "calories": 46.27,
+    "protein_g": 1.68,
+    "carbs_g": 8.4,
+    "fat_g": 0.16,
+    "fiber_g": 1.76,
+    "open_food_facts_id": "9300645111125"
+  },
+  {
+    "name": "Organic Unsweetened Oat Milk",
+    "region": "AU",
+    "calories": 44.26,
+    "protein_g": 1.52,
+    "carbs_g": 8.32,
+    "fat_g": 0.52,
+    "fiber_g": 0.4,
+    "open_food_facts_id": "9339687246106"
+  },
+  {
+    "name": "VitaBrits",
+    "region": "AU",
+    "calories": 351.69,
+    "protein_g": 9.91,
+    "carbs_g": 66.97,
+    "fat_g": 1.8,
+    "fiber_g": 12.61,
+    "open_food_facts_id": "9300605139862"
+  },
+  {
+    "name": "Banana Pudding",
+    "region": "AU",
+    "calories": 89.0,
+    "protein_g": 9.0,
+    "carbs_g": 7.06,
+    "fat_g": 2.35,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9339454001174"
+  },
+  {
+    "name": "Crunchy Chickpeas Lightly Salted",
+    "region": "AU",
+    "calories": 420.0,
+    "protein_g": 17.6,
+    "carbs_g": 59.6,
+    "fat_g": 16.0,
+    "fiber_g": 12.0,
+    "open_food_facts_id": "9318471000698"
+  },
+  {
+    "name": "OAT MILK",
+    "region": "AU",
+    "calories": 50.4,
+    "protein_g": 1.0,
+    "carbs_g": 7.2,
+    "fat_g": 2.0,
+    "fiber_g": 0.2,
+    "open_food_facts_id": "4088700354506"
+  },
+  {
+    "name": "Crispy oat clusters maple and pecan",
+    "region": "AU",
+    "calories": 473.0,
+    "protein_g": 7.6,
+    "carbs_g": 59.1,
+    "fat_g": 21.3,
+    "fiber_g": 7.2,
+    "open_food_facts_id": "5010477352859"
+  },
+  {
+    "name": "Hulled Tahini",
+    "region": "AU",
+    "calories": 587.0,
+    "protein_g": 17.6,
+    "carbs_g": 9.85,
+    "fat_g": 49.7,
+    "fiber_g": 14.9,
+    "open_food_facts_id": "9310885000141"
+  },
+  {
+    "name": "Protein Smoothie Double Espresso",
+    "region": "AU",
+    "calories": 67.53,
+    "protein_g": 7.06,
+    "carbs_g": 6.4,
+    "fat_g": 1.51,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9336243005030"
+  },
+  {
+    "name": "Instant vegetable stock cubes",
+    "region": "AU",
+    "calories": 7.2,
+    "protein_g": 0.04,
+    "carbs_g": 0.44,
+    "fat_g": 0.56,
+    "fiber_g": 0.12,
+    "open_food_facts_id": "5016084504582"
+  },
+  {
+    "name": "Soy Milky Low Sugar",
+    "region": "AU",
+    "calories": 38.72,
+    "protein_g": 3.0,
+    "carbs_g": 2.48,
+    "fat_g": 1.8,
+    "fiber_g": 0.2,
+    "open_food_facts_id": "9341650001742"
+  },
+  {
+    "name": "Toasted Muesli Super Berry Cranberry & Blueberry",
+    "region": "AU",
+    "calories": 449.0,
+    "protein_g": 10.6,
+    "carbs_g": 51.1,
+    "fat_g": 20.5,
+    "fiber_g": 6.6,
+    "open_food_facts_id": "9319133333451"
+  },
+  {
+    "name": "Certified Organic Virgin Coconut Oil",
+    "region": "AU",
+    "calories": 874.76,
+    "protein_g": 0.1,
+    "carbs_g": 0.2,
+    "fat_g": 99.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300633393939"
+  },
+  {
+    "name": "Soy Milk Protein Plus",
+    "region": "AU",
+    "calories": 52.0,
+    "protein_g": 4.2,
+    "carbs_g": 2.0,
+    "fat_g": 3.0,
+    "fiber_g": 0.4,
+    "open_food_facts_id": "9341650000578"
+  },
+  {
+    "name": "Hyderabad Red Korma",
+    "region": "AU",
+    "calories": 123.7,
+    "protein_g": 3.5,
+    "carbs_g": 6.7,
+    "fat_g": 8.1,
+    "fiber_g": 2.1,
+    "open_food_facts_id": "5052675000798"
+  },
+  {
+    "name": "Popcorn Sea Salt",
+    "region": "AU",
+    "calories": 495.0,
+    "protein_g": 11.0,
+    "carbs_g": 51.5,
+    "fat_g": 24.5,
+    "fiber_g": 11.5,
+    "open_food_facts_id": "9334714000096"
+  },
+  {
+    "name": "Full Cream Fresh Milk",
+    "region": "AU",
+    "calories": 63.2,
+    "protein_g": 3.32,
+    "carbs_g": 4.8,
+    "fat_g": 3.4,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300633556150"
+  },
+  {
+    "name": "BROWN RICE WHOLEGRAIN RICE",
+    "region": "AU",
+    "calories": 177.06,
+    "protein_g": 3.28,
+    "carbs_g": 32.8,
+    "fat_g": 3.2,
+    "fiber_g": 2.88,
+    "open_food_facts_id": "9310140005270"
+  },
+  {
+    "name": "Wholemeal & Seeds",
+    "region": "AU",
+    "calories": 248.51,
+    "protein_g": 13.2,
+    "carbs_g": 23.2,
+    "fat_g": 6.1,
+    "fiber_g": 10.8,
+    "open_food_facts_id": "9310043008927"
+  },
+  {
+    "name": "MILO Cereal",
+    "region": "AU",
+    "calories": 382.41,
+    "protein_g": 8.67,
+    "carbs_g": 72.33,
+    "fat_g": 3.67,
+    "fiber_g": 9.0,
+    "open_food_facts_id": "9300605153578"
+  },
+  {
+    "name": "HARVEST SEEDS & GRAINS",
+    "region": "AU",
+    "calories": 274.86,
+    "protein_g": 10.12,
+    "carbs_g": 43.33,
+    "fat_g": 5.36,
+    "fiber_g": 5.48,
+    "open_food_facts_id": "9339423004229"
+  },
+  {
+    "name": "Tuna chunks in springwater",
+    "region": "AU",
+    "calories": 125.38,
+    "protein_g": 25.0,
+    "carbs_g": 0.44,
+    "fat_g": 1.03,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "93657419"
+  },
+  {
+    "name": "BUCKWHEAT CRISPIBREAD",
+    "region": "AU",
+    "calories": 640.0,
+    "protein_g": 10.9,
+    "carbs_g": 73.4,
+    "fat_g": 2.1,
+    "fiber_g": 2.8,
+    "open_food_facts_id": "0720516021961"
+  },
+  {
+    "name": "Tomato Ketchup",
+    "region": "AU",
+    "calories": 65.73,
+    "protein_g": 1.6,
+    "carbs_g": 13.3,
+    "fat_g": 0.1,
+    "fiber_g": 2.5,
+    "open_food_facts_id": "9300657114411"
+  },
+  {
+    "name": "Unsweetened Macadamia Milk",
+    "region": "AU",
+    "calories": 16.67,
+    "protein_g": 0.42,
+    "carbs_g": 0.17,
+    "fat_g": 1.46,
+    "fiber_g": 0.17,
+    "open_food_facts_id": "0858045004299"
+  },
+  {
+    "name": "Olive oil butter",
+    "region": "AU",
+    "calories": 525.81,
+    "protein_g": 10.0,
+    "carbs_g": 10.0,
+    "fat_g": 60.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9310047070234"
+  },
+  {
+    "name": "Original Cheerios",
+    "region": "AU",
+    "calories": 382.0,
+    "protein_g": 7.33,
+    "carbs_g": 76.7,
+    "fat_g": 3.0,
+    "fiber_g": 8.0,
+    "open_food_facts_id": "9300605153721"
+  },
+  {
+    "name": "Spreadable Dairy Soft Original",
+    "region": "AU",
+    "calories": 587.95,
+    "protein_g": 1.0,
+    "carbs_g": 1.0,
+    "fat_g": 66.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300639100012"
+  },
+  {
+    "name": "Madras curry indian simmer sauce",
+    "region": "AU",
+    "calories": 107.14,
+    "protein_g": 1.79,
+    "carbs_g": 7.14,
+    "fat_g": 8.93,
+    "fiber_g": 1.79,
+    "open_food_facts_id": "0891756000174"
+  },
+  {
+    "name": "Chicken Stock",
+    "region": "AU",
+    "calories": 8.32,
+    "protein_g": 0.84,
+    "carbs_g": 1.16,
+    "fat_g": 0.04,
+    "fiber_g": 0.61,
+    "open_food_facts_id": "9300644043601"
+  },
+  {
+    "name": "Soy Milk Calci-Plus",
+    "region": "AU",
+    "calories": 64.0,
+    "protein_g": 3.2,
+    "carbs_g": 5.8,
+    "fat_g": 3.0,
+    "fiber_g": 0.6,
+    "open_food_facts_id": "9341650001698"
+  },
+  {
+    "name": "Milk activated almond",
+    "region": "AU",
+    "calories": 39.4,
+    "protein_g": 0.6,
+    "carbs_g": 4.6,
+    "fat_g": 2.0,
+    "fiber_g": 1.0,
+    "open_food_facts_id": "9312231231018"
+  },
+  {
+    "name": "Toasted Muesli Original Fruit Free",
+    "region": "AU",
+    "calories": 449.0,
+    "protein_g": 11.3,
+    "carbs_g": 50.2,
+    "fat_g": 20.6,
+    "fiber_g": 9.0,
+    "open_food_facts_id": "9319133331372"
+  },
+  {
+    "name": "Rye Bread",
+    "region": "AU",
+    "calories": 249.0,
+    "protein_g": 8.8,
+    "carbs_g": 29.4,
+    "fat_g": 4.3,
+    "fiber_g": 6.4,
+    "open_food_facts_id": "9310043008941"
+  },
+  {
+    "name": "Grapeseed Oil",
+    "region": "AU",
+    "calories": 814.21,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 92.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "80054696"
+  },
+  {
+    "name": "Organic Oat Unsweetened",
+    "region": "AU",
+    "calories": 22.16,
+    "protein_g": 0.84,
+    "carbs_g": 3.08,
+    "fat_g": 0.72,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9312231222023"
+  },
+  {
+    "name": "Low Sugar Granola Blueberry & Coconut",
+    "region": "AU",
+    "calories": 451.0,
+    "protein_g": 10.7,
+    "carbs_g": 63.8,
+    "fat_g": 15.1,
+    "fiber_g": 8.67,
+    "open_food_facts_id": "5010477357274"
+  },
+  {
+    "name": "Weet-bix Organic",
+    "region": "AU",
+    "calories": 355.0,
+    "protein_g": 12.4,
+    "carbs_g": 67.0,
+    "fat_g": 1.3,
+    "fiber_g": 11.0,
+    "open_food_facts_id": "9300652014457"
+  },
+  {
+    "name": "Crunchy Peanut Butter Super Crunchy",
+    "region": "AU",
+    "calories": 594.0,
+    "protein_g": 26.7,
+    "carbs_g": 15.3,
+    "fat_g": 46.0,
+    "fiber_g": 8.0,
+    "open_food_facts_id": "9421903938169"
+  },
+  {
+    "name": "Organic Soy Milk",
+    "region": "AU",
+    "calories": 62.0,
+    "protein_g": 3.0,
+    "carbs_g": 4.0,
+    "fat_g": 3.8,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300633903305"
+  },
+  {
+    "name": "Dairy Soft Salt Reduced",
+    "region": "AU",
+    "calories": 480.0,
+    "protein_g": 1.0,
+    "carbs_g": 1.0,
+    "fat_g": 66.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "9300639100036"
+  },
+  {
+    "name": "Just Right",
+    "region": "AU",
+    "calories": 364.48,
+    "protein_g": 8.0,
+    "carbs_g": 71.6,
+    "fat_g": 2.3,
+    "fiber_g": 10.2,
+    "open_food_facts_id": "9310055536616"
+  },
+  {
+    "name": "Tikka Masala Indian Simmer Sauce",
+    "region": "AU",
+    "calories": 142.86,
+    "protein_g": 1.79,
+    "carbs_g": 8.93,
+    "fat_g": 10.71,
+    "fiber_g": 1.14,
+    "open_food_facts_id": "0891756000167"
+  },
+  {
+    "name": "ORIGINAL",
+    "region": "AU",
+    "calories": 379.6,
+    "protein_g": 12.94,
+    "carbs_g": 56.76,
+    "fat_g": 9.12,
+    "fiber_g": 9.12,
+    "open_food_facts_id": "9310060403699"
+  },
+  {
+    "name": "Strawberry yoghurt",
+    "region": "AU",
+    "calories": 38.12,
+    "protein_g": 4.12,
+    "carbs_g": 4.31,
+    "fat_g": 0.12,
+    "fiber_g": 1.38,
+    "open_food_facts_id": "9300658403965"
+  },
+  {
+    "name": "Weet-Bix Kids",
+    "region": "AU",
+    "calories": 393.33,
+    "protein_g": 12.42,
+    "carbs_g": 64.0,
+    "fat_g": 1.8,
+    "fiber_g": 12.4,
+    "open_food_facts_id": "9300652810257"
+  }
+]

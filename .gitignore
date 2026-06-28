@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+venv/
+.venv/
+
+.env
+.env.*
+
+__pycache__/
+*.pyc
+
+*.parquet

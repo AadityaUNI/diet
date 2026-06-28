@@ -1,0 +1,702 @@
+[
+  {
+    "name": "Lipton Green Tea honey lemon",
+    "region": "IN",
+    "calories": 352.0,
+    "protein_g": 5.0,
+    "carbs_g": 83.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901030783241"
+  },
+  {
+    "name": "Iced Latté",
+    "region": "IN",
+    "calories": 56.0,
+    "protein_g": 2.2,
+    "carbs_g": 8.6,
+    "fat_g": 1.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "89080528"
+  },
+  {
+    "name": "Kool cafe",
+    "region": "IN",
+    "calories": 110.0,
+    "protein_g": 3.5,
+    "carbs_g": 12.5,
+    "fat_g": 5.0,
+    "fiber_g": 0.5,
+    "open_food_facts_id": "8901262151306"
+  },
+  {
+    "name": "Nescafe Classic Instant coffee",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901058007169"
+  },
+  {
+    "name": "3 Roses",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901030985843"
+  },
+  {
+    "name": "Super Strong Blend Coffee",
+    "region": "IN",
+    "calories": 5.05,
+    "protein_g": 11.1,
+    "carbs_g": 30.86,
+    "fat_g": 11.61,
+    "fiber_g": 15.12,
+    "open_food_facts_id": "8901036162514"
+  },
+  {
+    "name": "Gold Blend Instant Coffee",
+    "region": "IN",
+    "calories": 396.6,
+    "protein_g": 14.4,
+    "carbs_g": 40.2,
+    "fat_g": 15.4,
+    "fiber_g": 19.8,
+    "open_food_facts_id": "8901058867015"
+  },
+  {
+    "name": "Aarambh Danedar Assam Tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904132917064"
+  },
+  {
+    "name": "Bru Instant Coffee",
+    "region": "IN",
+    "calories": 412.0,
+    "protein_g": 0.0,
+    "carbs_g": 81.8,
+    "fat_g": 5.4,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8909106066410"
+  },
+  {
+    "name": "Ripple Tea",
+    "region": "IN",
+    "calories": 111.0,
+    "protein_g": 19.7,
+    "carbs_g": 4.1,
+    "fat_g": 1.8,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906033261215"
+  },
+  {
+    "name": "South Indian Filter Coffee",
+    "region": "IN",
+    "calories": 429.0,
+    "protein_g": 12.9,
+    "carbs_g": 69.5,
+    "fat_g": 11.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906002771028"
+  },
+  {
+    "name": "Thurbo DARJEELING TEA WHOLE LEAF",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904013460023"
+  },
+  {
+    "name": "Lemon Iced Tea",
+    "region": "IN",
+    "calories": 47.48,
+    "protein_g": 1.72,
+    "carbs_g": 10.15,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908019267198"
+  },
+  {
+    "name": "Ice Tea Lemon Flavour",
+    "region": "IN",
+    "calories": 18.0,
+    "protein_g": 0.0,
+    "carbs_g": 4.6,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8902080000586"
+  },
+  {
+    "name": "bikaji sub-kuch namkeen",
+    "region": "IN",
+    "calories": 519.0,
+    "protein_g": 17.0,
+    "carbs_g": 47.0,
+    "fat_g": 29.0,
+    "fiber_g": 9.0,
+    "open_food_facts_id": "8906005506924"
+  },
+  {
+    "name": "Tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904132917118"
+  },
+  {
+    "name": "Classic Assam Tea",
+    "region": "IN",
+    "calories": 194.73,
+    "protein_g": 21.92,
+    "carbs_g": 3.52,
+    "fat_g": 2.15,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901035054513"
+  },
+  {
+    "name": "Nectar of Night",
+    "region": "IN",
+    "calories": 1.5,
+    "protein_g": 0.0,
+    "carbs_g": 0.4,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8909900155143"
+  },
+  {
+    "name": "Heaven's Velvet",
+    "region": "IN",
+    "calories": 1.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.1,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8909900155112"
+  },
+  {
+    "name": "Export Quality flavoured tea",
+    "region": "IN",
+    "calories": 116.0,
+    "protein_g": 20.0,
+    "carbs_g": 5.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908002584103"
+  },
+  {
+    "name": "Wagh Bakri premium leaf tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901747001539"
+  },
+  {
+    "name": "Brooke Bond Red Label Masala Tea Premix",
+    "region": "IN",
+    "calories": 387.0,
+    "protein_g": 7.4,
+    "carbs_g": 77.4,
+    "fat_g": 5.3,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8909106010062"
+  },
+  {
+    "name": "Bombay Cutting Chai",
+    "region": "IN",
+    "calories": 39.09,
+    "protein_g": 1.31,
+    "carbs_g": 4.87,
+    "fat_g": 0.86,
+    "fiber_g": 3.38,
+    "open_food_facts_id": "0723172769406"
+  },
+  {
+    "name": "Blue Tea Chamomile Flower Herbal Tea",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "00001062"
+  },
+  {
+    "name": "Red Label",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901030876998"
+  },
+  {
+    "name": "Taj Mahal",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8909106043671"
+  },
+  {
+    "name": "premium desh ki chai",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901052030460"
+  },
+  {
+    "name": "Mili premium Strong Leaf Tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901747002086"
+  },
+  {
+    "name": "Society tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901095004015"
+  },
+  {
+    "name": "BOMBAY MIXTURE",
+    "region": "IN",
+    "calories": 555.0,
+    "protein_g": 14.0,
+    "carbs_g": 44.3,
+    "fat_g": 35.7,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908021430016"
+  },
+  {
+    "name": "Funnel seeds roasted",
+    "region": "IN",
+    "calories": 433.73,
+    "protein_g": 17.86,
+    "carbs_g": 53.2,
+    "fat_g": 16.61,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8903363002693"
+  },
+  {
+    "name": "Cheddar Cheeze Style Seasoning",
+    "region": "IN",
+    "calories": 310.0,
+    "protein_g": 1.3,
+    "carbs_g": 70.2,
+    "fat_g": 1.5,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0701098279094"
+  },
+  {
+    "name": "Wagh Bakri tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901747001546"
+  },
+  {
+    "name": "Original",
+    "region": "IN",
+    "calories": 375.0,
+    "protein_g": 16.0,
+    "carbs_g": 72.0,
+    "fat_g": 2.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5059603179342"
+  },
+  {
+    "name": "Masala Chai",
+    "region": "IN",
+    "calories": 312.0,
+    "protein_g": 6.05,
+    "carbs_g": 59.85,
+    "fat_g": 5.37,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908015703492"
+  },
+  {
+    "name": "Colombian Brew Coffee 3 in 1 Premix Nutty Hazelnut",
+    "region": "IN",
+    "calories": 91.0,
+    "protein_g": 1.0,
+    "carbs_g": 16.5,
+    "fat_g": 2.1,
+    "fiber_g": 1.0,
+    "open_food_facts_id": "8906088702398"
+  },
+  {
+    "name": "Honest Tea with organic green tea Mango flavoured",
+    "region": "IN",
+    "calories": 25.0,
+    "protein_g": 0.0,
+    "carbs_g": 6.3,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901764952029"
+  },
+  {
+    "name": "Nescafe choco mocha",
+    "region": "IN",
+    "calories": 69.0,
+    "protein_g": 3.2,
+    "carbs_g": 10.5,
+    "fat_g": 1.6,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901058898330"
+  },
+  {
+    "name": "Maxim Mocha gold",
+    "region": "IN",
+    "calories": 416.67,
+    "protein_g": 0.0,
+    "carbs_g": 75.0,
+    "fat_g": 13.33,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8801037006391"
+  },
+  {
+    "name": "Minerva Coffee Kaapi Premiere",
+    "region": "IN",
+    "calories": 360.0,
+    "protein_g": 0.1,
+    "carbs_g": 73.0,
+    "fat_g": 17.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908002359107"
+  },
+  {
+    "name": "Khatta Dhokla",
+    "region": "IN",
+    "calories": 340.0,
+    "protein_g": 10.2,
+    "carbs_g": 73.0,
+    "fat_g": 0.8,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901155106550"
+  },
+  {
+    "name": "wayback moong cheese n herbs",
+    "region": "IN",
+    "calories": 392.1,
+    "protein_g": 10.8,
+    "carbs_g": 78.7,
+    "fat_g": 4.18,
+    "fiber_g": 9.5,
+    "open_food_facts_id": "8906098831286"
+  },
+  {
+    "name": "Cafe Blend",
+    "region": "IN",
+    "calories": 434.0,
+    "protein_g": 5.6,
+    "carbs_g": 81.1,
+    "fat_g": 9.7,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8998666003027"
+  },
+  {
+    "name": "Rage Coffee Dark Chocolate",
+    "region": "IN",
+    "calories": 375.0,
+    "protein_g": 16.0,
+    "carbs_g": 72.0,
+    "fat_g": 2.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5059603179281"
+  },
+  {
+    "name": "Tetley Immuno Chai",
+    "region": "IN",
+    "calories": 358.0,
+    "protein_g": 20.1,
+    "carbs_g": 66.9,
+    "fat_g": 1.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901052007219"
+  },
+  {
+    "name": "Society tea 500 g",
+    "region": "IN",
+    "calories": 0.06,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901095003018"
+  },
+  {
+    "name": "Desi Kahwa Green Tea",
+    "region": "IN",
+    "calories": 4.0,
+    "protein_g": 0.0,
+    "carbs_g": 1.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901037010920"
+  },
+  {
+    "name": "Destinato Tè Nero",
+    "region": "IN",
+    "calories": 1.26,
+    "protein_g": 0.0,
+    "carbs_g": 0.3,
+    "fat_g": 0.01,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "4056489797869"
+  },
+  {
+    "name": "Cardamom Chai",
+    "region": "IN",
+    "calories": 436.0,
+    "protein_g": 14.1,
+    "carbs_g": 69.2,
+    "fat_g": 11.4,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908002579413"
+  },
+  {
+    "name": "ID Instant Filter Coffee Liquid (Bold)",
+    "region": "IN",
+    "calories": 28.4,
+    "protein_g": 1.1,
+    "carbs_g": 5.8,
+    "fat_g": 0.0,
+    "fiber_g": 0.8,
+    "open_food_facts_id": "8906020580916"
+  },
+  {
+    "name": "ORGANIC INDIA CLASSIC HEALTHY CONSCIOUS LIVING-",
+    "region": "IN",
+    "calories": 128.0,
+    "protein_g": 3.0,
+    "carbs_g": 15.0,
+    "fat_g": 6.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0801541070435"
+  },
+  {
+    "name": "Vahdam Matcha Green Tea",
+    "region": "IN",
+    "calories": 5.1,
+    "protein_g": 0.0,
+    "carbs_g": 1.09,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901205039357"
+  },
+  {
+    "name": "Lipton Green Tea",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901030779312"
+  },
+  {
+    "name": "Vedic Tea",
+    "region": "IN",
+    "calories": 350.0,
+    "protein_g": 21.5,
+    "carbs_g": 66.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901207043802"
+  },
+  {
+    "name": "Nescafe Iced Latte",
+    "region": "IN",
+    "calories": 88.0,
+    "protein_g": 3.0,
+    "carbs_g": 12.1,
+    "fat_g": 3.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "89008430"
+  },
+  {
+    "name": "Tea Premix",
+    "region": "IN",
+    "calories": 405.0,
+    "protein_g": 7.03,
+    "carbs_g": 87.0,
+    "fat_g": 2.96,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8902042302123"
+  },
+  {
+    "name": "Green Tea",
+    "region": "IN",
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8904308401977"
+  },
+  {
+    "name": "Beaten Caffee Powder",
+    "region": "IN",
+    "calories": 388.0,
+    "protein_g": 4.7,
+    "carbs_g": 92.1,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901725006402"
+  },
+  {
+    "name": "TeaCountry Green tea",
+    "region": "IN",
+    "calories": 347.0,
+    "protein_g": 23.5,
+    "carbs_g": 63.0,
+    "fat_g": 0.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8903363006592"
+  },
+  {
+    "name": "Nestea Iced Tea Lemon flavour",
+    "region": "IN",
+    "calories": 25.0,
+    "protein_g": 0.0,
+    "carbs_g": 6.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901058867855"
+  },
+  {
+    "name": "Classic Cold Coffee",
+    "region": "IN",
+    "calories": 92.0,
+    "protein_g": 3.4,
+    "carbs_g": 13.3,
+    "fat_g": 2.8,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906002770175"
+  },
+  {
+    "name": "Continental This is Caramel coffee",
+    "region": "IN",
+    "calories": 92.3,
+    "protein_g": 0.79,
+    "carbs_g": 15.3,
+    "fat_g": 3.0,
+    "fiber_g": 1.5,
+    "open_food_facts_id": "96831434"
+  },
+  {
+    "name": "Taj Mahal tea leaves 500 g",
+    "region": "IN",
+    "calories": 100.0,
+    "protein_g": 20.0,
+    "carbs_g": 4.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8901030658761"
+  },
+  {
+    "name": "instant premix coffee",
+    "region": "IN",
+    "calories": 402.0,
+    "protein_g": 10.7,
+    "carbs_g": 79.74,
+    "fat_g": 4.4,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908011648414"
+  },
+  {
+    "name": "Instant Coffee",
+    "region": "IN",
+    "calories": 354.0,
+    "protein_g": 21.0,
+    "carbs_g": 67.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "5050001665833"
+  },
+  {
+    "name": "Malgudi fresh filter coffee",
+    "region": "IN",
+    "calories": 4.04,
+    "protein_g": 11.76,
+    "carbs_g": 32.73,
+    "fat_g": 12.37,
+    "fiber_g": 16.06,
+    "open_food_facts_id": "8901036393185"
+  },
+  {
+    "name": "Masala Tea",
+    "region": "IN",
+    "calories": 120.0,
+    "protein_g": 19.0,
+    "carbs_g": 4.0,
+    "fat_g": 0.0,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8906036741080"
+  },
+  {
+    "name": "Filter Coffee Liquid Brew",
+    "region": "IN",
+    "calories": 23.5,
+    "protein_g": 1.17,
+    "carbs_g": 4.48,
+    "fat_g": 0.1,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908014388034"
+  },
+  {
+    "name": "Shahi Pradhan Gold Special Mix Tea",
+    "region": "IN",
+    "calories": 108.43,
+    "protein_g": 21.43,
+    "carbs_g": 3.83,
+    "fat_g": 0.83,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "0769807241992"
+  },
+  {
+    "name": "Karak tea Instant Premix",
+    "region": "IN",
+    "calories": 42.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 13.33,
+    "fiber_g": 0.0,
+    "open_food_facts_id": "8908000339361"
+  }
+]

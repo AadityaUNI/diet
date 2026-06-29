@@ -81,6 +81,7 @@ async def call_gemini(constraints: ConstraintInput, regional_list: list):
     - Age: {constraints.age} years
     - Biological Sex: {constraints.sex}
     - Height: {constraints.height} cm
+    - Weight: {constraints.weight} kg
     - Activity level: {constraints.activity_level} 
     - Health conditions: {', '.join(constraints.health_conditions)}
     - Must include: {', '.join(constraints.required_food_items)}

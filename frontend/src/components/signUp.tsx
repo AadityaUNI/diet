@@ -7,6 +7,14 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Sparkles } from "lucide-react"
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 interface SignupFormProps {
   onSwitchToLogin: () => void
@@ -38,6 +46,38 @@ export function Signup({ onSwitchToLogin, onSubmit }: SignupFormProps) {
             <Label htmlFor="signup-email">Email</Label>
             <Input id="signup-email" name="email" type="email" placeholder="you@example.com" autoComplete="email" required />
           </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="signup-region">Region</Label>
+            <Select name="region" id="signup-region">
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Region" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="IN">India</SelectItem>
+                <SelectItem value="AU">Australia</SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="signup-goals">Fitness Goals</Label>
+            <Select name="goals" id="signup-goals">
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Goal"/>
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="cut">Cut</SelectItem>
+                <SelectItem value="bulk">Bulk</SelectItem>
+                <SelectItem value="maintain">Maintain</SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+          </div>
+
 
           <div className="space-y-2">
             <Label htmlFor="signup-password">Password</Label>

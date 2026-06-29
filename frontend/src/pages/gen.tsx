@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import {
   Flame, TrendingUp, Calendar, Bolt, Lock, Star,
   Sparkles, Bookmark, BookmarkCheck, CheckCircle2,
-  Circle, Trash2, Flag, Bell, Settings, Edit3, Share2,
+  Circle, Trash2, Flag, Bell, Settings, Edit3, Share2, Utensils,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -13,7 +13,9 @@ import { Progress } from "@/components/ui/progress";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 
-// ─── Data ─────────────────────────────────────────────────────────────────────
+
+
+// ─── Static data ──────────────────────────────────────────────────────────────
 const weeklyCalories = [
   { day: "Mon", calories: 1820, goal: 2000 },
   { day: "Tue", calories: 2100, goal: 2000 },
@@ -22,21 +24,6 @@ const weeklyCalories = [
   { day: "Fri", calories: 2200, goal: 2000 },
   { day: "Sat", calories: 1680, goal: 2000 },
   { day: "Sun", calories: 1920, goal: 2000 },
-];
-// added comment 
-// another
-
-const macros = [
-  { label: "Protein", value: 142, max: 160, color: "#4f7eff" },
-  { label: "Carbohydrates", value: 198, max: 220, color: "#34d399" },
-  { label: "Fat", value: 52, max: 65, color: "#f59e0b" },
-];
-
-const ringMacros = [
-  { label: "Protein", value: 142, max: 160, color: "#4f7eff", unit: "g" },
-  { label: "Carbs", value: 198, max: 220, color: "#34d399", unit: "g" },
-  { label: "Fat", value: 52, max: 65, color: "#f59e0b", unit: "g" },
-  { label: "Water", value: 2.1, max: 3, color: "#a78bfa", unit: "L" },
 ];
 
 const achievements = [
@@ -111,7 +98,7 @@ const goalStyle = {
   bulk: { color: "#f59e0b", label: "Bulk" },
 };
 
-// ─── Small Components ─────────────────────────────────────────────────────────
+// ─── Sub-components ───────────────────────────────────────────────────────────
 function MacroRing({ label, value, max, color, unit, size = 80 }: {
   label: string; value: number; max: number;
   color: string; unit: string; size?: number;
@@ -129,7 +116,7 @@ function MacroRing({ label, value, max, color, unit, size = 80 }: {
             cx={size / 2} cy={size / 2} r={r} fill="none" stroke={color}
             strokeWidth={sw} strokeLinecap="round"
             strokeDasharray={circ} strokeDashoffset={offset}
-            style={{ transition: "stroke-dashoffset 1s ease" }}
+            style={{ transition: "stroke-dashoffset 0.6s ease" }}
           />
         </svg>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -157,14 +144,14 @@ function ChartTooltip({ active, payload, label }: any) {
 }
 
 // ─── App ──────────────────────────────────────────────────────────────────────
-export default function Home() {
+export default function App() {
   const [expandedPlan, setExpandedPlan] = useState<string | null>("1");
   const [bookmarked, setBookmarked] = useState(new Set(["1", "2", "3"]));
+  // eaten meal IDs for today
+  
 
-  const consumed = 1750;
-  const goal = 2000;
-  const r = 46;
-  const circ = 2 * Math.PI * r;
+
+  
 
   return (
     <div className="min-h-screen bg-background text-foreground" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -209,7 +196,6 @@ export default function Home() {
                 ✓
               </span>
             </div>
-
             <div className="flex-1 pt-1">
               <div className="flex items-center gap-2">
                 <h1 className="text-xl font-bold leading-none" style={{ fontFamily: "Outfit, sans-serif", letterSpacing: "-0.03em" }}>
@@ -223,7 +209,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-
           <div className="mt-4 flex gap-3">
             <Button className="flex-1 gap-1.5" size="sm">
               <Edit3 size={13} /> Edit Profile
@@ -276,7 +261,7 @@ export default function Home() {
                 <div className="flex items-center justify-between">
                   <CardTitle>Today's Calories</CardTitle>
                   <span className="text-xs text-muted-foreground" style={{ fontFamily: "DM Mono, monospace" }}>
-                    {Math.round((consumed / goal) * 100)}% of goal
+                    {Math.round((consumed.calories / goal.calories) * 100)}% of goal
                   </span>
                 </div>
               </CardHeader>
@@ -288,23 +273,22 @@ export default function Home() {
                       cx={55} cy={55} r={r} fill="none" stroke="#4f7eff"
                       strokeWidth={10} strokeLinecap="round"
                       strokeDasharray={circ}
-                      strokeDashoffset={circ * (1 - consumed / goal)}
-                      style={{ transition: "stroke-dashoffset 1.2s ease" }}
+                      strokeDashoffset={circ * (1 - Math.min(consumed.calories / goal.calories, 1))}
+                      style={{ transition: "stroke-dashoffset 0.6s ease" }}
                     />
                   </svg>
                   <div className="absolute inset-0 flex flex-col items-center justify-center">
                     <span className="text-2xl font-bold leading-none" style={{ fontFamily: "Outfit, sans-serif" }}>
-                      {consumed.toLocaleString()}
+                      {consumed.calories.toLocaleString()}
                     </span>
                     <span className="mt-0.5 text-[11px] text-muted-foreground">kcal</span>
                   </div>
                 </div>
-
                 <div className="flex flex-1 flex-col gap-3">
                   {[
-                    { label: "Goal", value: goal, color: "bg-secondary" },
-                    { label: "Consumed", value: consumed, color: "bg-primary" },
-                    { label: "Remaining", value: goal - consumed, color: "bg-emerald-500" },
+                    { label: "Goal", value: goal.calories, color: "bg-secondary" },
+                    { label: "Consumed", value: consumed.calories, color: "bg-primary" },
+                    { label: "Remaining", value: Math.max(0, goal.calories - consumed.calories), color: "bg-emerald-500" },
                   ].map((row) => (
                     <div key={row.label} className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -340,16 +324,14 @@ export default function Home() {
                           {m.value}g / {m.max}g
                         </span>
                       </div>
-                      
-                     <Progress 
-  value={(m.value / m.max) * 100} 
-  indicatorColor={m.color} 
-/>
+                      <Progress value={(m.value / m.max) * 100} indicatorColor={m.color} />
                     </div>
                   ))}
                 </div>
               </CardContent>
             </Card>
+
+            
 
             {/* Weekly chart */}
             <Card>
@@ -374,8 +356,8 @@ export default function Home() {
                     <XAxis dataKey="day" tick={{ fontSize: 10, fill: "#6b82a8", fontFamily: "DM Mono, monospace" }} axisLine={false} tickLine={false} />
                     <YAxis tick={{ fontSize: 10, fill: "#6b82a8", fontFamily: "DM Mono, monospace" }} axisLine={false} tickLine={false} domain={[1400, 2400]} />
                     <Tooltip content={<ChartTooltip />} />
-                    <Area type="monotone" dataKey="goal" stroke="#6b82a8" strokeWidth={1} strokeDasharray="4 4" fill="transparent" dot={false} />
-                    <Area type="monotone" dataKey="calories" stroke="#4f7eff" strokeWidth={2.5} fill="url(#calGrad)"
+                    <Area key="goal" type="monotone" dataKey="goal" stroke="#6b82a8" strokeWidth={1} strokeDasharray="4 4" fill="transparent" dot={false} />
+                    <Area key="calories" type="monotone" dataKey="calories" stroke="#4f7eff" strokeWidth={2.5} fill="url(#calGrad)"
                       dot={{ fill: "#4f7eff", strokeWidth: 0, r: 3 }}
                       activeDot={{ r: 5, fill: "#4f7eff", stroke: "#0d1628", strokeWidth: 2 }}
                     />
@@ -384,13 +366,39 @@ export default function Home() {
               </CardContent>
             </Card>
 
-           
+            {/* Achievements */}
+            <Card>
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <CardTitle>Achievements</CardTitle>
+                  <button className="text-xs font-semibold text-primary hover:text-accent transition-colors">
+                    See all
+                  </button>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-4">
+                <div className="grid grid-cols-3 gap-3">
+                  {achievements.map((a) => (
+                    <div key={a.label} className={`flex flex-col items-center gap-2 rounded-xl border p-3 transition-colors ${
+                      a.unlocked ? "border-primary/20 bg-primary/[0.07]" : "border-border bg-muted/20 opacity-45"
+                    }`}>
+                      <div className={`flex h-10 w-10 items-center justify-center rounded-xl text-xl ${
+                        a.unlocked ? "bg-primary/15" : "bg-muted"
+                      }`}>
+                        {a.unlocked ? a.icon : <Lock size={16} className="text-muted-foreground" />}
+                      </div>
+                      <span className="text-center text-[10px] font-medium leading-tight text-muted-foreground">
+                        {a.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           </TabsContent>
 
           {/* ════════════ SAVED ════════════ */}
           <TabsContent value="saved" className="flex flex-col gap-4">
-
-            {/* Header row */}
             <div className="flex items-center justify-between">
               <div>
                 <h2 className="text-base font-bold" style={{ fontFamily: "Outfit, sans-serif" }}>Saved Plans</h2>
@@ -401,7 +409,6 @@ export default function Home() {
               </Badge>
             </div>
 
-            {/* Plan cards */}
             {savedPlans.map((plan) => {
               const isOpen = expandedPlan === plan.id;
               const gs = goalStyle[plan.goal];
@@ -409,21 +416,16 @@ export default function Home() {
               const allDone = doneCount === plan.meals.length;
 
               return (
-                <Card
-                  key={plan.id}
-                  className={`cursor-pointer transition-colors ${isOpen ? "border-primary/40" : ""}`}
-                  onClick={() => setExpandedPlan(isOpen ? null : plan.id)}
-                >
+                <Card key={plan.id} className={`cursor-pointer transition-colors ${isOpen ? "border-primary/40" : ""}`}
+                  onClick={() => setExpandedPlan(isOpen ? null : plan.id)}>
                   <CardContent className="p-4">
-
-                    {/* Plan header row */}
                     <div className="flex items-start justify-between gap-2">
                       <div className="flex-1 min-w-0">
                         <div className="flex flex-wrap items-center gap-2 mb-1">
                           <span className="font-semibold text-sm leading-snug" style={{ fontFamily: "Outfit, sans-serif" }}>
                             {plan.name}
                           </span>
-                          {/* {plan.isTemplate && <Badge variant="purple">Template</Badge>} REMOVED TEMPLATE BADGE*/} 
+                          {plan.isTemplate && <Badge variant="purple">Template</Badge>}
                         </div>
                         <div className="flex flex-wrap items-center gap-2 text-[11px] text-muted-foreground">
                           <span>{plan.date}</span>
@@ -439,7 +441,6 @@ export default function Home() {
                           )}
                         </div>
                       </div>
-
                       <button
                         className="shrink-0 text-muted-foreground hover:text-primary transition-colors p-0.5"
                         onClick={(e) => {
@@ -457,7 +458,6 @@ export default function Home() {
                       </button>
                     </div>
 
-                    {/* Macro chips */}
                     <div className="mt-3 flex flex-wrap gap-1.5">
                       {[
                         { label: "Cal", value: plan.totalCalories.toLocaleString(), color: "text-foreground" },
@@ -480,7 +480,6 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Expanded content */}
                     {isOpen && (
                       <div onClick={(e) => e.stopPropagation()}>
                         <Separator className="my-4" />
@@ -488,9 +487,7 @@ export default function Home() {
                           {plan.meals.map((meal, i) => (
                             <div key={i} className="flex items-start gap-3">
                               <div className={`mt-0.5 shrink-0 ${meal.done ? "text-emerald-400" : "text-muted-foreground"}`}>
-                                {meal.done
-                                  ? <CheckCircle2 size={17} />
-                                  : <Circle size={17} />}
+                                {meal.done ? <CheckCircle2 size={17} /> : <Circle size={17} />}
                               </div>
                               <div className="flex-1 min-w-0">
                                 <div className="flex items-center justify-between gap-2">
@@ -506,11 +503,8 @@ export default function Home() {
                             </div>
                           ))}
                         </div>
-
                         <div className="mt-4 flex gap-2">
-                          <Button className="flex-1" size="sm">
-                            Use this Plan
-                          </Button>
+                          <Button className="flex-1" size="sm">Use this Plan</Button>
                           <Button variant="destructive" size="icon" className="shrink-0">
                             <Trash2 size={15} />
                           </Button>
@@ -522,7 +516,6 @@ export default function Home() {
               );
             })}
 
-            {/* Nudge card */}
             <Card className="border-primary/20 bg-gradient-to-br from-primary/[0.08] to-transparent">
               <CardContent className="p-4 text-center">
                 <Star size={20} className="mx-auto mb-2 fill-amber-400 text-amber-400" />

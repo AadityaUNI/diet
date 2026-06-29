@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
-import Home from "./pages/generated";
+import Home from "./pages/Home";
 import ProtectedRoute from "./auth/ProtectedRoute";
 import "@/styles/index.css"
 

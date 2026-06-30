@@ -1,12 +1,11 @@
 import { supabase } from "@/lib/supabase";
 import { type UserProfile } from "@/lib/types";
-export async function createUser(name: string, region: string, goals: string)
+
+export async function createUser(profile: UserProfile)
 {
     const { data, error } = await supabase
-    .from('Users')
-    .insert([
-        { name: name, region: region, fitness_goals: goals},
-    ])
+    .from('UserProfiles')
+    .insert([profile])
 
     if (error)
     {
@@ -18,7 +17,7 @@ export async function createUser(name: string, region: string, goals: string)
 export async function currUserDetails()
 {
     let { data: users, error } = await supabase
-    .from('Users')
+    .from('UserProfiles')
     .select('*')
     .single()
 
@@ -42,5 +41,14 @@ export async function updateUserDetails(
   if (error)
   {
     console.log("Error: updating user profile", error)
+  }
+}
+
+export async function logoutUser()
+{
+  const { error } = await supabase.auth.signOut()
+  if (error)
+  {
+    console.log("Error: signing out user", error)
   }
 }

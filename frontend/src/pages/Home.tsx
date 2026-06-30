@@ -13,6 +13,10 @@ import { Progress } from "@/components/ui/progress";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import Profile from "@/components/profile";
+import { Logout } from "@/components/logout";
+import { AppHeader } from "@/components/header";
+import StatBar from "@/components/statBar";
+import { DashboardTabs } from "@/components/dashboard/dashboardTabs";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
@@ -220,28 +224,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground" style={{ fontFamily: "Inter, sans-serif" }}>
 
-      {/* ── Nav ── */}
-      <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-lg items-center justify-between px-4 py-3">
-          <div className="flex items-center gap-2">
-            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary">
-              <Bolt size={14} className="fill-white text-white" />
-            </div>
-            <span className="text-base font-bold" style={{ fontFamily: "Outfit, sans-serif", letterSpacing: "-0.02em" }}>
-              Diet<span className="text-primary">Grid</span>
-            </span>
-          </div>
-          <div className="flex gap-2">
-            <Button variant="ghost" size="icon" className="relative">
-              <Bell size={16} />
-              <span className="absolute right-1.5 top-1.5 h-1.5 w-1.5 rounded-full bg-primary" />
-            </Button>
-            <Button variant="ghost" size="icon">
-              <Settings size={16} />
-            </Button>
-          </div>
-        </div>
-      </header>
+      <AppHeader />
 
       <main className="mx-auto max-w-lg lg:max-w-4xl lg:w-4xl px-4 pb-28">
 
@@ -249,30 +232,7 @@ export default function Home() {
         <Profile />
 
         {/* ── Stats Strip ── */}
-        <div className="mb-5 grid grid-cols-3 gap-2.5">
-          {[
-            { label: "Streak", value: "24", unit: "days", icon: <Flame size={14} className="text-orange-400" /> },
-            { label: "Avg Cal", value: "1,890", unit: "kcal", icon: <TrendingUp size={14} className="text-primary" /> },
-            { label: "Plans", value: "3", unit: "saved", icon: <Calendar size={14} className="text-emerald-400" /> },
-          ].map((s) => (
-            <Card key={s.label}>
-              <CardContent className="p-3">
-                <div className="mb-1.5 flex items-center gap-1.5">
-                  {s.icon}
-                  <span className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
-                    {s.label}
-                  </span>
-                </div>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-lg font-bold leading-none" style={{ fontFamily: "Outfit, sans-serif" }}>
-                    {s.value}
-                  </span>
-                  <span className="text-[10px] text-muted-foreground">{s.unit}</span>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        <StatBar />
 
         {/* ── Tabs ── */}
         <Tabs defaultValue="overview">
@@ -440,41 +400,6 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-
-
-            {/* Weekly chart
-            <Card>
-              <CardHeader>
-                <div className="flex items-center justify-between">
-                  <CardTitle>Weekly Calories</CardTitle>
-                  <span className="text-xs text-muted-foreground" style={{ fontFamily: "DM Mono, monospace" }}>
-                    Avg 1,918
-                  </span>
-                </div>
-              </CardHeader>
-              <CardContent className="pt-3">
-                <p className="mb-3 text-xs text-muted-foreground">Past 7 days vs. 2,000 kcal goal</p>
-                <ResponsiveContainer width="100%" height={150}>
-                  <AreaChart data={weeklyCalories} margin={{ top: 4, right: 4, left: -28, bottom: 0 }}>
-                    <defs>
-                      <linearGradient id="calGrad" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#4f7eff" stopOpacity={0.25} />
-                        <stop offset="95%" stopColor="#4f7eff" stopOpacity={0} />
-                      </linearGradient>
-                    </defs>
-                    <XAxis dataKey="day" tick={{ fontSize: 10, fill: "#6b82a8", fontFamily: "DM Mono, monospace" }} axisLine={false} tickLine={false} />
-                    <YAxis tick={{ fontSize: 10, fill: "#6b82a8", fontFamily: "DM Mono, monospace" }} axisLine={false} tickLine={false} domain={[1400, 2400]} />
-                    <Tooltip content={<ChartTooltip />} />
-                    <Area type="monotone" dataKey="goal" stroke="#6b82a8" strokeWidth={1} strokeDasharray="4 4" fill="transparent" dot={false} />
-                    <Area type="monotone" dataKey="calories" stroke="#4f7eff" strokeWidth={2.5} fill="url(#calGrad)"
-                      dot={{ fill: "#4f7eff", strokeWidth: 0, r: 3 }}
-                      activeDot={{ r: 5, fill: "#4f7eff", stroke: "#0d1628", strokeWidth: 2 }}
-                    />
-                  </AreaChart>
-                </ResponsiveContainer>
-              </CardContent>
-            </Card> */}
-
            
           </TabsContent>
 

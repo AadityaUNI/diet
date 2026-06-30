@@ -14,6 +14,10 @@ export async function onSignup(e: React.FormEvent<HTMLFormElement>, navigate)
     const name = formdata.get("name") as string
     const region = formdata.get("region") as string
     const goals = formdata.get("goals") as string
+    const height = Number(formdata.get("height")) 
+    const sex = formdata.get("sex") as string 
+    const weight = Number(formdata.get("weight"))
+    const activity_level = formdata.get("activity") as string 
 
     let { data, error } = await supabase.auth.signUp({
     email: email,
@@ -26,7 +30,8 @@ export async function onSignup(e: React.FormEvent<HTMLFormElement>, navigate)
     }
 
     // create UserProfile
-    createUser(name, region, goals)
+    createUser({id: data.user?.id, name: name, region: region, fitness_goals: goals, height:height, weight:weight, sex:sex, activity_level:activity_level})
+    console.log({name: name, region: region, fitness_goals: goals, height:height, weight:weight, sex:sex, activity_level:activity_level})
     navigate("/")
 }
 

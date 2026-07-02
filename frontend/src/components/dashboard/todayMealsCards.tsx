@@ -1,7 +1,6 @@
-// components/dashboard/todays-meals-card.tsx
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MealRow, type Meal } from "@/components/dashboard/meal-row";
+import { MealRow, type Meal } from "@/components/dashboard/mealRow";
 
 interface TodaysMealsCardProps {
   activePlanName: string;
@@ -17,11 +16,11 @@ export function TodaysMealsCard({ activePlanName, activeMeals, eatenIds, toggleM
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <CardTitle>Today's Meals</CardTitle>
-            <Badge variant="secondary" className="text-[13px]">
+            <Badge variant="secondary" className="text-sm">
               {activePlanName.split("—")[0].trim()}
             </Badge>
           </div>
-          <span className="font-mono text-[13px] text-muted-foreground">
+          <span className="font-mono text-sm text-muted-foreground">
             {eatenIds.size}/{activeMeals.length} eaten
           </span>
         </div>

@@ -1,4 +1,3 @@
-// components/dashboard/meal-row.tsx
 import { CheckCircle2, Circle } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
@@ -48,12 +47,12 @@ export function MealRow({ meal, eaten, isLast, onToggle }: MealRowProps) {
             }`}>
               {meal.name}
             </span>
-            <span className="text-[10px] text-muted-foreground">{meal.time}</span>
+            <span className="text-[11px] text-muted-foreground">{meal.time}</span>
           </div>
-          <p className="mt-0.5 truncate text-[13px] text-slate-400">{meal.ingredients}</p>
+          <p className="mt-0.5 truncate text-sm text-slate-400">{meal.ingredients}</p>
           <div className="mt-1.5 flex gap-1.5">
             {pills.map((p) => (
-              <span key={p.u} className={`font-mono text-[10px] font-semibold ${p.c}`}>
+              <span key={p.u} className={`font-mono text-[11px] font-semibold ${p.c}`}>
                 {p.v}<span className="font-normal text-muted-foreground opacity-70"> {p.u}</span>
               </span>
             ))}

@@ -1,4 +1,3 @@
-// components/dashboard/saved/plan-meal-row.tsx
 import { CheckCircle2, Circle } from "lucide-react";
 
 interface PlanMeal {

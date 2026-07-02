@@ -1,7 +1,6 @@
-// components/dashboard/saved/saved-plans-tab.tsx
 import { TabsContent } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { PlanCard, type SavedPlan } from "@/components/dashboard/saved/plan-card";
+import { PlanCard, type SavedPlan } from "@/components/dashboard/saved/planCard";
 
 interface SavedPlansTabProps {
   savedPlans: SavedPlan[];

@@ -40,7 +40,7 @@ export function CalorieRingCard({ consumed, goal, radius, circumference }: Calor
             <span className="font-outfit text-2xl font-bold leading-none">
               {consumed.calories.toLocaleString()}
             </span>
-            <span className="mt-0.5 text-[11px] text-muted-foreground">kcal</span>
+            <span className="mt-0.5 text-xs text-muted-foreground">kcal</span>
           </div>
         </div>
 

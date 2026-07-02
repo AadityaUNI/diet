@@ -50,7 +50,7 @@ export default function Profile()
                 />
                 <AvatarFallback>{userData.name}</AvatarFallback>
               </Avatar>
-              <span className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-background bg-primary text-[8px] text-white">
+              <span className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-background bg-primary text-[10px] text-white">
                 ✓
               </span>
             </div>

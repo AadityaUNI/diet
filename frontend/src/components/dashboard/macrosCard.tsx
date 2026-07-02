@@ -1,7 +1,5 @@
-// components/dashboard/macros-card.tsx
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { MacroRing } from "@/components/dashboard/macro-ring"; // your existing component
 
 interface Macro {
   label: string;
@@ -13,6 +11,49 @@ interface Macro {
 interface MacrosCardProps {
   ringMacros: Macro[];
   macros: Macro[];
+}
+
+function MacroRing({ label, value, max, color, unit, size = 80 }: {
+  label: string;
+  value: number;
+  max: number;
+  color: string;
+  unit?: string;
+  size?: number;
+}) {
+  const sw = 7;
+  const r = (size - sw) / 2;
+  const circ = 2 * Math.PI * r;
+  const offset = circ * (1 - Math.min(value / max, 1));
+
+  return (
+    <div className="flex flex-col items-center gap-1">
+      <div className="relative" style={{ width: size, height: size }}>
+        <svg width={size} height={size} style={{ transform: "rotate(-90deg)" }}>
+          <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="rgba(79,126,255,0.1)" strokeWidth={sw} />
+          <circle
+            cx={size / 2}
+            cy={size / 2}
+            r={r}
+            fill="none"
+            stroke={color}
+            strokeWidth={sw}
+            strokeLinecap="round"
+            strokeDasharray={circ}
+            strokeDashoffset={offset}
+            style={{ transition: "stroke-dashoffset 1s ease" }}
+          />
+        </svg>
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <span className="text-xs font-bold text-foreground leading-none" style={{ fontFamily: "DM Mono, monospace" }}>
+            {value}
+          </span>
+          <span className="text-[10px] text-muted-foreground">{unit ?? "g"}</span>
+        </div>
+      </div>
+      <span className="text-xs text-muted-foreground">{label}</span>
+    </div>
+  );
 }
 
 export function MacrosCard({ ringMacros, macros }: MacrosCardProps) {

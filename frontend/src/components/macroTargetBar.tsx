@@ -55,7 +55,7 @@ export default function MacroTargetBar(props: targetBarProps) {
                                 <span className="text-lg font-bold text-slate-100 leading-none">
                                     {remaining}{unit}
                                 </span>
-                                <span className="text-[11px] text-slate-500 font-medium uppercase mt-1">
+                                <span className="text-xs text-slate-500 font-medium uppercase mt-1">
                                     Left
                                 </span>
                             </div>

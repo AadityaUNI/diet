@@ -12,7 +12,7 @@ export default function StatBar()
               <CardContent className="p-3">
                 <div className="mb-1.5 flex items-center gap-1.5">
                   {s.icon}
-                  <span className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
+                  <span className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
                     {s.label}
                   </span>
                 </div>
@@ -20,7 +20,7 @@ export default function StatBar()
                   <span className="text-lg font-bold leading-none" style={{ fontFamily: "Outfit, sans-serif" }}>
                     {s.value}
                   </span>
-                  <span className="text-[10px] text-muted-foreground">{s.unit}</span>
+                  <span className="text-[11px] text-muted-foreground">{s.unit}</span>
                 </div>
               </CardContent>
             </Card>

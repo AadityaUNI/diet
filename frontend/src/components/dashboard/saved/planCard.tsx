@@ -1,9 +1,8 @@
-// components/dashboard/saved/plan-card.tsx
 import { Bookmark, BookmarkCheck, Flag, Trash2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { PlanMealRow } from "@/components/dashboard/saved/plan-meal-row";
+import { PlanMealRow } from "@/components/dashboard/saved/planMealRow";
 
 export interface SavedPlan {
   id: string;
@@ -49,7 +48,7 @@ export function PlanCard({ plan, isOpen, isBookmarked, goalStyle, onToggleOpen, 
             <div className="mb-1 flex flex-wrap items-center gap-2">
               <span className="font-outfit text-sm font-semibold leading-snug">{plan.name}</span>
             </div>
-            <div className="flex flex-wrap items-center gap-2 text-[11px] text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
               <span>{plan.date}</span>
               <span className="text-border">·</span>
               <span className="flex items-center gap-1 font-semibold" style={{ color: goalStyle.color }}>
@@ -78,15 +77,15 @@ export function PlanCard({ plan, isOpen, isBookmarked, goalStyle, onToggleOpen, 
         <div className="mt-3 flex flex-wrap gap-1.5">
           {chips.map((m) => (
             <div key={m.label} className="rounded-lg bg-secondary/50 px-2 py-1">
-              <span className={`block font-mono text-[11px] font-bold leading-none ${m.color}`}>{m.value}</span>
-              <span className="text-[9px] text-muted-foreground">{m.label}</span>
+              <span className={`block font-mono text-xs font-bold leading-none ${m.color}`}>{m.value}</span>
+              <span className="text-[10px] text-muted-foreground">{m.label}</span>
             </div>
           ))}
           <div className="ml-auto rounded-lg bg-secondary/50 px-2 py-1">
-            <span className={`block font-mono text-[11px] font-bold leading-none ${allDone ? "text-emerald-400" : "text-muted-foreground"}`}>
+            <span className={`block font-mono text-xs font-bold leading-none ${allDone ? "text-emerald-400" : "text-muted-foreground"}`}>
               {doneCount}/{plan.meals.length}
             </span>
-            <span className="text-[9px] text-muted-foreground">done</span>
+            <span className="text-[10px] text-muted-foreground">done</span>
           </div>
         </div>
 

@@ -45,7 +45,7 @@ export function TopNav() {
 
       {/* Profile avatar */}
       <Link to="/profile">
-        <div className="w-8 h-8 rounded-full bg-[#1A2844] border border-[#2A3F66] flex items-center justify-center text-xs font-semibold text-[#4F7EFF]">
+        <div className="w-8 h-8 rounded-full bg-[#1A2844] border border-[#2A3F66] flex items-center justify-center text-sm font-semibold text-[#4F7EFF]">
           {user?.email?.[0].toUpperCase() ?? "?"}
         </div>
       </Link>

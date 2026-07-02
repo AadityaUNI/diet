@@ -1,9 +1,8 @@
-// components/dashboard/overview-tab.tsx
 import { TabsContent } from "@/components/ui/tabs";
-import { CalorieRingCard } from "@/components/dashboard/calorie-ring-card";
-import { MacrosCard } from "@/components/dashboard/macros-card";
-import { TodaysMealsCard } from "@/components/dashboard/todays-meals-card";
-import type { Meal } from "@/components/dashboard/meal-row";
+import { CalorieRingCard } from "@/components/dashboard/calorieRingCard";
+import { MacrosCard } from "@/components/dashboard/macrosCard";
+import { TodaysMealsCard } from "@/components/dashboard/todayMealsCards";
+import type { Meal } from "@/components/dashboard/mealRow";
 
 interface OverviewTabProps {
   consumed: { calories: number };

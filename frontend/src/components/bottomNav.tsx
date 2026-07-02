@@ -42,7 +42,7 @@ function PillIcon({
           position: 'relative',
           transition: 'background-color 0.25s ease, box-shadow 0.25s ease',
           '& .MuiSvgIcon-root': {
-            fontSize: '1.35rem',
+            fontSize: '1.4rem',
             color: active ? '#fff' : '#6B82A8',
             filter: active ? 'drop-shadow(0 0 6px rgba(255,255,255,0.4))' : 'none',
             transition: 'color 0.25s ease, filter 0.25s ease',
@@ -67,7 +67,7 @@ function PillIcon({
         mb: '3px',
         transition: 'background-color 0.25s ease',
         '& .MuiSvgIcon-root': {
-          fontSize: '1.25rem',
+          fontSize: '1.3rem',
           filter: active ? 'drop-shadow(0 0 7px rgba(79,126,255,0.65))' : 'none',
           transform: active ? 'scale(1.1)' : 'scale(1)',
           transition: 'filter 0.25s ease, transform 0.25s ease',
@@ -109,13 +109,13 @@ export default function BottomNav() {
           transition: 'color 0.25s ease',
 
           '& .MuiBottomNavigationAction-label': {
-            fontSize: '0.6rem',
+            fontSize: '0.68rem',
             fontWeight: 600,
             letterSpacing: '0.07em',
             textTransform: 'uppercase',
             opacity: 1,
             marginTop: 0,
-            '&.Mui-selected': { fontSize: '0.6rem' },
+            '&.Mui-selected': { fontSize: '0.68rem' },
           },
         },
 
@@ -143,7 +143,7 @@ export default function BottomNav() {
                     top: 3, // diff from top border of navbar
                     // White when active so it pops against the dark bar
                     color: value === v ? '#fff' : '#6B82A8',
-                    '&.Mui-selected': { fontSize: '0.6rem', color: '#fff' },
+                    '&.Mui-selected': { fontSize: '0.68rem', color: '#fff' },
                   },
                 }
               : {}

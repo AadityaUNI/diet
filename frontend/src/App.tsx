@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
 import ProtectedRoute from "./auth/ProtectedRoute";
+import { RecommendPage } from "./pages/RecommendPage";
 import "@/styles/index.css"
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Routes> 
         <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
         <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+        <Route path="/recommend" element={<ProtectedRoute><RecommendPage /></ProtectedRoute>} />
         <Route path="/landing" element={<Landing />} />
     </Routes>
   )

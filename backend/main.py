@@ -113,7 +113,6 @@ async def call_gemini(constraints: ConstraintInput, regional_list: list):
                         "name": "Breakfast",
                         "ingredients": [
                             {{
-                                "food_item_id": "uuid here",
                                 "name": "ingredient name",
                                 "amount_grams": 0,
                                 "calories": 0,
@@ -162,3 +161,5 @@ def recommend(constraints, sessionToken):
         
     # call gemini client
     response = call_gemini(constraints, regional)
+    
+

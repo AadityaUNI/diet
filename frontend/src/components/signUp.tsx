@@ -16,6 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { LoginSpinner } from "./loginSpinner"
+import { ACTIVITY_LEVELS } from "@/lib/predefined"
 
 interface SignupFormProps {
   onSwitchToLogin: () => void
@@ -109,13 +110,7 @@ export function Signup({ onSwitchToLogin, onSubmit, disabled  }: SignupFormProps
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                {[
-                  { value: "sedentary",    label: "Sedentary",         desc: "Little or no exercise, desk job" },
-                  { value: "light",        label: "Lightly Active",    desc: "Light exercise or housework 1–3 days/week" },
-                  { value: "moderate",     label: "Moderately Active", desc: "Moderate exercise 3–5 days/week" },
-                  { value: "very_active",  label: "Very Active",       desc: "Hard exercise 6–7 days/week" },
-                  { value: "extra_active", label: "Extra Active",      desc: "Very hard exercise + physical job" },
-                ].map(({ value, label, desc }) => (
+                {ACTIVITY_LEVELS.map(({ value, label, desc }) => (
                   <SelectItem key={value} value={value}>
                     <div className="flex flex-col">
                       <span>{label}</span>

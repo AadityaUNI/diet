@@ -8,8 +8,9 @@ import { supabase } from "@/lib/supabase";
 import { currUserDetails } from "@/auth/UserService";
 import type { UserProfile } from "@/lib/types";
 import { useEffect, useState } from "react";
-
 import { Skeleton } from "@/components/ui/skeleton"
+import { EditProfileDialog } from "./editProfileDialog"
+import { updateUserDetails } from "@/auth/UserService";
 
 export function SkeletonAvatar() {
   return (
@@ -26,15 +27,21 @@ export function SkeletonAvatar() {
 export default function Profile()
 {
     let [userData, setUserData] = useState<UserProfile | null>(null)
-    
+    let [editOpen, setEditOpen] = useState(false)
+
     useEffect(() => {
       async function getUserDetails()
       {
          const data = await currUserDetails();
          setUserData(data);
+         console.log("FETCHED USER DATA: ", data);
       }
       getUserDetails()
     }, [])
+
+    const handleSave = (updated: UserProfile) => {
+      setUserData(updated)
+    }
 
     return (
 
@@ -68,13 +75,20 @@ export default function Profile()
           </div>
 
           <div className="mt-4 flex gap-3">
-            <Button className="flex-1 gap-1.5" size="sm">
+            <Button className="flex-1 gap-1.5" size="sm" onClick={() => setEditOpen(true)}>
               <Edit3 size={13} /> Edit Profile
             </Button>
             <Button variant="outline" size="sm" className="gap-1.5">
               <Share2 size={13} /> Share
             </Button>
           </div>
+
+          <EditProfileDialog
+            open={editOpen}
+            onOpenChange={setEditOpen}
+            userData={userData}
+            onSaved={(updated) => handleSave(updated)}
+          />
         </>
         ) : SkeletonAvatar()}
           

@@ -1,0 +1,9506 @@
+[
+  {
+    "name": "Country Grains",
+    "region": "AU",
+    "calories": 250.82,
+    "protein": 11.01,
+    "carbs": 43.15,
+    "fat": 4.21,
+    "fiber": 4.5
+  },
+  {
+    "name": "Arrabbiata",
+    "region": "AU",
+    "calories": 60.0,
+    "protein": 1.4,
+    "carbs": 5.5,
+    "fat": 3.1,
+    "fiber": 2.2
+  },
+  {
+    "name": "Penne Rigate No. 73 Durum Wheat Semolina Pasta",
+    "region": "AU",
+    "calories": 359.0,
+    "protein": 13.0,
+    "carbs": 71.0,
+    "fat": 2.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Fusilli N°98",
+    "region": "AU",
+    "calories": 359.0,
+    "protein": 13.0,
+    "carbs": 71.0,
+    "fat": 2.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Tomato passata",
+    "region": "AU",
+    "calories": 36.0,
+    "protein": 1.6,
+    "carbs": 5.1,
+    "fat": 0.5,
+    "fiber": 1.5
+  },
+  {
+    "name": "NAPOLETANA",
+    "region": "AU",
+    "calories": 72.0,
+    "protein": 1.4,
+    "carbs": 6.2,
+    "fat": 3.7,
+    "fiber": 1.8
+  },
+  {
+    "name": "Tomatenpulp in stukjes",
+    "region": "AU",
+    "calories": 25.0,
+    "protein": 1.2,
+    "carbs": 3.9,
+    "fat": 0.2,
+    "fiber": 1.32
+  },
+  {
+    "name": "PIPE RIGATE N°91",
+    "region": "AU",
+    "calories": 359.0,
+    "protein": 13.0,
+    "carbs": 71.0,
+    "fat": 2.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Passata Tomato Purée",
+    "region": "AU",
+    "calories": 36.0,
+    "protein": 1.6,
+    "carbs": 5.1,
+    "fat": 0.5,
+    "fiber": 0.3
+  },
+  {
+    "name": "DATE SYRUP",
+    "region": "AU",
+    "calories": 300.0,
+    "protein": 5.0,
+    "carbs": 70.0,
+    "fat": 0.0,
+    "fiber": 10.0
+  },
+  {
+    "name": "Capellini No. 1",
+    "region": "AU",
+    "calories": 359.0,
+    "protein": 13.0,
+    "carbs": 71.0,
+    "fat": 2.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Spaghettini N°3",
+    "region": "AU",
+    "calories": 359.0,
+    "protein": 13.0,
+    "carbs": 71.0,
+    "fat": 2.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Durum Wheat Semolina Pasta",
+    "region": "AU",
+    "calories": 359.0,
+    "protein": 13.0,
+    "carbs": 71.0,
+    "fat": 2.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Passata di Pomodoro",
+    "region": "AU",
+    "calories": 36.0,
+    "protein": 1.6,
+    "carbs": 5.1,
+    "fat": 0.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Ricotta",
+    "region": "AU",
+    "calories": 87.0,
+    "protein": 3.3,
+    "carbs": 6.3,
+    "fat": 5.0,
+    "fiber": 2.0
+  },
+  {
+    "name": "Rice Pudding",
+    "region": "AU",
+    "calories": 93.0,
+    "protein": 3.1,
+    "carbs": 15.6,
+    "fat": 2.0,
+    "fiber": 0.5
+  },
+  {
+    "name": "PURE BASMATI RICE",
+    "region": "AU",
+    "calories": 143.2,
+    "protein": 2.9,
+    "carbs": 28.2,
+    "fat": 1.9,
+    "fiber": 0.7
+  },
+  {
+    "name": "Paradajky lúpané",
+    "region": "AU",
+    "calories": 41.0,
+    "protein": 1.2,
+    "carbs": 6.9,
+    "fat": 0.6,
+    "fiber": 1.6
+  },
+  {
+    "name": "POLPA",
+    "region": "AU",
+    "calories": 12.38,
+    "protein": 1.2,
+    "carbs": 3.9,
+    "fat": 0.2,
+    "fiber": 1.2
+  },
+  {
+    "name": "CORN THINS",
+    "region": "AU",
+    "calories": 383.33,
+    "protein": 10.0,
+    "carbs": 71.11,
+    "fat": 3.33,
+    "fiber": 7.22
+  },
+  {
+    "name": "Evian Natural Mineral Water 2yrs prod",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Weet-Bix Caramel Crunch Flavour",
+    "region": "AU",
+    "calories": 353.44,
+    "protein": 12.4,
+    "carbs": 65.9,
+    "fat": 1.3,
+    "fiber": 12.9
+  },
+  {
+    "name": "Wholegrain Basmati Rice",
+    "region": "AU",
+    "calories": 129.64,
+    "protein": 2.8,
+    "carbs": 23.3,
+    "fat": 2.1,
+    "fiber": 3.0
+  },
+  {
+    "name": "Tomate y Badilico",
+    "region": "AU",
+    "calories": 64.0,
+    "protein": 1.6,
+    "carbs": 7.6,
+    "fat": 2.6,
+    "fiber": 1.9
+  },
+  {
+    "name": "Orecchiette Collezione",
+    "region": "AU",
+    "calories": 359.0,
+    "protein": 13.0,
+    "carbs": 71.0,
+    "fat": 2.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Weet-Bix",
+    "region": "AU",
+    "calories": 339.05,
+    "protein": 12.26,
+    "carbs": 65.81,
+    "fat": 4.19,
+    "fiber": 12.9
+  },
+  {
+    "name": "Original Tikka Masala",
+    "region": "AU",
+    "calories": 138.0,
+    "protein": 2.6,
+    "carbs": 9.9,
+    "fat": 9.3,
+    "fiber": 2.0
+  },
+  {
+    "name": "Strawberry Fruit Spread",
+    "region": "AU",
+    "calories": 200.0,
+    "protein": 0.0,
+    "carbs": 50.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lait Demi-écrémé",
+    "region": "AU",
+    "calories": 47.0,
+    "protein": 3.3,
+    "carbs": 4.8,
+    "fat": 1.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Madras Lentils",
+    "region": "AU",
+    "calories": 107.14,
+    "protein": 3.86,
+    "carbs": 12.28,
+    "fat": 3.86,
+    "fiber": 3.86
+  },
+  {
+    "name": "Wild Pacific Red Salmon",
+    "region": "AU",
+    "calories": 151.0,
+    "protein": 20.4,
+    "carbs": 0.0,
+    "fat": 7.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Base per Bolognese",
+    "region": "AU",
+    "calories": 68.0,
+    "protein": 1.3,
+    "carbs": 6.0,
+    "fat": 4.0,
+    "fiber": 1.5
+  },
+  {
+    "name": "Greek Style Yoghurt",
+    "region": "AU",
+    "calories": 119.0,
+    "protein": 4.24,
+    "carbs": 4.8,
+    "fat": 9.44,
+    "fiber": 0.53
+  },
+  {
+    "name": "Harissa Paste",
+    "region": "AU",
+    "calories": 72.0,
+    "protein": 2.9,
+    "carbs": 11.0,
+    "fat": 1.0,
+    "fiber": 2.5
+  },
+  {
+    "name": "Vita-Weat 9 Grains",
+    "region": "AU",
+    "calories": 410.73,
+    "protein": 11.76,
+    "carbs": 62.61,
+    "fat": 9.24,
+    "fiber": 13.45
+  },
+  {
+    "name": "Colman mint sause",
+    "region": "AU",
+    "calories": 120.0,
+    "protein": 1.8,
+    "carbs": 25.0,
+    "fat": 0.5,
+    "fiber": 1.85
+  },
+  {
+    "name": "Rice Cakes Salted",
+    "region": "AU",
+    "calories": 373.13,
+    "protein": 8.57,
+    "carbs": 72.86,
+    "fat": 2.86,
+    "fiber": 7.14
+  },
+  {
+    "name": "kombucha",
+    "region": "AU",
+    "calories": 2.0,
+    "protein": 0.5,
+    "carbs": 1.6,
+    "fat": 0.5,
+    "fiber": 0.5
+  },
+  {
+    "name": "Greek Yogurt",
+    "region": "AU",
+    "calories": 56.0,
+    "protein": 9.31,
+    "carbs": 4.0,
+    "fat": 0.19,
+    "fiber": 0.0
+  },
+  {
+    "name": "Grissini Nature Vita Vigor",
+    "region": "AU",
+    "calories": 396.0,
+    "protein": 12.0,
+    "carbs": 74.0,
+    "fat": 5.0,
+    "fiber": 3.5
+  },
+  {
+    "name": "The Pumpkin & Spinach",
+    "region": "AU",
+    "calories": 209.0,
+    "protein": 3.4,
+    "carbs": 27.0,
+    "fat": 9.5,
+    "fiber": 2.3
+  },
+  {
+    "name": "Almond Milk Unsweetened",
+    "region": "AU",
+    "calories": 16.0,
+    "protein": 0.6,
+    "carbs": 0.3,
+    "fat": 1.4,
+    "fiber": 0.3
+  },
+  {
+    "name": "The Cheeseburger Bowl",
+    "region": "AU",
+    "calories": 142.33,
+    "protein": 13.67,
+    "carbs": 13.8,
+    "fat": 3.3,
+    "fiber": 0.67
+  },
+  {
+    "name": "Cherry tomatoes",
+    "region": "AU",
+    "calories": 28.0,
+    "protein": 1.2,
+    "carbs": 4.4,
+    "fat": 0.0,
+    "fiber": 1.2
+  },
+  {
+    "name": "Greek Yogurt Nonfat Plain",
+    "region": "AU",
+    "calories": 53.33,
+    "protein": 9.33,
+    "carbs": 4.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Classic Butter Chicken",
+    "region": "AU",
+    "calories": 254.0,
+    "protein": 3.3,
+    "carbs": 8.9,
+    "fat": 7.7,
+    "fiber": 1.7
+  },
+  {
+    "name": "Mutti Knuste Tomater Datterini 300g",
+    "region": "AU",
+    "calories": 30.0,
+    "protein": 0.9,
+    "carbs": 5.4,
+    "fat": 0.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Original Green Tea with Honey",
+    "region": "AU",
+    "calories": 19.0,
+    "protein": 0.0,
+    "carbs": 5.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oat",
+    "region": "AU",
+    "calories": 46.4,
+    "protein": 0.84,
+    "carbs": 6.32,
+    "fat": 1.92,
+    "fiber": 0.4
+  },
+  {
+    "name": "Tomater Hele Økologisk 400g Mutti",
+    "region": "AU",
+    "calories": 22.0,
+    "protein": 1.1,
+    "carbs": 3.6,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Peanut Butter",
+    "region": "AU",
+    "calories": 623.59,
+    "protein": 23.9,
+    "carbs": 11.8,
+    "fat": 52.5,
+    "fiber": 7.0
+  },
+  {
+    "name": "Blueberry & Blackcurrant  Cordial",
+    "region": "AU",
+    "calories": 21.0,
+    "protein": 0.0,
+    "carbs": 5.2,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pasta Sauce Bolognese",
+    "region": "AU",
+    "calories": 51.0,
+    "protein": 1.2,
+    "carbs": 5.6,
+    "fat": 3.0,
+    "fiber": 1.4
+  },
+  {
+    "name": "Original Crackers",
+    "region": "AU",
+    "calories": 466.67,
+    "protein": 13.33,
+    "carbs": 66.67,
+    "fat": 16.67,
+    "fiber": 10.0
+  },
+  {
+    "name": "Brilliant Beetroot",
+    "region": "AU",
+    "calories": 39.0,
+    "protein": 1.0,
+    "carbs": 8.5,
+    "fat": 0.1,
+    "fiber": 2.42
+  },
+  {
+    "name": "RIGATONI N°89",
+    "region": "AU",
+    "calories": 359.0,
+    "protein": 13.0,
+    "carbs": 71.0,
+    "fat": 2.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Paxo Sage & Onion Stuffing Mix",
+    "region": "AU",
+    "calories": 122.22,
+    "protein": 3.78,
+    "carbs": 22.44,
+    "fat": 1.56,
+    "fiber": 2.22
+  },
+  {
+    "name": "Soy",
+    "region": "AU",
+    "calories": 65.2,
+    "protein": 3.2,
+    "carbs": 5.12,
+    "fat": 3.52,
+    "fiber": 0.32
+  },
+  {
+    "name": "TAHINA",
+    "region": "AU",
+    "calories": 700.0,
+    "protein": 27.0,
+    "carbs": 10.0,
+    "fat": 60.0,
+    "fiber": 5.9
+  },
+  {
+    "name": "Chipotle Salsa",
+    "region": "AU",
+    "calories": 32.0,
+    "protein": 1.0,
+    "carbs": 6.2,
+    "fat": 0.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Peanut Butter Crunchy",
+    "region": "AU",
+    "calories": 603.89,
+    "protein": 26.33,
+    "carbs": 11.33,
+    "fat": 49.0,
+    "fiber": 9.0
+  },
+  {
+    "name": "Peanut Butter Smooth",
+    "region": "AU",
+    "calories": 625.76,
+    "protein": 5.3,
+    "carbs": 2.5,
+    "fat": 11.7,
+    "fiber": 1.5
+  },
+  {
+    "name": "Cheese Dip with Breadsticks",
+    "region": "AU",
+    "calories": 262.86,
+    "protein": 10.57,
+    "carbs": 25.43,
+    "fat": 13.14,
+    "fiber": 1.14
+  },
+  {
+    "name": "Corn Thins Multigrain",
+    "region": "AU",
+    "calories": 453.33,
+    "protein": 10.6,
+    "carbs": 72.1,
+    "fat": 3.4,
+    "fiber": 6.8
+  },
+  {
+    "name": "Mutti Pulpa Tomatenfruchtfleisch mit Knobi",
+    "region": "AU",
+    "calories": 26.0,
+    "protein": 1.2,
+    "carbs": 3.9,
+    "fat": 0.2,
+    "fiber": 1.22
+  },
+  {
+    "name": "Bavette n.13",
+    "region": "AU",
+    "calories": 359.0,
+    "protein": 13.0,
+    "carbs": 71.0,
+    "fat": 2.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Lait Entier",
+    "region": "AU",
+    "calories": 65.0,
+    "protein": 3.3,
+    "carbs": 4.8,
+    "fat": 3.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Peanut Butter - Smooth",
+    "region": "AU",
+    "calories": 603.89,
+    "protein": 26.33,
+    "carbs": 11.33,
+    "fat": 49.0,
+    "fiber": 6.67
+  },
+  {
+    "name": "PULPE FINE DE TOMATES POLPA",
+    "region": "AU",
+    "calories": 26.0,
+    "protein": 1.2,
+    "carbs": 3.9,
+    "fat": 0.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Medjool Dates",
+    "region": "AU",
+    "calories": 282.0,
+    "protein": 1.96,
+    "carbs": 82.17,
+    "fat": 0.22,
+    "fiber": 8.7
+  },
+  {
+    "name": "Natural Yoghurt",
+    "region": "AU",
+    "calories": 114.72,
+    "protein": 3.3,
+    "carbs": 3.8,
+    "fat": 9.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pâte de curry rouge",
+    "region": "AU",
+    "calories": 29.0,
+    "protein": 0.5,
+    "carbs": 4.0,
+    "fat": 0.9,
+    "fiber": 1.3
+  },
+  {
+    "name": "Extra Creamy Oat",
+    "region": "AU",
+    "calories": 50.48,
+    "protein": 0.64,
+    "carbs": 6.2,
+    "fat": 2.48,
+    "fiber": 0.36
+  },
+  {
+    "name": "Nuttelex with Olive Oil",
+    "region": "AU",
+    "calories": 580.78,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 65.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Weet-Bix Bites Wild Berry",
+    "region": "AU",
+    "calories": 318.18,
+    "protein": 10.0,
+    "carbs": 71.11,
+    "fat": 0.8,
+    "fiber": 8.44
+  },
+  {
+    "name": "LAVAZZA QUALITÀ ROSSA",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.2,
+    "carbs": 0.3,
+    "fat": 0.0,
+    "fiber": 7.23
+  },
+  {
+    "name": "Biscottes Au froment",
+    "region": "AU",
+    "calories": 391.0,
+    "protein": 11.0,
+    "carbs": 72.0,
+    "fat": 5.6,
+    "fiber": 4.5
+  },
+  {
+    "name": "CHUNK STYLE TUNA IN OLIVE OIL BLEND",
+    "region": "AU",
+    "calories": 126.47,
+    "protein": 18.0,
+    "carbs": 1.0,
+    "fat": 7.7,
+    "fiber": 0.0
+  },
+  {
+    "name": "Basilico",
+    "region": "AU",
+    "calories": 64.0,
+    "protein": 1.6,
+    "carbs": 7.6,
+    "fat": 2.6,
+    "fiber": 1.9
+  },
+  {
+    "name": "long grain white rice",
+    "region": "AU",
+    "calories": 136.0,
+    "protein": 1.6,
+    "carbs": 6.4,
+    "fat": 8.0,
+    "fiber": 1.0
+  },
+  {
+    "name": "PÂTE DE CURRY VERT THAÏ",
+    "region": "AU",
+    "calories": 130.0,
+    "protein": 0.4,
+    "carbs": 4.0,
+    "fat": 0.8,
+    "fiber": 1.39
+  },
+  {
+    "name": "Vita-Weat Original",
+    "region": "AU",
+    "calories": 402.69,
+    "protein": 11.34,
+    "carbs": 65.55,
+    "fat": 7.14,
+    "fiber": 13.87
+  },
+  {
+    "name": "Soy Milk",
+    "region": "AU",
+    "calories": 58.1,
+    "protein": 4.1,
+    "carbs": 5.4,
+    "fat": 2.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Rice Krispies",
+    "region": "AU",
+    "calories": 393.33,
+    "protein": 7.0,
+    "carbs": 86.0,
+    "fat": 1.2,
+    "fiber": 2.9
+  },
+  {
+    "name": "Dash Grapefruit Sparkling Water",
+    "region": "AU",
+    "calories": 2.12,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Huile de sésame Ayam™",
+    "region": "AU",
+    "calories": 899.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Spreadable Original Soft",
+    "region": "AU",
+    "calories": 616.63,
+    "protein": 1.0,
+    "carbs": 1.2,
+    "fat": 68.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "CREAMY BLUE",
+    "region": "AU",
+    "calories": 431.0,
+    "protein": 13.2,
+    "carbs": 0.0,
+    "fat": 41.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Linda McCartney Deep Country Pies 2pk",
+    "region": "AU",
+    "calories": 236.0,
+    "protein": 5.4,
+    "carbs": 21.0,
+    "fat": 14.0,
+    "fiber": 1.9
+  },
+  {
+    "name": "L'Or Lungo Profondo",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "REAL MAYONNAISE",
+    "region": "AU",
+    "calories": 707.14,
+    "protein": 1.43,
+    "carbs": 1.43,
+    "fat": 78.57,
+    "fiber": 0.0
+  },
+  {
+    "name": "Fiery Goan Curry",
+    "region": "AU",
+    "calories": 186.0,
+    "protein": 1.9,
+    "carbs": 9.0,
+    "fat": 15.0,
+    "fiber": 2.6
+  },
+  {
+    "name": "Crema e Gusto",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.2,
+    "carbs": 0.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pure Harvest Organic Natures Soy Milk Malt Free imp",
+    "region": "AU",
+    "calories": 48.32,
+    "protein": 3.0,
+    "carbs": 1.5,
+    "fat": 3.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Céleri rémoulade",
+    "region": "AU",
+    "calories": 93.0,
+    "protein": 1.0,
+    "carbs": 3.7,
+    "fat": 7.6,
+    "fiber": 3.37
+  },
+  {
+    "name": "Beurre de cacahuète",
+    "region": "AU",
+    "calories": 629.0,
+    "protein": 25.0,
+    "carbs": 12.0,
+    "fat": 52.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Biała Trufla",
+    "region": "AU",
+    "calories": 882.0,
+    "protein": 0.25,
+    "carbs": 0.0,
+    "fat": 97.9,
+    "fiber": 0.0
+  },
+  {
+    "name": "Spring Water",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "All Natural Yogurt Light",
+    "region": "AU",
+    "calories": 79.2,
+    "protein": 5.52,
+    "carbs": 5.6,
+    "fat": 3.92,
+    "fiber": 0.0
+  },
+  {
+    "name": "SMOOTH PEANUT BUTTER",
+    "region": "AU",
+    "calories": 583.17,
+    "protein": 25.0,
+    "carbs": 13.5,
+    "fat": 49.0,
+    "fiber": 8.0
+  },
+  {
+    "name": "Fusilli 40",
+    "region": "AU",
+    "calories": 355.0,
+    "protein": 13.0,
+    "carbs": 72.0,
+    "fat": 1.7,
+    "fiber": 2.53
+  },
+  {
+    "name": "Pipa De Girasol Gigante Sal",
+    "region": "AU",
+    "calories": 590.0,
+    "protein": 32.5,
+    "carbs": 6.6,
+    "fat": 46.0,
+    "fiber": 10.0
+  },
+  {
+    "name": "Greek Yogurt Vanilla Bean",
+    "region": "AU",
+    "calories": 93.75,
+    "protein": 12.4,
+    "carbs": 15.2,
+    "fat": 4.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Dark Peanut Butter Crunchy",
+    "region": "AU",
+    "calories": 581.0,
+    "protein": 25.0,
+    "carbs": 13.5,
+    "fat": 49.0,
+    "fiber": 8.0
+  },
+  {
+    "name": "Giant beans in tomato sauce",
+    "region": "AU",
+    "calories": 115.0,
+    "protein": 5.0,
+    "carbs": 11.0,
+    "fat": 4.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cornflakes",
+    "region": "AU",
+    "calories": 389.0,
+    "protein": 8.0,
+    "carbs": 81.4,
+    "fat": 1.71,
+    "fiber": 4.29
+  },
+  {
+    "name": "Chocolate Protein+ Peanut Butter",
+    "region": "AU",
+    "calories": 554.49,
+    "protein": 30.0,
+    "carbs": 18.0,
+    "fat": 40.5,
+    "fiber": 8.5
+  },
+  {
+    "name": "Natural Wraps",
+    "region": "AU",
+    "calories": 344.0,
+    "protein": 10.8,
+    "carbs": 56.0,
+    "fat": 1.6,
+    "fiber": 2.8
+  },
+  {
+    "name": "Protein Smoothie Banana Honey + Cinnamon",
+    "region": "AU",
+    "calories": 60.0,
+    "protein": 7.06,
+    "carbs": 4.4,
+    "fat": 1.51,
+    "fiber": 0.0
+  },
+  {
+    "name": "Linguine 14",
+    "region": "AU",
+    "calories": 355.0,
+    "protein": 13.0,
+    "carbs": 72.0,
+    "fat": 1.7,
+    "fiber": 2.95
+  },
+  {
+    "name": "Crumpets",
+    "region": "AU",
+    "calories": 198.0,
+    "protein": 6.4,
+    "carbs": 37.0,
+    "fat": 1.4,
+    "fiber": 2.2
+  },
+  {
+    "name": "Greek Style All Natural Yogurt",
+    "region": "AU",
+    "calories": 119.2,
+    "protein": 4.24,
+    "carbs": 4.8,
+    "fat": 9.44,
+    "fiber": 0.0
+  },
+  {
+    "name": "Illy INTENSO Bold Roast",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.2,
+    "carbs": 0.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "PERFECTLY FIRM TOFU",
+    "region": "AU",
+    "calories": 49.55,
+    "protein": 14.8,
+    "carbs": 7.6,
+    "fat": 3.93,
+    "fiber": 6.2
+  },
+  {
+    "name": "Greek Style Natural Yoghurt",
+    "region": "AU",
+    "calories": 65.33,
+    "protein": 3.3,
+    "carbs": 3.8,
+    "fat": 9.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cruskits Rye",
+    "region": "AU",
+    "calories": 342.11,
+    "protein": 1.4,
+    "carbs": 6.7,
+    "fat": 0.3,
+    "fiber": 2.1
+  },
+  {
+    "name": "Risoni N°26",
+    "region": "AU",
+    "calories": 363.29,
+    "protein": 11.5,
+    "carbs": 72.25,
+    "fat": 2.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Multi-Grain+",
+    "region": "AU",
+    "calories": 366.67,
+    "protein": 10.7,
+    "carbs": 70.2,
+    "fat": 4.4,
+    "fiber": 8.9
+  },
+  {
+    "name": "LIGHT RYE BREAD",
+    "region": "AU",
+    "calories": 55.77,
+    "protein": 9.2,
+    "carbs": 43.1,
+    "fat": 2.9,
+    "fiber": 4.3
+  },
+  {
+    "name": "Sliced Mixed Grain Bread",
+    "region": "AU",
+    "calories": 255.3,
+    "protein": 7.9,
+    "carbs": 40.14,
+    "fat": 3.38,
+    "fiber": 3.76
+  },
+  {
+    "name": "Pure Sesame Oil",
+    "region": "AU",
+    "calories": 819.0,
+    "protein": 0.0,
+    "carbs": 1.0,
+    "fat": 91.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "organic ramen",
+    "region": "AU",
+    "calories": 346.56,
+    "protein": 10.5,
+    "carbs": 70.8,
+    "fat": 1.2,
+    "fiber": 6.6
+  },
+  {
+    "name": "Sultana Bran",
+    "region": "AU",
+    "calories": 345.23,
+    "protein": 9.56,
+    "carbs": 62.89,
+    "fat": 2.89,
+    "fiber": 15.11
+  },
+  {
+    "name": "Organic Chick Peas",
+    "region": "AU",
+    "calories": 106.67,
+    "protein": 7.47,
+    "carbs": 14.27,
+    "fat": 0.27,
+    "fiber": 3.27
+  },
+  {
+    "name": "FULL CREAM Pure Milk",
+    "region": "AU",
+    "calories": 63.0,
+    "protein": 3.2,
+    "carbs": 4.8,
+    "fat": 3.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Organic Kombucha Raspberry Lemonade",
+    "region": "AU",
+    "calories": 2.8,
+    "protein": 0.4,
+    "carbs": 0.4,
+    "fat": 0.4,
+    "fiber": 0.4
+  },
+  {
+    "name": "Super Sweet Corn",
+    "region": "AU",
+    "calories": 72.04,
+    "protein": 15.7,
+    "carbs": 1.0,
+    "fat": 0.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Salt Reduced Spreadable Butter",
+    "region": "AU",
+    "calories": 736.14,
+    "protein": 0.9,
+    "carbs": 0.9,
+    "fat": 82.4,
+    "fiber": 1.39
+  },
+  {
+    "name": "Crunchy Peanut Butter",
+    "region": "AU",
+    "calories": 594.0,
+    "protein": 26.9,
+    "carbs": 15.6,
+    "fat": 46.0,
+    "fiber": 7.7
+  },
+  {
+    "name": "100% Natural Crunchy Peanut Butter",
+    "region": "AU",
+    "calories": 714.63,
+    "protein": 25.0,
+    "carbs": 13.5,
+    "fat": 49.0,
+    "fiber": 6.5
+  },
+  {
+    "name": "Traditional Wholemeal Bread",
+    "region": "AU",
+    "calories": 219.89,
+    "protein": 8.1,
+    "carbs": 40.6,
+    "fat": 2.6,
+    "fiber": 5.4
+  },
+  {
+    "name": "Liquid Breakfast",
+    "region": "AU",
+    "calories": 72.0,
+    "protein": 3.5,
+    "carbs": 9.5,
+    "fat": 1.8,
+    "fiber": 1.8
+  },
+  {
+    "name": "Passata Rossoro de Toscane",
+    "region": "AU",
+    "calories": 31.0,
+    "protein": 1.2,
+    "carbs": 5.5,
+    "fat": 0.5,
+    "fiber": 1.2
+  },
+  {
+    "name": "Tomaten geschält San Marzano",
+    "region": "AU",
+    "calories": 22.0,
+    "protein": 1.1,
+    "carbs": 3.6,
+    "fat": 0.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Creamy Vanilla Flavoured Yoghurt",
+    "region": "AU",
+    "calories": 10.38,
+    "protein": 5.4,
+    "carbs": 11.8,
+    "fat": 4.8,
+    "fiber": 0.4
+  },
+  {
+    "name": "Cottage Cheese",
+    "region": "AU",
+    "calories": 82.0,
+    "protein": 12.0,
+    "carbs": 4.3,
+    "fat": 1.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Vegemite 40% less salt",
+    "region": "AU",
+    "calories": 186.5,
+    "protein": 21.6,
+    "carbs": 16.8,
+    "fat": 1.7,
+    "fiber": 8.8
+  },
+  {
+    "name": "Greek Style Yogurt with a hint of Vanilla Bean",
+    "region": "AU",
+    "calories": 131.2,
+    "protein": 4.0,
+    "carbs": 11.2,
+    "fat": 8.8,
+    "fiber": 0.16
+  },
+  {
+    "name": "Traditional Hommus",
+    "region": "AU",
+    "calories": 315.0,
+    "protein": 7.0,
+    "carbs": 16.5,
+    "fat": 25.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Wheat Biscuits",
+    "region": "AU",
+    "calories": 308.39,
+    "protein": 12.9,
+    "carbs": 65.48,
+    "fat": 1.29,
+    "fiber": 10.65
+  },
+  {
+    "name": "Weet-Bix Gluten Free",
+    "region": "AU",
+    "calories": 373.33,
+    "protein": 12.3,
+    "carbs": 69.7,
+    "fat": 3.6,
+    "fiber": 6.8
+  },
+  {
+    "name": "Spicy Chilli Crisp",
+    "region": "AU",
+    "calories": 717.0,
+    "protein": 5.9,
+    "carbs": 9.6,
+    "fat": 71.1,
+    "fiber": 1.84
+  },
+  {
+    "name": "Farfalle Nr. 65",
+    "region": "AU",
+    "calories": 359.0,
+    "protein": 12.5,
+    "carbs": 71.2,
+    "fat": 2.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Verdure mediterranee 400g eu cross",
+    "region": "AU",
+    "calories": 74.0,
+    "protein": 1.5,
+    "carbs": 6.6,
+    "fat": 4.2,
+    "fiber": 2.1
+  },
+  {
+    "name": "Aldi butter Dairy Blend",
+    "region": "AU",
+    "calories": 616.63,
+    "protein": 2.0,
+    "carbs": 2.0,
+    "fat": 68.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "TUNA WITH CHILLI",
+    "region": "AU",
+    "calories": 156.89,
+    "protein": 24.16,
+    "carbs": 1.64,
+    "fat": 11.67,
+    "fiber": 0.0
+  },
+  {
+    "name": "Creamed Cottage Cheese",
+    "region": "AU",
+    "calories": 93.0,
+    "protein": 11.3,
+    "carbs": 6.3,
+    "fat": 2.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Light Greek style natural yoghurt",
+    "region": "AU",
+    "calories": 76.67,
+    "protein": 6.0,
+    "carbs": 7.84,
+    "fat": 2.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Rogan Josh  préparation",
+    "region": "AU",
+    "calories": 157.0,
+    "protein": 2.5,
+    "carbs": 9.6,
+    "fat": 12.0,
+    "fiber": 1.6
+  },
+  {
+    "name": "Simply Granola Crunchy Oat & Honey",
+    "region": "AU",
+    "calories": 417.78,
+    "protein": 10.89,
+    "carbs": 66.0,
+    "fat": 10.89,
+    "fiber": 6.22
+  },
+  {
+    "name": "organic BROWN RICE CAKES original",
+    "region": "AU",
+    "calories": 379.75,
+    "protein": 8.0,
+    "carbs": 82.0,
+    "fat": 2.1,
+    "fiber": 4.2
+  },
+  {
+    "name": "Rolled Oats Traditional",
+    "region": "AU",
+    "calories": 375.84,
+    "protein": 12.75,
+    "carbs": 56.75,
+    "fat": 9.25,
+    "fiber": 9.25
+  },
+  {
+    "name": "Full Cream Milk",
+    "region": "AU",
+    "calories": 62.0,
+    "protein": 3.4,
+    "carbs": 4.4,
+    "fat": 3.4,
+    "fiber": 0.4
+  },
+  {
+    "name": "Pulse Pasta",
+    "region": "AU",
+    "calories": 325.92,
+    "protein": 23.0,
+    "carbs": 58.0,
+    "fat": 2.0,
+    "fiber": 6.0
+  },
+  {
+    "name": "ORGANIC BLACK BEANS",
+    "region": "AU",
+    "calories": 35.5,
+    "protein": 5.33,
+    "carbs": 15.07,
+    "fat": 0.67,
+    "fiber": 3.87
+  },
+  {
+    "name": "TUNA",
+    "region": "AU",
+    "calories": 80.0,
+    "protein": 26.0,
+    "carbs": 0.71,
+    "fat": 9.86,
+    "fiber": 0.0
+  },
+  {
+    "name": "Houmous",
+    "region": "AU",
+    "calories": 170.0,
+    "protein": 6.9,
+    "carbs": 16.0,
+    "fat": 7.1,
+    "fiber": 7.0
+  },
+  {
+    "name": "Sauce piment ail et gingembre Ayam™",
+    "region": "AU",
+    "calories": 12.0,
+    "protein": 0.1,
+    "carbs": 2.8,
+    "fat": 0.0,
+    "fiber": 0.02
+  },
+  {
+    "name": "plant-based meatballs",
+    "region": "AU",
+    "calories": 177.78,
+    "protein": 16.67,
+    "carbs": 10.0,
+    "fat": 7.78,
+    "fiber": 3.33
+  },
+  {
+    "name": "Spaghetti Ristorante 8",
+    "region": "AU",
+    "calories": 358.0,
+    "protein": 13.0,
+    "carbs": 72.0,
+    "fat": 1.7,
+    "fiber": 2.53
+  },
+  {
+    "name": "Coconut Cream",
+    "region": "AU",
+    "calories": 285.71,
+    "protein": 3.14,
+    "carbs": 4.0,
+    "fat": 28.57,
+    "fiber": 9.0
+  },
+  {
+    "name": "Vanilla Yoghurt",
+    "region": "AU",
+    "calories": 56.76,
+    "protein": 15.2,
+    "carbs": 6.1,
+    "fat": 0.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Tehina",
+    "region": "AU",
+    "calories": 666.0,
+    "protein": 24.0,
+    "carbs": 2.0,
+    "fat": 60.0,
+    "fiber": 11.0
+  },
+  {
+    "name": "Smunchy Protein Peanut Butter",
+    "region": "AU",
+    "calories": 670.0,
+    "protein": 32.0,
+    "carbs": 13.0,
+    "fat": 42.1,
+    "fiber": 9.1
+  },
+  {
+    "name": "BUTTERSOFT Salted Spreadable Butter",
+    "region": "AU",
+    "calories": 726.58,
+    "protein": 1.0,
+    "carbs": 1.0,
+    "fat": 82.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Natural Greek Style Yoghurt",
+    "region": "AU",
+    "calories": 107.13,
+    "protein": 0.65,
+    "carbs": 5.59,
+    "fat": 9.41,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lurpack Garlic Butter",
+    "region": "AU",
+    "calories": 696.0,
+    "protein": 1.2,
+    "carbs": 2.9,
+    "fat": 75.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Whole Milk Yoghurt",
+    "region": "AU",
+    "calories": 79.59,
+    "protein": 5.0,
+    "carbs": 5.7,
+    "fat": 4.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pate de curry jaune thai",
+    "region": "AU",
+    "calories": 124.0,
+    "protein": 2.8,
+    "carbs": 0.9,
+    "fat": 8.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "HIGH FIBRE WHOLEMEAL SLICED BREAD",
+    "region": "AU",
+    "calories": 249.25,
+    "protein": 9.46,
+    "carbs": 39.05,
+    "fat": 3.11,
+    "fiber": 7.43
+  },
+  {
+    "name": "Farms Elderflower & Rose Cordial",
+    "region": "AU",
+    "calories": 19.6,
+    "protein": 0.0,
+    "carbs": 4.7,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Nuttelex Original",
+    "region": "AU",
+    "calories": 678.78,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 63.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Greek yoghurt",
+    "region": "AU",
+    "calories": 128.0,
+    "protein": 4.93,
+    "carbs": 5.53,
+    "fat": 9.73,
+    "fiber": 0.0
+  },
+  {
+    "name": "chicken dinosaurs",
+    "region": "AU",
+    "calories": 286.0,
+    "protein": 12.3,
+    "carbs": 20.4,
+    "fat": 16.8,
+    "fiber": 1.9
+  },
+  {
+    "name": "Crispy flakes of whole wheat and wheat bran",
+    "region": "AU",
+    "calories": 429.6,
+    "protein": 12.2,
+    "carbs": 77.7,
+    "fat": 3.6,
+    "fiber": 18.8
+  },
+  {
+    "name": "Voss Vann Still 800ml",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Olio",
+    "region": "AU",
+    "calories": 822.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 91.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Vanilla Bean Yogurt",
+    "region": "AU",
+    "calories": 121.0,
+    "protein": 4.9,
+    "carbs": 13.6,
+    "fat": 4.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cornichons",
+    "region": "AU",
+    "calories": 33.0,
+    "protein": 1.4,
+    "carbs": 5.1,
+    "fat": 0.2,
+    "fiber": 1.3
+  },
+  {
+    "name": "Pickled Dill Cucumbers",
+    "region": "AU",
+    "calories": 32.9,
+    "protein": 0.5,
+    "carbs": 6.6,
+    "fat": 0.5,
+    "fiber": 0.29
+  },
+  {
+    "name": "TADHUNHOUSE",
+    "region": "AU",
+    "calories": 238.1,
+    "protein": 8.69,
+    "carbs": 40.0,
+    "fat": 2.86,
+    "fiber": 7.11
+  },
+  {
+    "name": "Voss Eau mineral water",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Yaki nori for sushi",
+    "region": "AU",
+    "calories": 277.25,
+    "protein": 44.4,
+    "carbs": 36.6,
+    "fat": 4.7,
+    "fiber": 1.9
+  },
+  {
+    "name": "Crunchy Oat Clusters Chunky Nut",
+    "region": "AU",
+    "calories": 464.44,
+    "protein": 10.2,
+    "carbs": 58.3,
+    "fat": 20.3,
+    "fiber": 6.1
+  },
+  {
+    "name": "HEINZ BEANZ THE ONE FOR ALL ENGLISH RECIPE",
+    "region": "AU",
+    "calories": 84.86,
+    "protein": 4.8,
+    "carbs": 13.0,
+    "fat": 0.5,
+    "fiber": 4.2
+  },
+  {
+    "name": "Hommus Classic",
+    "region": "AU",
+    "calories": 249.76,
+    "protein": 8.0,
+    "carbs": 12.9,
+    "fat": 18.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sweet potato Crispbread",
+    "region": "AU",
+    "calories": 377.63,
+    "protein": 6.67,
+    "carbs": 84.0,
+    "fat": 1.33,
+    "fiber": 1.33
+  },
+  {
+    "name": "tomato paste",
+    "region": "AU",
+    "calories": 364.0,
+    "protein": 4.0,
+    "carbs": 15.2,
+    "fat": 0.4,
+    "fiber": 4.0
+  },
+  {
+    "name": "Salted Spreadable Butter",
+    "region": "AU",
+    "calories": 726.58,
+    "protein": 1.0,
+    "carbs": 1.0,
+    "fat": 81.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Traditional Halloumi Cheese",
+    "region": "AU",
+    "calories": 300.0,
+    "protein": 20.0,
+    "carbs": 1.4,
+    "fat": 24.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Organic Almond Unsweetened",
+    "region": "AU",
+    "calories": 29.4,
+    "protein": 0.6,
+    "carbs": 2.92,
+    "fat": 1.72,
+    "fiber": 0.4
+  },
+  {
+    "name": "MasterFoods Salt Reduced Tomato Sauce | 475mL",
+    "region": "AU",
+    "calories": 74.1,
+    "protein": 1.4,
+    "carbs": 15.6,
+    "fat": 0.2,
+    "fiber": 1.5
+  },
+  {
+    "name": "Natural Coconut Yoghurt",
+    "region": "AU",
+    "calories": 129.3,
+    "protein": 0.9,
+    "carbs": 6.5,
+    "fat": 9.7,
+    "fiber": 0.0
+  },
+  {
+    "name": "Spreadable",
+    "region": "AU",
+    "calories": 680.0,
+    "protein": 0.5,
+    "carbs": 0.6,
+    "fat": 75.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "DRY ROASTED EDAMAME WITH SEA SALT",
+    "region": "AU",
+    "calories": 334.61,
+    "protein": 34.46,
+    "carbs": 20.78,
+    "fat": 19.18,
+    "fiber": 12.99
+  },
+  {
+    "name": "Pizza Funghi",
+    "region": "AU",
+    "calories": 232.0,
+    "protein": 8.3,
+    "carbs": 22.0,
+    "fat": 12.0,
+    "fiber": 2.2
+  },
+  {
+    "name": "100% jus de pomme",
+    "region": "AU",
+    "calories": 45.0,
+    "protein": 0.5,
+    "carbs": 11.0,
+    "fat": 0.5,
+    "fiber": 0.23
+  },
+  {
+    "name": "Wild Pacific Pink Salmon",
+    "region": "AU",
+    "calories": 155.0,
+    "protein": 23.0,
+    "carbs": 0.0,
+    "fat": 7.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "cheese and herb puffs",
+    "region": "AU",
+    "calories": 451.0,
+    "protein": 11.0,
+    "carbs": 68.0,
+    "fat": 15.0,
+    "fiber": 2.8
+  },
+  {
+    "name": "The Kale & Quinoa",
+    "region": "AU",
+    "calories": 221.33,
+    "protein": 4.5,
+    "carbs": 21.9,
+    "fat": 10.5,
+    "fiber": 2.7
+  },
+  {
+    "name": "Tomatillo Salsa",
+    "region": "AU",
+    "calories": 30.4,
+    "protein": 1.2,
+    "carbs": 5.4,
+    "fat": 0.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Almond",
+    "region": "AU",
+    "calories": 29.4,
+    "protein": 0.6,
+    "carbs": 3.6,
+    "fat": 1.4,
+    "fiber": 0.32
+  },
+  {
+    "name": "Mixed Grain",
+    "region": "AU",
+    "calories": 248.57,
+    "protein": 8.4,
+    "carbs": 42.7,
+    "fat": 3.6,
+    "fiber": 4.0
+  },
+  {
+    "name": "Dolminades",
+    "region": "AU",
+    "calories": 133.0,
+    "protein": 2.1,
+    "carbs": 10.0,
+    "fat": 9.0,
+    "fiber": 2.0
+  },
+  {
+    "name": "Bolognese with Chunky Tomato, Garlic & Herbs",
+    "region": "AU",
+    "calories": 46.27,
+    "protein": 1.68,
+    "carbs": 8.4,
+    "fat": 0.16,
+    "fiber": 1.76
+  },
+  {
+    "name": "Organic Unsweetened Oat Milk",
+    "region": "AU",
+    "calories": 44.26,
+    "protein": 1.52,
+    "carbs": 8.32,
+    "fat": 0.52,
+    "fiber": 0.4
+  },
+  {
+    "name": "VitaBrits",
+    "region": "AU",
+    "calories": 351.69,
+    "protein": 9.91,
+    "carbs": 66.97,
+    "fat": 1.8,
+    "fiber": 12.61
+  },
+  {
+    "name": "Banana Pudding",
+    "region": "AU",
+    "calories": 89.0,
+    "protein": 9.0,
+    "carbs": 7.06,
+    "fat": 2.35,
+    "fiber": 0.0
+  },
+  {
+    "name": "Crunchy Chickpeas Lightly Salted",
+    "region": "AU",
+    "calories": 420.0,
+    "protein": 17.6,
+    "carbs": 59.6,
+    "fat": 16.0,
+    "fiber": 12.0
+  },
+  {
+    "name": "OAT MILK",
+    "region": "AU",
+    "calories": 50.4,
+    "protein": 1.0,
+    "carbs": 7.2,
+    "fat": 2.0,
+    "fiber": 0.2
+  },
+  {
+    "name": "Crispy oat clusters maple and pecan",
+    "region": "AU",
+    "calories": 473.0,
+    "protein": 7.6,
+    "carbs": 59.1,
+    "fat": 21.3,
+    "fiber": 7.2
+  },
+  {
+    "name": "Hulled Tahini",
+    "region": "AU",
+    "calories": 587.0,
+    "protein": 17.6,
+    "carbs": 9.85,
+    "fat": 49.7,
+    "fiber": 14.9
+  },
+  {
+    "name": "Protein Smoothie Double Espresso",
+    "region": "AU",
+    "calories": 67.53,
+    "protein": 7.06,
+    "carbs": 6.4,
+    "fat": 1.51,
+    "fiber": 0.0
+  },
+  {
+    "name": "Instant vegetable stock cubes",
+    "region": "AU",
+    "calories": 7.2,
+    "protein": 0.04,
+    "carbs": 0.44,
+    "fat": 0.56,
+    "fiber": 0.12
+  },
+  {
+    "name": "Soy Milky Low Sugar",
+    "region": "AU",
+    "calories": 38.72,
+    "protein": 3.0,
+    "carbs": 2.48,
+    "fat": 1.8,
+    "fiber": 0.2
+  },
+  {
+    "name": "Toasted Muesli Super Berry Cranberry & Blueberry",
+    "region": "AU",
+    "calories": 449.0,
+    "protein": 10.6,
+    "carbs": 51.1,
+    "fat": 20.5,
+    "fiber": 6.6
+  },
+  {
+    "name": "Certified Organic Virgin Coconut Oil",
+    "region": "AU",
+    "calories": 874.76,
+    "protein": 0.1,
+    "carbs": 0.2,
+    "fat": 99.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Soy Milk Protein Plus",
+    "region": "AU",
+    "calories": 52.0,
+    "protein": 4.2,
+    "carbs": 2.0,
+    "fat": 3.0,
+    "fiber": 0.4
+  },
+  {
+    "name": "Hyderabad Red Korma",
+    "region": "AU",
+    "calories": 123.7,
+    "protein": 3.5,
+    "carbs": 6.7,
+    "fat": 8.1,
+    "fiber": 2.1
+  },
+  {
+    "name": "Popcorn Sea Salt",
+    "region": "AU",
+    "calories": 495.0,
+    "protein": 11.0,
+    "carbs": 51.5,
+    "fat": 24.5,
+    "fiber": 11.5
+  },
+  {
+    "name": "Full Cream Fresh Milk",
+    "region": "AU",
+    "calories": 63.2,
+    "protein": 3.32,
+    "carbs": 4.8,
+    "fat": 3.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "BROWN RICE WHOLEGRAIN RICE",
+    "region": "AU",
+    "calories": 177.06,
+    "protein": 3.28,
+    "carbs": 32.8,
+    "fat": 3.2,
+    "fiber": 2.88
+  },
+  {
+    "name": "Wholemeal & Seeds",
+    "region": "AU",
+    "calories": 248.51,
+    "protein": 13.2,
+    "carbs": 23.2,
+    "fat": 6.1,
+    "fiber": 10.8
+  },
+  {
+    "name": "MILO Cereal",
+    "region": "AU",
+    "calories": 382.41,
+    "protein": 8.67,
+    "carbs": 72.33,
+    "fat": 3.67,
+    "fiber": 9.0
+  },
+  {
+    "name": "HARVEST SEEDS & GRAINS",
+    "region": "AU",
+    "calories": 274.86,
+    "protein": 10.12,
+    "carbs": 43.33,
+    "fat": 5.36,
+    "fiber": 5.48
+  },
+  {
+    "name": "Tuna chunks in springwater",
+    "region": "AU",
+    "calories": 125.38,
+    "protein": 25.0,
+    "carbs": 0.44,
+    "fat": 1.03,
+    "fiber": 0.0
+  },
+  {
+    "name": "BUCKWHEAT CRISPIBREAD",
+    "region": "AU",
+    "calories": 640.0,
+    "protein": 10.9,
+    "carbs": 73.4,
+    "fat": 2.1,
+    "fiber": 2.8
+  },
+  {
+    "name": "Tomato Ketchup",
+    "region": "AU",
+    "calories": 65.73,
+    "protein": 1.6,
+    "carbs": 13.3,
+    "fat": 0.1,
+    "fiber": 2.5
+  },
+  {
+    "name": "Unsweetened Macadamia Milk",
+    "region": "AU",
+    "calories": 16.67,
+    "protein": 0.42,
+    "carbs": 0.17,
+    "fat": 1.46,
+    "fiber": 0.17
+  },
+  {
+    "name": "Olive oil butter",
+    "region": "AU",
+    "calories": 525.81,
+    "protein": 10.0,
+    "carbs": 10.0,
+    "fat": 60.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Original Cheerios",
+    "region": "AU",
+    "calories": 382.0,
+    "protein": 7.33,
+    "carbs": 76.7,
+    "fat": 3.0,
+    "fiber": 8.0
+  },
+  {
+    "name": "Spreadable Dairy Soft Original",
+    "region": "AU",
+    "calories": 587.95,
+    "protein": 1.0,
+    "carbs": 1.0,
+    "fat": 66.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Madras curry indian simmer sauce",
+    "region": "AU",
+    "calories": 107.14,
+    "protein": 1.79,
+    "carbs": 7.14,
+    "fat": 8.93,
+    "fiber": 1.79
+  },
+  {
+    "name": "Chicken Stock",
+    "region": "AU",
+    "calories": 8.32,
+    "protein": 0.84,
+    "carbs": 1.16,
+    "fat": 0.04,
+    "fiber": 0.61
+  },
+  {
+    "name": "Soy Milk Calci-Plus",
+    "region": "AU",
+    "calories": 64.0,
+    "protein": 3.2,
+    "carbs": 5.8,
+    "fat": 3.0,
+    "fiber": 0.6
+  },
+  {
+    "name": "Milk activated almond",
+    "region": "AU",
+    "calories": 39.4,
+    "protein": 0.6,
+    "carbs": 4.6,
+    "fat": 2.0,
+    "fiber": 1.0
+  },
+  {
+    "name": "Toasted Muesli Original Fruit Free",
+    "region": "AU",
+    "calories": 449.0,
+    "protein": 11.3,
+    "carbs": 50.2,
+    "fat": 20.6,
+    "fiber": 9.0
+  },
+  {
+    "name": "Rye Bread",
+    "region": "AU",
+    "calories": 249.0,
+    "protein": 8.8,
+    "carbs": 29.4,
+    "fat": 4.3,
+    "fiber": 6.4
+  },
+  {
+    "name": "Grapeseed Oil",
+    "region": "AU",
+    "calories": 814.21,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 92.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Organic Oat Unsweetened",
+    "region": "AU",
+    "calories": 22.16,
+    "protein": 0.84,
+    "carbs": 3.08,
+    "fat": 0.72,
+    "fiber": 0.0
+  },
+  {
+    "name": "Low Sugar Granola Blueberry & Coconut",
+    "region": "AU",
+    "calories": 451.0,
+    "protein": 10.7,
+    "carbs": 63.8,
+    "fat": 15.1,
+    "fiber": 8.67
+  },
+  {
+    "name": "Weet-bix Organic",
+    "region": "AU",
+    "calories": 355.0,
+    "protein": 12.4,
+    "carbs": 67.0,
+    "fat": 1.3,
+    "fiber": 11.0
+  },
+  {
+    "name": "Crunchy Peanut Butter Super Crunchy",
+    "region": "AU",
+    "calories": 594.0,
+    "protein": 26.7,
+    "carbs": 15.3,
+    "fat": 46.0,
+    "fiber": 8.0
+  },
+  {
+    "name": "Organic Soy Milk",
+    "region": "AU",
+    "calories": 62.0,
+    "protein": 3.0,
+    "carbs": 4.0,
+    "fat": 3.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Dairy Soft Salt Reduced",
+    "region": "AU",
+    "calories": 480.0,
+    "protein": 1.0,
+    "carbs": 1.0,
+    "fat": 66.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Just Right",
+    "region": "AU",
+    "calories": 364.48,
+    "protein": 8.0,
+    "carbs": 71.6,
+    "fat": 2.3,
+    "fiber": 10.2
+  },
+  {
+    "name": "Tikka Masala Indian Simmer Sauce",
+    "region": "AU",
+    "calories": 142.86,
+    "protein": 1.79,
+    "carbs": 8.93,
+    "fat": 10.71,
+    "fiber": 1.14
+  },
+  {
+    "name": "ORIGINAL",
+    "region": "AU",
+    "calories": 379.6,
+    "protein": 12.94,
+    "carbs": 56.76,
+    "fat": 9.12,
+    "fiber": 9.12
+  },
+  {
+    "name": "Strawberry yoghurt",
+    "region": "AU",
+    "calories": 38.12,
+    "protein": 4.12,
+    "carbs": 4.31,
+    "fat": 0.12,
+    "fiber": 1.38
+  },
+  {
+    "name": "Weet-Bix Kids",
+    "region": "AU",
+    "calories": 393.33,
+    "protein": 12.42,
+    "carbs": 64.0,
+    "fat": 1.8,
+    "fiber": 12.4
+  },
+  {
+    "name": "Illy Classico 100% Arabica, 250g",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Qualità Oro",
+    "region": "AU",
+    "calories": 396.6,
+    "protein": 14.4,
+    "carbs": 40.2,
+    "fat": 15.4,
+    "fiber": 19.8
+  },
+  {
+    "name": "Café grains 100% arabica",
+    "region": "AU",
+    "calories": 396.6,
+    "protein": 14.4,
+    "carbs": 40.2,
+    "fat": 15.4,
+    "fiber": 19.8
+  },
+  {
+    "name": "Latte",
+    "region": "AU",
+    "calories": 397.26,
+    "protein": 15.75,
+    "carbs": 56.85,
+    "fat": 11.64,
+    "fiber": 0.0
+  },
+  {
+    "name": "LAVAZZA Qualita Oro 100 % Arabica káva zrnková",
+    "region": "AU",
+    "calories": 396.6,
+    "protein": 14.4,
+    "carbs": 40.2,
+    "fat": 15.4,
+    "fiber": 19.8
+  },
+  {
+    "name": "Pukka Tea Lemon, Ginger & Manuka Honey 20 poser",
+    "region": "AU",
+    "calories": 330.0,
+    "protein": 0.0,
+    "carbs": 82.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Ristretto 11",
+    "region": "AU",
+    "calories": 396.6,
+    "protein": 14.4,
+    "carbs": 40.2,
+    "fat": 15.4,
+    "fiber": 19.8
+  },
+  {
+    "name": "Teh kotak teh melati",
+    "region": "AU",
+    "calories": 50.0,
+    "protein": 0.0,
+    "carbs": 13.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Moccona Freeze dried instant coffee Classic Decaffeinated",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.2,
+    "carbs": 0.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Coffre mate",
+    "region": "AU",
+    "calories": 549.71,
+    "protein": 1.28,
+    "carbs": 57.1,
+    "fat": 34.9,
+    "fiber": 0.0
+  },
+  {
+    "name": "Espresso",
+    "region": "AU",
+    "calories": 396.6,
+    "protein": 14.4,
+    "carbs": 40.2,
+    "fat": 15.4,
+    "fiber": 19.8
+  },
+  {
+    "name": "Green Tea with honey",
+    "region": "AU",
+    "calories": 19.0,
+    "protein": 0.0,
+    "carbs": 5.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "L'or espres supremo",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.2,
+    "carbs": 0.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Café Bio-Organic",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.2,
+    "carbs": 0.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Café en capsule alu",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.2,
+    "carbs": 0.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Arizona",
+    "region": "AU",
+    "calories": 21.0,
+    "protein": 0.0,
+    "carbs": 4.9,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Japanese green tea",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Ice tea light",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.1,
+    "carbs": 0.1,
+    "fat": 0.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Protein Smoothie",
+    "region": "AU",
+    "calories": 253.0,
+    "protein": 7.06,
+    "carbs": 4.31,
+    "fat": 1.51,
+    "fiber": 0.0
+  },
+  {
+    "name": "Swiss Café Mocha",
+    "region": "AU",
+    "calories": 31.55,
+    "protein": 0.48,
+    "carbs": 5.5,
+    "fat": 1.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Brazil Coffee Cerrado",
+    "region": "AU",
+    "calories": 45.89,
+    "protein": 2.4,
+    "carbs": 3.4,
+    "fat": 2.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "PEACH FLAVOUR ICE TEA",
+    "region": "AU",
+    "calories": 1.2,
+    "protein": 0.02,
+    "carbs": 0.1,
+    "fat": 0.02,
+    "fiber": 0.02
+  },
+  {
+    "name": "Cranberry & Pomegranate",
+    "region": "AU",
+    "calories": 2.39,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Instant Iced Black Coffee",
+    "region": "AU",
+    "calories": 60.0,
+    "protein": 6.25,
+    "carbs": 87.5,
+    "fat": 0.0,
+    "fiber": 6.25
+  },
+  {
+    "name": "Mocha",
+    "region": "AU",
+    "calories": 397.0,
+    "protein": 10.0,
+    "carbs": 63.2,
+    "fat": 10.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Caramel Latte",
+    "region": "AU",
+    "calories": 56.99,
+    "protein": 0.0,
+    "carbs": 10.21,
+    "fat": 1.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "White Coffee",
+    "region": "AU",
+    "calories": 52.92,
+    "protein": 1.08,
+    "carbs": 9.21,
+    "fat": 1.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Iced coffee milk",
+    "region": "AU",
+    "calories": 63.6,
+    "protein": 3.2,
+    "carbs": 8.4,
+    "fat": 1.9,
+    "fiber": 0.0
+  },
+  {
+    "name": "ICED LATTE",
+    "region": "AU",
+    "calories": 26.16,
+    "protein": 0.89,
+    "carbs": 4.09,
+    "fat": 0.72,
+    "fiber": 0.38
+  },
+  {
+    "name": "English Breakfast Tea",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.0,
+    "carbs": 0.2,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Minas Santos Kava",
+    "region": "AU",
+    "calories": 24.0,
+    "protein": 3.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Earl Grey",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Organic Chamomile",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Organic Peppermint",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Extra Strength Tea",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.1,
+    "carbs": 0.2,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Organic Green Tea",
+    "region": "AU",
+    "calories": 3.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Key Lime Iced Tea",
+    "region": "AU",
+    "calories": 357.0,
+    "protein": 0.0,
+    "carbs": 89.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Soy cappuccino",
+    "region": "AU",
+    "calories": 350.0,
+    "protein": 11.67,
+    "carbs": 45.0,
+    "fat": 11.67,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lemon Black Tea",
+    "region": "AU",
+    "calories": 24.38,
+    "protein": 0.0,
+    "carbs": 6.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Valletta 6",
+    "region": "AU",
+    "calories": 396.6,
+    "protein": 14.4,
+    "carbs": 40.2,
+    "fat": 15.4,
+    "fiber": 19.8
+  },
+  {
+    "name": "Mountain Grown 100% Arabica Coffee",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "English Breakfast Tea Cup Bags",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Black Tea Chai Honey Flavoured",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Hazelnut Mocha",
+    "region": "AU",
+    "calories": 425.86,
+    "protein": 9.09,
+    "carbs": 67.88,
+    "fat": 12.73,
+    "fiber": 0.0
+  },
+  {
+    "name": "Insta grand 3u1 Najlepše želje",
+    "region": "AU",
+    "calories": 431.0,
+    "protein": 4.0,
+    "carbs": 78.0,
+    "fat": 11.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "3u1 Instant kafa",
+    "region": "AU",
+    "calories": 543.0,
+    "protein": 11.3,
+    "carbs": 41.8,
+    "fat": 35.9,
+    "fiber": 4.0
+  },
+  {
+    "name": "English Breakfast",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cappuccino Vanilla",
+    "region": "AU",
+    "calories": 413.0,
+    "protein": 4.4,
+    "carbs": 80.3,
+    "fat": 7.6,
+    "fiber": 2.65
+  },
+  {
+    "name": "3in1 original",
+    "region": "AU",
+    "calories": 426.0,
+    "protein": 3.0,
+    "carbs": 60.0,
+    "fat": 15.0,
+    "fiber": 3.6
+  },
+  {
+    "name": "Black",
+    "region": "AU",
+    "calories": 7.37,
+    "protein": 0.42,
+    "carbs": 1.42,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Peppermint tea",
+    "region": "AU",
+    "calories": 1.43,
+    "protein": 0.5,
+    "carbs": 0.5,
+    "fat": 0.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Strong cappuccino",
+    "region": "AU",
+    "calories": 408.0,
+    "protein": 8.46,
+    "carbs": 58.5,
+    "fat": 14.6,
+    "fiber": 7.69
+  },
+  {
+    "name": "3 in 1 Ice Coffee",
+    "region": "AU",
+    "calories": 402.0,
+    "protein": 7.3,
+    "carbs": 76.0,
+    "fat": 8.1,
+    "fiber": 2.05
+  },
+  {
+    "name": "Al Ameen Coffee (medium With Cardamom, 0.51 Ml)",
+    "region": "AU",
+    "calories": 2.0,
+    "protein": 0.6,
+    "carbs": 0.0,
+    "fat": 0.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Classic Medium Roast Coffee",
+    "region": "AU",
+    "calories": 16.67,
+    "protein": 19.4,
+    "carbs": 42.6,
+    "fat": 1.1,
+    "fiber": 19.1
+  },
+  {
+    "name": "Decaf granulated coffee",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pistachio Latte",
+    "region": "AU",
+    "calories": 426.92,
+    "protein": 6.15,
+    "carbs": 79.23,
+    "fat": 9.62,
+    "fiber": 0.0
+  },
+  {
+    "name": "ICED COFFEE",
+    "region": "AU",
+    "calories": 41.7,
+    "protein": 1.25,
+    "carbs": 8.33,
+    "fat": 0.42,
+    "fiber": 0.0
+  },
+  {
+    "name": "Low Joule Peach Flavoured Ice Tea Drink",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.1,
+    "carbs": 0.1,
+    "fat": 0.1,
+    "fiber": 0.1
+  },
+  {
+    "name": "ICED VANILLA LATTE",
+    "region": "AU",
+    "calories": 38.0,
+    "protein": 0.8,
+    "carbs": 7.38,
+    "fat": 0.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Arizona ice tea with peach flavour",
+    "region": "AU",
+    "calories": 20.0,
+    "protein": 0.0,
+    "carbs": 4.9,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cappuccino Decaf",
+    "region": "AU",
+    "calories": 401.53,
+    "protein": 0.5,
+    "carbs": 9.0,
+    "fat": 1.9,
+    "fiber": 0.0
+  },
+  {
+    "name": "Green and mint tea",
+    "region": "AU",
+    "calories": 1.5,
+    "protein": 0.5,
+    "carbs": 0.5,
+    "fat": 0.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Strong Cappucino",
+    "region": "AU",
+    "calories": 37.0,
+    "protein": 1.1,
+    "carbs": 5.5,
+    "fat": 1.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Mochaccino",
+    "region": "AU",
+    "calories": 275.0,
+    "protein": 8.12,
+    "carbs": 31.88,
+    "fat": 11.25,
+    "fiber": 0.0
+  },
+  {
+    "name": "The annasma",
+    "region": "AU",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "CHAI LATTE",
+    "region": "AU",
+    "calories": 93.21,
+    "protein": 6.0,
+    "carbs": 22.5,
+    "fat": 7.5,
+    "fiber": 60.0
+  },
+  {
+    "name": "Classic Granulated Instant Coffee",
+    "region": "AU",
+    "calories": 296.0,
+    "protein": 19.4,
+    "carbs": 42.6,
+    "fat": 1.1,
+    "fiber": 19.1
+  },
+  {
+    "name": "Vanilla Latte",
+    "region": "AU",
+    "calories": 79.0,
+    "protein": 5.41,
+    "carbs": 77.84,
+    "fat": 13.51,
+    "fiber": 0.0
+  },
+  {
+    "name": "iTIERRA! BIO-ORGANIC",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Gold Original",
+    "region": "AU",
+    "calories": 296.0,
+    "protein": 19.4,
+    "carbs": 42.6,
+    "fat": 1.1,
+    "fiber": 19.1
+  },
+  {
+    "name": "Salted Caramel Iced Cappuccino",
+    "region": "AU",
+    "calories": 60.0,
+    "protein": 1.3,
+    "carbs": 13.1,
+    "fat": 1.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cappuccino",
+    "region": "AU",
+    "calories": 86.0,
+    "protein": 3.9,
+    "carbs": 8.4,
+    "fat": 3.9,
+    "fiber": 0.5
+  },
+  {
+    "name": "KitKat Mocha",
+    "region": "AU",
+    "calories": 45.0,
+    "protein": 1.1,
+    "carbs": 8.6,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cafe Grain Grand Crema Espresso Lavazza",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.2,
+    "carbs": 0.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Café espresso maestro",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.2,
+    "carbs": 0.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Double Espresso Flavoured Arabica Coffee",
+    "region": "AU",
+    "calories": 64.8,
+    "protein": 3.4,
+    "carbs": 4.92,
+    "fat": 3.52,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chill Protein Iced Coffee",
+    "region": "AU",
+    "calories": 62.6,
+    "protein": 6.2,
+    "carbs": 4.42,
+    "fat": 2.06,
+    "fiber": 0.0
+  },
+  {
+    "name": "Freeze Dried Instant Coffee",
+    "region": "AU",
+    "calories": 396.6,
+    "protein": 14.4,
+    "carbs": 40.2,
+    "fat": 15.4,
+    "fiber": 19.8
+  },
+  {
+    "name": "ESPRESSO CONCENTRATE Rich Arabica Blend Sweet Vanilla",
+    "region": "AU",
+    "calories": 90.0,
+    "protein": 1.0,
+    "carbs": 20.6,
+    "fat": 0.0,
+    "fiber": 1.8
+  },
+  {
+    "name": "Double Shot Latte",
+    "region": "AU",
+    "calories": 392.86,
+    "protein": 10.0,
+    "carbs": 53.57,
+    "fat": 14.29,
+    "fiber": 7.14
+  },
+  {
+    "name": "Moccona Freeze Dried Instant Coffee Classic Medium Roast",
+    "region": "AU",
+    "calories": 396.6,
+    "protein": 14.4,
+    "carbs": 40.2,
+    "fat": 15.4,
+    "fiber": 19.8
+  },
+  {
+    "name": "Fennel Seeds Whole",
+    "region": "AU",
+    "calories": 21.8,
+    "protein": 1.0,
+    "carbs": 2.63,
+    "fat": 0.25,
+    "fiber": 2.6
+  },
+  {
+    "name": "Mild Roast Instant Coffee",
+    "region": "AU",
+    "calories": 4.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Moccona Classic 8 Dark Roast",
+    "region": "AU",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "nescafe iced capuccino original",
+    "region": "AU",
+    "calories": 62.0,
+    "protein": 1.8,
+    "carbs": 13.4,
+    "fat": 1.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Nescafé Cappuccino Strong",
+    "region": "AU",
+    "calories": 50.0,
+    "protein": 1.7,
+    "carbs": 9.1,
+    "fat": 1.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "blend 43 coffee",
+    "region": "AU",
+    "calories": 1.0,
+    "protein": 0.2,
+    "carbs": 0.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Nescafe cappuccino decaf",
+    "region": "AU",
+    "calories": 424.0,
+    "protein": 8.0,
+    "carbs": 76.8,
+    "fat": 15.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Tea Cup Bags",
+    "region": "AU",
+    "calories": 1.2,
+    "protein": 0.0,
+    "carbs": 0.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Arkadia Tea Mix Chai Spice",
+    "region": "AU",
+    "calories": 46.1,
+    "protein": 0.2,
+    "carbs": 8.4,
+    "fat": 1.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Coffee concentrate",
+    "region": "AU",
+    "calories": 400.0,
+    "protein": 0.0,
+    "carbs": 20.4,
+    "fat": 0.0,
+    "fiber": 1.59
+  },
+  {
+    "name": "Pure black tea decaf",
+    "region": "AU",
+    "calories": 0.98,
+    "protein": 0.0,
+    "carbs": 0.31,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Espresso cold brew coffee with almond",
+    "region": "AU",
+    "calories": 34.0,
+    "protein": 0.6,
+    "carbs": 4.9,
+    "fat": 1.2,
+    "fiber": 0.4
+  },
+  {
+    "name": "Perly",
+    "region": "IN",
+    "calories": 97.0,
+    "protein": 8.0,
+    "carbs": 9.4,
+    "fat": 3.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Quaker",
+    "region": "IN",
+    "calories": 374.0,
+    "protein": 11.0,
+    "carbs": 60.0,
+    "fat": 8.0,
+    "fiber": 9.0
+  },
+  {
+    "name": "Bisleri 1ltr MADE IN INDIA",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul Masti Spiced Buttermilk 200ml",
+    "region": "IN",
+    "calories": 28.5,
+    "protein": 1.5,
+    "carbs": 1.8,
+    "fat": 1.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Storia 100% Tender Coconut Water 1L",
+    "region": "IN",
+    "calories": 20.0,
+    "protein": 0.1,
+    "carbs": 4.9,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oats",
+    "region": "IN",
+    "calories": 407.0,
+    "protein": 11.8,
+    "carbs": 68.5,
+    "fat": 9.5,
+    "fiber": 10.0
+  },
+  {
+    "name": "Packaged Drinking Water",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Wild Pacific Red Salmon",
+    "region": "IN",
+    "calories": 151.0,
+    "protein": 20.4,
+    "carbs": 0.0,
+    "fat": 7.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Muesli Fruit, Nut & Seeds",
+    "region": "IN",
+    "calories": 955.0,
+    "protein": 8.1,
+    "carbs": 80.0,
+    "fat": 5.1,
+    "fiber": 6.4
+  },
+  {
+    "name": "100% Pure Coconut Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Moong Dal",
+    "region": "IN",
+    "calories": 476.0,
+    "protein": 21.31,
+    "carbs": 50.66,
+    "fat": 20.93,
+    "fiber": 0.0
+  },
+  {
+    "name": "Modern 100% Whole Wheat Bread",
+    "region": "IN",
+    "calories": 264.44,
+    "protein": 8.78,
+    "carbs": 43.54,
+    "fat": 2.73,
+    "fiber": 6.4
+  },
+  {
+    "name": "Smith & Jones Ginger Garlic Paste",
+    "region": "IN",
+    "calories": 11.0,
+    "protein": 0.6,
+    "carbs": 2.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Muesli dark chocolate cranberry",
+    "region": "IN",
+    "calories": 437.0,
+    "protein": 12.3,
+    "carbs": 67.0,
+    "fat": 13.3,
+    "fiber": 9.4
+  },
+  {
+    "name": "Farm Fresh Sahi Plain Yoghurt",
+    "region": "IN",
+    "calories": 61.8,
+    "protein": 3.5,
+    "carbs": 5.2,
+    "fat": 3.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "malai paneer fresh",
+    "region": "IN",
+    "calories": 312.0,
+    "protein": 20.0,
+    "carbs": 4.0,
+    "fat": 24.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "High Protein Oats Chocolate",
+    "region": "IN",
+    "calories": 392.0,
+    "protein": 25.0,
+    "carbs": 54.6,
+    "fat": 8.0,
+    "fiber": 9.6
+  },
+  {
+    "name": "Knorr Schezwan Sauce 200 g",
+    "region": "IN",
+    "calories": 134.0,
+    "protein": 1.7,
+    "carbs": 18.7,
+    "fat": 6.0,
+    "fiber": 2.3
+  },
+  {
+    "name": "Storia Tender Coconut Water",
+    "region": "IN",
+    "calories": 20.0,
+    "protein": 0.1,
+    "carbs": 5.1,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Yoga bar 23G protein muesli + choco almond + cranberry",
+    "region": "IN",
+    "calories": 386.0,
+    "protein": 23.0,
+    "carbs": 53.1,
+    "fat": 10.7,
+    "fiber": 7.5
+  },
+  {
+    "name": "Fine ground sea salt almond flour crackers, sea salt",
+    "region": "IN",
+    "calories": 500.0,
+    "protein": 10.0,
+    "carbs": 60.0,
+    "fat": 26.7,
+    "fiber": 6.67
+  },
+  {
+    "name": "Coconut oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "FOOD",
+    "region": "IN",
+    "calories": 217.0,
+    "protein": 19.7,
+    "carbs": 0.1,
+    "fat": 21.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul Fresh Cream",
+    "region": "IN",
+    "calories": 34.8,
+    "protein": 3.28,
+    "carbs": 4.99,
+    "fat": 0.19,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul Taaza 1ltr",
+    "region": "IN",
+    "calories": 58.2,
+    "protein": 3.0,
+    "carbs": 4.8,
+    "fat": 3.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Zero Maida Whole Wheat Bread",
+    "region": "IN",
+    "calories": 241.4,
+    "protein": 13.41,
+    "carbs": 43.97,
+    "fat": 1.32,
+    "fiber": 6.31
+  },
+  {
+    "name": "Panchathanthra mix",
+    "region": "IN",
+    "calories": 142.21,
+    "protein": 1.32,
+    "carbs": 10.52,
+    "fat": 10.52,
+    "fiber": 0.0
+  },
+  {
+    "name": "Coconut Water",
+    "region": "IN",
+    "calories": 24.78,
+    "protein": 0.19,
+    "carbs": 5.6,
+    "fat": 0.18,
+    "fiber": 0.85
+  },
+  {
+    "name": "Coke Classic",
+    "region": "IN",
+    "calories": 80.0,
+    "protein": 3.0,
+    "carbs": 9.6,
+    "fat": 3.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Peanut Butter Crunchy",
+    "region": "IN",
+    "calories": 612.0,
+    "protein": 25.7,
+    "carbs": 20.3,
+    "fat": 49.5,
+    "fiber": 8.6
+  },
+  {
+    "name": "Kelloggs",
+    "region": "IN",
+    "calories": 397.5,
+    "protein": 8.0,
+    "carbs": 80.0,
+    "fat": 6.0,
+    "fiber": 5.0
+  },
+  {
+    "name": "Peanut Butter - Crunchy",
+    "region": "IN",
+    "calories": 612.5,
+    "protein": 26.0,
+    "carbs": 19.0,
+    "fat": 49.0,
+    "fiber": 4.2
+  },
+  {
+    "name": "Natural Peanut Butter Crunch",
+    "region": "IN",
+    "calories": 625.0,
+    "protein": 30.0,
+    "carbs": 18.0,
+    "fat": 49.0,
+    "fiber": 6.0
+  },
+  {
+    "name": "Yoga Bar Super Muesli 0% Added Sugar",
+    "region": "IN",
+    "calories": 370.0,
+    "protein": 15.0,
+    "carbs": 60.0,
+    "fat": 10.5,
+    "fiber": 15.1
+  },
+  {
+    "name": "Peanut butter",
+    "region": "IN",
+    "calories": 619.0,
+    "protein": 26.0,
+    "carbs": 22.7,
+    "fat": 48.0,
+    "fiber": 4.0
+  },
+  {
+    "name": "High protein super oats chocolate",
+    "region": "IN",
+    "calories": 457.77,
+    "protein": 22.0,
+    "carbs": 51.34,
+    "fat": 18.6,
+    "fiber": 11.6
+  },
+  {
+    "name": "Amul gee",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul Masti",
+    "region": "IN",
+    "calories": 65.0,
+    "protein": 4.0,
+    "carbs": 4.6,
+    "fat": 3.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Peanut Butter All Natural Creamy Unsweetened",
+    "region": "IN",
+    "calories": 639.0,
+    "protein": 30.0,
+    "carbs": 18.0,
+    "fat": 49.0,
+    "fiber": 9.0
+  },
+  {
+    "name": "Refined Sunflower Oil",
+    "region": "IN",
+    "calories": 899.35,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 99.93,
+    "fiber": 0.0
+  },
+  {
+    "name": "Rice Bran Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Protein Oats",
+    "region": "IN",
+    "calories": 393.47,
+    "protein": 27.04,
+    "carbs": 55.01,
+    "fat": 8.15,
+    "fiber": 9.75
+  },
+  {
+    "name": "Almond Milk Unsweetened 137 Degrees",
+    "region": "IN",
+    "calories": 33.33,
+    "protein": 1.11,
+    "carbs": 0.56,
+    "fat": 2.78,
+    "fiber": 0.0
+  },
+  {
+    "name": "100% Rolled Oats",
+    "region": "IN",
+    "calories": 387.5,
+    "protein": 12.5,
+    "carbs": 66.5,
+    "fat": 8.25,
+    "fiber": 10.0
+  },
+  {
+    "name": "SUPER RING cheese rings 60G",
+    "region": "IN",
+    "calories": 570.0,
+    "protein": 6.67,
+    "carbs": 46.67,
+    "fat": 43.33,
+    "fiber": 6.67
+  },
+  {
+    "name": "Greek Yogurt",
+    "region": "IN",
+    "calories": 77.8,
+    "protein": 8.0,
+    "carbs": 6.5,
+    "fat": 2.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "slice",
+    "region": "IN",
+    "calories": 50.0,
+    "protein": 0.0,
+    "carbs": 12.5,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pasteurised Cow Milk",
+    "region": "IN",
+    "calories": 67.2,
+    "protein": 3.1,
+    "carbs": 4.7,
+    "fat": 4.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Nutri Delite Crunchies",
+    "region": "IN",
+    "calories": 386.0,
+    "protein": 6.6,
+    "carbs": 82.5,
+    "fat": 2.4,
+    "fiber": 7.6
+  },
+  {
+    "name": "Iced Latté",
+    "region": "IN",
+    "calories": 56.0,
+    "protein": 2.2,
+    "carbs": 8.6,
+    "fat": 1.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oxycool",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Catch Black Salt",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Saffola oats",
+    "region": "IN",
+    "calories": 369.0,
+    "protein": 12.6,
+    "carbs": 66.8,
+    "fat": 8.0,
+    "fiber": 10.4
+  },
+  {
+    "name": "Dal Makhani",
+    "region": "IN",
+    "calories": 91.0,
+    "protein": 5.1,
+    "carbs": 9.1,
+    "fat": 2.9,
+    "fiber": 4.2
+  },
+  {
+    "name": "Peanut butter Creamy",
+    "region": "IN",
+    "calories": 612.5,
+    "protein": 25.0,
+    "carbs": 19.0,
+    "fat": 49.0,
+    "fiber": 4.19
+  },
+  {
+    "name": "Aashirvaad Superior MP Atta",
+    "region": "IN",
+    "calories": 338.0,
+    "protein": 10.7,
+    "carbs": 76.0,
+    "fat": 1.3,
+    "fiber": 10.4
+  },
+  {
+    "name": "High Protein Muesli",
+    "region": "IN",
+    "calories": 390.0,
+    "protein": 24.0,
+    "carbs": 56.0,
+    "fat": 8.0,
+    "fiber": 10.0
+  },
+  {
+    "name": "Amul Ghee 1ltr",
+    "region": "IN",
+    "calories": 897.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 99.7,
+    "fiber": 1.39
+  },
+  {
+    "name": "Diced Cheese",
+    "region": "IN",
+    "calories": 289.0,
+    "protein": 23.0,
+    "carbs": 2.0,
+    "fat": 21.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Butter School Pack",
+    "region": "IN",
+    "calories": 724.0,
+    "protein": 1.0,
+    "carbs": 0.0,
+    "fat": 80.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Dark Chocolate Peanut Butter with added Whey",
+    "region": "IN",
+    "calories": 637.5,
+    "protein": 25.0,
+    "carbs": 21.88,
+    "fat": 50.0,
+    "fiber": 6.25
+  },
+  {
+    "name": "Fruit Yogurt Blueberry",
+    "region": "IN",
+    "calories": 103.5,
+    "protein": 3.6,
+    "carbs": 15.3,
+    "fat": 3.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Heritage Total Curd",
+    "region": "IN",
+    "calories": 58.0,
+    "protein": 3.3,
+    "carbs": 4.3,
+    "fat": 3.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Farmley Makhana Munchies",
+    "region": "IN",
+    "calories": 429.5,
+    "protein": 7.7,
+    "carbs": 76.1,
+    "fat": 9.7,
+    "fiber": 3.6
+  },
+  {
+    "name": "Protein Lassi - Rose Flavour",
+    "region": "IN",
+    "calories": 53.5,
+    "protein": 7.5,
+    "carbs": 6.0,
+    "fat": 0.85,
+    "fiber": 0.0
+  },
+  {
+    "name": "activ 100% Coconut water",
+    "region": "IN",
+    "calories": 20.0,
+    "protein": 0.0,
+    "carbs": 5.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "brown rice",
+    "region": "IN",
+    "calories": 350.0,
+    "protein": 9.7,
+    "carbs": 75.0,
+    "fat": 2.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "MYFITNESS Peanut Butter - Chocolate",
+    "region": "IN",
+    "calories": 200.7,
+    "protein": 8.4,
+    "carbs": 7.1,
+    "fat": 15.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Bakarwadi",
+    "region": "IN",
+    "calories": 106.4,
+    "protein": 1.4,
+    "carbs": 9.4,
+    "fat": 6.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Californian Almond",
+    "region": "IN",
+    "calories": 597.19,
+    "protein": 19.33,
+    "carbs": 21.72,
+    "fat": 48.11,
+    "fiber": 0.0
+  },
+  {
+    "name": "Un-junked Dates",
+    "region": "IN",
+    "calories": 366.23,
+    "protein": 1.87,
+    "carbs": 77.0,
+    "fat": 5.63,
+    "fiber": 6.23
+  },
+  {
+    "name": "Kinley Mineral Water 1ltr",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul Pasteurized Butter",
+    "region": "IN",
+    "calories": 714.29,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 78.57,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul Taaza Milky Milk",
+    "region": "IN",
+    "calories": 29.0,
+    "protein": 1.5,
+    "carbs": 2.35,
+    "fat": 1.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul Butter",
+    "region": "IN",
+    "calories": 724.0,
+    "protein": 1.0,
+    "carbs": 0.0,
+    "fat": 80.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul Gold Milky Milk",
+    "region": "IN",
+    "calories": 87.0,
+    "protein": 3.1,
+    "carbs": 5.0,
+    "fat": 6.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul Taaza 200ml",
+    "region": "IN",
+    "calories": 58.0,
+    "protein": 3.0,
+    "carbs": 4.8,
+    "fat": 3.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul pasteurised butter",
+    "region": "IN",
+    "calories": 724.0,
+    "protein": 1.0,
+    "carbs": 0.0,
+    "fat": 80.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sundrop Peanut Butter Regular",
+    "region": "IN",
+    "calories": 610.0,
+    "protein": 27.9,
+    "carbs": 19.8,
+    "fat": 49.0,
+    "fiber": 11.0
+  },
+  {
+    "name": "Premium kachi ghani pure mustard oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Haldiram moong dal",
+    "region": "IN",
+    "calories": 476.0,
+    "protein": 21.31,
+    "carbs": 50.66,
+    "fat": 20.93,
+    "fiber": 7.52
+  },
+  {
+    "name": "Paneer",
+    "region": "IN",
+    "calories": 283.0,
+    "protein": 16.1,
+    "carbs": 5.1,
+    "fat": 22.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Peanut Butter Regular Creamy",
+    "region": "IN",
+    "calories": 647.0,
+    "protein": 26.8,
+    "carbs": 15.2,
+    "fat": 55.0,
+    "fiber": 7.8
+  },
+  {
+    "name": "UAE by",
+    "region": "IN",
+    "calories": 330.91,
+    "protein": 2.73,
+    "carbs": 80.0,
+    "fat": 0.44,
+    "fiber": 6.91
+  },
+  {
+    "name": "sprite",
+    "region": "IN",
+    "calories": 24.5,
+    "protein": 0.0,
+    "carbs": 6.1,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Idly & Dosa Batter",
+    "region": "IN",
+    "calories": 138.0,
+    "protein": 1.74,
+    "carbs": 29.32,
+    "fat": 1.61,
+    "fiber": 1.85
+  },
+  {
+    "name": "Peanut Butter Regular",
+    "region": "IN",
+    "calories": 647.0,
+    "protein": 26.8,
+    "carbs": 15.2,
+    "fat": 55.0,
+    "fiber": 7.8
+  },
+  {
+    "name": "dark chocolate peanut butter",
+    "region": "IN",
+    "calories": 590.0,
+    "protein": 17.7,
+    "carbs": 42.0,
+    "fat": 39.1,
+    "fiber": 10.0
+  },
+  {
+    "name": "Nutty Fruity Muesli",
+    "region": "IN",
+    "calories": 380.0,
+    "protein": 8.9,
+    "carbs": 79.8,
+    "fat": 4.4,
+    "fiber": 7.3
+  },
+  {
+    "name": "knorr Thick tomato soup",
+    "region": "IN",
+    "calories": 27.65,
+    "protein": 0.43,
+    "carbs": 5.59,
+    "fat": 0.43,
+    "fiber": 0.37
+  },
+  {
+    "name": "Soya sticks",
+    "region": "IN",
+    "calories": 554.0,
+    "protein": 7.46,
+    "carbs": 45.0,
+    "fat": 38.21,
+    "fiber": 5.26
+  },
+  {
+    "name": "Regular Peanui Butter",
+    "region": "IN",
+    "calories": 642.0,
+    "protein": 26.0,
+    "carbs": 20.0,
+    "fat": 51.0,
+    "fiber": 5.0
+  },
+  {
+    "name": "maggi",
+    "region": "IN",
+    "calories": 83.0,
+    "protein": 0.8,
+    "carbs": 19.9,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Nutrela Soya chunks  220gm",
+    "region": "IN",
+    "calories": 354.0,
+    "protein": 53.0,
+    "carbs": 34.0,
+    "fat": 0.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Paper boat coconut water 200ml pet",
+    "region": "IN",
+    "calories": 17.94,
+    "protein": 0.21,
+    "carbs": 4.05,
+    "fat": 0.15,
+    "fiber": 0.25
+  },
+  {
+    "name": "Fortune Soya Chunks-225g",
+    "region": "IN",
+    "calories": 343.0,
+    "protein": 52.5,
+    "carbs": 31.5,
+    "fat": 0.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "MTR POHA 60 g",
+    "region": "IN",
+    "calories": 249.0,
+    "protein": 4.8,
+    "carbs": 40.3,
+    "fat": 7.2,
+    "fiber": 1.8
+  },
+  {
+    "name": "Hatsun Curd",
+    "region": "IN",
+    "calories": 67.0,
+    "protein": 4.0,
+    "carbs": 6.0,
+    "fat": 3.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Fortune Soya Health Refined Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Dr. Oetker Funfoods Peanut Butter",
+    "region": "IN",
+    "calories": 636.4,
+    "protein": 25.6,
+    "carbs": 20.3,
+    "fat": 50.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "alphonso mango juice",
+    "region": "IN",
+    "calories": 41.7,
+    "protein": 0.45,
+    "carbs": 10.43,
+    "fat": 0.0,
+    "fiber": 0.91
+  },
+  {
+    "name": "Tata water 1ltr",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Myfitness Chocolate peanut butter",
+    "region": "IN",
+    "calories": 615.62,
+    "protein": 25.0,
+    "carbs": 18.75,
+    "fat": 46.88,
+    "fiber": 6.25
+  },
+  {
+    "name": "Superior MP Atta",
+    "region": "IN",
+    "calories": 338.0,
+    "protein": 10.7,
+    "carbs": 76.0,
+    "fat": 1.3,
+    "fiber": 10.4
+  },
+  {
+    "name": "Bisleri Water 250ml",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Kitty Brown Bread",
+    "region": "IN",
+    "calories": 248.41,
+    "protein": 10.2,
+    "carbs": 46.3,
+    "fat": 2.49,
+    "fiber": 6.35
+  },
+  {
+    "name": "Curd",
+    "region": "IN",
+    "calories": 60.0,
+    "protein": 3.7,
+    "carbs": 4.4,
+    "fat": 3.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "chocolate cranberry museli",
+    "region": "IN",
+    "calories": 438.0,
+    "protein": 12.3,
+    "carbs": 67.0,
+    "fat": 13.2,
+    "fiber": 9.5
+  },
+  {
+    "name": "Amul Lactose Free250ml",
+    "region": "IN",
+    "calories": 59.2,
+    "protein": 3.0,
+    "carbs": 4.8,
+    "fat": 3.12,
+    "fiber": 0.0
+  },
+  {
+    "name": "Millet muesli",
+    "region": "IN",
+    "calories": 390.0,
+    "protein": 11.5,
+    "carbs": 59.6,
+    "fat": 11.7,
+    "fiber": 7.9
+  },
+  {
+    "name": "Muesli+",
+    "region": "IN",
+    "calories": 417.5,
+    "protein": 13.0,
+    "carbs": 70.0,
+    "fat": 9.5,
+    "fiber": 7.5
+  },
+  {
+    "name": "Muesli Fruit & Nut",
+    "region": "IN",
+    "calories": 344.0,
+    "protein": 8.2,
+    "carbs": 70.0,
+    "fat": 2.2,
+    "fiber": 6.3
+  },
+  {
+    "name": "Dr. Oetker Peanut Butter",
+    "region": "IN",
+    "calories": 642.0,
+    "protein": 26.3,
+    "carbs": 19.3,
+    "fat": 51.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Myfitness Peanut Butter",
+    "region": "IN",
+    "calories": 637.0,
+    "protein": 23.0,
+    "carbs": 24.0,
+    "fat": 50.0,
+    "fiber": 9.0
+  },
+  {
+    "name": "100% Whole Wheat Brown Bread",
+    "region": "IN",
+    "calories": 245.0,
+    "protein": 8.3,
+    "carbs": 50.7,
+    "fat": 2.0,
+    "fiber": 4.4
+  },
+  {
+    "name": "mixture",
+    "region": "IN",
+    "calories": 267.0,
+    "protein": 7.69,
+    "carbs": 22.29,
+    "fat": 15.12,
+    "fiber": 5.68
+  },
+  {
+    "name": "Ruchi gold Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Whole Leaves Cactus",
+    "region": "IN",
+    "calories": 340.0,
+    "protein": 8.0,
+    "carbs": 80.0,
+    "fat": 0.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Protein Buttermilk",
+    "region": "IN",
+    "calories": 54.0,
+    "protein": 7.5,
+    "carbs": 4.0,
+    "fat": 0.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Slim 'n' Trim",
+    "region": "IN",
+    "calories": 46.0,
+    "protein": 3.2,
+    "carbs": 5.0,
+    "fat": 1.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "MARCO CRUNCHY PEANUT BUTTER",
+    "region": "IN",
+    "calories": 209.0,
+    "protein": 8.0,
+    "carbs": 6.0,
+    "fat": 17.0,
+    "fiber": 1.0
+  },
+  {
+    "name": "LaxmiNarayan Patal Poha Chiwda (Indian snack)",
+    "region": "IN",
+    "calories": 475.1,
+    "protein": 16.37,
+    "carbs": 60.27,
+    "fat": 19.14,
+    "fiber": 14.18
+  },
+  {
+    "name": "Namaste India",
+    "region": "IN",
+    "calories": 73.18,
+    "protein": 3.52,
+    "carbs": 7.8,
+    "fat": 3.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Mustard Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Aquafina",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Taboulé à l'orientale",
+    "region": "IN",
+    "calories": 204.0,
+    "protein": 4.3,
+    "carbs": 25.0,
+    "fat": 9.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Noix de cajou nature",
+    "region": "IN",
+    "calories": 581.0,
+    "protein": 18.0,
+    "carbs": 27.0,
+    "fat": 44.0,
+    "fiber": 3.3
+  },
+  {
+    "name": "Huile D'olive  Vierge extra",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Rolled Oats",
+    "region": "IN",
+    "calories": 410.9,
+    "protein": 12.0,
+    "carbs": 68.3,
+    "fat": 10.0,
+    "fiber": 9.5
+  },
+  {
+    "name": "Chocolate Peanut Butter",
+    "region": "IN",
+    "calories": 635.0,
+    "protein": 23.0,
+    "carbs": 23.27,
+    "fat": 50.0,
+    "fiber": 6.4
+  },
+  {
+    "name": "Amul Protein Blueberry Shake",
+    "region": "IN",
+    "calories": 69.0,
+    "protein": 10.0,
+    "carbs": 9.5,
+    "fat": 0.75,
+    "fiber": 0.0
+  },
+  {
+    "name": "Malabar Parota",
+    "region": "IN",
+    "calories": 300.0,
+    "protein": 9.71,
+    "carbs": 36.7,
+    "fat": 14.35,
+    "fiber": 1.85
+  },
+  {
+    "name": "Gatorade zero sugar lemon lime",
+    "region": "IN",
+    "calories": 1.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul Curd",
+    "region": "IN",
+    "calories": 53.0,
+    "protein": 3.0,
+    "carbs": 3.5,
+    "fat": 3.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Danedar Ghee",
+    "region": "IN",
+    "calories": 898.92,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 99.88,
+    "fiber": 0.0
+  },
+  {
+    "name": "Omega-3 Fish Oil",
+    "region": "IN",
+    "calories": 9.71,
+    "protein": 0.02,
+    "carbs": 0.44,
+    "fat": 0.87,
+    "fiber": 0.0
+  },
+  {
+    "name": "Ghee",
+    "region": "IN",
+    "calories": 897.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 99.7,
+    "fiber": 0.0
+  },
+  {
+    "name": "Masti Dahi",
+    "region": "IN",
+    "calories": 65.0,
+    "protein": 4.0,
+    "carbs": 4.6,
+    "fat": 3.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Peanut Spread Creamy",
+    "region": "IN",
+    "calories": 624.0,
+    "protein": 26.0,
+    "carbs": 20.0,
+    "fat": 50.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Alpino Super Oats Chocolate",
+    "region": "IN",
+    "calories": 445.0,
+    "protein": 22.0,
+    "carbs": 52.2,
+    "fat": 16.4,
+    "fiber": 11.3
+  },
+  {
+    "name": "Pure Ghee",
+    "region": "IN",
+    "calories": 897.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 99.7,
+    "fiber": 0.0
+  },
+  {
+    "name": "SAFOLA ACTIVE - MULTI-SOURCE EDIBLE OIL",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Dark Chocolate And Cranberry Muesli",
+    "region": "IN",
+    "calories": 408.0,
+    "protein": 12.0,
+    "carbs": 69.0,
+    "fat": 11.6,
+    "fiber": 10.0
+  },
+  {
+    "name": "Full Cream Milk",
+    "region": "IN",
+    "calories": 85.0,
+    "protein": 3.2,
+    "carbs": 4.7,
+    "fat": 6.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "date sweetened peanut butter",
+    "region": "IN",
+    "calories": 637.0,
+    "protein": 24.3,
+    "carbs": 22.0,
+    "fat": 50.3,
+    "fiber": 8.0
+  },
+  {
+    "name": "DoodhShakti Ghee",
+    "region": "IN",
+    "calories": 897.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 99.7,
+    "fiber": 0.0
+  },
+  {
+    "name": "soya drink",
+    "region": "IN",
+    "calories": 34.4,
+    "protein": 3.22,
+    "carbs": 1.78,
+    "fat": 1.67,
+    "fiber": 1.11
+  },
+  {
+    "name": "Whole Wheat Loaf",
+    "region": "IN",
+    "calories": 253.0,
+    "protein": 10.0,
+    "carbs": 49.0,
+    "fat": 2.0,
+    "fiber": 10.0
+  },
+  {
+    "name": "apis ROYAL ZAHIDI 500g",
+    "region": "IN",
+    "calories": 365.0,
+    "protein": 1.8,
+    "carbs": 89.1,
+    "fat": 0.0,
+    "fiber": 7.1
+  },
+  {
+    "name": "Chocolate Peanut butter smooth",
+    "region": "IN",
+    "calories": 628.0,
+    "protein": 28.1,
+    "carbs": 17.5,
+    "fat": 49.4,
+    "fiber": 8.44
+  },
+  {
+    "name": "Protein Muesli",
+    "region": "IN",
+    "calories": 386.0,
+    "protein": 23.0,
+    "carbs": 53.1,
+    "fat": 10.7,
+    "fiber": 7.5
+  },
+  {
+    "name": "Atta Shakti",
+    "region": "IN",
+    "calories": 243.0,
+    "protein": 9.9,
+    "carbs": 45.6,
+    "fat": 2.34,
+    "fiber": 8.4
+  },
+  {
+    "name": "VEEBA CREAMY PEANUT BUTTER",
+    "region": "IN",
+    "calories": 638.0,
+    "protein": 26.0,
+    "carbs": 21.0,
+    "fat": 50.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Happilo Arabian Dates",
+    "region": "IN",
+    "calories": 286.67,
+    "protein": 2.67,
+    "carbs": 77.33,
+    "fat": 0.67,
+    "fiber": 9.33
+  },
+  {
+    "name": "Shubham",
+    "region": "IN",
+    "calories": 74.0,
+    "protein": 3.3,
+    "carbs": 4.8,
+    "fat": 4.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Roasted chana",
+    "region": "IN",
+    "calories": 374.5,
+    "protein": 22.5,
+    "carbs": 61.0,
+    "fat": 4.5,
+    "fiber": 12.0
+  },
+  {
+    "name": "GREEK YOGURT natural",
+    "region": "IN",
+    "calories": 63.53,
+    "protein": 7.65,
+    "carbs": 4.71,
+    "fat": 2.24,
+    "fiber": 0.0
+  },
+  {
+    "name": "26g High Protein Oats Dark Chocolate",
+    "region": "IN",
+    "calories": 364.0,
+    "protein": 26.0,
+    "carbs": 57.3,
+    "fat": 5.9,
+    "fiber": 11.1
+  },
+  {
+    "name": "Farmley Makhana Peri Peri",
+    "region": "IN",
+    "calories": 475.0,
+    "protein": 7.8,
+    "carbs": 63.4,
+    "fat": 19.8,
+    "fiber": 11.2
+  },
+  {
+    "name": "Idhayam Sesame Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 99.9,
+    "fiber": 0.0
+  },
+  {
+    "name": "Moti",
+    "region": "IN",
+    "calories": 58.0,
+    "protein": 3.0,
+    "carbs": 4.8,
+    "fat": 3.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "DiSano Peanut Butter Crunchy",
+    "region": "IN",
+    "calories": 639.0,
+    "protein": 28.3,
+    "carbs": 18.0,
+    "fat": 49.0,
+    "fiber": 9.0
+  },
+  {
+    "name": "Real active 100% orange juice",
+    "region": "IN",
+    "calories": 44.0,
+    "protein": 0.0,
+    "carbs": 11.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Zero Maida Pizza Base",
+    "region": "IN",
+    "calories": 239.7,
+    "protein": 13.4,
+    "carbs": 43.51,
+    "fat": 1.34,
+    "fiber": 6.39
+  },
+  {
+    "name": "Muesli 0% Added Sugar",
+    "region": "IN",
+    "calories": 382.0,
+    "protein": 9.3,
+    "carbs": 77.6,
+    "fat": 5.2,
+    "fiber": 6.4
+  },
+  {
+    "name": "Figaro Olive Oil",
+    "region": "IN",
+    "calories": 821.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 91.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Anmol Gold Coconut Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Good Life MP Sharbati Atta",
+    "region": "IN",
+    "calories": 321.0,
+    "protein": 10.6,
+    "carbs": 64.2,
+    "fat": 1.5,
+    "fiber": 11.4
+  },
+  {
+    "name": "Modern Sandwich Supreme Bread",
+    "region": "IN",
+    "calories": 254.0,
+    "protein": 7.9,
+    "carbs": 51.0,
+    "fat": 2.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Ragi Flour",
+    "region": "IN",
+    "calories": 322.0,
+    "protein": 7.1,
+    "carbs": 66.8,
+    "fat": 18.0,
+    "fiber": 8.5
+  },
+  {
+    "name": "Skyr Yogurt",
+    "region": "IN",
+    "calories": 99.5,
+    "protein": 12.0,
+    "carbs": 9.5,
+    "fat": 1.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Ginger Garlic Paste",
+    "region": "IN",
+    "calories": 35.0,
+    "protein": 0.87,
+    "carbs": 5.3,
+    "fat": 1.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Super Soft Paneer",
+    "region": "IN",
+    "calories": 291.0,
+    "protein": 17.0,
+    "carbs": 4.2,
+    "fat": 23.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Saras Dahi",
+    "region": "IN",
+    "calories": 58.0,
+    "protein": 3.2,
+    "carbs": 4.6,
+    "fat": 3.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Alu Methi",
+    "region": "IN",
+    "calories": 83.0,
+    "protein": 1.6,
+    "carbs": 8.1,
+    "fat": 4.9,
+    "fiber": 0.0
+  },
+  {
+    "name": "Impact Why Protein Isolate & Concentrate",
+    "region": "IN",
+    "calories": 368.89,
+    "protein": 53.38,
+    "carbs": 32.44,
+    "fat": 2.84,
+    "fiber": 0.0
+  },
+  {
+    "name": "Soya Chocolate Flavor Drink",
+    "region": "IN",
+    "calories": 77.3,
+    "protein": 3.2,
+    "carbs": 12.3,
+    "fat": 1.4,
+    "fiber": 1.2
+  },
+  {
+    "name": "mini soya chunks",
+    "region": "IN",
+    "calories": 316.0,
+    "protein": 52.9,
+    "carbs": 31.7,
+    "fat": 0.9,
+    "fiber": 15.3
+  },
+  {
+    "name": "Ketofy Zero Sugar",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Zero Maida Protein Bread",
+    "region": "IN",
+    "calories": 246.0,
+    "protein": 15.2,
+    "carbs": 42.5,
+    "fat": 1.64,
+    "fiber": 4.92
+  },
+  {
+    "name": "Brown Bread",
+    "region": "IN",
+    "calories": 244.0,
+    "protein": 7.78,
+    "carbs": 47.2,
+    "fat": 2.68,
+    "fiber": 5.38
+  },
+  {
+    "name": "Heritage Spiced Buttermilk",
+    "region": "IN",
+    "calories": 21.0,
+    "protein": 1.1,
+    "carbs": 1.8,
+    "fat": 1.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Yoga Bar Super Muesli",
+    "region": "IN",
+    "calories": 367.0,
+    "protein": 9.7,
+    "carbs": 73.0,
+    "fat": 6.2,
+    "fiber": 9.5
+  },
+  {
+    "name": "Multi Grain High Fibre Bread",
+    "region": "IN",
+    "calories": 310.55,
+    "protein": 11.21,
+    "carbs": 54.31,
+    "fat": 3.09,
+    "fiber": 10.27
+  },
+  {
+    "name": "Go Desi Ice Popz",
+    "region": "IN",
+    "calories": 72.1,
+    "protein": 0.02,
+    "carbs": 18.3,
+    "fat": 0.0,
+    "fiber": 0.12
+  },
+  {
+    "name": "Coconut Water with Litchi",
+    "region": "IN",
+    "calories": 22.0,
+    "protein": 0.0,
+    "carbs": 5.6,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Saffolamayo90 g",
+    "region": "IN",
+    "calories": 262.0,
+    "protein": 0.0,
+    "carbs": 9.2,
+    "fat": 25.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Mother dairy classic dahi",
+    "region": "IN",
+    "calories": 62.0,
+    "protein": 3.7,
+    "carbs": 5.0,
+    "fat": 3.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Rajbhog natural jaggery",
+    "region": "IN",
+    "calories": 385.0,
+    "protein": 0.4,
+    "carbs": 75.0,
+    "fat": 0.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Prostar 100% Whey Protein",
+    "region": "IN",
+    "calories": 400.0,
+    "protein": 83.3,
+    "carbs": 6.7,
+    "fat": 3.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Emami Healthy & Tasty Refined Sunflower Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "B Natural Select Tender Coconut Water",
+    "region": "IN",
+    "calories": 21.0,
+    "protein": 0.0,
+    "carbs": 5.2,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Heritage A-One Spiced Buttermilk",
+    "region": "IN",
+    "calories": 21.8,
+    "protein": 1.2,
+    "carbs": 2.0,
+    "fat": 1.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Dark Chocolate Peanut Spread - Crunchy",
+    "region": "IN",
+    "calories": 590.29,
+    "protein": 17.71,
+    "carbs": 42.0,
+    "fat": 39.14,
+    "fiber": 10.0
+  },
+  {
+    "name": "Mother Dairy Ultimate Dahi",
+    "region": "IN",
+    "calories": 75.0,
+    "protein": 3.7,
+    "carbs": 5.0,
+    "fat": 4.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Whole Wheat Bread",
+    "region": "IN",
+    "calories": 241.49,
+    "protein": 13.47,
+    "carbs": 43.91,
+    "fat": 1.33,
+    "fiber": 6.31
+  },
+  {
+    "name": "Barramundi",
+    "region": "IN",
+    "calories": 88.5,
+    "protein": 18.58,
+    "carbs": 0.0,
+    "fat": 1.33,
+    "fiber": 0.0
+  },
+  {
+    "name": "AMUL PURE GHEE",
+    "region": "IN",
+    "calories": 897.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 99.7,
+    "fiber": 0.0
+  },
+  {
+    "name": "Multi Grain Bread",
+    "region": "IN",
+    "calories": 504.0,
+    "protein": 19.2,
+    "carbs": 94.0,
+    "fat": 8.6,
+    "fiber": 13.0
+  },
+  {
+    "name": "Probiotic Buttermilk",
+    "region": "IN",
+    "calories": 27.9,
+    "protein": 1.37,
+    "carbs": 2.78,
+    "fat": 1.26,
+    "fiber": 0.0
+  },
+  {
+    "name": "Greek Yoghurt",
+    "region": "IN",
+    "calories": 80.2,
+    "protein": 8.6,
+    "carbs": 6.5,
+    "fat": 2.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Wonderland California In-Shell Walnuts 1kg",
+    "region": "IN",
+    "calories": 654.0,
+    "protein": 15.0,
+    "carbs": 14.0,
+    "fat": 65.0,
+    "fiber": 7.0
+  },
+  {
+    "name": "Crunchy Dark Chocolate Peanut Butter",
+    "region": "IN",
+    "calories": 620.0,
+    "protein": 21.5,
+    "carbs": 30.5,
+    "fat": 47.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Health Mix",
+    "region": "IN",
+    "calories": 360.0,
+    "protein": 10.0,
+    "carbs": 76.0,
+    "fat": 4.0,
+    "fiber": 10.0
+  },
+  {
+    "name": "Max Protein Dark Choco Crunchy Spread Peanut Butter",
+    "region": "IN",
+    "calories": 593.0,
+    "protein": 18.0,
+    "carbs": 38.0,
+    "fat": 41.0,
+    "fiber": 4.0
+  },
+  {
+    "name": "Zero Maida Kulcha Bread",
+    "region": "IN",
+    "calories": 244.31,
+    "protein": 12.74,
+    "carbs": 42.83,
+    "fat": 2.74,
+    "fiber": 6.34
+  },
+  {
+    "name": "Fruit And Nuts Supermix",
+    "region": "IN",
+    "calories": 434.0,
+    "protein": 14.0,
+    "carbs": 36.0,
+    "fat": 26.0,
+    "fiber": 4.3
+  },
+  {
+    "name": "Bread",
+    "region": "IN",
+    "calories": 273.93,
+    "protein": 10.48,
+    "carbs": 54.14,
+    "fat": 1.05,
+    "fiber": 3.0
+  },
+  {
+    "name": "Kellogg's Corn flakes original",
+    "region": "IN",
+    "calories": 378.0,
+    "protein": 6.7,
+    "carbs": 86.9,
+    "fat": 1.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sid's Farm Cow Milk",
+    "region": "IN",
+    "calories": 68.0,
+    "protein": 3.4,
+    "carbs": 5.15,
+    "fat": 3.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Peanut Butter Chocolate",
+    "region": "IN",
+    "calories": 609.38,
+    "protein": 25.0,
+    "carbs": 21.88,
+    "fat": 46.88,
+    "fiber": 6.25
+  },
+  {
+    "name": "Chia Seeds (Raw)",
+    "region": "IN",
+    "calories": 449.0,
+    "protein": 19.9,
+    "carbs": 36.0,
+    "fat": 32.7,
+    "fiber": 34.3
+  },
+  {
+    "name": "Bambino Vermicelli",
+    "region": "IN",
+    "calories": 381.0,
+    "protein": 10.5,
+    "carbs": 82.5,
+    "fat": 1.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Pintola Wholegrain brown rice cakes unsalted",
+    "region": "IN",
+    "calories": 378.0,
+    "protein": 7.9,
+    "carbs": 81.0,
+    "fat": 2.2,
+    "fiber": 7.1
+  },
+  {
+    "name": "MDH BIRYANI MASALA",
+    "region": "IN",
+    "calories": 256.0,
+    "protein": 8.6,
+    "carbs": 67.7,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Multigrain Dosa",
+    "region": "IN",
+    "calories": 388.6,
+    "protein": 13.0,
+    "carbs": 72.0,
+    "fat": 5.4,
+    "fiber": 8.0
+  },
+  {
+    "name": "Aarambh Danedar Assam Tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "Good Life Fard Dates 500gm",
+    "region": "IN",
+    "calories": 312.0,
+    "protein": 2.4,
+    "carbs": 72.7,
+    "fat": 0.3,
+    "fiber": 9.1
+  },
+  {
+    "name": "Eggon White Grade A White Eggs",
+    "region": "IN",
+    "calories": 128.0,
+    "protein": 13.3,
+    "carbs": 0.67,
+    "fat": 8.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "TruNativ Raw Whey Isolate Unflavored",
+    "region": "IN",
+    "calories": 377.14,
+    "protein": 86.86,
+    "carbs": 3.14,
+    "fat": 2.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "toasted millet muesli dark chocolate and orange peel",
+    "region": "IN",
+    "calories": 465.8,
+    "protein": 9.3,
+    "carbs": 67.4,
+    "fat": 17.7,
+    "fiber": 4.3
+  },
+  {
+    "name": "Zero Maida Super Multi Grain Bread",
+    "region": "IN",
+    "calories": 240.91,
+    "protein": 13.1,
+    "carbs": 43.62,
+    "fat": 1.55,
+    "fiber": 6.9
+  },
+  {
+    "name": "Country Delight Low Malai Milk",
+    "region": "IN",
+    "calories": 57.0,
+    "protein": 3.2,
+    "carbs": 4.5,
+    "fat": 3.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Saras Chhach",
+    "region": "IN",
+    "calories": 31.0,
+    "protein": 2.4,
+    "carbs": 2.1,
+    "fat": 1.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Spiced Butter Milk",
+    "region": "IN",
+    "calories": 21.6,
+    "protein": 1.2,
+    "carbs": 1.5,
+    "fat": 1.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Almond milk unsweetened",
+    "region": "IN",
+    "calories": 16.0,
+    "protein": 0.6,
+    "carbs": 0.3,
+    "fat": 1.4,
+    "fiber": 0.3
+  },
+  {
+    "name": "Finger Millet Vermicelli",
+    "region": "IN",
+    "calories": 164.0,
+    "protein": 5.0,
+    "carbs": 36.0,
+    "fat": 0.0,
+    "fiber": 2.0
+  },
+  {
+    "name": "Muesli",
+    "region": "IN",
+    "calories": 425.4,
+    "protein": 13.5,
+    "carbs": 68.1,
+    "fat": 10.9,
+    "fiber": 11.5
+  },
+  {
+    "name": "8906069406154",
+    "region": "IN",
+    "calories": 335.51,
+    "protein": 0.0,
+    "carbs": 46.04,
+    "fat": 16.73,
+    "fiber": 3.27
+  },
+  {
+    "name": "Low Fat Paneer",
+    "region": "IN",
+    "calories": 156.0,
+    "protein": 17.0,
+    "carbs": 4.0,
+    "fat": 8.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Nutty Gritties Omani Dates",
+    "region": "IN",
+    "calories": 289.0,
+    "protein": 2.4,
+    "carbs": 74.0,
+    "fat": 0.4,
+    "fiber": 8.0
+  },
+  {
+    "name": "Shredded Mozzarella Cheese",
+    "region": "IN",
+    "calories": 289.0,
+    "protein": 22.4,
+    "carbs": 2.6,
+    "fat": 21.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Soulfull Millet muesli",
+    "region": "IN",
+    "calories": 405.0,
+    "protein": 8.8,
+    "carbs": 80.0,
+    "fat": 5.7,
+    "fiber": 8.7
+  },
+  {
+    "name": "Fortune sun lite refined sunflower oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Extra Virgin Olive Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Aashirvaad Organic Whole Wheat Atta",
+    "region": "IN",
+    "calories": 343.0,
+    "protein": 10.6,
+    "carbs": 77.6,
+    "fat": 1.6,
+    "fiber": 10.6
+  },
+  {
+    "name": "Date Sweetened Peanut Butter Crunchy",
+    "region": "IN",
+    "calories": 637.0,
+    "protein": 24.3,
+    "carbs": 22.0,
+    "fat": 50.3,
+    "fiber": 8.0
+  },
+  {
+    "name": "McCain Chilli Garlic Potato Pops",
+    "region": "IN",
+    "calories": 174.4,
+    "protein": 3.0,
+    "carbs": 23.5,
+    "fat": 7.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Jivo Rice Bran Oil",
+    "region": "IN",
+    "calories": 900.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 100.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pro Clean Whey Chocolate Flavour",
+    "region": "IN",
+    "calories": 389.0,
+    "protein": 71.4,
+    "carbs": 12.0,
+    "fat": 6.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sago",
+    "region": "IN",
+    "calories": 358.0,
+    "protein": 0.2,
+    "carbs": 88.7,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Super T Milk",
+    "region": "IN",
+    "calories": 68.0,
+    "protein": 3.1,
+    "carbs": 4.7,
+    "fat": 4.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Amul Calci+ Milk",
+    "region": "IN",
+    "calories": 58.0,
+    "protein": 4.48,
+    "carbs": 6.48,
+    "fat": 1.48,
+    "fiber": 0.0
+  },
+  {
+    "name": "More Choice Zahidi Dates",
+    "region": "IN",
+    "calories": 327.0,
+    "protein": 2.27,
+    "carbs": 78.48,
+    "fat": 0.42,
+    "fiber": 7.83
+  },
+  {
+    "name": "Lite Fit Milk",
+    "region": "IN",
+    "calories": 33.0,
+    "protein": 3.1,
+    "carbs": 5.0,
+    "fat": 0.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "High Protein Paneer",
+    "region": "IN",
+    "calories": 189.8,
+    "protein": 25.0,
+    "carbs": 6.7,
+    "fat": 7.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "77 Green Dosa Flour",
+    "region": "IN",
+    "calories": 370.0,
+    "protein": 11.0,
+    "carbs": 77.0,
+    "fat": 2.0,
+    "fiber": 5.0
+  },
+  {
+    "name": "evocus water",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Coriander Chutney",
+    "region": "IN",
+    "calories": 155.91,
+    "protein": 2.63,
+    "carbs": 7.38,
+    "fat": 12.88,
+    "fiber": 0.0
+  },
+  {
+    "name": "High Protein Milk",
+    "region": "IN",
+    "calories": 64.0,
+    "protein": 10.4,
+    "carbs": 5.2,
+    "fat": 0.16,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lipton Green Tea honey lemon",
+    "region": "IN",
+    "calories": 352.0,
+    "protein": 5.0,
+    "carbs": 83.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Kool cafe",
+    "region": "IN",
+    "calories": 110.0,
+    "protein": 3.5,
+    "carbs": 12.5,
+    "fat": 5.0,
+    "fiber": 0.5
+  },
+  {
+    "name": "Nescafe Classic Instant coffee",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "3 Roses",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "Super Strong Blend Coffee",
+    "region": "IN",
+    "calories": 5.05,
+    "protein": 11.1,
+    "carbs": 30.86,
+    "fat": 11.61,
+    "fiber": 15.12
+  },
+  {
+    "name": "Gold Blend Instant Coffee",
+    "region": "IN",
+    "calories": 396.6,
+    "protein": 14.4,
+    "carbs": 40.2,
+    "fat": 15.4,
+    "fiber": 19.8
+  },
+  {
+    "name": "Bru Instant Coffee",
+    "region": "IN",
+    "calories": 412.0,
+    "protein": 0.0,
+    "carbs": 81.8,
+    "fat": 5.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Ripple Tea",
+    "region": "IN",
+    "calories": 111.0,
+    "protein": 19.7,
+    "carbs": 4.1,
+    "fat": 1.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "South Indian Filter Coffee",
+    "region": "IN",
+    "calories": 429.0,
+    "protein": 12.9,
+    "carbs": 69.5,
+    "fat": 11.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Thurbo DARJEELING TEA WHOLE LEAF",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lemon Iced Tea",
+    "region": "IN",
+    "calories": 47.48,
+    "protein": 1.72,
+    "carbs": 10.15,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Ice Tea Lemon Flavour",
+    "region": "IN",
+    "calories": 18.0,
+    "protein": 0.0,
+    "carbs": 4.6,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "bikaji sub-kuch namkeen",
+    "region": "IN",
+    "calories": 519.0,
+    "protein": 17.0,
+    "carbs": 47.0,
+    "fat": 29.0,
+    "fiber": 9.0
+  },
+  {
+    "name": "Tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "Classic Assam Tea",
+    "region": "IN",
+    "calories": 194.73,
+    "protein": 21.92,
+    "carbs": 3.52,
+    "fat": 2.15,
+    "fiber": 0.0
+  },
+  {
+    "name": "Nectar of Night",
+    "region": "IN",
+    "calories": 1.5,
+    "protein": 0.0,
+    "carbs": 0.4,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Heaven's Velvet",
+    "region": "IN",
+    "calories": 1.06,
+    "protein": 0.0,
+    "carbs": 0.1,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Export Quality flavoured tea",
+    "region": "IN",
+    "calories": 116.0,
+    "protein": 20.0,
+    "carbs": 5.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Wagh Bakri premium leaf tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "Brooke Bond Red Label Masala Tea Premix",
+    "region": "IN",
+    "calories": 387.0,
+    "protein": 7.4,
+    "carbs": 77.4,
+    "fat": 5.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Bombay Cutting Chai",
+    "region": "IN",
+    "calories": 39.09,
+    "protein": 1.31,
+    "carbs": 4.87,
+    "fat": 0.86,
+    "fiber": 3.38
+  },
+  {
+    "name": "Blue Tea Chamomile Flower Herbal Tea",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Red Label",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "Taj Mahal",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "premium desh ki chai",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "Mili premium Strong Leaf Tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "Society tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "BOMBAY MIXTURE",
+    "region": "IN",
+    "calories": 555.0,
+    "protein": 14.0,
+    "carbs": 44.3,
+    "fat": 35.7,
+    "fiber": 0.0
+  },
+  {
+    "name": "Funnel seeds roasted",
+    "region": "IN",
+    "calories": 433.73,
+    "protein": 17.86,
+    "carbs": 53.2,
+    "fat": 16.61,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheddar Cheeze Style Seasoning",
+    "region": "IN",
+    "calories": 310.0,
+    "protein": 1.3,
+    "carbs": 70.2,
+    "fat": 1.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Wagh Bakri tea",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "Original",
+    "region": "IN",
+    "calories": 375.0,
+    "protein": 16.0,
+    "carbs": 72.0,
+    "fat": 2.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Masala Chai",
+    "region": "IN",
+    "calories": 312.0,
+    "protein": 6.05,
+    "carbs": 59.85,
+    "fat": 5.37,
+    "fiber": 0.0
+  },
+  {
+    "name": "Colombian Brew Coffee 3 in 1 Premix Nutty Hazelnut",
+    "region": "IN",
+    "calories": 91.0,
+    "protein": 1.0,
+    "carbs": 16.5,
+    "fat": 2.1,
+    "fiber": 1.0
+  },
+  {
+    "name": "Honest Tea with organic green tea Mango flavoured",
+    "region": "IN",
+    "calories": 25.0,
+    "protein": 0.0,
+    "carbs": 6.3,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Nescafe choco mocha",
+    "region": "IN",
+    "calories": 69.0,
+    "protein": 3.2,
+    "carbs": 10.5,
+    "fat": 1.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Maxim Mocha gold",
+    "region": "IN",
+    "calories": 416.67,
+    "protein": 0.0,
+    "carbs": 75.0,
+    "fat": 13.33,
+    "fiber": 0.0
+  },
+  {
+    "name": "Minerva Coffee Kaapi Premiere",
+    "region": "IN",
+    "calories": 360.0,
+    "protein": 0.1,
+    "carbs": 73.0,
+    "fat": 17.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Khatta Dhokla",
+    "region": "IN",
+    "calories": 340.0,
+    "protein": 10.2,
+    "carbs": 73.0,
+    "fat": 0.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "wayback moong cheese n herbs",
+    "region": "IN",
+    "calories": 392.1,
+    "protein": 10.8,
+    "carbs": 78.7,
+    "fat": 4.18,
+    "fiber": 9.5
+  },
+  {
+    "name": "Cafe Blend",
+    "region": "IN",
+    "calories": 434.0,
+    "protein": 5.6,
+    "carbs": 81.1,
+    "fat": 9.7,
+    "fiber": 0.0
+  },
+  {
+    "name": "Rage Coffee Dark Chocolate",
+    "region": "IN",
+    "calories": 375.0,
+    "protein": 16.0,
+    "carbs": 72.0,
+    "fat": 2.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Tetley Immuno Chai",
+    "region": "IN",
+    "calories": 358.0,
+    "protein": 20.1,
+    "carbs": 66.9,
+    "fat": 1.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Society tea 500 g",
+    "region": "IN",
+    "calories": 0.06,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "Desi Kahwa Green Tea",
+    "region": "IN",
+    "calories": 4.0,
+    "protein": 0.0,
+    "carbs": 1.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Destinato Tè Nero",
+    "region": "IN",
+    "calories": 1.26,
+    "protein": 0.0,
+    "carbs": 0.3,
+    "fat": 0.01,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cardamom Chai",
+    "region": "IN",
+    "calories": 436.0,
+    "protein": 14.1,
+    "carbs": 69.2,
+    "fat": 11.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "ID Instant Filter Coffee Liquid (Bold)",
+    "region": "IN",
+    "calories": 28.4,
+    "protein": 1.1,
+    "carbs": 5.8,
+    "fat": 0.0,
+    "fiber": 0.8
+  },
+  {
+    "name": "ORGANIC INDIA CLASSIC HEALTHY CONSCIOUS LIVING-",
+    "region": "IN",
+    "calories": 128.0,
+    "protein": 3.0,
+    "carbs": 15.0,
+    "fat": 6.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Vahdam Matcha Green Tea",
+    "region": "IN",
+    "calories": 5.1,
+    "protein": 0.0,
+    "carbs": 1.09,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lipton Green Tea",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Vedic Tea",
+    "region": "IN",
+    "calories": 350.0,
+    "protein": 21.5,
+    "carbs": 66.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Nescafe Iced Latte",
+    "region": "IN",
+    "calories": 88.0,
+    "protein": 3.0,
+    "carbs": 12.1,
+    "fat": 3.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Tea Premix",
+    "region": "IN",
+    "calories": 405.0,
+    "protein": 7.03,
+    "carbs": 87.0,
+    "fat": 2.96,
+    "fiber": 0.0
+  },
+  {
+    "name": "Green Tea",
+    "region": "IN",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beaten Caffee Powder",
+    "region": "IN",
+    "calories": 388.0,
+    "protein": 4.7,
+    "carbs": 92.1,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "TeaCountry Green tea",
+    "region": "IN",
+    "calories": 347.0,
+    "protein": 23.5,
+    "carbs": 63.0,
+    "fat": 0.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Nestea Iced Tea Lemon flavour",
+    "region": "IN",
+    "calories": 25.0,
+    "protein": 0.0,
+    "carbs": 6.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Classic Cold Coffee",
+    "region": "IN",
+    "calories": 92.0,
+    "protein": 3.4,
+    "carbs": 13.3,
+    "fat": 2.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Continental This is Caramel coffee",
+    "region": "IN",
+    "calories": 92.3,
+    "protein": 0.79,
+    "carbs": 15.3,
+    "fat": 3.0,
+    "fiber": 1.5
+  },
+  {
+    "name": "Taj Mahal tea leaves 500 g",
+    "region": "IN",
+    "calories": 100.0,
+    "protein": 20.0,
+    "carbs": 4.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "instant premix coffee",
+    "region": "IN",
+    "calories": 402.0,
+    "protein": 10.7,
+    "carbs": 79.74,
+    "fat": 4.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Instant Coffee",
+    "region": "IN",
+    "calories": 354.0,
+    "protein": 21.0,
+    "carbs": 67.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Malgudi fresh filter coffee",
+    "region": "IN",
+    "calories": 4.04,
+    "protein": 11.76,
+    "carbs": 32.73,
+    "fat": 12.37,
+    "fiber": 16.06
+  },
+  {
+    "name": "Masala Tea",
+    "region": "IN",
+    "calories": 120.0,
+    "protein": 19.0,
+    "carbs": 4.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Filter Coffee Liquid Brew",
+    "region": "IN",
+    "calories": 23.5,
+    "protein": 1.17,
+    "carbs": 4.48,
+    "fat": 0.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Shahi Pradhan Gold Special Mix Tea",
+    "region": "IN",
+    "calories": 108.43,
+    "protein": 21.43,
+    "carbs": 3.83,
+    "fat": 0.83,
+    "fiber": 0.0
+  },
+  {
+    "name": "Karak tea Instant Premix",
+    "region": "IN",
+    "calories": 42.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 13.33,
+    "fiber": 0.0
+  },
+  {
+    "name": "Apples, Fuji, With Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 64.7,
+    "protein": 0.15,
+    "carbs": 15.7,
+    "fat": 0.16,
+    "fiber": 2.08
+  },
+  {
+    "name": "Apples, Gala, With Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 61.0,
+    "protein": 0.13,
+    "carbs": 14.8,
+    "fat": 0.15,
+    "fiber": 2.11
+  },
+  {
+    "name": "Apples, Granny Smith, With Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 58.9,
+    "protein": 0.27,
+    "carbs": 14.1,
+    "fat": 0.14,
+    "fiber": 2.51
+  },
+  {
+    "name": "Apples, Honeycrisp, With Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 60.0,
+    "protein": 0.1,
+    "carbs": 14.7,
+    "fat": 0.1,
+    "fiber": 1.72
+  },
+  {
+    "name": "Apples, Red Delicious, With Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 61.8,
+    "protein": 0.19,
+    "carbs": 14.8,
+    "fat": 0.21,
+    "fiber": 2.04
+  },
+  {
+    "name": "Bananas, Overripe, Raw",
+    "region": "GLOBAL",
+    "calories": 85.0,
+    "protein": 0.73,
+    "carbs": 20.1,
+    "fat": 0.22,
+    "fiber": 1.7
+  },
+  {
+    "name": "Bananas, Ripe And Slightly Ripe, Raw",
+    "region": "GLOBAL",
+    "calories": 408.0,
+    "protein": 0.74,
+    "carbs": 23.0,
+    "fat": 0.29,
+    "fiber": 1.7
+  },
+  {
+    "name": "Broccoli, Raw",
+    "region": "GLOBAL",
+    "calories": 132.0,
+    "protein": 2.57,
+    "carbs": 6.27,
+    "fat": 0.34,
+    "fiber": 2.4
+  },
+  {
+    "name": "Fish, Haddock, Raw",
+    "region": "GLOBAL",
+    "calories": 74.0,
+    "protein": 16.3,
+    "carbs": 0.0,
+    "fat": 0.45,
+    "fiber": 0.0
+  },
+  {
+    "name": "Garlic, Raw",
+    "region": "GLOBAL",
+    "calories": 143.0,
+    "protein": 6.62,
+    "carbs": 28.2,
+    "fat": 0.38,
+    "fiber": 2.7
+  },
+  {
+    "name": "Kale, Raw",
+    "region": "GLOBAL",
+    "calories": 148.0,
+    "protein": 2.92,
+    "carbs": 4.42,
+    "fat": 1.49,
+    "fiber": 4.1
+  },
+  {
+    "name": "Kiwifruit, Green, Raw",
+    "region": "GLOBAL",
+    "calories": 58.0,
+    "protein": 1.06,
+    "carbs": 14.0,
+    "fat": 0.44,
+    "fiber": 3.0
+  },
+  {
+    "name": "Lettuce, Cos Or Romaine, Raw",
+    "region": "GLOBAL",
+    "calories": 17.0,
+    "protein": 1.24,
+    "carbs": 3.24,
+    "fat": 0.26,
+    "fiber": 1.8
+  },
+  {
+    "name": "Melons, Cantaloupe, Raw",
+    "region": "GLOBAL",
+    "calories": 34.0,
+    "protein": 0.82,
+    "carbs": 8.16,
+    "fat": 0.18,
+    "fiber": 0.8
+  },
+  {
+    "name": "Nectarines, Raw",
+    "region": "GLOBAL",
+    "calories": 163.0,
+    "protein": 1.06,
+    "carbs": 9.18,
+    "fat": 0.28,
+    "fiber": 1.5
+  },
+  {
+    "name": "Onions, Red, Raw",
+    "region": "GLOBAL",
+    "calories": 44.0,
+    "protein": 0.94,
+    "carbs": 9.93,
+    "fat": 0.1,
+    "fiber": 2.2
+  },
+  {
+    "name": "Onions, White, Raw",
+    "region": "GLOBAL",
+    "calories": 35.0,
+    "protein": 0.89,
+    "carbs": 7.68,
+    "fat": 0.13,
+    "fiber": 1.2
+  },
+  {
+    "name": "Onions, Yellow, Raw",
+    "region": "GLOBAL",
+    "calories": 38.0,
+    "protein": 0.83,
+    "carbs": 8.61,
+    "fat": 0.05,
+    "fiber": 1.9
+  },
+  {
+    "name": "Oranges, Raw, Navels",
+    "region": "GLOBAL",
+    "calories": 47.0,
+    "protein": 0.91,
+    "carbs": 11.8,
+    "fat": 0.15,
+    "fiber": 2.0
+  },
+  {
+    "name": "Peaches, Yellow, Raw",
+    "region": "GLOBAL",
+    "calories": 42.0,
+    "protein": 0.91,
+    "carbs": 10.1,
+    "fat": 0.27,
+    "fiber": 1.5
+  },
+  {
+    "name": "Pears, Raw, Bartlett",
+    "region": "GLOBAL",
+    "calories": 238.0,
+    "protein": 0.38,
+    "carbs": 15.1,
+    "fat": 0.16,
+    "fiber": 3.1
+  },
+  {
+    "name": "Tomatoes, Grape, Raw",
+    "region": "GLOBAL",
+    "calories": 27.0,
+    "protein": 0.83,
+    "carbs": 5.51,
+    "fat": 0.63,
+    "fiber": 2.1
+  },
+  {
+    "name": "Alaska Pollock, Raw",
+    "region": "GLOBAL",
+    "calories": 78.5,
+    "protein": 17.3,
+    "carbs": 0.06,
+    "fat": 0.99,
+    "fiber": 0.0
+  },
+  {
+    "name": "Almond Butter, Creamy",
+    "region": "GLOBAL",
+    "calories": 645.0,
+    "protein": 20.8,
+    "carbs": 21.2,
+    "fat": 53.0,
+    "fiber": 9.72
+  },
+  {
+    "name": "Almond Milk, Unsweetened, Plain, Refrigerated",
+    "region": "GLOBAL",
+    "calories": 19.3,
+    "protein": 0.66,
+    "carbs": 0.67,
+    "fat": 1.56,
+    "fiber": 0.0
+  },
+  {
+    "name": "Almond Milk, Unsweetened, Plain, Shelf Stable",
+    "region": "GLOBAL",
+    "calories": 14.6,
+    "protein": 0.56,
+    "carbs": 0.34,
+    "fat": 1.22,
+    "fiber": 0.0
+  },
+  {
+    "name": "Anchovies, Canned In Olive Oil, With Salt, Drained",
+    "region": "GLOBAL",
+    "calories": 206.0,
+    "protein": 26.9,
+    "carbs": 2.41,
+    "fat": 9.85,
+    "fiber": 0.0
+  },
+  {
+    "name": "Apple Juice, With Added Vitamin C, From Concentrate, Shelf Stable",
+    "region": "GLOBAL",
+    "calories": 48.4,
+    "protein": 0.09,
+    "carbs": 11.4,
+    "fat": 0.29,
+    "fiber": 0.0
+  },
+  {
+    "name": "Applesauce, Unsweetened, With Added Vitamin C",
+    "region": "GLOBAL",
+    "calories": 51.6,
+    "protein": 0.27,
+    "carbs": 12.3,
+    "fat": 0.16,
+    "fiber": 0.0
+  },
+  {
+    "name": "Apricot, With Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 48.4,
+    "protein": 0.96,
+    "carbs": 10.2,
+    "fat": 0.41,
+    "fiber": 1.51
+  },
+  {
+    "name": "Arugula, Baby, Raw",
+    "region": "GLOBAL",
+    "calories": 31.0,
+    "protein": 1.65,
+    "carbs": 5.37,
+    "fat": 0.33,
+    "fiber": 2.28
+  },
+  {
+    "name": "Asparagus, Green, Raw",
+    "region": "GLOBAL",
+    "calories": 28.1,
+    "protein": 1.44,
+    "carbs": 5.1,
+    "fat": 0.22,
+    "fiber": 1.88
+  },
+  {
+    "name": "Avocado, Hass, Peeled, Raw",
+    "region": "GLOBAL",
+    "calories": 223.0,
+    "protein": 1.81,
+    "carbs": 8.32,
+    "fat": 20.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Baked Beans, Original, Canned, With Pork",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 3.55
+  },
+  {
+    "name": "Beans, Baked, Canned, Vegetarian",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 4.23
+  },
+  {
+    "name": "Beans, Black, Canned, Sodium Added, Drained And Rinsed",
+    "region": "GLOBAL",
+    "calories": 115.0,
+    "protein": 6.91,
+    "carbs": 19.8,
+    "fat": 1.27,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beans, Cannellini, Canned, Sodium Added, Drained And Rinsed",
+    "region": "GLOBAL",
+    "calories": 115.0,
+    "protein": 7.41,
+    "carbs": 18.8,
+    "fat": 1.17,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beans, Cannellini, Dry",
+    "region": "GLOBAL",
+    "calories": 345.0,
+    "protein": 21.6,
+    "carbs": 59.8,
+    "fat": 2.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beans, Dry, Black (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 24.4,
+    "carbs": 0.0,
+    "fat": 1.45,
+    "fiber": 4.2
+  },
+  {
+    "name": "Beans, Dry, Brown (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 25.6,
+    "carbs": 0.0,
+    "fat": 1.12,
+    "fiber": 4.1
+  },
+  {
+    "name": "Beans, Dry, Carioca (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 25.2,
+    "carbs": 0.0,
+    "fat": 1.44,
+    "fiber": 4.5
+  },
+  {
+    "name": "Beans, Dry, Cranberry (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 24.4,
+    "carbs": 0.0,
+    "fat": 1.23,
+    "fiber": 4.3
+  },
+  {
+    "name": "Beans, Dry, Dark Red Kidney (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 25.9,
+    "carbs": 0.0,
+    "fat": 1.31,
+    "fiber": 4.3
+  },
+  {
+    "name": "Beans, Dry, Flor De Mayo (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 23.3,
+    "carbs": 0.0,
+    "fat": 0.86,
+    "fiber": 4.0
+  },
+  {
+    "name": "Beans, Dry, Great Northern (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 24.7,
+    "carbs": 0.0,
+    "fat": 1.24,
+    "fiber": 4.3
+  },
+  {
+    "name": "Beans, Dry, Light Red Kidney (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 25.0,
+    "carbs": 0.0,
+    "fat": 1.03,
+    "fiber": 4.5
+  },
+  {
+    "name": "Beans, Dry, Light Tan (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 24.6,
+    "carbs": 0.0,
+    "fat": 1.28,
+    "fiber": 4.3
+  },
+  {
+    "name": "Beans, Dry, Medium Red (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 25.5,
+    "carbs": 0.0,
+    "fat": 1.04,
+    "fiber": 4.3
+  },
+  {
+    "name": "Beans, Dry, Navy (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 24.1,
+    "carbs": 0.0,
+    "fat": 1.51,
+    "fiber": 4.3
+  },
+  {
+    "name": "Beans, Dry, Pink (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 23.4,
+    "carbs": 0.0,
+    "fat": 1.2,
+    "fiber": 4.1
+  },
+  {
+    "name": "Beans, Dry, Pinto (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 23.7,
+    "carbs": 0.0,
+    "fat": 1.24,
+    "fiber": 4.1
+  },
+  {
+    "name": "Beans, Dry, Red (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 21.3,
+    "carbs": 0.0,
+    "fat": 1.16,
+    "fiber": 4.0
+  },
+  {
+    "name": "Beans, Dry, Small Red (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 23.5,
+    "carbs": 0.0,
+    "fat": 1.28,
+    "fiber": 4.1
+  },
+  {
+    "name": "Beans, Dry, Small White (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 24.5,
+    "carbs": 0.0,
+    "fat": 1.32,
+    "fiber": 4.3
+  },
+  {
+    "name": "Beans, Dry, Tan (0% Moisture)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 26.8,
+    "carbs": 0.0,
+    "fat": 1.14,
+    "fiber": 4.4
+  },
+  {
+    "name": "Beans, Great Northern, Canned, Sodium Added, Drained And Rinsed",
+    "region": "GLOBAL",
+    "calories": 117.0,
+    "protein": 7.03,
+    "carbs": 19.3,
+    "fat": 1.27,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beans, Kidney, Dark Red, Canned, Sodium Added, Sugar Added, Drained And Rinsed",
+    "region": "GLOBAL",
+    "calories": 127.0,
+    "protein": 7.8,
+    "carbs": 21.0,
+    "fat": 1.26,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beans, Kidney, Light Red, Canned, Sodium Added, Sugar Added, Drained And Rinsed",
+    "region": "GLOBAL",
+    "calories": 127.0,
+    "protein": 7.31,
+    "carbs": 21.4,
+    "fat": 1.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beans, Navy, Canned, Sodium Added, Drained And Rinsed",
+    "region": "GLOBAL",
+    "calories": 119.0,
+    "protein": 6.57,
+    "carbs": 20.0,
+    "fat": 1.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beans, Pinto, Canned, Sodium Added, Drained And Rinsed",
+    "region": "GLOBAL",
+    "calories": 117.0,
+    "protein": 6.69,
+    "carbs": 19.6,
+    "fat": 1.27,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beans, Snap, Green, Canned, Regular Pack, Drained Solids",
+    "region": "GLOBAL",
+    "calories": 21.0,
+    "protein": 1.04,
+    "carbs": 4.11,
+    "fat": 0.39,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beans, Snap, Green, Raw",
+    "region": "GLOBAL",
+    "calories": 40.0,
+    "protein": 1.97,
+    "carbs": 7.41,
+    "fat": 0.28,
+    "fiber": 3.01
+  },
+  {
+    "name": "Beef, Chuck, Roast, Boneless, Choice, Raw",
+    "region": "GLOBAL",
+    "calories": 232.0,
+    "protein": 18.4,
+    "carbs": 0.0,
+    "fat": 17.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Flank, Steak, Boneless, Choice, Raw",
+    "region": "GLOBAL",
+    "calories": 164.0,
+    "protein": 20.1,
+    "carbs": 0.0,
+    "fat": 9.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Ground, 80% Lean Meat / 20% Fat, Raw",
+    "region": "GLOBAL",
+    "calories": 243.0,
+    "protein": 17.5,
+    "carbs": 0.0,
+    "fat": 19.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Ground, 90% Lean Meat / 10% Fat, Raw",
+    "region": "GLOBAL",
+    "calories": 185.0,
+    "protein": 18.2,
+    "carbs": 0.0,
+    "fat": 12.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Loin, Tenderloin Roast, Separable Lean Only, Boneless, Trimmed To 0\" Fat, Select, Cooked, Roasted",
+    "region": "GLOBAL",
+    "calories": 176.0,
+    "protein": 27.7,
+    "carbs": 0.0,
+    "fat": 6.36,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Loin, Top Loin Steak, Boneless, Lip-On, Separable Lean Only, Trimmed To 1/8\" Fat, Choice, Raw",
+    "region": "GLOBAL",
+    "calories": 155.0,
+    "protein": 22.8,
+    "carbs": 0.0,
+    "fat": 6.39,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Ribeye, Steak, Boneless, Choice, Raw",
+    "region": "GLOBAL",
+    "calories": 254.0,
+    "protein": 18.7,
+    "carbs": 0.0,
+    "fat": 20.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Round, Eye Of Round Roast, Boneless, Separable Lean Only, Trimmed To 0\" Fat, Select, Raw",
+    "region": "GLOBAL",
+    "calories": 512.0,
+    "protein": 23.4,
+    "carbs": 0.0,
+    "fat": 2.48,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Round, Top Round Roast, Boneless, Separable Lean Only, Trimmed To 0\" Fat, Select, Raw",
+    "region": "GLOBAL",
+    "calories": 123.0,
+    "protein": 23.7,
+    "carbs": 0.0,
+    "fat": 2.41,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Round, Top Round, Boneless, Choice, Raw",
+    "region": "GLOBAL",
+    "calories": 141.0,
+    "protein": 21.5,
+    "carbs": 0.85,
+    "fat": 5.7,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Short Loin (Ny Strip Steak), Raw",
+    "region": "GLOBAL",
+    "calories": 190.0,
+    "protein": 21.3,
+    "carbs": 0.22,
+    "fat": 11.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Short Loin, Porterhouse Steak, Separable Lean Only, Trimmed To 1/8\" Fat, Select, Raw",
+    "region": "GLOBAL",
+    "calories": 145.0,
+    "protein": 22.7,
+    "carbs": 0.0,
+    "fat": 5.32,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Short Loin, T-Bone Steak, Bone-In, Separable Lean Only, Trimmed To 1/8\" Fat, Choice, Cooked, Grilled",
+    "region": "GLOBAL",
+    "calories": 918.0,
+    "protein": 27.3,
+    "carbs": 0.0,
+    "fat": 11.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Top Sirloin Steak, Raw",
+    "region": "GLOBAL",
+    "calories": 140.0,
+    "protein": 22.0,
+    "carbs": 0.22,
+    "fat": 5.71,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beef, Tenderloin Steak, Raw",
+    "region": "GLOBAL",
+    "calories": 143.0,
+    "protein": 21.1,
+    "carbs": 0.18,
+    "fat": 6.46,
+    "fiber": 0.0
+  },
+  {
+    "name": "Beet Greens, Raw",
+    "region": "GLOBAL",
+    "calories": 26.4,
+    "protein": 1.61,
+    "carbs": 4.66,
+    "fat": 0.14,
+    "fiber": 2.58
+  },
+  {
+    "name": "Beets, Raw",
+    "region": "GLOBAL",
+    "calories": 44.6,
+    "protein": 1.69,
+    "carbs": 8.79,
+    "fat": 0.3,
+    "fiber": 3.12
+  },
+  {
+    "name": "Bison, Ground, Raw",
+    "region": "GLOBAL",
+    "calories": 159.0,
+    "protein": 19.9,
+    "carbs": -0.15,
+    "fat": 8.88,
+    "fiber": 0.0
+  },
+  {
+    "name": "Blackberries, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 1.53,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 5.3
+  },
+  {
+    "name": "Blackeye Pea, Canned, Sodium Added, Drained And Rinsed",
+    "region": "GLOBAL",
+    "calories": 116.0,
+    "protein": 6.92,
+    "carbs": 19.2,
+    "fat": 1.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Blackeye Pea, Dry",
+    "region": "GLOBAL",
+    "calories": 354.0,
+    "protein": 21.2,
+    "carbs": 61.8,
+    "fat": 2.42,
+    "fiber": 0.0
+  },
+  {
+    "name": "Blueberries, Raw",
+    "region": "GLOBAL",
+    "calories": 63.9,
+    "protein": 0.7,
+    "carbs": 14.6,
+    "fat": 0.31,
+    "fiber": 0.0
+  },
+  {
+    "name": "Bologna, Beef",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Bologna, Classic",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Bread, 100% Whole Wheat, Commercial",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Bread, Mulitgrain, Commercial",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Bread, White, Commercial",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Brussels Sprouts, Raw",
+    "region": "GLOBAL",
+    "calories": 59.5,
+    "protein": 3.98,
+    "carbs": 9.62,
+    "fat": 0.56,
+    "fiber": 4.78
+  },
+  {
+    "name": "Buckwheat, Whole Grain",
+    "region": "GLOBAL",
+    "calories": 356.0,
+    "protein": 11.1,
+    "carbs": 71.1,
+    "fat": 3.04,
+    "fiber": 4.05
+  },
+  {
+    "name": "Bulgur, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 372.0,
+    "protein": 11.8,
+    "carbs": 75.9,
+    "fat": 2.42,
+    "fiber": 11.7
+  },
+  {
+    "name": "Butter, Stick, Salted",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 82.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Butter, Stick, Unsalted",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 81.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Buttermilk, Low Fat",
+    "region": "GLOBAL",
+    "calories": 42.8,
+    "protein": 3.46,
+    "carbs": 4.81,
+    "fat": 1.08,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cabbage, Bok Choy, Raw",
+    "region": "GLOBAL",
+    "calories": 20.3,
+    "protein": 1.02,
+    "carbs": 3.51,
+    "fat": 0.23,
+    "fiber": 1.26
+  },
+  {
+    "name": "Cabbage, Green, Raw",
+    "region": "GLOBAL",
+    "calories": 31.4,
+    "protein": 0.96,
+    "carbs": 6.38,
+    "fat": 0.23,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cabbage, Napa, Leaf, Destemmed, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 1.06,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 1.2
+  },
+  {
+    "name": "Cabbage, Red, Raw",
+    "region": "GLOBAL",
+    "calories": 34.1,
+    "protein": 1.24,
+    "carbs": 6.79,
+    "fat": 0.21,
+    "fiber": 0.0
+  },
+  {
+    "name": "Carrots, Baby, Raw",
+    "region": "GLOBAL",
+    "calories": 40.8,
+    "protein": 0.81,
+    "carbs": 9.08,
+    "fat": 0.14,
+    "fiber": 2.69
+  },
+  {
+    "name": "Carrots, Frozen, Unprepared",
+    "region": "GLOBAL",
+    "calories": 37.0,
+    "protein": 0.81,
+    "carbs": 7.92,
+    "fat": 0.47,
+    "fiber": 3.2
+  },
+  {
+    "name": "Carrots, Mature, Raw",
+    "region": "GLOBAL",
+    "calories": 48.0,
+    "protein": 0.94,
+    "carbs": 10.3,
+    "fat": 0.35,
+    "fiber": 3.1
+  },
+  {
+    "name": "Cauliflower, Raw",
+    "region": "GLOBAL",
+    "calories": 27.6,
+    "protein": 1.64,
+    "carbs": 4.72,
+    "fat": 0.24,
+    "fiber": 1.95
+  },
+  {
+    "name": "Celery, Raw",
+    "region": "GLOBAL",
+    "calories": 16.7,
+    "protein": 0.49,
+    "carbs": 3.32,
+    "fat": 0.16,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, American, Restaurant",
+    "region": "GLOBAL",
+    "calories": 375.0,
+    "protein": 17.5,
+    "carbs": 6.35,
+    "fat": 31.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Cheddar",
+    "region": "GLOBAL",
+    "calories": 408.0,
+    "protein": 23.3,
+    "carbs": 2.44,
+    "fat": 34.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Cotija, Solid",
+    "region": "GLOBAL",
+    "calories": 351.0,
+    "protein": 23.8,
+    "carbs": 2.72,
+    "fat": 27.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Cottage, Lowfat, 2% Milkfat",
+    "region": "GLOBAL",
+    "calories": 84.0,
+    "protein": 11.0,
+    "carbs": 4.31,
+    "fat": 2.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Dry White, Queso Seco",
+    "region": "GLOBAL",
+    "calories": 1360.0,
+    "protein": 24.5,
+    "carbs": 2.07,
+    "fat": 24.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Feta, Whole Milk, Crumbled",
+    "region": "GLOBAL",
+    "calories": 273.0,
+    "protein": 19.7,
+    "carbs": 5.58,
+    "fat": 19.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Monterey Jack, Solid",
+    "region": "GLOBAL",
+    "calories": 392.0,
+    "protein": 22.6,
+    "carbs": 1.9,
+    "fat": 32.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Mozzarella, Low Moisture, Part-Skim",
+    "region": "GLOBAL",
+    "calories": 1240.0,
+    "protein": 23.7,
+    "carbs": 4.44,
+    "fat": 20.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Oaxaca, Solid",
+    "region": "GLOBAL",
+    "calories": 297.0,
+    "protein": 22.1,
+    "carbs": 2.4,
+    "fat": 22.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Parmesan, Grated",
+    "region": "GLOBAL",
+    "calories": 421.0,
+    "protein": 29.6,
+    "carbs": 12.4,
+    "fat": 28.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Parmesan, Grated, Refrigerated",
+    "region": "GLOBAL",
+    "calories": 403.0,
+    "protein": 30.1,
+    "carbs": 4.33,
+    "fat": 29.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Pasteurized Process Cheese Food Or Product, American, Singles",
+    "region": "GLOBAL",
+    "calories": 310.0,
+    "protein": 15.6,
+    "carbs": 8.19,
+    "fat": 23.9,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Pasteurized Process, American, Vitamin D Fortified",
+    "region": "GLOBAL",
+    "calories": 1530.0,
+    "protein": 18.0,
+    "carbs": 5.27,
+    "fat": 30.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Provolone, Sliced",
+    "region": "GLOBAL",
+    "calories": 357.0,
+    "protein": 23.5,
+    "carbs": 2.45,
+    "fat": 28.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Queso Fresco, Solid",
+    "region": "GLOBAL",
+    "calories": 298.0,
+    "protein": 18.9,
+    "carbs": 2.96,
+    "fat": 23.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Ricotta, Whole Milk",
+    "region": "GLOBAL",
+    "calories": 657.0,
+    "protein": 7.81,
+    "carbs": 6.86,
+    "fat": 11.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cheese, Swiss",
+    "region": "GLOBAL",
+    "calories": 393.0,
+    "protein": 27.0,
+    "carbs": 1.44,
+    "fat": 31.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cherries, Sweet, Dark Red, Raw",
+    "region": "GLOBAL",
+    "calories": 70.5,
+    "protein": 1.04,
+    "carbs": 16.2,
+    "fat": 0.19,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chia Seeds, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 517.0,
+    "protein": 17.0,
+    "carbs": 38.3,
+    "fat": 32.9,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chicken, Breast, Boneless, Skinless, Raw",
+    "region": "GLOBAL",
+    "calories": 106.0,
+    "protein": 22.5,
+    "carbs": 0.0,
+    "fat": 1.93,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chicken, Breast, Meat And Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 127.0,
+    "protein": 21.4,
+    "carbs": -0.43,
+    "fat": 4.78,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chicken, Broiler Or Fryers, Breast, Skinless, Boneless, Meat Only, Cooked, Braised",
+    "region": "GLOBAL",
+    "calories": 166.0,
+    "protein": 32.1,
+    "carbs": 0.0,
+    "fat": 3.24,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chicken, Broilers Or Fryers, Drumstick, Meat Only, Cooked, Braised",
+    "region": "GLOBAL",
+    "calories": 652.0,
+    "protein": 23.9,
+    "carbs": 0.0,
+    "fat": 5.95,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chicken, Drumstick, Meat And Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 125.0,
+    "protein": 18.4,
+    "carbs": -0.47,
+    "fat": 5.94,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chicken, Ground, With Additives, Raw",
+    "region": "GLOBAL",
+    "calories": 133.0,
+    "protein": 17.9,
+    "carbs": 0.0,
+    "fat": 7.16,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chicken, Thigh, Boneless, Skinless, Raw",
+    "region": "GLOBAL",
+    "calories": 144.0,
+    "protein": 18.6,
+    "carbs": 0.0,
+    "fat": 7.92,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chicken, Thigh, Meat And Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 188.0,
+    "protein": 17.1,
+    "carbs": -0.17,
+    "fat": 13.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chicken, Wing, Meat And Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 168.0,
+    "protein": 18.4,
+    "carbs": -0.46,
+    "fat": 10.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chickpeas (Garbanzo Beans, Bengal Gram), Canned, Sodium Added, Drained And Rinsed",
+    "region": "GLOBAL",
+    "calories": 137.0,
+    "protein": 7.02,
+    "carbs": 20.3,
+    "fat": 3.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Chickpeas, (Garbanzo Beans, Bengal Gram), Dry",
+    "region": "GLOBAL",
+    "calories": 383.0,
+    "protein": 21.3,
+    "carbs": 60.4,
+    "fat": 6.27,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cod, Pacific Or Alaskan, Frozen, Wild Caught",
+    "region": "GLOBAL",
+    "calories": 60.8,
+    "protein": 14.2,
+    "carbs": 0.52,
+    "fat": 0.22,
+    "fiber": 0.0
+  },
+  {
+    "name": "Collards, Raw",
+    "region": "GLOBAL",
+    "calories": 46.9,
+    "protein": 2.97,
+    "carbs": 7.02,
+    "fat": 0.77,
+    "fiber": 3.82
+  },
+  {
+    "name": "Cookies, Oatmeal, Soft, With Raisins",
+    "region": "GLOBAL",
+    "calories": 430.0,
+    "protein": 5.79,
+    "carbs": 69.6,
+    "fat": 14.3,
+    "fiber": 3.3
+  },
+  {
+    "name": "Corn Flour, Masa Harina, White Or Yellow, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 376.0,
+    "protein": 7.56,
+    "carbs": 76.7,
+    "fat": 4.34,
+    "fiber": 7.04
+  },
+  {
+    "name": "Corn, Sweet, Yellow And White Kernels,  Fresh, Raw",
+    "region": "GLOBAL",
+    "calories": 84.6,
+    "protein": 2.79,
+    "carbs": 14.7,
+    "fat": 1.63,
+    "fiber": 2.43
+  },
+  {
+    "name": "Cottage Cheese, Full Fat, Large Or Small Curd",
+    "region": "GLOBAL",
+    "calories": 103.0,
+    "protein": 11.6,
+    "carbs": 4.6,
+    "fat": 4.22,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cranberries, Dried, Sweetened",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 4.36
+  },
+  {
+    "name": "Cranberry Juice, Not Fortified, From Concentrate, Shelf Stable",
+    "region": "GLOBAL",
+    "calories": 32.1,
+    "protein": 0.0,
+    "carbs": 7.26,
+    "fat": 0.34,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cream Cheese, Full Fat, Block",
+    "region": "GLOBAL",
+    "calories": 343.0,
+    "protein": 5.79,
+    "carbs": 4.56,
+    "fat": 33.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cream, Heavy",
+    "region": "GLOBAL",
+    "calories": 343.0,
+    "protein": 2.02,
+    "carbs": 3.8,
+    "fat": 35.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cream, Sour, Full Fat",
+    "region": "GLOBAL",
+    "calories": 196.0,
+    "protein": 3.07,
+    "carbs": 5.56,
+    "fat": 18.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Crustaceans, Crab, Blue Swimming, Lump, Pasteurized, Refrigerated",
+    "region": "GLOBAL",
+    "calories": 81.0,
+    "protein": 18.6,
+    "carbs": 0.0,
+    "fat": 0.81,
+    "fiber": 0.0
+  },
+  {
+    "name": "Crustaceans, Shrimp, Farm Raised, Raw",
+    "region": "GLOBAL",
+    "calories": 71.4,
+    "protein": 15.6,
+    "carbs": 0.48,
+    "fat": 0.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Cucumber, With Peel, Raw",
+    "region": "GLOBAL",
+    "calories": 15.9,
+    "protein": 0.62,
+    "carbs": 2.95,
+    "fat": 0.18,
+    "fiber": 0.0
+  },
+  {
+    "name": "Dressing, Ranch",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Edamame, Frozen, Prepared",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 6.23
+  },
+  {
+    "name": "Egg, White, Dried",
+    "region": "GLOBAL",
+    "calories": 1570.0,
+    "protein": 79.9,
+    "carbs": 6.02,
+    "fat": 0.65,
+    "fiber": 0.0
+  },
+  {
+    "name": "Egg, White, Raw, Frozen, Pasteurized",
+    "region": "GLOBAL",
+    "calories": 48.0,
+    "protein": 10.1,
+    "carbs": 0.74,
+    "fat": 0.16,
+    "fiber": 0.0
+  },
+  {
+    "name": "Egg, Whole, Dried",
+    "region": "GLOBAL",
+    "calories": 2410.0,
+    "protein": 48.1,
+    "carbs": 1.87,
+    "fat": 39.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Egg, Whole, Raw, Frozen, Pasteurized",
+    "region": "GLOBAL",
+    "calories": 627.0,
+    "protein": 12.3,
+    "carbs": 0.91,
+    "fat": 10.3,
+    "fiber": 0.0
+  },
+  {
+    "name": "Egg, Yolk, Dried",
+    "region": "GLOBAL",
+    "calories": 654.0,
+    "protein": 34.2,
+    "carbs": 1.07,
+    "fat": 55.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Egg, Yolk, Raw, Frozen, Pasteurized",
+    "region": "GLOBAL",
+    "calories": 296.0,
+    "protein": 15.6,
+    "carbs": 0.59,
+    "fat": 25.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Eggplant, Raw",
+    "region": "GLOBAL",
+    "calories": 26.1,
+    "protein": 0.85,
+    "carbs": 5.4,
+    "fat": 0.12,
+    "fiber": 2.45
+  },
+  {
+    "name": "Eggs, Grade A, Large, Egg White",
+    "region": "GLOBAL",
+    "calories": 231.0,
+    "protein": 10.7,
+    "carbs": 2.36,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Eggs, Grade A, Large, Egg Whole",
+    "region": "GLOBAL",
+    "calories": 148.0,
+    "protein": 12.4,
+    "carbs": 0.96,
+    "fat": 9.96,
+    "fiber": 0.0
+  },
+  {
+    "name": "Eggs, Grade A, Large, Egg Yolk",
+    "region": "GLOBAL",
+    "calories": 334.0,
+    "protein": 16.2,
+    "carbs": 1.02,
+    "fat": 28.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Einkorn, Grain, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 369.0,
+    "protein": 15.1,
+    "carbs": 68.7,
+    "fat": 3.81,
+    "fiber": 8.91
+  },
+  {
+    "name": "Farro, Pearled, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 367.0,
+    "protein": 12.6,
+    "carbs": 72.1,
+    "fat": 3.1,
+    "fiber": 7.31
+  },
+  {
+    "name": "Fennel, Bulb, Raw",
+    "region": "GLOBAL",
+    "calories": 26.9,
+    "protein": 0.92,
+    "carbs": 5.49,
+    "fat": 0.14,
+    "fiber": 2.05
+  },
+  {
+    "name": "Figs, Dried, Uncooked",
+    "region": "GLOBAL",
+    "calories": 1040.0,
+    "protein": 3.3,
+    "carbs": 63.9,
+    "fat": 0.92,
+    "fiber": 9.8
+  },
+  {
+    "name": "Fish, Catfish, Farm Raised, Raw",
+    "region": "GLOBAL",
+    "calories": 129.0,
+    "protein": 16.5,
+    "carbs": 0.0,
+    "fat": 7.31,
+    "fiber": 0.0
+  },
+  {
+    "name": "Fish, Cod, Atlantic, Wild Caught, Raw",
+    "region": "GLOBAL",
+    "calories": 66.0,
+    "protein": 16.1,
+    "carbs": 0.0,
+    "fat": 0.67,
+    "fiber": 0.0
+  },
+  {
+    "name": "Fish, Salmon, Atlantic, Farm Raised, Raw",
+    "region": "GLOBAL",
+    "calories": 197.0,
+    "protein": 20.3,
+    "carbs": 0.0,
+    "fat": 13.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Fish, Salmon, Sockeye, Wild Caught, Raw",
+    "region": "GLOBAL",
+    "calories": 130.0,
+    "protein": 22.3,
+    "carbs": 0.0,
+    "fat": 4.94,
+    "fiber": 0.0
+  },
+  {
+    "name": "Fish, Tilapia, Farm Raised, Raw",
+    "region": "GLOBAL",
+    "calories": 94.7,
+    "protein": 19.0,
+    "carbs": 0.0,
+    "fat": 2.48,
+    "fiber": 0.0
+  },
+  {
+    "name": "Fish, Tuna, Light, Canned In Water, Drained Solids",
+    "region": "GLOBAL",
+    "calories": 90.0,
+    "protein": 19.0,
+    "carbs": 0.08,
+    "fat": 0.94,
+    "fiber": 0.0
+  },
+  {
+    "name": "Flaxseed, Ground",
+    "region": "GLOBAL",
+    "calories": 545.0,
+    "protein": 18.0,
+    "carbs": 34.4,
+    "fat": 37.3,
+    "fiber": 23.1
+  },
+  {
+    "name": "Flour, 00",
+    "region": "GLOBAL",
+    "calories": 357.0,
+    "protein": 11.4,
+    "carbs": 74.4,
+    "fat": 1.52,
+    "fiber": 2.66
+  },
+  {
+    "name": "Flour, Almond",
+    "region": "GLOBAL",
+    "calories": 622.0,
+    "protein": 26.2,
+    "carbs": 16.2,
+    "fat": 50.2,
+    "fiber": 9.27
+  },
+  {
+    "name": "Flour, Amaranth",
+    "region": "GLOBAL",
+    "calories": 384.0,
+    "protein": 13.2,
+    "carbs": 68.8,
+    "fat": 6.24,
+    "fiber": 7.21
+  },
+  {
+    "name": "Flour, Barley",
+    "region": "GLOBAL",
+    "calories": 367.0,
+    "protein": 8.72,
+    "carbs": 77.4,
+    "fat": 2.45,
+    "fiber": 12.8
+  },
+  {
+    "name": "Flour, Bread, White, Enriched, Unbleached",
+    "region": "GLOBAL",
+    "calories": 363.0,
+    "protein": 14.3,
+    "carbs": 72.8,
+    "fat": 1.65,
+    "fiber": 0.0
+  },
+  {
+    "name": "Flour, Buckwheat",
+    "region": "GLOBAL",
+    "calories": 358.0,
+    "protein": 8.88,
+    "carbs": 75.0,
+    "fat": 2.48,
+    "fiber": 10.4
+  },
+  {
+    "name": "Flour, Cassava",
+    "region": "GLOBAL",
+    "calories": 357.0,
+    "protein": 0.92,
+    "carbs": 87.3,
+    "fat": 0.49,
+    "fiber": 4.83
+  },
+  {
+    "name": "Flour, Chestnut",
+    "region": "GLOBAL",
+    "calories": 385.0,
+    "protein": 5.29,
+    "carbs": 80.5,
+    "fat": 4.64,
+    "fiber": 8.71
+  },
+  {
+    "name": "Flour, Coconut",
+    "region": "GLOBAL",
+    "calories": 438.0,
+    "protein": 16.1,
+    "carbs": 58.9,
+    "fat": 15.3,
+    "fiber": 34.2
+  },
+  {
+    "name": "Flour, Corn, Yellow, Fine Meal, Enriched",
+    "region": "GLOBAL",
+    "calories": 364.0,
+    "protein": 6.2,
+    "carbs": 80.8,
+    "fat": 1.74,
+    "fiber": 4.3
+  },
+  {
+    "name": "Flour, Oat, Whole Grain",
+    "region": "GLOBAL",
+    "calories": 389.0,
+    "protein": 13.2,
+    "carbs": 69.9,
+    "fat": 6.31,
+    "fiber": 10.5
+  },
+  {
+    "name": "Flour, Pastry, Unenriched, Unbleached",
+    "region": "GLOBAL",
+    "calories": 358.0,
+    "protein": 8.75,
+    "carbs": 77.2,
+    "fat": 1.64,
+    "fiber": 0.0
+  },
+  {
+    "name": "Flour, Potato",
+    "region": "GLOBAL",
+    "calories": 361.0,
+    "protein": 8.11,
+    "carbs": 79.9,
+    "fat": 0.95,
+    "fiber": 5.4
+  },
+  {
+    "name": "Flour, Quinoa",
+    "region": "GLOBAL",
+    "calories": 385.0,
+    "protein": 11.9,
+    "carbs": 69.5,
+    "fat": 6.6,
+    "fiber": 6.3
+  },
+  {
+    "name": "Flour, Rice, Brown",
+    "region": "GLOBAL",
+    "calories": 1580.0,
+    "protein": 7.19,
+    "carbs": 75.5,
+    "fat": 3.85,
+    "fiber": 0.0
+  },
+  {
+    "name": "Flour, Rice, Glutinous",
+    "region": "GLOBAL",
+    "calories": 358.0,
+    "protein": 6.69,
+    "carbs": 80.1,
+    "fat": 1.16,
+    "fiber": 0.0
+  },
+  {
+    "name": "Flour, Rice, White, Unenriched",
+    "region": "GLOBAL",
+    "calories": 1500.0,
+    "protein": 6.94,
+    "carbs": 79.8,
+    "fat": 1.3,
+    "fiber": 0.5
+  },
+  {
+    "name": "Flour, Rye",
+    "region": "GLOBAL",
+    "calories": 359.0,
+    "protein": 8.4,
+    "carbs": 77.2,
+    "fat": 1.91,
+    "fiber": 13.7
+  },
+  {
+    "name": "Flour, Semolina, Coarse And Semi-Coarse",
+    "region": "GLOBAL",
+    "calories": 357.0,
+    "protein": 11.7,
+    "carbs": 73.8,
+    "fat": 1.6,
+    "fiber": 3.22
+  },
+  {
+    "name": "Flour, Semolina, Fine",
+    "region": "GLOBAL",
+    "calories": 358.0,
+    "protein": 13.3,
+    "carbs": 72.0,
+    "fat": 1.84,
+    "fiber": 3.68
+  },
+  {
+    "name": "Flour, Sorghum",
+    "region": "GLOBAL",
+    "calories": 375.0,
+    "protein": 8.27,
+    "carbs": 77.4,
+    "fat": 3.59,
+    "fiber": 6.02
+  },
+  {
+    "name": "Flour, Soy, Defatted",
+    "region": "GLOBAL",
+    "calories": 366.0,
+    "protein": 51.1,
+    "carbs": 32.9,
+    "fat": 3.33,
+    "fiber": 0.0
+  },
+  {
+    "name": "Flour, Soy, Full-Fat",
+    "region": "GLOBAL",
+    "calories": 452.0,
+    "protein": 38.6,
+    "carbs": 27.9,
+    "fat": 20.7,
+    "fiber": 0.0
+  },
+  {
+    "name": "Flour, Spelt, Whole Grain",
+    "region": "GLOBAL",
+    "calories": 364.0,
+    "protein": 14.5,
+    "carbs": 70.7,
+    "fat": 2.54,
+    "fiber": 9.34
+  },
+  {
+    "name": "Flour, Wheat, All-Purpose, Enriched, Bleached",
+    "region": "GLOBAL",
+    "calories": 1530.0,
+    "protein": 10.9,
+    "carbs": 77.3,
+    "fat": 1.48,
+    "fiber": 0.0
+  },
+  {
+    "name": "Flour, Wheat, All-Purpose, Enriched, Unbleached",
+    "region": "GLOBAL",
+    "calories": 1500.0,
+    "protein": 13.1,
+    "carbs": 73.2,
+    "fat": 1.48,
+    "fiber": 0.0
+  },
+  {
+    "name": "Flour, Wheat, All-Purpose, Unenriched, Unbleached",
+    "region": "GLOBAL",
+    "calories": 362.0,
+    "protein": 12.0,
+    "carbs": 74.6,
+    "fat": 1.7,
+    "fiber": 3.0
+  },
+  {
+    "name": "Flour, Whole Wheat, Unenriched",
+    "region": "GLOBAL",
+    "calories": 370.0,
+    "protein": 15.1,
+    "carbs": 71.2,
+    "fat": 2.73,
+    "fiber": 10.6
+  },
+  {
+    "name": "Fonio, Grain, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 369.0,
+    "protein": 7.17,
+    "carbs": 81.3,
+    "fat": 1.69,
+    "fiber": 2.2
+  },
+  {
+    "name": "Frankfurter, Beef, Unheated",
+    "region": "GLOBAL",
+    "calories": 314.0,
+    "protein": 11.7,
+    "carbs": 2.89,
+    "fat": 28.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Grape Juice, Purple, With Added Vitamin C, From Concentrate, Shelf Stable",
+    "region": "GLOBAL",
+    "calories": 66.1,
+    "protein": 0.26,
+    "carbs": 15.6,
+    "fat": 0.29,
+    "fiber": 0.0
+  },
+  {
+    "name": "Grape Juice, White, With Added Vitamin C, From Concentrate, Shelf Stable",
+    "region": "GLOBAL",
+    "calories": 66.1,
+    "protein": 0.09,
+    "carbs": 15.8,
+    "fat": 0.27,
+    "fiber": 0.0
+  },
+  {
+    "name": "Grapefruit Juice, Red, Not Fortified, Not From Concentrate, Refrigerated",
+    "region": "GLOBAL",
+    "calories": 41.1,
+    "protein": 0.57,
+    "carbs": 9.1,
+    "fat": 0.27,
+    "fiber": 0.0
+  },
+  {
+    "name": "Grapefruit Juice, White, Canned Or Bottled, Unsweetened",
+    "region": "GLOBAL",
+    "calories": 157.0,
+    "protein": 0.55,
+    "carbs": 7.59,
+    "fat": 0.7,
+    "fiber": 0.2
+  },
+  {
+    "name": "Grapefruit, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.65
+  },
+  {
+    "name": "Grapes, Green, Seedless, Raw",
+    "region": "GLOBAL",
+    "calories": 80.1,
+    "protein": 0.9,
+    "carbs": 18.6,
+    "fat": 0.23,
+    "fiber": 0.0
+  },
+  {
+    "name": "Grapes, Red, Seedless, Raw",
+    "region": "GLOBAL",
+    "calories": 85.9,
+    "protein": 0.91,
+    "carbs": 20.2,
+    "fat": 0.16,
+    "fiber": 0.0
+  },
+  {
+    "name": "Green Onion, (Scallion), Bulb And Greens, Root Removed, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.67,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 2.3
+  },
+  {
+    "name": "Halibut, Frozen, Wild Caught",
+    "region": "GLOBAL",
+    "calories": 81.3,
+    "protein": 19.1,
+    "carbs": -0.06,
+    "fat": 0.59,
+    "fiber": 0.0
+  },
+  {
+    "name": "Ham, Sliced, Pre-Packaged, Deli Meat (96%Fat Free, Water Added)",
+    "region": "GLOBAL",
+    "calories": 443.0,
+    "protein": 16.7,
+    "carbs": 0.27,
+    "fat": 3.73,
+    "fiber": 0.0
+  },
+  {
+    "name": "Ham, Sliced, Restaurant",
+    "region": "GLOBAL",
+    "calories": 121.0,
+    "protein": 19.6,
+    "carbs": 2.36,
+    "fat": 3.68,
+    "fiber": 0.0
+  },
+  {
+    "name": "Hummus, Commercial",
+    "region": "GLOBAL",
+    "calories": 960.0,
+    "protein": 7.35,
+    "carbs": 14.9,
+    "fat": 17.1,
+    "fiber": 5.4
+  },
+  {
+    "name": "Juice, Pomegranate, From Concentrate, Shelf-Stable",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Juice, Prune, Shelf-Stable",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.42,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Juice, Tart Cherry, From Concentrate, Shelf-Stable",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.15,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Kale, Frozen, Cooked, Boiled, Drained, Without Salt",
+    "region": "GLOBAL",
+    "calories": 36.0,
+    "protein": 2.94,
+    "carbs": 5.3,
+    "fat": 1.21,
+    "fiber": 0.0
+  },
+  {
+    "name": "Ketchup, Restaurant",
+    "region": "GLOBAL",
+    "calories": 117.0,
+    "protein": 1.11,
+    "carbs": 26.8,
+    "fat": 0.55,
+    "fiber": 0.0
+  },
+  {
+    "name": "Khorasan, Grain, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 371.0,
+    "protein": 14.8,
+    "carbs": 71.8,
+    "fat": 2.8,
+    "fiber": 10.5
+  },
+  {
+    "name": "Kiwifruit (Kiwi), Green, Peeled, Raw",
+    "region": "GLOBAL",
+    "calories": 65.1,
+    "protein": 1.01,
+    "carbs": 13.8,
+    "fat": 0.64,
+    "fiber": 2.13
+  },
+  {
+    "name": "Lamb, Ground, Raw",
+    "region": "GLOBAL",
+    "calories": 237.0,
+    "protein": 17.5,
+    "carbs": -0.25,
+    "fat": 18.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Leeks, Bulb And Greens, Root Removed, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 1.47,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 3.0
+  },
+  {
+    "name": "Lentils, Dry",
+    "region": "GLOBAL",
+    "calories": 360.0,
+    "protein": 23.6,
+    "carbs": 62.2,
+    "fat": 1.92,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lettuce, Iceberg, Raw",
+    "region": "GLOBAL",
+    "calories": 17.1,
+    "protein": 0.74,
+    "carbs": 3.37,
+    "fat": 0.07,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lettuce, Leaf, Green, Raw",
+    "region": "GLOBAL",
+    "calories": 22.0,
+    "protein": 1.09,
+    "carbs": 4.07,
+    "fat": 0.16,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lettuce, Leaf, Red, Raw",
+    "region": "GLOBAL",
+    "calories": 17.5,
+    "protein": 0.88,
+    "carbs": 3.26,
+    "fat": 0.11,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lettuce, Romaine, Green, Raw",
+    "region": "GLOBAL",
+    "calories": 20.8,
+    "protein": 0.98,
+    "carbs": 4.06,
+    "fat": 0.07,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lobster, Tail Only, Frozen, Wild Caught",
+    "region": "GLOBAL",
+    "calories": 58.8,
+    "protein": 13.0,
+    "carbs": 0.89,
+    "fat": 0.37,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lunchmeat, Chicken Breast, Sliced",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lunchmeat, Ham, Black Forest, Sliced",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lunchmeat, Roast Beef, Sliced, Prepackaged",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Lunchmeat, Turkey, Oven Roasted, Sliced",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Mahi Mahi, Frozen, Wild Caught",
+    "region": "GLOBAL",
+    "calories": 83.7,
+    "protein": 19.8,
+    "carbs": 0.29,
+    "fat": 0.38,
+    "fiber": 0.0
+  },
+  {
+    "name": "Mandarin, Seedless, Peeled, Raw",
+    "region": "GLOBAL",
+    "calories": 62.0,
+    "protein": 1.04,
+    "carbs": 13.4,
+    "fat": 0.46,
+    "fiber": 1.33
+  },
+  {
+    "name": "Mango, Ataulfo, Peeled, Raw",
+    "region": "GLOBAL",
+    "calories": 78.5,
+    "protein": 0.69,
+    "carbs": 17.4,
+    "fat": 0.68,
+    "fiber": 1.29
+  },
+  {
+    "name": "Mango, Tommy Atkins, Peeled, Raw",
+    "region": "GLOBAL",
+    "calories": 68.5,
+    "protein": 0.56,
+    "carbs": 15.3,
+    "fat": 0.57,
+    "fiber": 1.75
+  },
+  {
+    "name": "Mayonnaise, Regular",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Melons, Honeydew, Raw",
+    "region": "GLOBAL",
+    "calories": 36.7,
+    "protein": 0.53,
+    "carbs": 8.15,
+    "fat": 0.22,
+    "fiber": 0.0
+  },
+  {
+    "name": "Milk, Lowfat, Fluid, 1% Milkfat, With Added Vitamin A And Vitamin D",
+    "region": "GLOBAL",
+    "calories": 179.0,
+    "protein": 3.38,
+    "carbs": 5.18,
+    "fat": 0.95,
+    "fiber": 0.0
+  },
+  {
+    "name": "Milk, Nonfat, Fluid, With Added Vitamin A And Vitamin D (Fat Free Or Skim)",
+    "region": "GLOBAL",
+    "calories": 34.0,
+    "protein": 3.43,
+    "carbs": 4.92,
+    "fat": 0.08,
+    "fiber": 0.0
+  },
+  {
+    "name": "Milk, Reduced Fat, Fluid, 2% Milkfat, With Added Vitamin A And Vitamin D",
+    "region": "GLOBAL",
+    "calories": 209.0,
+    "protein": 3.36,
+    "carbs": 4.9,
+    "fat": 1.9,
+    "fiber": 0.0
+  },
+  {
+    "name": "Milk, Whole, 3.25% Milkfat, With Added Vitamin D",
+    "region": "GLOBAL",
+    "calories": 60.0,
+    "protein": 3.27,
+    "carbs": 4.63,
+    "fat": 3.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Millet, Whole Grain",
+    "region": "GLOBAL",
+    "calories": 376.0,
+    "protein": 10.0,
+    "carbs": 74.4,
+    "fat": 4.19,
+    "fiber": 2.62
+  },
+  {
+    "name": "Mushroom, Beech",
+    "region": "GLOBAL",
+    "calories": 39.8,
+    "protein": 2.18,
+    "carbs": 6.76,
+    "fat": 0.45,
+    "fiber": 3.14
+  },
+  {
+    "name": "Mushroom, Crimini",
+    "region": "GLOBAL",
+    "calories": 30.2,
+    "protein": 3.09,
+    "carbs": 4.01,
+    "fat": 0.2,
+    "fiber": 1.78
+  },
+  {
+    "name": "Mushroom, Enoki",
+    "region": "GLOBAL",
+    "calories": 44.4,
+    "protein": 2.42,
+    "carbs": 8.14,
+    "fat": 0.24,
+    "fiber": 2.94
+  },
+  {
+    "name": "Mushroom, King Oyster",
+    "region": "GLOBAL",
+    "calories": 46.4,
+    "protein": 2.41,
+    "carbs": 8.5,
+    "fat": 0.31,
+    "fiber": 3.01
+  },
+  {
+    "name": "Mushroom, Lion'S Mane",
+    "region": "GLOBAL",
+    "calories": 42.7,
+    "protein": 2.5,
+    "carbs": 7.59,
+    "fat": 0.26,
+    "fiber": 4.38
+  },
+  {
+    "name": "Mushroom, Maitake",
+    "region": "GLOBAL",
+    "calories": 37.6,
+    "protein": 2.2,
+    "carbs": 6.6,
+    "fat": 0.27,
+    "fiber": 3.07
+  },
+  {
+    "name": "Mushroom, Oyster",
+    "region": "GLOBAL",
+    "calories": 41.0,
+    "protein": 2.9,
+    "carbs": 6.94,
+    "fat": 0.19,
+    "fiber": 2.85
+  },
+  {
+    "name": "Mushroom, Pioppini",
+    "region": "GLOBAL",
+    "calories": 39.2,
+    "protein": 3.5,
+    "carbs": 5.76,
+    "fat": 0.24,
+    "fiber": 2.75
+  },
+  {
+    "name": "Mushroom, Portabella",
+    "region": "GLOBAL",
+    "calories": 32.4,
+    "protein": 2.75,
+    "carbs": 4.66,
+    "fat": 0.31,
+    "fiber": 1.88
+  },
+  {
+    "name": "Mushrooms, Shiitake",
+    "region": "GLOBAL",
+    "calories": 44.1,
+    "protein": 2.41,
+    "carbs": 8.17,
+    "fat": 0.2,
+    "fiber": 4.17
+  },
+  {
+    "name": "Mushrooms, White Button",
+    "region": "GLOBAL",
+    "calories": 31.2,
+    "protein": 2.89,
+    "carbs": 4.08,
+    "fat": 0.37,
+    "fiber": 1.72
+  },
+  {
+    "name": "Mustard, Prepared, Yellow",
+    "region": "GLOBAL",
+    "calories": 254.0,
+    "protein": 4.25,
+    "carbs": 5.3,
+    "fat": 3.38,
+    "fiber": 4.3
+  },
+  {
+    "name": "Nuts, Almonds, Dry Roasted, With Salt Added",
+    "region": "GLOBAL",
+    "calories": 620.0,
+    "protein": 20.4,
+    "carbs": 16.2,
+    "fat": 57.8,
+    "fiber": 11.0
+  },
+  {
+    "name": "Nuts, Almonds, Whole, Raw",
+    "region": "GLOBAL",
+    "calories": 626.0,
+    "protein": 21.5,
+    "carbs": 20.0,
+    "fat": 51.1,
+    "fiber": 10.8
+  },
+  {
+    "name": "Nuts, Brazilnuts, Raw",
+    "region": "GLOBAL",
+    "calories": 664.0,
+    "protein": 15.0,
+    "carbs": 21.6,
+    "fat": 57.4,
+    "fiber": 5.98
+  },
+  {
+    "name": "Nuts, Cashew Nuts, Raw",
+    "region": "GLOBAL",
+    "calories": 565.0,
+    "protein": 17.4,
+    "carbs": 36.3,
+    "fat": 38.9,
+    "fiber": 4.1
+  },
+  {
+    "name": "Nuts, Hazelnuts Or Filberts, Raw",
+    "region": "GLOBAL",
+    "calories": 641.0,
+    "protein": 13.5,
+    "carbs": 26.5,
+    "fat": 53.5,
+    "fiber": 8.41
+  },
+  {
+    "name": "Nuts, Macadamia Nuts, Raw",
+    "region": "GLOBAL",
+    "calories": 712.0,
+    "protein": 7.79,
+    "carbs": 24.1,
+    "fat": 64.9,
+    "fiber": 7.56
+  },
+  {
+    "name": "Nuts, Pecans, Halves, Raw",
+    "region": "GLOBAL",
+    "calories": 750.0,
+    "protein": 9.96,
+    "carbs": 12.7,
+    "fat": 73.3,
+    "fiber": 5.79
+  },
+  {
+    "name": "Nuts, Pine Nuts, Raw",
+    "region": "GLOBAL",
+    "calories": 689.0,
+    "protein": 15.7,
+    "carbs": 18.6,
+    "fat": 61.3,
+    "fiber": 3.94
+  },
+  {
+    "name": "Nuts, Pistachio Nuts, Raw",
+    "region": "GLOBAL",
+    "calories": 598.0,
+    "protein": 20.5,
+    "carbs": 27.7,
+    "fat": 45.0,
+    "fiber": 6.97
+  },
+  {
+    "name": "Nuts, Walnuts, English, Halves, Raw",
+    "region": "GLOBAL",
+    "calories": 730.0,
+    "protein": 14.6,
+    "carbs": 10.9,
+    "fat": 69.7,
+    "fiber": 5.21
+  },
+  {
+    "name": "Oat Milk, Unsweetened, Plain, Refrigerated",
+    "region": "GLOBAL",
+    "calories": 48.3,
+    "protein": 0.8,
+    "carbs": 5.1,
+    "fat": 2.75,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oats, Whole Grain, Rolled, Old Fashioned",
+    "region": "GLOBAL",
+    "calories": 382.0,
+    "protein": 13.5,
+    "carbs": 68.7,
+    "fat": 5.89,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oats, Whole Grain, Steel Cut",
+    "region": "GLOBAL",
+    "calories": 381.0,
+    "protein": 12.5,
+    "carbs": 69.8,
+    "fat": 5.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oil, Canola",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oil, Coconut",
+    "region": "GLOBAL",
+    "calories": 3480.0,
+    "protein": 0.0,
+    "carbs": 0.84,
+    "fat": 99.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oil, Corn",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oil, Olive, Extra Light",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oil, Olive, Extra Virgin",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oil, Peanut",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oil, Safflower",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oil, Soybean",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Oil, Sunflower",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Olives, Green, Manzanilla, Stuffed With Pimiento",
+    "region": "GLOBAL",
+    "calories": 130.0,
+    "protein": 1.15,
+    "carbs": 4.96,
+    "fat": 12.9,
+    "fiber": 4.0
+  },
+  {
+    "name": "Onion Rings, Breaded, Par Fried, Frozen, Prepared, Heated In Oven",
+    "region": "GLOBAL",
+    "calories": 288.0,
+    "protein": 4.52,
+    "carbs": 36.3,
+    "fat": 14.4,
+    "fiber": 2.4
+  },
+  {
+    "name": "Orange Juice, No Pulp, Not Fortified, From Concentrate, Refrigerated",
+    "region": "GLOBAL",
+    "calories": 47.2,
+    "protein": 0.73,
+    "carbs": 10.3,
+    "fat": 0.33,
+    "fiber": 0.0
+  },
+  {
+    "name": "Orange Juice, No Pulp, Not Fortified, Not From Concentrate, Refrigerated",
+    "region": "GLOBAL",
+    "calories": 46.5,
+    "protein": 0.81,
+    "carbs": 10.0,
+    "fat": 0.36,
+    "fiber": 0.0
+  },
+  {
+    "name": "Parsnips, Raw",
+    "region": "GLOBAL",
+    "calories": 87.1,
+    "protein": 1.27,
+    "carbs": 19.3,
+    "fat": 0.54,
+    "fiber": 5.35
+  },
+  {
+    "name": "Pasta, Dry, Enriched, Spaghetti",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pasta, Dry, Whole Grain, Spaghetti",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pawpaw, Peeled, Seeded, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 1.15,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 3.3
+  },
+  {
+    "name": "Peanut Butter, Creamy",
+    "region": "GLOBAL",
+    "calories": 632.0,
+    "protein": 24.0,
+    "carbs": 22.7,
+    "fat": 49.4,
+    "fiber": 6.32
+  },
+  {
+    "name": "Peanut Butter, Creamy",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 5.18
+  },
+  {
+    "name": "Peanuts, Raw",
+    "region": "GLOBAL",
+    "calories": 588.0,
+    "protein": 23.2,
+    "carbs": 26.5,
+    "fat": 43.3,
+    "fiber": 8.01
+  },
+  {
+    "name": "Pear, Anjou, Green, With Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 63.7,
+    "protein": 0.31,
+    "carbs": 14.8,
+    "fat": 0.37,
+    "fiber": 2.64
+  },
+  {
+    "name": "Peas, Green, Sweet, Canned, Sodium Added, Sugar Added, Drained And Rinsed",
+    "region": "GLOBAL",
+    "calories": 80.1,
+    "protein": 4.73,
+    "carbs": 12.7,
+    "fat": 1.15,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pepperoni, Beef And Pork, Sliced",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Peppers, Banana Or Hungarian Wax, Seeded, Raw",
+    "region": "GLOBAL",
+    "calories": 23.9,
+    "protein": 0.72,
+    "carbs": 4.97,
+    "fat": 0.13,
+    "fiber": 1.79
+  },
+  {
+    "name": "Peppers, Bell, Green, Raw",
+    "region": "GLOBAL",
+    "calories": 22.9,
+    "protein": 0.71,
+    "carbs": 4.78,
+    "fat": 0.11,
+    "fiber": 0.94
+  },
+  {
+    "name": "Peppers, Bell, Orange, Raw",
+    "region": "GLOBAL",
+    "calories": 31.7,
+    "protein": 0.88,
+    "carbs": 6.7,
+    "fat": 0.16,
+    "fiber": 0.97
+  },
+  {
+    "name": "Peppers, Bell, Red, Raw",
+    "region": "GLOBAL",
+    "calories": 31.3,
+    "protein": 0.9,
+    "carbs": 6.65,
+    "fat": 0.13,
+    "fiber": 1.16
+  },
+  {
+    "name": "Peppers, Bell, Yellow, Raw",
+    "region": "GLOBAL",
+    "calories": 30.8,
+    "protein": 0.82,
+    "carbs": 6.6,
+    "fat": 0.12,
+    "fiber": 1.07
+  },
+  {
+    "name": "Peppers, Jalapeno, Seeded, Raw",
+    "region": "GLOBAL",
+    "calories": 24.1,
+    "protein": 0.62,
+    "carbs": 5.08,
+    "fat": 0.15,
+    "fiber": 1.72
+  },
+  {
+    "name": "Peppers, Poblano, Seeded, Raw",
+    "region": "GLOBAL",
+    "calories": 28.0,
+    "protein": 1.43,
+    "carbs": 5.14,
+    "fat": 0.19,
+    "fiber": 2.07
+  },
+  {
+    "name": "Peppers, Serrano, Seeded, Raw",
+    "region": "GLOBAL",
+    "calories": 29.2,
+    "protein": 0.86,
+    "carbs": 6.14,
+    "fat": 0.14,
+    "fiber": 2.52
+  },
+  {
+    "name": "Pickles, Cucumber, Dill Or Kosher Dill",
+    "region": "GLOBAL",
+    "calories": 50.0,
+    "protein": 0.48,
+    "carbs": 1.99,
+    "fat": 0.43,
+    "fiber": 1.0
+  },
+  {
+    "name": "Pineapple, Raw",
+    "region": "GLOBAL",
+    "calories": 60.1,
+    "protein": 0.46,
+    "carbs": 14.1,
+    "fat": 0.21,
+    "fiber": 0.94
+  },
+  {
+    "name": "Plantains, Overripe, Raw",
+    "region": "GLOBAL",
+    "calories": 130.0,
+    "protein": 1.17,
+    "carbs": 29.2,
+    "fat": 0.99,
+    "fiber": 1.79
+  },
+  {
+    "name": "Plantains, Ripe, Raw",
+    "region": "GLOBAL",
+    "calories": 136.0,
+    "protein": 1.16,
+    "carbs": 31.0,
+    "fat": 0.89,
+    "fiber": 2.12
+  },
+  {
+    "name": "Plantains, Underripe, Raw",
+    "region": "GLOBAL",
+    "calories": 145.0,
+    "protein": 1.23,
+    "carbs": 33.6,
+    "fat": 0.69,
+    "fiber": 2.53
+  },
+  {
+    "name": "Plum, Black, With Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 52.7,
+    "protein": 0.58,
+    "carbs": 13.5,
+    "fat": 0.28,
+    "fiber": 1.35
+  },
+  {
+    "name": "Plums, Dried (Prunes), Uncooked",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 6.25
+  },
+  {
+    "name": "Pork, Belly, With Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 380.0,
+    "protein": 15.2,
+    "carbs": -0.7,
+    "fat": 35.8,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pork, Chop, Center Cut, Raw",
+    "region": "GLOBAL",
+    "calories": 138.0,
+    "protein": 22.8,
+    "carbs": -0.56,
+    "fat": 5.48,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pork, Cured, Bacon, Cooked, Restaurant",
+    "region": "GLOBAL",
+    "calories": 500.0,
+    "protein": 40.9,
+    "carbs": 2.1,
+    "fat": 36.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pork, Ground, Raw",
+    "region": "GLOBAL",
+    "calories": 228.0,
+    "protein": 17.8,
+    "carbs": 0.0,
+    "fat": 17.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pork, Loin, Boneless, Raw",
+    "region": "GLOBAL",
+    "calories": 168.0,
+    "protein": 21.1,
+    "carbs": 0.0,
+    "fat": 9.47,
+    "fiber": 0.0
+  },
+  {
+    "name": "Pork, Loin, Tenderloin, Boneless, Raw",
+    "region": "GLOBAL",
+    "calories": 119.0,
+    "protein": 21.6,
+    "carbs": 0.0,
+    "fat": 3.9,
+    "fiber": 0.0
+  },
+  {
+    "name": "Potatoes, Gold, Without Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 73.5,
+    "protein": 1.81,
+    "carbs": 16.0,
+    "fat": 0.26,
+    "fiber": 0.0
+  },
+  {
+    "name": "Potatoes, Red, Without Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 75.6,
+    "protein": 2.06,
+    "carbs": 16.3,
+    "fat": 0.25,
+    "fiber": 0.0
+  },
+  {
+    "name": "Potatoes, Russet, Without Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 83.4,
+    "protein": 2.27,
+    "carbs": 17.8,
+    "fat": 0.36,
+    "fiber": 0.0
+  },
+  {
+    "name": "Radicchio, Raw",
+    "region": "GLOBAL",
+    "calories": 26.4,
+    "protein": 1.31,
+    "carbs": 4.96,
+    "fat": 0.14,
+    "fiber": 2.11
+  },
+  {
+    "name": "Radishes, Red, Raw",
+    "region": "GLOBAL",
+    "calories": 19.6,
+    "protein": 0.66,
+    "carbs": 4.06,
+    "fat": 0.08,
+    "fiber": 1.31
+  },
+  {
+    "name": "Raisins, Dark, Seedless",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 3.68
+  },
+  {
+    "name": "Raisins, Golden, Seedless",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 3.01
+  },
+  {
+    "name": "Raspberries, Raw",
+    "region": "GLOBAL",
+    "calories": 57.3,
+    "protein": 1.01,
+    "carbs": 12.9,
+    "fat": 0.19,
+    "fiber": 0.0
+  },
+  {
+    "name": "Refried Beans, Canned (Pinto)",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 3.87
+  },
+  {
+    "name": "Refried Beans, Canned, Vegetarian",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 3.91
+  },
+  {
+    "name": "Restaurant, Chinese, Fried Rice, Without Meat",
+    "region": "GLOBAL",
+    "calories": 174.0,
+    "protein": 3.84,
+    "carbs": 32.5,
+    "fat": 3.19,
+    "fiber": 0.0
+  },
+  {
+    "name": "Restaurant, Chinese, Sweet And Sour Pork",
+    "region": "GLOBAL",
+    "calories": 1090.0,
+    "protein": 8.88,
+    "carbs": 25.5,
+    "fat": 13.6,
+    "fiber": 1.0
+  },
+  {
+    "name": "Restaurant, Latino, Pupusas Con Frijoles (Pupusas, Bean)",
+    "region": "GLOBAL",
+    "calories": 959.0,
+    "protein": 5.59,
+    "carbs": 31.5,
+    "fat": 9.01,
+    "fiber": 5.8
+  },
+  {
+    "name": "Restaurant, Latino, Tamale, Pork",
+    "region": "GLOBAL",
+    "calories": 728.0,
+    "protein": 7.38,
+    "carbs": 15.8,
+    "fat": 9.04,
+    "fiber": 2.4
+  },
+  {
+    "name": "Rhubarb, Stalk, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 1.43
+  },
+  {
+    "name": "Rice, Black, Unenriched, Raw",
+    "region": "GLOBAL",
+    "calories": 370.0,
+    "protein": 7.57,
+    "carbs": 77.2,
+    "fat": 3.44,
+    "fiber": 4.18
+  },
+  {
+    "name": "Rice, Brown, Long Grain, Unenriched, Raw",
+    "region": "GLOBAL",
+    "calories": 366.0,
+    "protein": 7.25,
+    "carbs": 76.7,
+    "fat": 3.31,
+    "fiber": 3.02
+  },
+  {
+    "name": "Rice, Red, Unenriched, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 370.0,
+    "protein": 8.56,
+    "carbs": 76.2,
+    "fat": 3.44,
+    "fiber": 4.2
+  },
+  {
+    "name": "Rice, White, Long Grain, Unenriched, Raw",
+    "region": "GLOBAL",
+    "calories": 359.0,
+    "protein": 7.04,
+    "carbs": 80.3,
+    "fat": 1.03,
+    "fiber": 0.15
+  },
+  {
+    "name": "Rutabaga, Peeled, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.89,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 2.9
+  },
+  {
+    "name": "Salad Dressing, Italian Dressing, Commercial, Regular",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Salami, Hard, Sliced",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Salt, Table, Iodized",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sauce, Pasta, Spaghetti/Marinara, Ready-To-Serve",
+    "region": "GLOBAL",
+    "calories": 45.0,
+    "protein": 1.41,
+    "carbs": 8.05,
+    "fat": 1.48,
+    "fiber": 1.8
+  },
+  {
+    "name": "Sauce, Salsa, Ready-To-Serve",
+    "region": "GLOBAL",
+    "calories": 122.0,
+    "protein": 1.44,
+    "carbs": 6.74,
+    "fat": 0.19,
+    "fiber": 1.8
+  },
+  {
+    "name": "Sausage, Breakfast Sausage, Beef, Pre-Cooked, Unprepared",
+    "region": "GLOBAL",
+    "calories": 328.0,
+    "protein": 13.3,
+    "carbs": 3.37,
+    "fat": 28.7,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sausage, Italian, Pork, Mild, Cooked, Pan-Fried",
+    "region": "GLOBAL",
+    "calories": 322.0,
+    "protein": 18.2,
+    "carbs": 2.15,
+    "fat": 26.2,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sausage, Pork, Chorizo, Link Or Ground, Cooked, Pan-Fried",
+    "region": "GLOBAL",
+    "calories": 346.0,
+    "protein": 19.3,
+    "carbs": 2.63,
+    "fat": 28.1,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sausage, Turkey, Breakfast Links, Mild, Raw",
+    "region": "GLOBAL",
+    "calories": 706.0,
+    "protein": 16.7,
+    "carbs": 0.93,
+    "fat": 10.4,
+    "fiber": 0.0
+  },
+  {
+    "name": "Scallops, Bay, Patagonian, Frozen, Wild Caught",
+    "region": "GLOBAL",
+    "calories": 78.5,
+    "protein": 16.4,
+    "carbs": 2.28,
+    "fat": 0.42,
+    "fiber": 0.0
+  },
+  {
+    "name": "Scallops, Sea, Frozen, Wild Caught",
+    "region": "GLOBAL",
+    "calories": 66.4,
+    "protein": 13.5,
+    "carbs": 1.97,
+    "fat": 0.49,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sea Bass, Chilean, Frozen, Wild Caught",
+    "region": "GLOBAL",
+    "calories": 209.0,
+    "protein": 14.9,
+    "carbs": 0.14,
+    "fat": 16.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Seeds, Pumpkin Seeds (Pepitas), Raw",
+    "region": "GLOBAL",
+    "calories": 555.0,
+    "protein": 29.9,
+    "carbs": 18.7,
+    "fat": 40.0,
+    "fiber": 5.08
+  },
+  {
+    "name": "Seeds, Sunflower Seed Kernels, Dry Roasted, With Salt Added",
+    "region": "GLOBAL",
+    "calories": 612.0,
+    "protein": 21.0,
+    "carbs": 17.1,
+    "fat": 56.1,
+    "fiber": 10.3
+  },
+  {
+    "name": "Seeds, Sunflower Seed, Kernel, Raw",
+    "region": "GLOBAL",
+    "calories": 609.0,
+    "protein": 18.9,
+    "carbs": 24.5,
+    "fat": 48.4,
+    "fiber": 7.22
+  },
+  {
+    "name": "Sesame Butter, Creamy",
+    "region": "GLOBAL",
+    "calories": 697.0,
+    "protein": 19.7,
+    "carbs": 14.2,
+    "fat": 62.4,
+    "fiber": 8.37
+  },
+  {
+    "name": "Shallots, Bulb, Peeled, Root Removed, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 1.38,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 2.2
+  },
+  {
+    "name": "Snapper, Frozen, Wild Caught",
+    "region": "GLOBAL",
+    "calories": 89.5,
+    "protein": 20.7,
+    "carbs": 0.44,
+    "fat": 0.57,
+    "fiber": 0.0
+  },
+  {
+    "name": "Snow Crab, Legs Only, Frozen",
+    "region": "GLOBAL",
+    "calories": 69.2,
+    "protein": 15.5,
+    "carbs": 1.11,
+    "fat": 0.29,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sorghum Bran, White, Unenriched, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 403.0,
+    "protein": 11.2,
+    "carbs": 68.7,
+    "fat": 9.26,
+    "fiber": 35.0
+  },
+  {
+    "name": "Sorghum Flour, White, Pearled, Unenriched, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 364.0,
+    "protein": 10.2,
+    "carbs": 73.5,
+    "fat": 3.24,
+    "fiber": 3.3
+  },
+  {
+    "name": "Sorghum Grain, White, Pearled, Unenriched, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 370.0,
+    "protein": 10.2,
+    "carbs": 74.9,
+    "fat": 3.26,
+    "fiber": 3.92
+  },
+  {
+    "name": "Sorghum, Whole Grain, White, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 373.0,
+    "protein": 10.1,
+    "carbs": 73.6,
+    "fat": 4.22,
+    "fiber": 8.27
+  },
+  {
+    "name": "Soy Milk, Sweetened, Plain, Refrigerated",
+    "region": "GLOBAL",
+    "calories": 40.7,
+    "protein": 2.78,
+    "carbs": 3.0,
+    "fat": 1.96,
+    "fiber": 0.0
+  },
+  {
+    "name": "Soy Milk, Unsweetened, Plain, Shelf Stable",
+    "region": "GLOBAL",
+    "calories": 38.5,
+    "protein": 3.55,
+    "carbs": 1.29,
+    "fat": 2.12,
+    "fiber": 0.0
+  },
+  {
+    "name": "Spinach, Baby",
+    "region": "GLOBAL",
+    "calories": 26.6,
+    "protein": 2.85,
+    "carbs": 2.41,
+    "fat": 0.62,
+    "fiber": 1.56
+  },
+  {
+    "name": "Spinach, Mature",
+    "region": "GLOBAL",
+    "calories": 27.6,
+    "protein": 2.91,
+    "carbs": 2.64,
+    "fat": 0.6,
+    "fiber": 1.59
+  },
+  {
+    "name": "Squash, Pie Pumpkin, Peeled, Seeded, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.85,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 2.3
+  },
+  {
+    "name": "Squash, Spaghetti, Peeled, Seeded, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.79,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 1.4
+  },
+  {
+    "name": "Squash, Summer, Green, Zucchini, Includes Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 19.0,
+    "protein": 0.98,
+    "carbs": 3.27,
+    "fat": 0.2,
+    "fiber": 0.75
+  },
+  {
+    "name": "Squash, Summer, Yellow, Includes Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 22.0,
+    "protein": 0.89,
+    "carbs": 4.39,
+    "fat": 0.14,
+    "fiber": 0.96
+  },
+  {
+    "name": "Squash, Winter, Acorn, Raw",
+    "region": "GLOBAL",
+    "calories": 48.6,
+    "protein": 1.25,
+    "carbs": 10.5,
+    "fat": 0.18,
+    "fiber": 2.64
+  },
+  {
+    "name": "Squash, Winter, Butternut, Raw",
+    "region": "GLOBAL",
+    "calories": 48.1,
+    "protein": 1.15,
+    "carbs": 10.5,
+    "fat": 0.17,
+    "fiber": 1.96
+  },
+  {
+    "name": "Squid (Calamari), Frozen, Tubes Only",
+    "region": "GLOBAL",
+    "calories": 43.9,
+    "protein": 8.81,
+    "carbs": 0.93,
+    "fat": 0.55,
+    "fiber": 0.0
+  },
+  {
+    "name": "Strawberries, Raw",
+    "region": "GLOBAL",
+    "calories": 36.4,
+    "protein": 0.64,
+    "carbs": 7.96,
+    "fat": 0.22,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sugars, Granulated",
+    "region": "GLOBAL",
+    "calories": 1610.0,
+    "protein": 0.0,
+    "carbs": 99.6,
+    "fat": 0.32,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sweet Potatoes, Orange Flesh, Without Skin, Raw",
+    "region": "GLOBAL",
+    "calories": 79.0,
+    "protein": 1.58,
+    "carbs": 17.3,
+    "fat": 0.38,
+    "fiber": 0.0
+  },
+  {
+    "name": "Sweetened Condensed Milk",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Swordfish, Frozen, Wild Caught",
+    "region": "GLOBAL",
+    "calories": 152.0,
+    "protein": 19.2,
+    "carbs": 0.45,
+    "fat": 8.12,
+    "fiber": 0.0
+  },
+  {
+    "name": "Tomatillos, Dehusked, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 1.06,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 1.7
+  },
+  {
+    "name": "Tomato Juice, With Added Ingredients, From Concentrate, Shelf Stable",
+    "region": "GLOBAL",
+    "calories": 23.3,
+    "protein": 0.86,
+    "carbs": 4.32,
+    "fat": 0.29,
+    "fiber": 0.0
+  },
+  {
+    "name": "Tomato, Paste, Canned, Without Salt Added",
+    "region": "GLOBAL",
+    "calories": 104.0,
+    "protein": 4.23,
+    "carbs": 20.2,
+    "fat": 0.73,
+    "fiber": 4.7
+  },
+  {
+    "name": "Tomato, Puree, Canned",
+    "region": "GLOBAL",
+    "calories": 40.8,
+    "protein": 1.58,
+    "carbs": 8.04,
+    "fat": 0.27,
+    "fiber": 1.97
+  },
+  {
+    "name": "Tomato, Roma",
+    "region": "GLOBAL",
+    "calories": 22.0,
+    "protein": 0.7,
+    "carbs": 3.84,
+    "fat": 0.42,
+    "fiber": 0.97
+  },
+  {
+    "name": "Tomato, Sauce, Canned, With Salt Added",
+    "region": "GLOBAL",
+    "calories": 29.1,
+    "protein": 1.35,
+    "carbs": 6.33,
+    "fat": 0.38,
+    "fiber": 1.64
+  },
+  {
+    "name": "Tomatoes, Canned, Red, Ripe, Diced",
+    "region": "GLOBAL",
+    "calories": 18.0,
+    "protein": 0.84,
+    "carbs": 3.32,
+    "fat": 0.5,
+    "fiber": 0.0
+  },
+  {
+    "name": "Tomatoes, Crushed, Canned",
+    "region": "GLOBAL",
+    "calories": 37.9,
+    "protein": 1.44,
+    "carbs": 7.14,
+    "fat": 0.4,
+    "fiber": 1.94
+  },
+  {
+    "name": "Tomatoes, Whole, Canned, Solids And Liquids, With Salt Added",
+    "region": "GLOBAL",
+    "calories": 22.5,
+    "protein": 0.87,
+    "carbs": 4.29,
+    "fat": 0.21,
+    "fiber": 0.87
+  },
+  {
+    "name": "Tortilla, Corn, Shelf Stable",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Tortilla, Wheat Flour, Shelf Stable",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Tuna, Ahi Or Yellowfin, Frozen, Wild Caught",
+    "region": "GLOBAL",
+    "calories": 102.0,
+    "protein": 24.7,
+    "carbs": -0.1,
+    "fat": 0.39,
+    "fiber": 0.0
+  },
+  {
+    "name": "Turkey, Ground, 93% Lean, 7% Fat, Pan-Broiled Crumbles",
+    "region": "GLOBAL",
+    "calories": 220.0,
+    "protein": 27.1,
+    "carbs": 0.0,
+    "fat": 11.6,
+    "fiber": 0.0
+  },
+  {
+    "name": "Turkey, Ground, 93% Lean/ 7% Fat, Raw",
+    "region": "GLOBAL",
+    "calories": 153.0,
+    "protein": 17.3,
+    "carbs": 0.0,
+    "fat": 9.59,
+    "fiber": 0.0
+  },
+  {
+    "name": "Turnips, Raw",
+    "region": "GLOBAL",
+    "calories": 34.0,
+    "protein": 0.95,
+    "carbs": 7.27,
+    "fat": 0.12,
+    "fiber": 1.92
+  },
+  {
+    "name": "Watermelon, Seedless, Flesh Only, Raw",
+    "region": "GLOBAL",
+    "calories": 0.0,
+    "protein": 0.87,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "fiber": 0.0
+  },
+  {
+    "name": "Watermelon, Seedless, Rind Only, Raw",
+    "region": "GLOBAL",
+    "calories": 19.4,
+    "protein": 0.53,
+    "carbs": 4.17,
+    "fat": 0.07,
+    "fiber": 1.54
+  },
+  {
+    "name": "Wild Rice, Dry, Raw",
+    "region": "GLOBAL",
+    "calories": 369.0,
+    "protein": 12.8,
+    "carbs": 75.7,
+    "fat": 1.7,
+    "fiber": 4.26
+  },
+  {
+    "name": "Yogurt, Greek, Plain, Nonfat",
+    "region": "GLOBAL",
+    "calories": 256.0,
+    "protein": 10.3,
+    "carbs": 3.64,
+    "fat": 0.37,
+    "fiber": 0.0
+  },
+  {
+    "name": "Yogurt, Greek, Plain, Whole Milk",
+    "region": "GLOBAL",
+    "calories": 93.7,
+    "protein": 8.78,
+    "carbs": 4.75,
+    "fat": 4.39,
+    "fiber": 0.0
+  },
+  {
+    "name": "Yogurt, Greek, Strawberry, Nonfat",
+    "region": "GLOBAL",
+    "calories": 83.0,
+    "protein": 8.06,
+    "carbs": 12.2,
+    "fat": 0.15,
+    "fiber": 0.6
+  },
+  {
+    "name": "Yogurt, Plain, Nonfat",
+    "region": "GLOBAL",
+    "calories": 50.0,
+    "protein": 4.23,
+    "carbs": 8.08,
+    "fat": 0.09,
+    "fiber": 0.0
+  },
+  {
+    "name": "Yogurt, Plain, Whole Milk",
+    "region": "GLOBAL",
+    "calories": 78.0,
+    "protein": 3.82,
+    "carbs": 5.57,
+    "fat": 4.48,
+    "fiber": 0.0
+  }
+]

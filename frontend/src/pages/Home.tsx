@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Sparkles } from "lucide-react";
 import Profile from "@/components/profile";
 import { AppHeader } from "@/components/header";
@@ -166,6 +166,10 @@ export default function Home() {
     { label: "Fat", value: consumed.fat, max: goal.fat, color: "#f59e0b", unit: "g" },
   ];
 
+  // useEffect( () => {
+  //   async function 
+  // }, [])
+
   return (
     <div className="min-h-screen bg-background text-foreground" style={{ fontFamily: "Inter, sans-serif" }}>
 
@@ -177,7 +181,7 @@ export default function Home() {
         <Profile />
 
         {/* ── Stats Strip ── */}
-        <StatBar />
+        {/* <StatBar /> */}
 
         {/* ── Tabs ── */}
         <DashboardTabs

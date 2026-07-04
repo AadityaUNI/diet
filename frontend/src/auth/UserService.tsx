@@ -31,12 +31,15 @@ export async function currUserDetails()
 }
 
 export async function updateUserDetails(
+  id: string,
   updates: UserProfile
 ) {
+  console.log("Taken updates", updates)
+
   const { data, error } = await supabase
     .from("UserProfiles")
     .update(updates)
-    .select();
+    .eq("id", id)
 
   if (error)
   {

@@ -13,3 +13,11 @@ export type UserProfile = {
   sex?: string;
   activity_level?: string; 
 };
+
+export type MealPlan = {
+  total_protein: number, 
+  total_carbs: number, 
+  total_fats: number, 
+  total_fibre: number, 
+  total_calories: number
+}

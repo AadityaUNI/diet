@@ -13,7 +13,7 @@ import { Label }     from "@/components/ui/label";
 import { Progress }  from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
-import { TagInput } from "@/components/ui/tag-input";
+import TagField from "@/components/ui/tag-input";
 import { cn }        from "@/lib/utils";
 import { useNavigate } from "react-router";
 import { AppHeader } from "@/components/header";
@@ -305,8 +305,8 @@ export function RecommendPage() {
             <div className="flex flex-col gap-2">
               <Label>Dietary Restrictions</Label>
               <p className="text-xs text-muted-foreground -mt-1">e.g. vegetarian, gluten-free, dairy-free</p>
-              <TagInput
-                tags={restrictions}
+              <TagField
+                values={restrictions}
                 onChange={setRestrictions}
                 placeholder="Type and press Enter…"
               />
@@ -316,8 +316,8 @@ export function RecommendPage() {
             <div className="flex flex-col gap-2">
               <Label>Health Conditions</Label>
               <p className="text-xs text-muted-foreground -mt-1">e.g. RA, anti-inflammatory, diabetes</p>
-              <TagInput
-                tags={conditions}
+              <TagField
+                values={conditions}
                 onChange={setConditions}
                 placeholder="Type and press Enter…"
               />
@@ -327,8 +327,8 @@ export function RecommendPage() {
             <div className="flex flex-col gap-2">
               <Label>Must-Have Foods</Label>
               <p className="text-xs text-muted-foreground -mt-1">Foods that must appear somewhere in your plan</p>
-              <TagInput
-                tags={mustHave}
+              <TagField
+                values={mustHave}
                 onChange={setMustHave}
                 placeholder="e.g. chai, dal, eggs…"
               />

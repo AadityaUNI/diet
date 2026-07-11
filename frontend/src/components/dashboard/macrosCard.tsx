@@ -9,11 +9,10 @@ interface Macro {
 }
 
 interface MacrosCardProps {
-  ringMacros: Macro[];
   macros: Macro[];
 }
 
-function MacroRing({ label, value, max, color, unit, size = 80 }: {
+function MacroRing({ label, value, max, color, size = 80 }: {
   label: string;
   value: number;
   max: number;
@@ -48,7 +47,7 @@ function MacroRing({ label, value, max, color, unit, size = 80 }: {
           <span className="text-xs font-bold text-foreground leading-none" style={{ fontFamily: "DM Mono, monospace" }}>
             {value}
           </span>
-          <span className="text-[10px] text-muted-foreground">{unit ?? "g"}</span>
+          <span className="text-[10px] text-muted-foreground">g</span>
         </div>
       </div>
       <span className="text-xs text-muted-foreground">{label}</span>
@@ -56,7 +55,7 @@ function MacroRing({ label, value, max, color, unit, size = 80 }: {
   );
 }
 
-export function MacrosCard({ ringMacros, macros }: MacrosCardProps) {
+export function MacrosCard({ macros }: MacrosCardProps) {
   return (
     <Card>
       <CardHeader>
@@ -64,7 +63,7 @@ export function MacrosCard({ ringMacros, macros }: MacrosCardProps) {
       </CardHeader>
       <CardContent className="pt-4">
         <div className="mb-5 flex justify-around">
-          {ringMacros.map((m) => (
+          {macros.map((m) => (
             <MacroRing key={m.label} {...m} />
           ))}
         </div>

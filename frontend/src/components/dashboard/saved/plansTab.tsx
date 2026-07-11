@@ -1,24 +1,36 @@
 import { TabsContent } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { PlanCard, type SavedPlan } from "@/components/dashboard/saved/planCard";
+import { PlanCard } from "@/components/dashboard/saved/planCard";
+import { MealSkeleton } from "@/components/MealSkeleton";
+import { NoSavedPlansEmptyState } from "@/components/emptyPlanStates";
+import type { FullPlanData } from "@/types/types";
 
-interface SavedPlansTabProps {
-  savedPlans: SavedPlan[];
-  expandedPlan: string | null;
-  setExpandedPlan: (id: string | null) => void;
-  bookmarked: Set<string>;
-  setBookmarked: React.Dispatch<React.SetStateAction<Set<string>>>;
-  goalStyle: Record<string, { color: string; label: string }>;
+export interface SavedPlansTabProps {
+  savedPlans: FullPlanData[] | null;
+  expandedPlan: number | null;
+  setExpandedPlan: (id: number | null) => void;
+  loading: boolean;
+  getRecommended: () => void;
+  onSetActive: (id: number | null) => void;
+  activePlanID: number | null
 }
 
-export function SavedPlansTab({ savedPlans, expandedPlan, setExpandedPlan, bookmarked, setBookmarked, goalStyle }: SavedPlansTabProps) {
-  const toggleBookmark = (id: string) => {
-    setBookmarked((prev) => {
-      const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
-      return next;
-    });
-  };
+export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpandedPlan, loading, getRecommended ,onSetActive }: SavedPlansTabProps) {
+  if (loading) {
+    return (
+      <TabsContent value="saved" className="flex flex-col gap-4">
+        <MealSkeleton />
+      </TabsContent>
+    );
+  }
+
+  if (!savedPlans || savedPlans.length === 0) {
+    return (
+      <TabsContent value="saved" className="flex flex-col gap-4">
+        <NoSavedPlansEmptyState onGetRecommended={getRecommended} />
+      </TabsContent>
+    );
+  }
 
   return (
     <TabsContent value="saved" className="flex flex-col gap-4">
@@ -35,13 +47,11 @@ export function SavedPlansTab({ savedPlans, expandedPlan, setExpandedPlan, bookm
           key={plan.id}
           plan={plan}
           isOpen={expandedPlan === plan.id}
-          isBookmarked={bookmarked.has(plan.id)}
-          goalStyle={goalStyle[plan.goal]}
           onToggleOpen={(id) => setExpandedPlan(expandedPlan === id ? null : id)}
-          onToggleBookmark={toggleBookmark}
+          isActive={plan.id === activePlanID}
+          onSetActive={onSetActive}
         />
       ))}
-
     </TabsContent>
   );
 }

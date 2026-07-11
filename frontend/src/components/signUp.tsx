@@ -98,7 +98,18 @@ export function Signup({ onSwitchToLogin, onSubmit, disabled  }: SignupFormProps
 
           <div className="space-y-2">
             <Label htmlFor="signup-sex">Sex</Label>
-            <Input id="signup-sex" name="sex" type="text" placeholder="Attack Helicopter" autoComplete="Attack Helicopter" required />
+            <Select name="sex" id="signup-sex" required>
+            <SelectTrigger className="w-[180px]">
+              <SelectValue/>
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="Male">Male</SelectItem>
+                <SelectItem value="Female">Female</SelectItem>
+                
+              </SelectGroup>
+            </SelectContent>
+          </Select>
           </div>
 
             <div className="space-y-2">

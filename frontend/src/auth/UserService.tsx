@@ -1,5 +1,5 @@
 import { supabase } from "@/lib/supabase";
-import { type UserProfile } from "@/lib/types";
+import { type UpdateUserProfile, type UserProfile } from "@/types/types";
 
 export async function createUser(profile: UserProfile)
 {
@@ -11,6 +11,22 @@ export async function createUser(profile: UserProfile)
     {
         console.log("Error: creating user", error);
     }
+}
+
+export async function getActivePlanID(userID: string)
+{
+  const {data, error} = await supabase
+  .from("UserProfiles")
+  .select("active_meal_plan_id")
+  .eq("id", userID)
+  .single()
+
+  if (error)
+  {
+    console.log("Error: retrieving active plan id", error)
+    return 
+  }
+  return data.active_meal_plan_id
 }
 
 
@@ -32,7 +48,7 @@ export async function currUserDetails()
 
 export async function updateUserDetails(
   id: string,
-  updates: UserProfile
+  updates: UpdateUserProfile
 ) {
   console.log("Taken updates", updates)
 

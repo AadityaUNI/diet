@@ -40,7 +40,7 @@ export function FlipCard({ className, onLogin, onSignup }: AuthFlipCardProps) {
         className="relative w-full transition-transform duration-700 ease-[cubic-bezier(0.4,0.2,0.2,1)]"
         style={{
           transformStyle: "preserve-3d",
-          height: isFlipped ? "58rem" : "36rem",
+          height: isFlipped ? "63rem" : "36rem",
           transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
         }}
       >

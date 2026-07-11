@@ -1,6 +1,14 @@
 node_modules/
 dist/
 
+.postman
+postman
+
+data/
+
+AGENTS.md
+*.py
+
 venv/
 .venv/
 

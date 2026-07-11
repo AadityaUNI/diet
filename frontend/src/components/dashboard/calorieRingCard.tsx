@@ -4,11 +4,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 interface CalorieRingCardProps {
   consumed: { calories: number };
   goal: { calories: number };
-  radius: number;
-  circumference: number;
 }
 
-export function CalorieRingCard({ consumed, goal, radius, circumference }: CalorieRingCardProps) {
+export function CalorieRingCard({ consumed, goal }: CalorieRingCardProps) {
+  const radius = 46;
+  const circumference = 2 * Math.PI * radius;
   const pct = Math.round((consumed.calories / goal.calories) * 100);
   const rows = [
     { label: "Goal", value: goal.calories, color: "bg-secondary" },
@@ -37,7 +37,7 @@ export function CalorieRingCard({ consumed, goal, radius, circumference }: Calor
             />
           </svg>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="font-outfit text-2xl font-bold leading-none">
+            <span className="font-outfit text-[19px] font-bold leading-none">
               {consumed.calories.toLocaleString()}
             </span>
             <span className="mt-0.5 text-xs text-muted-foreground">kcal</span>

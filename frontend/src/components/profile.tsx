@@ -1,16 +1,12 @@
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar"
-import { useAuth } from "@/auth/AuthContext"
-import { Badge } from "./ui/badge"
 import { Button } from "@/components/ui/button";
 import { Edit3 } from "lucide-react";
 import { Share2 } from "lucide-react";
-import { supabase } from "@/lib/supabase";
 import { currUserDetails } from "@/auth/UserService";
-import type { UserProfile } from "@/lib/types";
+import type { UserProfile } from "@/types/types";
 import { useEffect, useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton"
 import { EditProfileDialog } from "./editProfileDialog"
-import { updateUserDetails } from "@/auth/UserService";
 
 export function SkeletonAvatar() {
   return (
@@ -33,8 +29,8 @@ export default function Profile()
       async function getUserDetails()
       {
          const data = await currUserDetails();
-         setUserData(data);
-         console.log("FETCHED USER DATA: ", data);
+         setUserData(data!);
+        //  console.log("FETCHED USER DATA: ", data);
       }
       getUserDetails()
     }, [])
@@ -72,16 +68,14 @@ export default function Profile()
                 Fitness Goal: {userData.fitness_goals}, last logged weight: {userData.weight}
               </p>
             </div>
-          </div>
-
-          <div className="mt-4 flex gap-3">
-            <Button className="flex-1 gap-1.5" size="sm" onClick={() => setEditOpen(true)}>
+             <div className="mt-4 flex gap-3">
+            <Button className="gap-1.5" size="lg" onClick={() => setEditOpen(true)}>
               <Edit3 size={13} /> Edit Profile
             </Button>
-            <Button variant="outline" size="sm" className="gap-1.5">
-              <Share2 size={13} /> Share
-            </Button>
           </div>
+          </div>
+
+         
 
           <EditProfileDialog
             open={editOpen}

@@ -20,8 +20,7 @@ import {
 } from "@/components/ui/select"
 import { Loader2 } from "lucide-react"
 import TagField from "./ui/tag-input"
-import { supabase } from "@/lib/supabase"
-import type { UserProfile } from "@/lib/types"
+import type { UserProfile } from "@/types/types"
 import { ACTIVITY_LEVELS } from "@/lib/predefined"
 import { updateUserDetails } from "@/auth/UserService"
 

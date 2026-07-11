@@ -1,15 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MealRow, type Meal } from "@/components/dashboard/mealRow";
-
+import { MealRow} from "@/components/dashboard/mealRow";
+import type { FullPlanData } from "@/types/types";
 interface TodaysMealsCardProps {
-  activePlanName: string;
-  activeMeals: Meal[];
-  eatenIds: Set<string>;
-  toggleMeal: (id: string) => void;
+  activePlan: FullPlanData;
+  toggleMeal: (mealID: number, planID: number) => void 
 }
 
-export function TodaysMealsCard({ activePlanName, activeMeals, eatenIds, toggleMeal }: TodaysMealsCardProps) {
+export function TodaysMealsCard({ activePlan, toggleMeal }: TodaysMealsCardProps) {
   return (
     <Card>
       <CardHeader>
@@ -17,25 +15,29 @@ export function TodaysMealsCard({ activePlanName, activeMeals, eatenIds, toggleM
           <div className="flex items-center gap-2">
             <CardTitle>Today's Meals</CardTitle>
             <Badge variant="secondary" className="text-sm">
-              {activePlanName.split("—")[0].trim()}
+              {activePlan.name.split("—")[0].trim()}
             </Badge>
           </div>
-          <span className="font-mono text-sm text-muted-foreground">
-            {eatenIds.size}/{activeMeals.length} eaten
-          </span>
+          {/* <span className="font-mono text-sm text-muted-foreground">
+            {eaten.size}/{activePlan.meals.length} eaten
+          </span> */}
         </div>
       </CardHeader>
       <CardContent className="pt-3">
         <div className="flex flex-col">
-          {activeMeals.map((meal, idx) => (
+          {activePlan.meal_plan_items.map((meal_item, idx) => {
+            const mealData = meal_item.meal_data
+            return(
             <MealRow
-              key={meal.id}
-              meal={meal}
-              eaten={eatenIds.has(meal.id)}
-              isLast={idx === activeMeals.length - 1}
+              key={mealData.id}
+              mealData={mealData}
+              eaten={meal_item.meal_completed}
+              planID={activePlan.id as number}
+              isLast={idx === activePlan.meal_plan_items.length - 1}
               onToggle={toggleMeal}
-            />
-          ))}
+            />)
+          }
+          )}
         </div>
       </CardContent>
     </Card>

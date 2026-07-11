@@ -56,7 +56,7 @@ export default function TagField({
           Add
         </Button>
       </div>
-      {values.length > 0 && (
+      {(values && values.length > 0) && (
         <div className="flex flex-wrap gap-1.5 pt-1">
           {values.map((tag) => (
             <Badge

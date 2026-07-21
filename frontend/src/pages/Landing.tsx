@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { FlipCard } from "@/components/flipcard"
 import { Leaf, LineChart, Salad, Zap } from "lucide-react"
 import { onLogin, onSignup } from "@/auth/LoginAuth"

@@ -13,9 +13,10 @@ interface PlanCardProps {
   onToggleOpen: (id: number) => void;
   isActive: boolean;
   onSetActive: (id: number | null) => void;
+  onDeletePlan: (id: number) => void;
 }
 
-export function PlanCard({ plan, isOpen, onToggleOpen, isActive, onSetActive }: PlanCardProps) {
+export function PlanCard({ plan, isOpen, onToggleOpen, isActive, onSetActive, onDeletePlan }: PlanCardProps) {
   const chips = [
     { label: "Cal", value: plan.total_calories.toFixed(2), color: "text-foreground" },
     { label: "Protein", value: `${plan.total_protein.toFixed(2)}g`, color: "text-primary" },
@@ -89,7 +90,7 @@ export function PlanCard({ plan, isOpen, onToggleOpen, isActive, onSetActive }: 
                   Use this Plan
                 </Button>
               )}
-              <Button variant="destructive" size="icon" className="shrink-0">
+              <Button variant="destructive" size="icon" className="shrink-0" onClick={() => onDeletePlan(plan.id)}>
                 <Trash2 size={15} />
               </Button>
             </div>

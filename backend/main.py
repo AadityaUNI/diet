@@ -47,14 +47,31 @@ def verify_jwt(auth_string: str):
         # invalid token 
         print(e)
         return None 
+
+cl_account_id = config["CLOUDFLARE_ACCOUNT_ID"]
+cl_namespace_id = config["CLOUDFLARE_NAMESPACE_ID"]
     
+def get_list(region):
+    try: 
+        regional_list = cloudflare.kv.namespaces.values.get(f"r-{region}", account_id=cl_account_id, namespace_id=cl_namespace_id)
+        regional_list = json.loads(regional_list.read())
+        print("RETRIEVED FROM CACHE")
+        return regional_list
     
-def check_key_in_kv(region):
-    pass
+    except: 
+        # get the regional list and put it into the kv 
+        regional = supabase.table('FoodItems').select("id, name, protein, carbs, fat, calories, fibre").or_(f'region.eq.GLOBAL,region.eq.{region}').execute().data
+        reg_str = json.dumps(regional)
+        print("PUT THE KEY IN CACHE")
+        put_key_in_kv(f"r-{region}", reg_str.encode())
+        return regional
 
 def put_key_in_kv(key, val):
-    pass
-    
+    try:
+        cloudflare.kv.namespaces.values.update(key, account_id=cl_account_id, namespace_id=cl_namespace_id, value=val)
+    except Exception as e:
+        print("Unable to put key in kv", e)
+        
 class ConstraintInput(BaseModel):
     fitness_goals: str
     age: PositiveInt
@@ -231,20 +248,14 @@ def recommend(authorization: Annotated[str | None, Header()], constraints: Const
     # verify user token
     if not verify_jwt(authorization):
         return -1
+
+    regional = get_list(constraints.region)
     
-    # check file in kv
-    # try:
-    #     regional = check_key_in_kv(constraints.region)
-    # except Exception as e:
-    #     # pull result from supabase
-    #     regional = supabase.table('regionalListItems').select("""FoodItem!inner(name)""").eq("region", constraints.region).execute()
-    #     put_key_in_kv(constraints.region, regional)
-    regional = supabase.table('FoodItems').select("id, name, protein, carbs, fat, calories, fibre").or_(f'region.eq.GLOBAL,region.eq.{constraints.region}').execute().data
-    # print(regional)
     print("REGIONAL FETCHED")
     if not regional: 
         print("RETURNING HERE")
         return 10
+    
     # # call gemini client
     output = call_gemini(constraints, regional)
     output = GeminiOutput.model_validate(output)

@@ -1,7 +1,6 @@
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar"
 import { Button } from "@/components/ui/button";
 import { Edit3 } from "lucide-react";
-import { Share2 } from "lucide-react";
 import { currUserDetails } from "@/auth/UserService";
 import type { UserProfile } from "@/types/types";
 import { useEffect, useState } from "react";
@@ -29,7 +28,9 @@ export default function Profile()
       async function getUserDetails()
       {
          const data = await currUserDetails();
-         setUserData(data!);
+        if (data) {
+         setUserData(data);
+        }
         //  console.log("FETCHED USER DATA: ", data);
       }
       getUserDetails()

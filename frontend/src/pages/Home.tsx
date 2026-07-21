@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground" style={{ fontFamily: "Inter, sans-serif" }}>
 
-      <AppHeader />
+      <AppHeader loading={false} />
 
       <main className="mx-auto max-w-lg lg:max-w-4xl lg:w-4xl px-4 pb-28">
 

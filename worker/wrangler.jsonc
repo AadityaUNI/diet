@@ -1,0 +1,11 @@
+{
+  "name": "dietgrid-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-01",
+  "kv_namespaces": [
+    {
+      "binding": "DIETGRID_KV",
+      "id": "ec2a548750e1462d9569068973856ba5"  // paste the id from wrangler kv namespace create
+    }
+  ]
+}

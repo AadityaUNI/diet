@@ -1,6 +1,6 @@
 import type { ReactNode } from "react"
 import { useAuth } from "./AuthContext"
-import { Navigate, type Navigation } from "react-router-dom"
+import { Navigate } from "react-router-dom"
 
 export default function ProtectedRoute({children} : {children: ReactNode})
 {

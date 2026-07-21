@@ -35,7 +35,7 @@ export function RecommendForm({
   console.log("Retrived conditions: ", conditions)
   return (
     <div className="min-h-screen bg-background text-foreground" style={{ fontFamily: "Inter, sans-serif" }}>
-      <AppHeader />
+      <AppHeader loading={loadingUser} />
 
       <main className="mx-auto max-w-lg lg:max-w-4xl lg:w-4xl px-4 pb-28">
         <div className="flex flex-col gap-6">

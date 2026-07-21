@@ -1,4 +1,4 @@
-import { Sparkles, BookmarkCheck, ClipboardList, Bookmark } from "lucide-react";
+import { Sparkles, ClipboardList, Bookmark } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Empty,

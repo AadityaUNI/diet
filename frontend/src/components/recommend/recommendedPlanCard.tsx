@@ -12,9 +12,10 @@ interface RecommendedPlanCardProps {
   onToggleOpen: () => void;
   isSaved: boolean;
   onSave: (plan: GeneratedPlan) => void;
+  savedLoading: boolean
 }
 
-export function RecommendedPlanCard({ plan, isOpen, onToggleOpen, isSaved, onSave }: RecommendedPlanCardProps) {
+export function RecommendedPlanCard({ plan, isOpen, onToggleOpen, isSaved, onSave, savedLoading }: RecommendedPlanCardProps) {
   const chips = [
     { label: "Cal", value: plan.total_calories.toFixed(2), color: "text-foreground" },
     { label: "Protein", value: `${plan.total_protein.toFixed(2)}g`, color: "text-primary" },
@@ -63,7 +64,7 @@ export function RecommendedPlanCard({ plan, isOpen, onToggleOpen, isSaved, onSav
                 variant={isSaved ? "secondary" : "default"}
                 className="flex-1 gap-1.5"
                 size="sm"
-                disabled={isSaved}
+                disabled={isSaved || savedLoading}
                 onClick={(e) => {
                   e.stopPropagation();
                   onSave(plan);

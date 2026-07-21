@@ -1,4 +1,4 @@
-import type { GeneratedPlan, RecommendResponse } from "@/types/generated-plan";
+import type { RecommendResponse } from "@/types/generated-plan";
 import type { UserProfile } from "@/types/types";
 
 export async function getAIRec(token: string, constraints: UserProfile)

@@ -2,7 +2,7 @@ import { supabase } from "@/lib/supabase";
 
 export async function toggleUserMealCompletion(mealID: number, planID: number, state: boolean)
 {
-    const {data, error} = await supabase 
+    const { error } = await supabase 
     .from("MealPlanItems")
     .update({"meal_completed": state})
     .eq("mealID", mealID)
@@ -16,7 +16,7 @@ export async function toggleUserMealCompletion(mealID: number, planID: number, s
 
 export async function getItemsInMeal(mealID: number)
 {
-    const {data, error} = await supabase 
+    const { data, error } = await supabase 
     .from("MealItems")
     .select("amount, foodItems: FoodItems!inner(*)")
     .eq("mealID", mealID)

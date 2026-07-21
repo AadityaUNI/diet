@@ -74,7 +74,7 @@ export function EditProfileDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-[480px] border-primary/20">
+      <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-120 border-primary/20">
         <DialogHeader>
           <DialogTitle
             className="text-lg font-bold"
@@ -101,7 +101,7 @@ export function EditProfileDialog({
           <div className="grid gap-1.5">
             <Label className="text-xs text-foreground/70">Region</Label>
             <Select name="region" value={form.region ?? ""} onValueChange={(v) => update("region", v as string)} required>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger className="w-45">
               <SelectValue placeholder="Region" />
             </SelectTrigger>
             <SelectContent>

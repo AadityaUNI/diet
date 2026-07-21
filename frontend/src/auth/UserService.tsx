@@ -3,7 +3,7 @@ import { type UpdateUserProfile, type UserProfile } from "@/types/types";
 
 export async function createUser(profile: UserProfile)
 {
-    const { data, error } = await supabase
+  const { error } = await supabase
     .from('UserProfiles')
     .insert([profile])
 
@@ -30,7 +30,7 @@ export async function getActivePlanID(userID: string)
 }
 
 
-export async function currUserDetails()
+export async function currUserDetails(): Promise<UserProfile | undefined>
 {
     let { data: users, error } = await supabase
     .from('UserProfiles')
@@ -43,7 +43,19 @@ export async function currUserDetails()
         return
     }
 
-    return users
+    if (users === null) {
+      return
+    }
+
+    const profile = users as UserProfile
+    const normalized: UserProfile = {
+      ...profile,
+      dietary_restrictions: profile.dietary_restrictions ?? [],
+      health_conditions: profile.health_conditions ?? [],
+      required_food_items: profile.required_food_items ?? [],
+    }
+
+    return normalized
 }
 
 export async function updateUserDetails(
@@ -52,7 +64,7 @@ export async function updateUserDetails(
 ) {
   console.log("Taken updates", updates)
 
-  const { data, error } = await supabase
+  const { error } = await supabase
     .from("UserProfiles")
     .update(updates)
     .eq("id", id)

@@ -5,6 +5,7 @@ import { MealSkeleton } from "@/components/MealSkeleton";
 import { NoSavedPlansEmptyState } from "@/components/emptyPlanStates";
 import type { FullPlanData } from "@/types/types";
 
+
 export interface SavedPlansTabProps {
   savedPlans: FullPlanData[] | null;
   expandedPlan: number | null;
@@ -12,10 +13,13 @@ export interface SavedPlansTabProps {
   loading: boolean;
   getRecommended: () => void;
   onSetActive: (id: number | null) => void;
-  activePlanID: number | null
+  activePlanID: number | null;
+  onDeletePlan: (planID: number) => void; 
 }
 
-export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpandedPlan, loading, getRecommended ,onSetActive }: SavedPlansTabProps) {
+export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpandedPlan, loading, getRecommended ,onSetActive, onDeletePlan }: SavedPlansTabProps) {
+  
+  
   if (loading) {
     return (
       <TabsContent value="saved" className="flex flex-col gap-4">
@@ -32,6 +36,7 @@ export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpan
     );
   }
 
+  
   return (
     <TabsContent value="saved" className="flex flex-col gap-4">
       <div className="flex items-center justify-between">
@@ -50,6 +55,7 @@ export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpan
           onToggleOpen={(id) => setExpandedPlan(expandedPlan === id ? null : id)}
           isActive={plan.id === activePlanID}
           onSetActive={onSetActive}
+          onDeletePlan={onDeletePlan}
         />
       ))}
     </TabsContent>

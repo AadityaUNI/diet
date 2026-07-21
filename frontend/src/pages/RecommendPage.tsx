@@ -53,6 +53,7 @@ export function RecommendPage() {
   const [results,             setResults]            = useState<RecommendResponse | null>(null);
   const [savedPlanIndices,    setSavedPlanIndices]   = useState<Set<number>>(new Set());
   const [expandedPlanIndex,   setExpandedPlanIndex]  = useState<number | null>(null);
+  const [savedLoading, setSavedLoading] = useState<boolean>(false)
 
   // ── Handlers ──
   const handleImport = () => {
@@ -89,11 +90,19 @@ const recMutation = useMutation({
     onError: () => setView("error")
   })
 
+  const saveMutation = useMutation({
+    mutationFn: async ({plan, index} : {plan: GeneratedPlan, index: number}) => {
+      return handleSavePlan(plan, index)
+    },
+    onSuccess: () => setSavedLoading(false)
+  })
+
   const handleSavePlan = async (plan: GeneratedPlan, index: number) => {
     if (!profile) {
       return;
     }
     setSavedPlanIndices((prev) => new Set([...prev, index]));
+    setSavedLoading(true)
     const savedPlanID = await createUserPlan(plan, profile.id);
 
     if (!savedPlanID) {
@@ -114,7 +123,7 @@ const recMutation = useMutation({
         loadingUser={profile ? false : true}
         onGenerate={() => recMutation.mutate({profile: profile as UserProfile, conditions, mustHave, restrictions, goal })}
       />
-      <HomeButton />
+      <HomeButton loading={false} />
       </>
     );
   }
@@ -144,9 +153,10 @@ const recMutation = useMutation({
       expandedPlanIndex={expandedPlanIndex}
       setExpandedPlanIndex={setExpandedPlanIndex}
       savedPlanIndices={savedPlanIndices}
-      onSavePlan={handleSavePlan}
+      onSavePlan={(plan, idx) => saveMutation.mutate({plan: plan, index: idx})}
+      savedLoading={savedLoading}
     />
-    <HomeButton />
+    <HomeButton loading={savedLoading} />
     </>
   );
 }

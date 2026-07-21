@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { OverviewTab } from "@/components/dashboard/overviewTabs";
 import { SavedPlansTab } from "@/components/dashboard/saved/plansTab";
-import { changeUserActivePlan, getAllFoodData } from "@/auth/PlanService";
+import { changeUserActivePlan, deleteUserPlan, getAllFoodData } from "@/auth/PlanService";
 import { toggleUserMealCompletion } from "@/auth/MealService";
 import { useAuth } from "@/auth/AuthContext";
 import { useNavigate } from "react-router";
 import { useDebouncedCallback } from "use-debounce";
 import { getActivePlanID } from "@/auth/UserService";
 import type { FullPlanData } from "@/types/types";
+import { useMutation } from "@tanstack/react-query";
 
 export interface DashboardTabsProps {}
 
@@ -19,6 +20,15 @@ export function DashboardTabs(_: DashboardTabsProps) {
   const [activePlan, setActivePlan] = useState<FullPlanData | null>(null);
   const [savedPlans, setSavedPlans] = useState<FullPlanData[] | null>(null);
   const [loadingPlans, setLoadingPlans] = useState<boolean>(true);
+
+  const handleDeletePlan = useMutation({
+    mutationFn: async (planID: number) => {
+      setSavedPlans(prev => prev!.filter((plan) => plan.id !== planID))
+      const deletedActive = activePlan ? planID === activePlan.id : false
+      if (deletedActive) setActivePlan(null)
+      return deleteUserPlan(planID, deletedActive, user!.id)
+    }
+  })
 
   const debouncedToggle = useDebouncedCallback((mealID: number, planID: number, state: boolean) => {
     toggleUserMealCompletion(mealID, planID, state);
@@ -102,6 +112,7 @@ export function DashboardTabs(_: DashboardTabsProps) {
         getRecommended={getRecommended}
         onSetActive={onSetActive}
         activePlanID={activePlan?.id ?? null}
+        onDeletePlan={(planID) => handleDeletePlan.mutate(planID)}
       />
     </Tabs>
   );

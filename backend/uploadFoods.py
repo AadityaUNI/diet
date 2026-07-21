@@ -13,8 +13,6 @@ global_file = open("../data/globalCleaned.json", 'r')
 
 globals = json.load(global_file)
 
-
-
 # food_data = supabase.table("FoodItem").insert(foods).execute()
 global_data = supabase.table("FoodItems").insert(globals).execute()
 

@@ -38,6 +38,8 @@ export async function deleteUserPlan(planID: number, isActive: boolean, userID: 
     .eq("id", planID)
     .eq("userID", userID)
 
+    console.log("Deleted plan: ", planID)
+
     if (error)
     {
         console.log("Error: deleting user plan", error)

@@ -6,7 +6,6 @@ import PersonIcon from '@mui/icons-material/Person';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import { useNavigate } from 'react-router-dom';
-import { cn } from '@/lib/utils';
 
 const NAV_ITEMS = [
   { label: 'Profile', value: 'profile', icon: <PersonIcon /> },

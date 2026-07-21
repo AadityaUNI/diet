@@ -9,6 +9,7 @@ interface RecommendResultsTabProps {
   expandedPlanIndex: number | null;
   setExpandedPlanIndex: (index: number | null) => void;
   savedPlanIndices: Set<number>;
+  savedLoading: boolean; 
   onSavePlan: (plan: GeneratedPlan, index: number) => void;
 }
 
@@ -17,6 +18,7 @@ export function RecommendResultsTab({
   expandedPlanIndex,
   setExpandedPlanIndex,
   savedPlanIndices,
+  savedLoading,
   onSavePlan,
 }: RecommendResultsTabProps) {
   return (
@@ -24,12 +26,15 @@ export function RecommendResultsTab({
       className="min-h-screen bg-background text-foreground"
       style={{ fontFamily: "Inter, sans-serif" }}
     >
-      <AppHeader />
+      <AppHeader loading={savedLoading} />
 
       <main className="mx-auto max-w-lg lg:max-w-4xl lg:w-4xl px-4 pb-28">
         <div className="flex flex-col gap-4">
           {(results.skipped_items && results.skipped_items.length > 0) && (
-            <Card className="border-amber-500/20 bg-amber-500/[0.06]">
+            <Card
+              className="border-amber-500/20"
+              style={{ backgroundColor: "rgba(245, 158, 11, 0.06)" }}
+            >
               <CardContent className="flex items-start gap-2.5 p-3.5">
                 <AlertCircle
                   size={14}
@@ -51,6 +56,7 @@ export function RecommendResultsTab({
               key={`${plan.name}-${index}`}
               plan={plan}
               isOpen={expandedPlanIndex === index}
+              savedLoading={savedLoading}
               onToggleOpen={() =>
                 setExpandedPlanIndex(expandedPlanIndex === index ? null : index)
               }

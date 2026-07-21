@@ -1,8 +1,12 @@
 import { supabase } from "@/lib/supabase";
 import type React from "react";
+import type { NavigateFunction } from "react-router-dom";
 import { createUser } from "./UserService";
 
-export async function onSignup(e: React.FormEvent<HTMLFormElement>, navigate)
+export async function onSignup(
+    e: React.FormEvent<HTMLFormElement>,
+    navigate: NavigateFunction
+)
 {
     e.preventDefault()
 
@@ -37,7 +41,10 @@ export async function onSignup(e: React.FormEvent<HTMLFormElement>, navigate)
     setTimeout(() => navigate('/'), 600)
 }
 
-export async function onLogin(e: React.FormEvent<HTMLFormElement>, navigate)
+export async function onLogin(
+    e: React.FormEvent<HTMLFormElement>,
+    navigate: NavigateFunction
+)
 {
     e.preventDefault()
 

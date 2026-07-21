@@ -23,7 +23,7 @@ export function RecommendError({
           {message}
         </p>
       </div>
-      <HomeButton />
+      <HomeButton loading={false} />
     </>
   );
 }

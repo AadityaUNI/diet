@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { PlanMealRow } from "@/components/dashboard/saved/planMealRow";
 import { PlanMacroChips } from "@/components/dashboard/saved/planMacroChips";
+import { Spinner } from "@/components/ui/spinner";
 import type { GeneratedPlan } from "@/types/generated-plan";
 
 interface RecommendedPlanCardProps {
@@ -70,9 +71,13 @@ export function RecommendedPlanCard({ plan, isOpen, onToggleOpen, isSaved, onSav
                   onSave(plan);
                 }}
               >
-                {isSaved
-                  ? <><BookmarkCheck size={14} /> Saved</>
-                  : <><BookmarkPlus size={14} /> Save this Plan</>}
+                {savedLoading ? (
+                  <><Spinner className="size-4" /> Saving...</>
+                ) : isSaved ? (
+                  <><BookmarkCheck size={14} /> Saved</>
+                ) : (
+                  <><BookmarkPlus size={14} /> Save this Plan</>
+                )}
               </Button>
             </div>
           </div>

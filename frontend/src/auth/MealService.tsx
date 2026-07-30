@@ -10,7 +10,7 @@ export async function toggleUserMealCompletion(mealID: number, planID: number, s
 
     if (error)
     {
-        console.log("Error: marking user meal completed", error)
+        return
     }
 }
 
@@ -23,7 +23,6 @@ export async function getItemsInMeal(mealID: number)
 
     if (error)
     {
-        console.log("Error: retrieving items in meal", error)
         return 
     }
     // data is collection of amount, food data.

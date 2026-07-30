@@ -32,7 +32,6 @@ export function RecommendForm({
   imported, onImport,
   onGenerate,
 }: RecommendFormProps) {
-  console.log("Retrived conditions: ", conditions)
   return (
     <div className="min-h-screen bg-background text-foreground" style={{ fontFamily: "Inter, sans-serif" }}>
       <AppHeader loading={loadingUser} />

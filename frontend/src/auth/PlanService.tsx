@@ -5,7 +5,6 @@ import type { GeneratedMeal, GeneratedPlan } from "@/types/generated-plan";
 
 export async function getAllFoodData(userID: string)
 {
-    console.log("Calling food data function with : ", userID)
     const {data, error} = await supabase 
     .from("MealPlans")
     .select(`*, 
@@ -19,12 +18,10 @@ export async function getAllFoodData(userID: string)
 
     if (error)
     {
-        console.log("Error: getting all user food data", error)
         return null 
     }
 
     // data : [mealPlans[]], mealPlans -> meals[] -> meal_completed, mealData[] -> foodItem[]
-    console.log("Returned data: ", data)
     return data as FullPlanData[]
 }
 
@@ -38,11 +35,8 @@ export async function deleteUserPlan(planID: number, isActive: boolean, userID: 
     .eq("id", planID)
     .eq("userID", userID)
 
-    console.log("Deleted plan: ", planID)
-
     if (error)
     {
-        console.log("Error: deleting user plan", error)
         return 
     }
 
@@ -55,7 +49,6 @@ export async function deleteUserPlan(planID: number, isActive: boolean, userID: 
         
         if (error)
         {
-            console.log("Error: setting user active plan to null", error)
             return 
         }
     }
@@ -69,7 +62,7 @@ export async function addUserPlan(mealPlan: MealData, userID: string)
 
     if (error)
     {
-        console.log("Error: adding user meal plan", error)
+        return
     }
 }
 
@@ -92,7 +85,6 @@ export async function createMealPlan(plan: GeneratedPlan, userID: string)
         .single();
 
     if (planError || !insertedPlan) {
-        console.log("Error: creating recommended plan", planError)
         return null;
     }
 
@@ -118,7 +110,6 @@ export async function createMeal(meal: GeneratedMeal, userID: string)
         .single();
 
     if (mealError || !insertedMeal) {
-        console.log("Error: creating recommended meal", mealError)
         return null;
     }
 
@@ -138,7 +129,6 @@ export async function createMealPlanItem(mealID: number, planID: number)
         ]);
 
     if (error) {
-        console.log("Error: linking recommended meal to plan", error)
         return false;
     }
 
@@ -150,7 +140,6 @@ export async function createMealItems(meal: GeneratedMeal, mealID: number, userI
     if (meal.ingredients.length === 0) {
         return true;
     }
-    console.log("INGREDIENTS: ", meal.ingredients)
     const mealItems = meal.ingredients.map((ingredient) => ({
         amount: ingredient.amount,
         foodID: ingredient.id,
@@ -163,7 +152,6 @@ export async function createMealItems(meal: GeneratedMeal, mealID: number, userI
         .insert(mealItems);
 
     if (error) {
-        console.log("Error: creating recommended meal items", error)
         return false;
     }
 
@@ -210,6 +198,6 @@ export async function changeUserActivePlan(userID: string, planID: number | null
 
     if (error)
     {
-        console.log("Error: marking user plan active", error)
+        return
     }
 }

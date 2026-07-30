@@ -21,8 +21,8 @@ export function SkeletonAvatar() {
 
 export default function Profile()
 {
-    let [userData, setUserData] = useState<UserProfile | null>(null)
-    let [editOpen, setEditOpen] = useState(false)
+  const [userData, setUserData] = useState<UserProfile | null>(null)
+  const [editOpen, setEditOpen] = useState(false)
 
     useEffect(() => {
       async function getUserDetails()
@@ -31,7 +31,6 @@ export default function Profile()
         if (data) {
          setUserData(data);
         }
-        //  console.log("FETCHED USER DATA: ", data);
       }
       getUserDetails()
     }, [])

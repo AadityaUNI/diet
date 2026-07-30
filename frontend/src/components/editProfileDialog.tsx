@@ -47,8 +47,12 @@ export function EditProfileDialog({
   // Reset form whenever the dialog is (re)opened with fresh userData
   useEffect(() => {
     if (open) {
-      setForm(userData)
-      setError(null)
+      const timeout = window.setTimeout(() => {
+        setForm(userData)
+        setError(null)
+      }, 0)
+
+      return () => window.clearTimeout(timeout)
     }
   }, [open, userData])
 
@@ -61,7 +65,6 @@ export function EditProfileDialog({
     setError(null)
     try {
       const {id} = form
-      // console.log("passing in : " , form, form.health_conditions)
       updateUserDetails(id as string, form)
       onSaved(form)
       onOpenChange(false)
@@ -115,12 +118,20 @@ export function EditProfileDialog({
 
           <div className="grid gap-1.5">
             <Label className="text-xs text-foreground/70">Fitness Goal</Label>
-            <Input
-              value={form.fitness_goals ?? ""}
-              onChange={(e) => update("fitness_goals", e.target.value)}
-              placeholder="e.g. Lean bulk, fat loss"
-              className="h-9 text-sm"
-            />
+            <Select name="goals" value={form.fitness_goals ?? ""} onValueChange={(v) => update("fitness_goals", v as string)} required>
+              <SelectTrigger className="w-[180px]">
+                <SelectValue placeholder="Goal"/>
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectItem value="cut">Cut</SelectItem>
+                  <SelectItem value="bulk">Bulk</SelectItem>
+                  <SelectItem value="maintain">Maintain</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+
+           
           </div>
 
           <div className="grid grid-cols-2 gap-3">

@@ -23,12 +23,6 @@ type RecommendVariables = {
   mustHave: string[];
 };
 
-// TODO(dev-only): stand-in for the real POST /recommend response until the
-// endpoint is wired up (main.py's recommend() doesn't currently `return`
-// anything, so there's nothing to fetch yet). Shape matches call_gemini's
-// prompt schema exactly — swap this for a real fetch once the backend
-// returns the response and you know how auth/profile data reach the request.
-
 export function RecommendPage() {
 
   // All hooks first — no early returns before this point
@@ -39,7 +33,6 @@ export function RecommendPage() {
     async function getProfile()
     {
       setProfile(await currUserDetails() as UserProfile)
-      console.log("Set the user", profile)
     }
     getProfile()
   }, [])
@@ -94,7 +87,8 @@ const recMutation = useMutation({
     mutationFn: async ({plan, index} : {plan: GeneratedPlan, index: number}) => {
       return handleSavePlan(plan, index)
     },
-    onSuccess: () => setSavedLoading(false)
+    onSuccess: () => setSavedLoading(false),
+    onError: () => setSavedLoading(false)
   })
 
   const handleSavePlan = async (plan: GeneratedPlan, index: number) => {

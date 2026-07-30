@@ -9,7 +9,7 @@ export async function createUser(profile: UserProfile)
 
     if (error)
     {
-        console.log("Error: creating user", error);
+        return;
     }
 }
 
@@ -23,7 +23,6 @@ export async function getActivePlanID(userID: string)
 
   if (error)
   {
-    console.log("Error: retrieving active plan id", error)
     return 
   }
   return data.active_meal_plan_id
@@ -32,14 +31,13 @@ export async function getActivePlanID(userID: string)
 
 export async function currUserDetails(): Promise<UserProfile | undefined>
 {
-    let { data: users, error } = await supabase
+  const { data: users, error } = await supabase
     .from('UserProfiles')
     .select('*')
     .single()
 
     if (error)
     {
-        console.log("Error: getting user details", error)
         return
     }
 
@@ -62,8 +60,6 @@ export async function updateUserDetails(
   id: string,
   updates: UpdateUserProfile
 ) {
-  console.log("Taken updates", updates)
-
   const { error } = await supabase
     .from("UserProfiles")
     .update(updates)
@@ -71,7 +67,7 @@ export async function updateUserDetails(
 
   if (error)
   {
-    console.log("Error: updating user profile", error)
+    return
   }
 }
 
@@ -80,6 +76,6 @@ export async function logoutUser()
   const { error } = await supabase.auth.signOut()
   if (error)
   {
-    console.log("Error: signing out user", error)
+    return
   }
 }

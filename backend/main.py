@@ -11,8 +11,9 @@ import io
 import jwt 
 from collections import defaultdict
 import csv 
+import os
 # dot env vals
-config = dotenv_values()
+config = os.environ
 
 # load clients
 from fastapi.middleware.cors import CORSMiddleware
@@ -21,7 +22,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Vite dev server
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:8080"],  # Vite dev server
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -35,7 +36,7 @@ jwkClient = jwt.PyJWKClient(config["JWK_DISCOVERY_URL"], cache_keys=True, max_ca
 cloudflare = Cloudflare(
     api_token=config["CLOUDFLARE_API_TOKEN"],  # This is the default and can be omitted
 )
-
+     
 def verify_jwt(auth_string: str):
     token = auth_string[6:].strip()
 

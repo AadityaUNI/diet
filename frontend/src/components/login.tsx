@@ -39,9 +39,9 @@ export function Login({ onSwitchToSignup, onSubmit, disabled }: LoginFormProps) 
           <div className="space-y-2">
             <div className="flex items-center justify-between">
               <Label htmlFor="login-password">Password</Label>
-              <button type="button" className="text-xs font-medium text-primary transition-colors hover:text-primary/80">
+              {/* <button type="button" className="text-xs font-medium text-primary transition-colors hover:text-primary/80">
                 Forgot password?
-              </button>
+              </button> */}
             </div>
             <Input
               id="login-password"

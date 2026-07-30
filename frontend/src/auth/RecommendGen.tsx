@@ -3,7 +3,7 @@ import type { UserProfile } from "@/types/types";
 
 export async function getAIRec(token: string, constraints: UserProfile)
 {
-    const response = await fetch('http://127.0.0.1:8000/recommend', {
+    const response = await fetch(`${import.meta.env.VITE_FASTAPI_URL}/recommend`, {
         method: "POST",
         
         headers: {

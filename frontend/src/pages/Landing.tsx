@@ -8,18 +8,18 @@ import { useNavigate } from "react-router-dom"
 const features = [
   {
     icon: Salad,
-    title: "Smart meal logging",
-    description: "Snap or search a meal and get instant macro breakdowns.",
+    title: "Personalized diet plans",
+    description: "Generate plans around health restrictions, conditions, and dietary choices.",
   },
   {
     icon: LineChart,
-    title: "Visual progress",
-    description: "Track calories, protein, and habits on a clean daily grid.",
+    title: "Visual tracking",
+    description: "See your meals, macros, and progress in a clear daily view.",
   },
   {
     icon: Zap,
-    title: "Adaptive goals",
-    description: "Targets that adjust automatically as your routine evolves.",
+    title: "Flexible dietary options",
+    description: "Support for different eating patterns, allergies, and other meal preferences.",
   },
 ]
 

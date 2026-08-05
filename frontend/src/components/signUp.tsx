@@ -54,7 +54,7 @@ export function Signup({ onSwitchToLogin, onSubmit, disabled  }: SignupFormProps
             <Label htmlFor="signup-region">Region</Label>
             <Select name="region" id="signup-region" required>
             <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Region" />
+              <SelectValue placeholder="Select region" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
@@ -69,7 +69,7 @@ export function Signup({ onSwitchToLogin, onSubmit, disabled  }: SignupFormProps
             <Label htmlFor="signup-goals">Fitness Goals</Label>
             <Select name="goals" id="signup-goals" required>
             <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Goal"/>
+              <SelectValue placeholder="Select goal"/>
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
@@ -83,24 +83,24 @@ export function Signup({ onSwitchToLogin, onSubmit, disabled  }: SignupFormProps
 
           <div className="space-y-2">
             <Label htmlFor="signup-age">Age</Label>
-            <Input id="signup-age" name="age" type="numeric" placeholder="67" autoComplete="67" required />
+            <Input id="signup-age" name="age" type="numeric" placeholder="e.g. 28" autoComplete="off" required />
           </div>
 
           <div className="space-y-2">
             <Label htmlFor="signup-weight">Weight (kgs)</Label>
-            <Input id="signup-weight" name="weight" type="numeric" placeholder="67" autoComplete="67" required />
+            <Input id="signup-weight" name="weight" type="numeric" placeholder="e.g. 68" autoComplete="off" required />
           </div>
 
           <div className="space-y-2">
             <Label htmlFor="signup-height">Height (cms)</Label>
-            <Input id="signup-height" name="height" type="numeric" placeholder="67" autoComplete="67" required />
+            <Input id="signup-height" name="height" type="numeric" placeholder="e.g. 175" autoComplete="off" required />
           </div>
 
           <div className="space-y-2">
             <Label htmlFor="signup-sex">Sex</Label>
             <Select name="sex" id="signup-sex" required>
             <SelectTrigger className="w-[180px]">
-              <SelectValue/>
+              <SelectValue placeholder="Select sex"/>
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
@@ -117,7 +117,7 @@ export function Signup({ onSwitchToLogin, onSubmit, disabled  }: SignupFormProps
           <Label htmlFor="signup-activity">Activity Level</Label>
           <Select name="activity" id="signup-activity" required>
             <SelectTrigger className="w-full">
-              <SelectValue placeholder="Activity Level" />
+              <SelectValue placeholder="Select activity level" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>

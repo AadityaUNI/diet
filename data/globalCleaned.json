@@ -6,7 +6,7 @@
     "protein": 0.15,
     "carbs": 15.7,
     "fat": 0.16,
-    "fiber": 2.08
+    "fibre": 2.08
   },
   {
     "name": "Apples, Gala, With Skin, Raw",
@@ -15,7 +15,7 @@
     "protein": 0.13,
     "carbs": 14.8,
     "fat": 0.15,
-    "fiber": 2.11
+    "fibre": 2.11
   },
   {
     "name": "Apples, Granny Smith, With Skin, Raw",
@@ -24,7 +24,7 @@
     "protein": 0.27,
     "carbs": 14.1,
     "fat": 0.14,
-    "fiber": 2.51
+    "fibre": 2.51
   },
   {
     "name": "Apples, Honeycrisp, With Skin, Raw",

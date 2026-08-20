@@ -32,18 +32,17 @@ function PillIcon({
           width: 52,
           height: 32,
           borderRadius: '50%',
-          // Raised glowing circle for the hero action
-          bgcolor: active ? '#4F7EFF' : '#233260',
+          bgcolor: active ? 'var(--primary)' : 'var(--secondary)',
           boxShadow: active
-            ? '0 0 0 4px rgba(79,126,255,0.2), 0 6px 24px rgba(79,126,255,0.55)'
-            : '0 2px 10px rgba(10,16,36,0.5)',
+            ? '0 0 0 4px color-mix(in oklch, var(--primary) 20%, transparent), 0 6px 24px color-mix(in oklch, var(--primary) 40%, transparent)'
+            : '0 2px 10px color-mix(in oklch, var(--foreground) 12%, transparent)',
           mb: '2px',
           position: 'relative',
           transition: 'background-color 0.25s ease, box-shadow 0.25s ease',
           '& .MuiSvgIcon-root': {
             fontSize: '1.4rem',
-            color: active ? '#fff' : '#6B82A8',
-            filter: active ? 'drop-shadow(0 0 6px rgba(255,255,255,0.4))' : 'none',
+            color: active ? 'var(--primary-foreground)' : 'var(--muted-foreground)',
+            filter: active ? 'drop-shadow(0 0 6px color-mix(in oklch, var(--primary-foreground) 40%, transparent))' : 'none',
             transition: 'color 0.25s ease, filter 0.25s ease',
           },
         }}
@@ -62,12 +61,12 @@ function PillIcon({
         width: 56,
         height: 30,
         borderRadius: '15px',
-        bgcolor: active ? 'rgba(79,126,255,0.15)' : 'transparent',
+        bgcolor: active ? 'color-mix(in oklch, var(--primary) 15%, transparent)' : 'transparent',
         mb: '3px',
         transition: 'background-color 0.25s ease',
         '& .MuiSvgIcon-root': {
           fontSize: '1.3rem',
-          filter: active ? 'drop-shadow(0 0 7px rgba(79,126,255,0.65))' : 'none',
+          filter: active ? 'drop-shadow(0 0 7px color-mix(in oklch, var(--primary) 65%, transparent))' : 'none',
           transform: active ? 'scale(1.1)' : 'scale(1)',
           transition: 'filter 0.25s ease, transform 0.25s ease',
         },
@@ -96,12 +95,12 @@ export default function BottomNav() {
         position: 'fixed',
         bottom: 0,
         left: 0,
-        bgcolor: '#1A2844',
+        bgcolor: 'var(--card)',
         height: 68,
-        boxShadow: '0 -1px 0 rgba(79,126,255,0.2), 0 -8px 32px rgba(10,16,36,0.65)',
+        boxShadow: '0 -1px 0 var(--border), 0 -8px 32px color-mix(in oklch, var(--foreground) 8%, transparent)',
 
         '& .MuiBottomNavigationAction-root': {
-          color: '#6B82A8',
+          color: 'var(--muted-foreground)',
           minWidth: 0,
           padding: '8px 0 10px',
           overflow: 'visible',
@@ -119,7 +118,7 @@ export default function BottomNav() {
         },
 
         '& .MuiBottomNavigationAction-root.Mui-selected': {
-          color: '#4F7EFF',
+          color: 'var(--primary)',
         },
       }}
     >
@@ -136,13 +135,11 @@ export default function BottomNav() {
           sx={
             hero
               ? {
-                  // Hero label sits below the floating circle, needs nudge down
                   '& .MuiBottomNavigationAction-label': {
                     position: 'relative',
-                    top: 3, // diff from top border of navbar
-                    // White when active so it pops against the dark bar
-                    color: value === v ? '#fff' : '#6B82A8',
-                    '&.Mui-selected': { fontSize: '0.68rem', color: '#fff' },
+                    top: 3,
+                    color: value === v ? 'var(--foreground)' : 'var(--muted-foreground)',
+                    '&.Mui-selected': { fontSize: '0.68rem', color: 'var(--foreground)' },
                   },
                 }
               : {}

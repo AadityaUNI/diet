@@ -1,5 +1,5 @@
 from collections import defaultdict
-from models.models import GeminiOutput 
+from app.models.models import GeminiOutput 
 
 def hydrate_plans(output: GeminiOutput, regional: list[dict]) -> list[dict]:
     lookup = dict()
@@ -22,20 +22,27 @@ def hydrate_plans(output: GeminiOutput, regional: list[dict]) -> list[dict]:
             
             for ing in meal.ingredients:
                 food_data = lookup.get(ing.id)
-                if not food_data: 
+                if not food_data or not ing.amount: 
                     # hallucination, skip the plan
                     skip_plan = True 
                     break
                 
                 # food data is id, name, protein, carbs, fat, calories, fibre as dictionary 
                 food_data['amount'] = ing.amount 
+
+                if ing.amount <= 0:
+                    skip_plan = True
+                    break
+
                 meal_data["ingredients"].append(food_data)
                 scale = ing.amount / 100
-                meal_data["total_calories"] += food_data["calories"] * scale 
-                meal_data["total_carbs"] += food_data["carbs"] * scale 
-                meal_data["total_fats"] += food_data["fat"] * scale 
-                meal_data["total_fibre"] += food_data["fibre"] * scale 
-                meal_data["total_protein"] += food_data["protein"] * scale 
+                meal_data["total_calories"] += round(food_data["calories"] * scale, 2)
+                meal_data["total_carbs"] += round(food_data["carbs"] * scale, 2)
+                meal_data["total_fats"] += round(food_data["fat"] * scale, 2)
+                meal_data["total_fibre"] += round(food_data["fibre"] * scale, 2)
+                meal_data["total_protein"] += round(food_data["protein"] * scale, 2)
+
+
             
             if (skip_plan):
                 break 

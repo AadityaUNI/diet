@@ -128,28 +128,3 @@
     @apply font-sans;
     }
 }
-@layer components {
-  .bg-primary {
-    @apply bg-[#4F7EFF];
-  }
-
-  .bg-secondary {
-    @apply bg-[#1A2844];
-  }
-
-  .text-primary {
-    @apply text-[#4F7EFF];
-  }
-
-  .text-secondary {
-    @apply text-[#6B82A8];
-  }
-
-  .hover-primary {
-    @apply hover:bg-[#3D6EEF];
-  }
-
-  .hover-secondary {
-    @apply hover:bg-[#1A2844] hover:text-white;
-  }
-}

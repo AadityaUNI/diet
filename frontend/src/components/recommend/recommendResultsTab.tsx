@@ -23,7 +23,7 @@ export function RecommendResultsTab({
 }: RecommendResultsTabProps) {
   return (
     <div
-      className="min-h-screen bg-background text-foreground"
+      className="min-h-screen bg-transparent text-foreground"
       style={{ fontFamily: "Inter, sans-serif" }}
     >
       <AppHeader loading={savedLoading} />

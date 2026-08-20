@@ -1,7 +1,7 @@
 // Mirrors the JSON schema Gemini is instructed to return in main.py's
 // call_gemini() prompt. Deliberately NOT unified with FullPlanData /
-// MealPlanItems / MealData — a generated plan hasn't been saved yet, so it
-// has no id, userID, mealID, planID, meal_completed, or FK-linked FoodItem.
+// MealData — a generated plan hasn't been saved yet, so it has no id,
+// planID, meal_completed, or FK-linked FoodItem.
 // Once a plan is saved, the backend response for that save action should
 // come back as (or be mapped to) FullPlanData — this type is purely for the
 // pre-save preview returned by POST /recommend.

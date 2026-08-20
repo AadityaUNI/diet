@@ -13,12 +13,12 @@ export function TopNav() {
   const { user } = useAuth()
 
   return (
-    <nav className="hidden md:flex items-center justify-between mx-3 rounded-xl mt-1 px-8 py-4 border-b border-[#1A2844] bg-[#0B1121]">
+    <nav className="hidden md:flex items-center justify-between mx-3 rounded-xl mt-1 px-8 py-4 border-b border-border bg-background">
 
       {/* Logo */}
       <Link to="/" className="flex items-center gap-2.5">
-        <div className="w-5 h-5 rounded-sm bg-gradient-to-br from-[#4F7EFF] to-[#00D47E]" />
-        <span className="text-sm font-semibold tracking-wide text-white">DietGrid</span>
+        <div className="w-5 h-5 rounded-sm bg-gradient-to-br from-primary to-chart-2" />
+        <span className="text-sm font-semibold tracking-wide">DietGrid</span>
       </Link>
 
       {/* Nav items */}
@@ -28,14 +28,14 @@ export function TopNav() {
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/saved"
-              className={`${navigationMenuTriggerStyle()} bg-transparent text-[#6B82A8] hover:text-white hover:bg-[#1A2844]`}
+              className={`${navigationMenuTriggerStyle()} bg-transparent text-muted-foreground hover:text-foreground hover:bg-secondary`}
             >
               Saved
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Button className="bg-[#4F7EFF] hover:bg-[#3D6EEF] text-white font-semibold shadow-none">
+            <Button className="font-semibold shadow-none">
               <Link to="/generate">Create For You</Link>
             </Button>
           </NavigationMenuItem>
@@ -45,7 +45,7 @@ export function TopNav() {
 
       {/* Profile avatar */}
       <Link to="/profile">
-        <div className="w-8 h-8 rounded-full bg-[#1A2844] border border-[#2A3F66] flex items-center justify-center text-sm font-semibold text-[#4F7EFF]">
+        <div className="w-8 h-8 rounded-full bg-secondary border border-border flex items-center justify-center text-sm font-semibold text-primary">
           {user?.email?.[0].toUpperCase() ?? "?"}
         </div>
       </Link>

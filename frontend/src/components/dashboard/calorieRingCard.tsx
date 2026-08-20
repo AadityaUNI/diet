@@ -11,9 +11,9 @@ export function CalorieRingCard({ consumed, goal }: CalorieRingCardProps) {
   const circumference = 2 * Math.PI * radius;
   const pct = Math.round((consumed.calories / goal.calories) * 100);
   const rows = [
-    { label: "Goal", value: goal.calories, color: "bg-secondary" },
-    { label: "Consumed", value: consumed.calories, color: "bg-primary" },
-    { label: "Remaining", value: goal.calories - consumed.calories, color: "bg-emerald-500" },
+    { label: "Goal", value: goal.calories, color: "bg-foreground/35" },
+    { label: "Consumed", value: consumed.calories, color: "bg-chart-1" },
+    { label: "Remaining", value: goal.calories - consumed.calories, color: "bg-chart-3" },
   ];
 
   return (
@@ -21,15 +21,15 @@ export function CalorieRingCard({ consumed, goal }: CalorieRingCardProps) {
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle>Today's Calories</CardTitle>
-          <span className="font-mono text-xs text-muted-foreground">{pct}% of goal</span>
+          <span className="font-mono text-xs font-semibold text-chart-1">{pct}% of goal</span>
         </div>
       </CardHeader>
       <CardContent className="flex items-center gap-5 pt-4">
         <div className="relative shrink-0" style={{ width: 110, height: 110 }}>
           <svg width={110} height={110} style={{ transform: "rotate(-90deg)" }}>
-            <circle cx={55} cy={55} r={radius} fill="none" stroke="rgba(79,126,255,0.08)" strokeWidth={10} />
+            <circle cx={55} cy={55} r={radius} fill="none" stroke="color-mix(in oklch, var(--chart-1) 18%, transparent)" strokeWidth={10} />
             <circle
-              cx={55} cy={55} r={radius} fill="none" stroke="#4f7eff"
+              cx={55} cy={55} r={radius} fill="none" stroke="var(--chart-1)"
               strokeWidth={10} strokeLinecap="round"
               strokeDasharray={circumference}
               strokeDashoffset={circumference * (1 - consumed.calories / goal.calories)}

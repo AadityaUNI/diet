@@ -3,7 +3,7 @@ import io
 import csv
 from google.genai import types
 
-from models.models import ConstraintInput
+from app.models.models import ConstraintInput
 
 def to_csv_string(regional):
     headers = regional[0].keys()
@@ -79,11 +79,11 @@ def call_gemini(constraints: ConstraintInput, regional_list: list, gemini):
     import time
     start = time.time()
     response = gemini.models.generate_content(
-        model="gemini-3.1-flash-lite",
+        model="gemini-3.6-flash",
         contents=prompt,
-        config=types.GenerateContentConfig(
-        thinking_config=types.ThinkingConfig(thinking_level="high")
-        )
+        # config=types.GenerateContentConfig(
+        # thinking_config=types.ThinkingConfig(thinking_level="high")
+        # )
     )
     print(f"GEMINI CALL TOOK: {time.time() - start:.2f}s")
 

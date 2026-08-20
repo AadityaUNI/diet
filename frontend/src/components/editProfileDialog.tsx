@@ -18,7 +18,7 @@ import {
   SelectValue,
   SelectGroup
 } from "@/components/ui/select"
-import { Loader2 } from "lucide-react"
+import { Check, ChevronLeft, ChevronRight, CircleUserRound, Dumbbell, Loader2, SlidersHorizontal, Target } from "lucide-react"
 import TagField from "./ui/tag-input"
 import type { UserProfile } from "@/types/types"
 import { ACTIVITY_LEVELS } from "@/lib/predefined"
@@ -41,6 +41,7 @@ export function EditProfileDialog({
   onSaved,
 }: EditProfileDialogProps) {
   const [form, setForm] = useState<UserProfile>(userData)
+  const [step, setStep] = useState(0)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
@@ -49,6 +50,7 @@ export function EditProfileDialog({
     if (open) {
       const timeout = window.setTimeout(() => {
         setForm(userData)
+        setStep(0)
         setError(null)
       }, 0)
 
@@ -65,7 +67,7 @@ export function EditProfileDialog({
     setError(null)
     try {
       const {id} = form
-      updateUserDetails(id as string, form)
+      await updateUserDetails(id as string, form)
       onSaved(form)
       onOpenChange(false)
     } catch (err) {
@@ -77,20 +79,44 @@ export function EditProfileDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-120 border-primary/20">
+      <DialogContent className="sm:max-w-2xl">
         <DialogHeader>
           <DialogTitle
             className="text-lg font-bold"
             style={{ fontFamily: "Outfit, sans-serif", letterSpacing: "-0.02em" }}
           >
-            Edit Profile
+            Edit Profile <span className="text-primary">/ {step + 1} of 4</span>
           </DialogTitle>
           <DialogDescription className="text-xs text-foreground/60">
             Update your details to keep your meal plans accurate.
           </DialogDescription>
         </DialogHeader>
 
-        <div className="grid gap-4 py-2">
+        <div className="grid gap-5 py-2 sm:grid-cols-[150px_1fr]">
+          <div className="grid h-fit grid-cols-4 gap-2 sm:grid-cols-1 sm:gap-1">
+            {([
+              ["Basics", CircleUserRound],
+              ["Body", Dumbbell],
+              ["Goal", Target],
+              ["Preferences", SlidersHorizontal],
+            ] as const).map(([label, Icon], index) => (
+              <button
+                key={label}
+                type="button"
+                onClick={() => setStep(index)}
+                aria-label={label}
+                className={`flex flex-col items-center gap-1 rounded-lg px-1 py-2 text-center text-xs transition-colors sm:flex-row sm:gap-2 sm:px-2 sm:text-left ${step === index ? "bg-primary/10 font-semibold text-primary" : "text-muted-foreground hover:bg-muted"}`}
+              >
+                <span className={`flex size-6 shrink-0 items-center justify-center rounded-full border text-[10px] ${step === index ? "border-primary bg-primary text-primary-foreground" : "border-border"}`}>
+                  {step > index ? <Check size={12} /> : <Icon size={13} />}
+                </span>
+                <span className="text-[10px] leading-none sm:text-xs sm:leading-normal">{label}</span>
+              </button>
+            ))}
+          </div>
+
+          <div className="min-h-70">
+          {step === 0 && <div className="grid gap-4">
           <div className="grid gap-1.5">
             <Label className="text-xs text-foreground/70">Name</Label>
             <Input
@@ -115,11 +141,13 @@ export function EditProfileDialog({
             </SelectContent>
           </Select>
           </div>
+          </div>}
 
+          {step === 2 && <div className="grid gap-4">
           <div className="grid gap-1.5">
             <Label className="text-xs text-foreground/70">Fitness Goal</Label>
             <Select name="goals" value={form.fitness_goals ?? ""} onValueChange={(v) => update("fitness_goals", v as string)} required>
-              <SelectTrigger className="w-[180px]">
+              <SelectTrigger className="w-45">
                 <SelectValue placeholder="Goal"/>
               </SelectTrigger>
               <SelectContent>
@@ -133,7 +161,9 @@ export function EditProfileDialog({
 
            
           </div>
+          </div>}
 
+          {step === 1 && <div className="grid gap-4">
           <div className="grid grid-cols-2 gap-3">
             <div className="grid gap-1.5">
               <Label className="text-xs text-foreground/70">Weight (kg)</Label>
@@ -196,7 +226,9 @@ export function EditProfileDialog({
               </Select>
             </div>
           </div>
+          </div>}
 
+          {step === 3 && <div className="grid gap-4">
           <TagField
             label="Dietary Restrictions"
             values={form.dietary_restrictions ?? []}
@@ -217,10 +249,12 @@ export function EditProfileDialog({
             onChange={(v) => update("required_food_items", v)}
             placeholder="e.g. paneer, lentils"
           />
+          </div>}
 
           {error && (
             <p className="text-xs text-destructive">{error}</p>
           )}
+          </div>
         </div>
 
         <DialogFooter className="gap-2 sm:gap-2">
@@ -232,15 +266,15 @@ export function EditProfileDialog({
           >
             Cancel
           </Button>
-          <Button
-            size="sm"
-            onClick={handleSave}
-            disabled={saving}
-            className="gap-1.5 bg-primary hover:bg-primary/90"
-          >
-            {saving && <Loader2 size={13} className="animate-spin" />}
-            Save Changes
-          </Button>
+          {step > 0 && <Button variant="outline" size="sm" onClick={() => setStep(step - 1)} disabled={saving} className="gap-1.5"><ChevronLeft size={14} /> Back</Button>}
+          {step < 3 ? (
+            <Button size="sm" onClick={() => setStep(step + 1)} disabled={saving} className="gap-1.5">Next <ChevronRight size={14} /></Button>
+          ) : (
+            <Button size="sm" onClick={handleSave} disabled={saving} className="gap-1.5">
+              {saving && <Loader2 size={13} className="animate-spin" />}
+              Save Changes
+            </Button>
+          )}
         </DialogFooter>
       </DialogContent>
     </Dialog>

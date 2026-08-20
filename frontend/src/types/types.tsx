@@ -38,15 +38,8 @@ export type FullPlanData = {
   total_fibre: number;
   total_protein: number;
   userID: string;
-  meal_plan_items: MealPlanItems[]
+  meals: MealData[]
 };
-
-export type MealPlanItems = {
-   meal_completed: boolean;
-    mealID: number;
-    planID: number;
-    meal_data: MealData;
-}
 
 export type MealData = {
   id: number;
@@ -56,12 +49,12 @@ export type MealData = {
   total_fats: number;
   total_fibre: number;
   total_protein: number;
-  userID: string;
+  planID: number;
+  meal_completed: boolean;
   meal_items: {
     amount: number;
     foodID: number;
     mealID: number;
-    userID: string;
     food_item: FoodItem;
   }[];
 };

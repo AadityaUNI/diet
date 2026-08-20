@@ -2,6 +2,7 @@
 import { Bolt } from "lucide-react";
 import { Logout } from "./logout";
 import { Link } from "react-router";
+import { ModeToggle } from "./mode-toggle";
 
 export function AppHeader({ loading = false }: { loading?: boolean }) {
 
@@ -16,7 +17,7 @@ export function AppHeader({ loading = false }: { loading?: boolean }) {
         }}>
         <div className="flex items-center gap-2">
           <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary">
-            <Bolt size={14} className="fill-white text-white" />
+            <Bolt size={14} className="fill-primary-foreground text-primary-foreground" />
           </div>
           <span className="font-outfit text-base font-bold tracking-tight">
             Diet<span className="text-primary">Grid</span>
@@ -24,7 +25,10 @@ export function AppHeader({ loading = false }: { loading?: boolean }) {
         </div>
 
         </Link>
-        <Logout />
+        <div className="flex items-center gap-2">
+          <ModeToggle />
+          <Logout />
+        </div>
       </div>
     </header>
   );

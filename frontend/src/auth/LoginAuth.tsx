@@ -1,27 +1,28 @@
 import { supabase } from "@/lib/supabase";
-import type React from "react";
 import type { NavigateFunction } from "react-router-dom";
 import { createUser } from "./UserService";
+import type { LoginValues, SignupValues } from "./authSchemas.ts";
 
 export async function onSignup(
-    e: React.FormEvent<HTMLFormElement>,
+    values: SignupValues,
     navigate: NavigateFunction
-)
+): Promise<string | null>
 {
-    e.preventDefault()
-
-    const formdata = new FormData(e.currentTarget)
-
-    const email = formdata.get("email") as string
-    const pass = formdata.get("password") as string
-    const age = Number(formdata.get("age"))
-    const name = formdata.get("name") as string
-    const region = formdata.get("region") as string
-    const goals = formdata.get("goals") as string
-    const height = Number(formdata.get("height")) 
-    const sex = formdata.get("sex") as string 
-    const weight = Number(formdata.get("weight"))
-    const activity_level = formdata.get("activity") as string 
+    const {
+        email,
+        password: pass,
+        age,
+        name,
+        region,
+        goals,
+        height,
+        sex,
+        weight,
+        activity: activity_level,
+        health_conditions,
+        dietary_restrictions,
+        required_food_items,
+    } = values
 
     const { data, error } = await supabase.auth.signUp({
     email: email,
@@ -29,27 +30,39 @@ export async function onSignup(
     })
     if (error)
     {
-        return false
+    console.log("Error signing up user", error)
+    return error.message
     }
 
-    // create UserProfile
-    await createUser({id: data.user!.id, name: name, region: region, fitness_goals: goals, height:height, weight:weight, sex:sex, activity_level:activity_level, age: age, 
-        health_conditions: [], dietary_restrictions: [], required_food_items: [], active_meal_plan_id: null
+    if (!data.user) {
+        return "Account was created but no user was returned. Try logging in."
+    }
+
+    await createUser({
+        id: data.user.id,
+        name: name,
+        region: region,
+        fitness_goals: goals,
+        height: height,
+        weight: weight,
+        sex: sex,
+        activity_level: activity_level,
+        age: age,
+        health_conditions: health_conditions ?? [],
+        dietary_restrictions: dietary_restrictions ?? [],
+        required_food_items: required_food_items ?? [],
+        active_meal_plan_id: null
     })
     navigate('/')
+    return null
 }
 
 export async function onLogin(
-    e: React.FormEvent<HTMLFormElement>,
+    values: LoginValues,
     navigate: NavigateFunction
 )
 {
-    e.preventDefault()
-
-    const formdata = new FormData(e.currentTarget)
-
-    const email = formdata.get("email") as string
-    const pass = formdata.get("password") as string
+    const { email, password: pass } = values
     
     const { error } = await supabase.auth.signInWithPassword({
     email: email,
@@ -57,6 +70,7 @@ export async function onLogin(
     })
     if (error)
     {
+        console.log("Error signing in user", error)
         return false
     }
     navigate("/")

@@ -6,19 +6,24 @@ config = dotenv_values()
 supabase = create_client(config["SUPABASE_URL"], config["SUPABASE_SECRET_KEY"])
 
 # add all food items according to their regions.
-# food_file = open("../data/food_items_cleaned.json", 'r') 
-global_file = open("../data/globalCleaned.json", 'r')
+food_file = open("../../../data/all_foods_cleaned.json", 'r')
 
-# foods = json.load(food_file)
+# new_food = open("../../../data/all_foods_cleaned.json", 'w')
 
-globals = json.load(global_file)
+foods = json.load(food_file)
 
-# food_data = supabase.table("FoodItem").insert(foods).execute()
-global_data = supabase.table("FoodItems").insert(globals).execute()
+# for item in foods:
+#     # item is a dictionary 
+#     item["fibre"] = item.pop("fiber")
+
+# json.dump(foods, new_food)
+
+food_data = supabase.table("FoodItems").insert(foods).execute()
+# global_data = supabase.table("FoodItems").insert(globals).execute()
 
 # Assert we pulled real data.
 # assert len(food_data.data) > 0
-assert len(global_data.data) > 0
+assert len(food_data.data) > 0
     
     
 

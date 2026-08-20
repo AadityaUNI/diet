@@ -15,9 +15,10 @@ export interface SavedPlansTabProps {
   onSetActive: (id: number | null) => void;
   activePlanID: number | null;
   onDeletePlan: (planID: number) => void; 
+  onEditPlan: (plan: FullPlanData) => void;
 }
 
-export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpandedPlan, loading, getRecommended ,onSetActive, onDeletePlan }: SavedPlansTabProps) {
+export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpandedPlan, loading, getRecommended ,onSetActive, onDeletePlan, onEditPlan }: SavedPlansTabProps) {
   
   
   if (loading) {
@@ -42,9 +43,9 @@ export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpan
       <div className="flex items-center justify-between">
         <div>
           <h2 className="font-outfit text-base font-bold">Saved Plans</h2>
-          <p className="text-xs text-muted-foreground">AI-generated · tap to expand</p>
+          <p className="text-xs text-muted-foreground">Tap to expand</p>
         </div>
-        <Badge className="font-mono text-xs">{savedPlans.length} plans</Badge>
+        <Badge variant="secondary" className="font-mono text-xs">{savedPlans.length} plans</Badge>
       </div>
 
       {savedPlans.map((plan) => (
@@ -56,6 +57,7 @@ export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpan
           isActive={plan.id === activePlanID}
           onSetActive={onSetActive}
           onDeletePlan={onDeletePlan}
+          onEditPlan={onEditPlan}
         />
       ))}
     </TabsContent>

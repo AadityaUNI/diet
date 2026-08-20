@@ -5,12 +5,13 @@ from supabase import create_client
 from typing import Annotated
 import jwt 
 import os
-
-from models.models import *
-from services.JWTService import verify_jwt
-from services.cfService import get_list
-from utils.verifyMacros import hydrate_plans
-from services.geminiService import call_gemini
+from dotenv import load_dotenv
+from app.models.models import *
+from app.services.JWTService import verify_jwt
+from app.services.cfService import get_list
+from app.utils.verifyMacros import hydrate_plans
+from app.services.geminiService import call_gemini
+load_dotenv()
 
 # dot env vals
 config = os.environ
@@ -47,7 +48,7 @@ def recommend(authorization: Annotated[str | None, Header()], constraints: Const
     if not verify_jwt(jwkClient,authorization):
         return -1
 
-    regional = get_list(constraints.region, cloudflare, cl_account_id, cl_namespace_id)
+    regional = get_list(cloudflare, constraints.region, cl_account_id, cl_namespace_id, supabase)
     
     if not regional: 
         return 10

@@ -1,31 +1,31 @@
 "use client"
 
-import type React from "react"
 import { useState, useRef, useCallback } from "react"
 import { cn } from "@/lib/utils"
 import { Login } from "./login"
 import { Signup } from "./signUp"
+import type { LoginValues, CredentialsValues } from "../auth/authSchemas.ts"
 
 const COOLDOWN_MS = 3000
 
 interface AuthFlipCardProps {
   className?: string
-  onLogin?: (e: React.FormEvent<HTMLFormElement>) => void
-  onSignup?: (e: React.FormEvent<HTMLFormElement>) => void
+  onLogin?: (values: LoginValues) => void
+  onCredentials?: (values: CredentialsValues) => void
 }
 
-export function FlipCard({ className, onLogin, onSignup }: AuthFlipCardProps) {
+export function FlipCard({ className, onLogin, onCredentials }: AuthFlipCardProps) {
   const [isFlipped, setIsFlipped] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const cooldownRef = useRef(false)
 
   const withCooldown = useCallback(
-    (handler?: (e: React.FormEvent<HTMLFormElement>) => void) =>
-      (e: React.FormEvent<HTMLFormElement>) => {
-        if (cooldownRef.current) return   // drop duplicate firings
+    <T,>(handler?: (values: T) => void) =>
+      (values: T) => {
+        if (cooldownRef.current) return
         cooldownRef.current = true
         setIsSubmitting(true)
-        handler?.(e)
+        handler?.(values)
         setTimeout(() => {
           cooldownRef.current = false
           setIsSubmitting(false)
@@ -40,13 +40,11 @@ export function FlipCard({ className, onLogin, onSignup }: AuthFlipCardProps) {
         className="relative w-full transition-transform duration-700 ease-[cubic-bezier(0.4,0.2,0.2,1)]"
         style={{
           transformStyle: "preserve-3d",
-          height: isFlipped ? "63rem" : "36rem",
           transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
         }}
       >
-        {/* Front: Login */}
         <div
-          className="absolute inset-0"
+          className={cn(!isFlipped ? "relative" : "absolute inset-0")}
           style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
         >
           <Login
@@ -56,9 +54,8 @@ export function FlipCard({ className, onLogin, onSignup }: AuthFlipCardProps) {
           />
         </div>
 
-        {/* Back: Signup */}
         <div
-          className="absolute inset-0"
+          className={cn(isFlipped ? "relative" : "absolute inset-0")}
           style={{
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
@@ -67,8 +64,8 @@ export function FlipCard({ className, onLogin, onSignup }: AuthFlipCardProps) {
         >
           <Signup
             onSwitchToLogin={() => setIsFlipped(false)}
-            onSubmit={withCooldown(onSignup)}
-            disabled={isSubmitting}
+            onSubmit={onCredentials}
+            disabled={false}
           />
         </div>
       </div>

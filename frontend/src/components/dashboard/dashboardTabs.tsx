@@ -5,15 +5,14 @@ import { SavedPlansTab } from "@/components/dashboard/saved/plansTab";
 import { changeUserActivePlan, deleteUserPlan, getAllFoodData } from "@/auth/PlanService";
 import { toggleUserMealCompletion } from "@/auth/MealService";
 import { useAuth } from "@/auth/AuthContext";
-import { useNavigate } from "react-router";
 import { useDebouncedCallback } from "use-debounce";
 import { getActivePlanID } from "@/auth/UserService";
 import type { FullPlanData } from "@/types/types";
 import { useMutation } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 
-export interface DashboardTabsProps {}
 
-export function DashboardTabs(_: DashboardTabsProps) {
+export function DashboardTabs() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const [expandedPlan, setExpandedPlan] = useState<number | null>(null);
@@ -34,16 +33,22 @@ export function DashboardTabs(_: DashboardTabsProps) {
     toggleUserMealCompletion(mealID, planID, state);
   }, 350);
 
-  const toggleMeal = (mealID: number, planID: number) => {
-    const isCompleted = activePlan?.meal_plan_items.find((meal) => meal.meal_data.id === mealID)?.meal_completed ?? false;
+  const toggleMeal = (mealID: number) => {
+    const meal = activePlan?.meals.find((item) => item.id === mealID);
+    const isCompleted = meal?.meal_completed ?? false;
     const state = !isCompleted;
+    const planID = meal?.planID ?? activePlan?.id;
+
+    if (!planID) {
+      return;
+    }
 
     setActivePlan((prev) => {
       if (!prev) return prev;
       return {
         ...prev,
-        meal_plan_items: prev.meal_plan_items.map((item) =>
-          item.meal_data.id === mealID ? { ...item, meal_completed: state } : item,
+        meals: prev.meals.map((item) =>
+          item.id === mealID ? { ...item, meal_completed: state } : item,
         ),
       };
     });
@@ -60,7 +65,7 @@ export function DashboardTabs(_: DashboardTabsProps) {
         return;
       }
 
-      const allPlans = await getAllFoodData(user.id);
+      const allPlans: FullPlanData[] | null = await getAllFoodData(user.id);
       const activePlanID = await getActivePlanID(user.id);
       const active = allPlans?.find((plan) => plan.id === activePlanID) ?? null;
 
@@ -92,17 +97,32 @@ export function DashboardTabs(_: DashboardTabsProps) {
     navigate("/recommend");
   };
 
+  const editPlan = (plan: FullPlanData) => {
+    navigate(`/plans/${plan.id}/edit`, { state: { plan } });
+  };
+
   return (
     <Tabs defaultValue="overview">
-      <TabsList className="mb-5 w-full">
-        <TabsTrigger value="overview">Overview</TabsTrigger>
-        <TabsTrigger value="saved">Saved</TabsTrigger>
+      <TabsList className="mb-5 w-full bg-muted dark:bg-white/10">
+        <TabsTrigger
+          value="overview"
+          className="data-active:bg-primary data-active:text-white dark:data-active:bg-white dark:data-active:text-black dark:data-active:border-transparent"
+        >
+          Active
+        </TabsTrigger>
+        <TabsTrigger
+          value="saved"
+          className="data-active:bg-primary data-active:text-white dark:data-active:bg-white dark:data-active:text-black dark:data-active:border-transparent"
+        >
+          Saved
+        </TabsTrigger>
       </TabsList>
       <OverviewTab
         activePlan={activePlan}
         toggleMeal={toggleMeal}
         getRecommended={getRecommended}
         loading={loadingPlans}
+        onEditPlan={editPlan}
       />
       <SavedPlansTab
         savedPlans={savedPlans}
@@ -113,6 +133,7 @@ export function DashboardTabs(_: DashboardTabsProps) {
         onSetActive={onSetActive}
         activePlanID={activePlan?.id ?? null}
         onDeletePlan={(planID) => handleDeletePlan.mutate(planID)}
+        onEditPlan={editPlan}
       />
     </Tabs>
   );

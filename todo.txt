@@ -1,0 +1,14 @@
+
+- add option to wire in the daily calorie count to the AI for better results (this, we're gonna have 
+to hard set the maths, like +250 for light bulk, +500 for heavy bulk)
+
+- change the goal value to what it should be , maybe an external AI call when the user signs up, 
+with a prompt to calculate it yourself using wired in calorie counter.
+
+- clean up food item names in the database and check what the added ingredients look like 
+
+
+Change AI to something that can handle 1000 users
+
+Make integration test and End to end test on frontend 
+

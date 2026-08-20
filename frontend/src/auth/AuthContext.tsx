@@ -1,11 +1,13 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import { supabase } from "../lib/supabase";
 import type { User } from "@supabase/supabase-js";
+import {currUserDetails} from "@/auth/UserService";
 
 interface AuthContextType
 {
   user: User | null,
   loading: boolean,
+  region: string,
   session_token: string | null
 }
 
@@ -15,8 +17,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
   const [session_token, setToken] = useState<string | null>(null)
+  const [region, setRegion] = useState<string>("")
 
   useEffect(() => {
+
+    async function fetchRegion() {
+      const profile = await currUserDetails()
+      if (profile) {
+        setRegion(profile.region)
+      }
+    }
+    fetchRegion()
   
     supabase.auth.getSession().then((data) => {
       setUser(data.data.session?.user ?? null)
@@ -32,7 +43,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => subscription.unsubscribe()
   }, [])
 
-  return <authContext.Provider value={{user, loading, session_token}}>{children}</authContext.Provider>
+  return <authContext.Provider value={{user, loading, session_token, region}}>{children}</authContext.Provider>
 }
 
 export const useAuth = () => {

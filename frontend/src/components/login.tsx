@@ -1,6 +1,7 @@
 "use client"
 
-import type React from "react"
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -8,15 +9,28 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Leaf } from "lucide-react"
 import { LoginSpinner } from "./loginSpinner"
+import { loginSchema, type LoginValues } from "../auth/authSchemas.ts"
 
 interface LoginFormProps {
   onSwitchToSignup: () => void
   /** Plug your auth handler in here. */
-  onSubmit?: (e: React.FormEvent<HTMLFormElement>) => void
+  onSubmit?: (values: LoginValues) => void
   disabled: boolean 
 }
 
 export function Login({ onSwitchToSignup, onSubmit, disabled }: LoginFormProps) {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginValues>({
+    resolver: zodResolver(loginSchema),
+    defaultValues: {
+      email: "",
+      password: "",
+    },
+  })
+
   return (
     <Card className="h-full w-full border-border/60 shadow-xl shadow-primary/5">
       <CardHeader className="space-y-3 text-center">
@@ -29,11 +43,12 @@ export function Login({ onSwitchToSignup, onSubmit, disabled }: LoginFormProps) 
         </div>
       </CardHeader>
 
-      <form onSubmit={onSubmit}>
+      <form onSubmit={handleSubmit((values) => onSubmit?.(values))}>
         <CardContent className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="login-email">Email</Label>
-            <Input id="login-email" name="email" type="email" placeholder="you@example.com" autoComplete="email" required />
+            <Input id="login-email" type="email" placeholder="you@example.com" autoComplete="email" {...register("email")} />
+            {errors.email && <p className="text-xs text-destructive">{errors.email.message}</p>}
           </div>
 
           <div className="space-y-2">
@@ -45,12 +60,12 @@ export function Login({ onSwitchToSignup, onSubmit, disabled }: LoginFormProps) 
             </div>
             <Input
               id="login-password"
-              name="password"
               type="password"
               placeholder="••••••••"
               autoComplete="current-password"
-              required
+              {...register("password")}
             />
+            {errors.password && <p className="text-xs text-destructive">{errors.password.message}</p>}
           </div>
         </CardContent>
 

@@ -1,5 +1,5 @@
 import { Sparkles } from "lucide-react";
-
+import { useAuth } from "@/auth/AuthContext";
 const steps = [
   "Fetching regional food data",
   "Applying your constraints",
@@ -7,8 +7,9 @@ const steps = [
 ];
 
 export function RecommendLoading() {
+  const {region} = useAuth();
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-8 bg-background px-8 text-center">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-8 bg-transparent px-8 text-center">
       <style>{`
         @keyframes dietgrid-fill {
           from { width: 0%; }
@@ -28,7 +29,7 @@ export function RecommendLoading() {
           Generating your plans…
         </p>
         <p className="mt-1 text-xs text-muted-foreground">
-          Gemini is curating meals from the India regional food list
+          Gemini is curating meals from the {region} regional food list
         </p>
       </div>
 

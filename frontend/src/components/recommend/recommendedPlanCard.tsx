@@ -19,14 +19,14 @@ interface RecommendedPlanCardProps {
 export function RecommendedPlanCard({ plan, isOpen, onToggleOpen, isSaved, onSave, savedLoading }: RecommendedPlanCardProps) {
   const chips = [
     { label: "Cal", value: plan.total_calories.toFixed(2), color: "text-foreground" },
-    { label: "Protein", value: `${plan.total_protein.toFixed(2)}g`, color: "text-primary" },
-    { label: "Carbs", value: `${plan.total_carbs.toFixed(2)}g`, color: "text-emerald-400" },
-    { label: "Fat", value: `${plan.total_fats.toFixed(2)}g`, color: "text-amber-400" },
+    { label: "Protein", value: `${plan.total_protein.toFixed(2)}g`, color: "text-chart-1" },
+    { label: "Carbs", value: `${plan.total_carbs.toFixed(2)}g`, color: "text-chart-2" },
+    { label: "Fat", value: `${plan.total_fats.toFixed(2)}g`, color: "text-chart-3" },
   ];
 
   return (
     <Card
-      className={`cursor-pointer transition-colors ${isOpen ? "border-primary/40" : ""}`}
+      className={`cursor-pointer bg-muted dark:bg-secondary transition-colors ${isOpen ? "ring-1 ring-border" : ""}`}
       onClick={onToggleOpen}
     >
       <CardContent className="p-4">

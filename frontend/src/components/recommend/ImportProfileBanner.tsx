@@ -9,7 +9,7 @@ interface ImportProfileBannerProps {
 
 export function ImportProfileBanner({ imported, onImport }: ImportProfileBannerProps) {
   return (
-    <Card className="border-primary/20 bg-primary/[0.06]">
+    <Card className="border-border bg-muted">
       <CardContent className="flex items-center justify-between p-4">
         <div>
           <p className="text-sm font-semibold text-foreground">Use saved fields</p>

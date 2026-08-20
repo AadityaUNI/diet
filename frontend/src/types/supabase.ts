@@ -58,19 +58,16 @@ export type Database = {
           amount: number
           foodID: number
           mealID: number
-          userID: string
         }
         Insert: {
           amount: number
           foodID: number
           mealID: number
-          userID: string
         }
         Update: {
           amount?: number
           foodID?: number
           mealID?: number
-          userID?: string
         }
         Relationships: [
           {
@@ -82,46 +79,6 @@ export type Database = {
           },
           {
             foreignKeyName: "mealItems_mealID_fkey"
-            columns: ["mealID"]
-            isOneToOne: false
-            referencedRelation: "Meals"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "MealItems_userID_fkey"
-            columns: ["userID"]
-            isOneToOne: false
-            referencedRelation: "UserProfiles"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      MealPlanItems: {
-        Row: {
-          meal_completed: boolean
-          mealID: number
-          planID: number
-        }
-        Insert: {
-          meal_completed?: boolean
-          mealID: number
-          planID: number
-        }
-        Update: {
-          meal_completed?: boolean
-          mealID?: number
-          planID?: number
-        }
-        Relationships: [
-          {
-            foreignKeyName: "DailyMealItems_dmID_fkey"
-            columns: ["planID"]
-            isOneToOne: false
-            referencedRelation: "MealPlans"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "DailyMealItems_mealID_fkey"
             columns: ["mealID"]
             isOneToOne: false
             referencedRelation: "Meals"
@@ -173,40 +130,43 @@ export type Database = {
       Meals: {
         Row: {
           id: number
+          meal_completed: boolean
           name: string
+          planID: number
           total_calories: number
           total_carbs: number
           total_fats: number
           total_fibre: number
           total_protein: number
-          userID: string
         }
         Insert: {
           id?: number
+          meal_completed?: boolean
           name: string
+          planID?: number
           total_calories: number
           total_carbs: number
           total_fats: number
           total_fibre: number
           total_protein: number
-          userID: string
         }
         Update: {
           id?: number
+          meal_completed?: boolean
           name?: string
+          planID?: number
           total_calories?: number
           total_carbs?: number
           total_fats?: number
           total_fibre?: number
           total_protein?: number
-          userID?: string
         }
         Relationships: [
           {
-            foreignKeyName: "Meals_userID_fkey"
-            columns: ["userID"]
+            foreignKeyName: "Meals_planID_fkey"
+            columns: ["planID"]
             isOneToOne: false
-            referencedRelation: "UserProfiles"
+            referencedRelation: "MealPlans"
             referencedColumns: ["id"]
           },
         ]
@@ -251,14 +211,14 @@ export type Database = {
           active_meal_plan_id: number | null
           activity_level: string
           age: number
-          dietary_restrictions: string[] | null
+          dietary_restrictions: string[]
           fitness_goals: string
-          health_conditions: string[] | null
+          health_conditions: string[]
           height: number
           id: string
           name: string
           region: string
-          required_food_items: string[] | null
+          required_food_items: string[]
           sex: string
           weight: number
         }
@@ -266,14 +226,14 @@ export type Database = {
           active_meal_plan_id?: number | null
           activity_level: string
           age: number
-          dietary_restrictions?: string[] | null
+          dietary_restrictions?: string[]
           fitness_goals: string
-          health_conditions?: string[] | null
+          health_conditions?: string[]
           height: number
           id: string
           name: string
           region: string
-          required_food_items?: string[] | null
+          required_food_items?: string[]
           sex: string
           weight: number
         }
@@ -281,14 +241,14 @@ export type Database = {
           active_meal_plan_id?: number | null
           activity_level?: string
           age?: number
-          dietary_restrictions?: string[] | null
+          dietary_restrictions?: string[]
           fitness_goals?: string
-          health_conditions?: string[] | null
+          health_conditions?: string[]
           height?: number
           id?: string
           name?: string
           region?: string
-          required_food_items?: string[] | null
+          required_food_items?: string[]
           sex?: string
           weight?: number
         }

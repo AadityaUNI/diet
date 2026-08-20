@@ -1,9 +1,13 @@
 "use client"
 
+import { useState } from "react"
 import { FlipCard } from "@/components/flipcard"
+import { OnboardingFlow } from "@/components/onboarding/OnboardingFlow"
 import { Leaf, LineChart, Salad, Zap } from "lucide-react"
 import { onLogin, onSignup } from "@/auth/LoginAuth"
 import { useNavigate } from "react-router-dom"
+import { ModeToggle } from "@/components/mode-toggle"
+import type { CredentialsValues } from "@/auth/authSchemas"
 
 const features = [
   {
@@ -25,22 +29,21 @@ const features = [
 
 export default function Landing() {
   const navigate = useNavigate()
+  const [credentials, setCredentials] = useState<CredentialsValues | null>(null)
+
   return (
-    <main className="min-h-svh bg-background">
-      {/* Nav */}
-      <header className="mx-auto flex w-full max-w-6xl items-center justify-center px-6 py-6">
+    <main className="min-h-svh bg-transparent">
+      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
         <div className="flex items-center h-15 gap-2">
           <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
             <Leaf className="h-10 w-5" />
           </div>
           <span className="text-4xl font-semibold tracking-tight">DietGrid</span>
         </div>
-      
+        <ModeToggle />
       </header>
 
-      {/* Hero + Auth */}
       <section className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 py-12 lg:grid-cols-2 lg:py-20">
-        {/* Left: copy */}
         <div className="flex flex-col gap-6">
           <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-sm font-medium text-muted-foreground">
             <span className="h-2 w-2 rounded-full bg-primary" />
@@ -71,9 +74,19 @@ export default function Landing() {
           </ul>
         </div>
 
-        {/* Right: flipping auth card */}
         <div className="flex justify-center lg:justify-end">
-          <FlipCard onLogin={(e) => onLogin(e, navigate)} onSignup={(e) => onSignup(e, navigate)} />
+          {credentials ? (
+            <OnboardingFlow
+              credentials={credentials}
+              onBackToCredentials={() => setCredentials(null)}
+              onComplete={(values) => onSignup(values, navigate)}
+            />
+          ) : (
+            <FlipCard
+              onLogin={(e) => onLogin(e, navigate)}
+              onCredentials={setCredentials}
+            />
+          )}
         </div>
       </section>
     </main>

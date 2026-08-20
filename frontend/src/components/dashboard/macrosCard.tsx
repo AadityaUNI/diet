@@ -29,7 +29,7 @@ function MacroRing({ label, value, max, color, size = 80 }: {
     <div className="flex flex-col items-center gap-1">
       <div className="relative" style={{ width: size, height: size }}>
         <svg width={size} height={size} style={{ transform: "rotate(-90deg)" }}>
-          <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="rgba(79,126,255,0.1)" strokeWidth={sw} />
+          <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="color-mix(in oklch, var(--foreground) 10%, transparent)" strokeWidth={sw} />
           <circle
             cx={size / 2}
             cy={size / 2}

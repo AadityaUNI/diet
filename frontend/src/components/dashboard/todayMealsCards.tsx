@@ -4,7 +4,7 @@ import { MealRow} from "@/components/dashboard/mealRow";
 import type { FullPlanData } from "@/types/types";
 interface TodaysMealsCardProps {
   activePlan: FullPlanData;
-  toggleMeal: (mealID: number, planID: number) => void 
+  toggleMeal: (mealID: number) => void 
 }
 
 export function TodaysMealsCard({ activePlan, toggleMeal }: TodaysMealsCardProps) {
@@ -25,15 +25,14 @@ export function TodaysMealsCard({ activePlan, toggleMeal }: TodaysMealsCardProps
       </CardHeader>
       <CardContent className="pt-3">
         <div className="flex flex-col">
-          {activePlan.meal_plan_items.map((meal_item, idx) => {
-            const mealData = meal_item.meal_data
+          {activePlan.meals.map((mealData, idx) => {
             return(
             <MealRow
               key={mealData.id}
               mealData={mealData}
-              eaten={meal_item.meal_completed}
-              planID={activePlan.id as number}
-              isLast={idx === activePlan.meal_plan_items.length - 1}
+              eaten={mealData.meal_completed}
+              isLast={idx === activePlan.meals.length - 1}
+              accentIndex={idx}
               onToggle={toggleMeal}
             />)
           }

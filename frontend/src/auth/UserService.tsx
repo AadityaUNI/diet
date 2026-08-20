@@ -9,6 +9,7 @@ export async function createUser(profile: UserProfile)
 
     if (error)
     {
+      console.log("Error inserting user profile", error)
         return;
     }
 }
@@ -23,6 +24,7 @@ export async function getActivePlanID(userID: string)
 
   if (error)
   {
+    console.log("Error fetching active plan ID", error)
     return 
   }
   return data.active_meal_plan_id
@@ -38,6 +40,7 @@ export async function currUserDetails(): Promise<UserProfile | undefined>
 
     if (error)
     {
+      console.log("Error fetching current user details", error)
         return
     }
 
@@ -67,6 +70,7 @@ export async function updateUserDetails(
 
   if (error)
   {
+     console.log("Error updating user details", error)
     return
   }
 }
@@ -76,6 +80,7 @@ export async function logoutUser()
   const { error } = await supabase.auth.signOut()
   if (error)
   {
+     console.log("Error signing out user", error)
     return
   }
 }

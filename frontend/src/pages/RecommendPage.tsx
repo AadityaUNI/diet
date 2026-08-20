@@ -12,8 +12,8 @@ import { useMutation } from "@tanstack/react-query";
 import { getAIRec } from "@/auth/RecommendGen";
 import { RecommendError } from "@/components/recommend/recommendError";
 import type { View, Goal } from "@/types/generated-plan";
-import { createUserPlan } from "@/auth/PlanService";
 import { useAuth } from "@/auth/AuthContext";
+import { createUserPlanFromAI } from "@/auth/PlanService";
 
 type RecommendVariables = {
   profile: UserProfile;
@@ -32,7 +32,13 @@ export function RecommendPage() {
   useEffect(() => {
     async function getProfile()
     {
-      setProfile(await currUserDetails() as UserProfile)
+      const loadedProfile = await currUserDetails() as UserProfile
+      setProfile(loadedProfile)
+      setGoal(loadedProfile.fitness_goals as Goal)
+      setRestrictions(loadedProfile.dietary_restrictions ?? [])
+      setConditions(loadedProfile.health_conditions ?? [])
+      setMustHave(loadedProfile.required_food_items ?? [])
+      setImported(true)
     }
     getProfile()
   }, [])
@@ -47,17 +53,6 @@ export function RecommendPage() {
   const [savedPlanIndices,    setSavedPlanIndices]   = useState<Set<number>>(new Set());
   const [expandedPlanIndex,   setExpandedPlanIndex]  = useState<number | null>(null);
   const [savedLoading, setSavedLoading] = useState<boolean>(false)
-
-  // ── Handlers ──
-  const handleImport = () => {
-    if (!profile) return
-    setGoal(profile.fitness_goals as Goal);
-    setRestrictions(profile.dietary_restrictions as string[]);
-    setConditions(profile.health_conditions as string[]);
-    setMustHave(profile.required_food_items as string[]);
-    setImported(true);
-  };
-
 
 const recMutation = useMutation({
   mutationFn: async ({
@@ -97,7 +92,7 @@ const recMutation = useMutation({
     }
     setSavedPlanIndices((prev) => new Set([...prev, index]));
     setSavedLoading(true)
-    const savedPlanID = await createUserPlan(plan, profile.id);
+    const savedPlanID = await createUserPlanFromAI(plan, profile.id);
 
     if (!savedPlanID) {
       return;
@@ -113,7 +108,7 @@ const recMutation = useMutation({
         restrictions={restrictions} setRestrictions={setRestrictions}
         conditions={conditions} setConditions={setConditions}
         mustHave={mustHave} setMustHave={setMustHave}
-        imported={imported} onImport={handleImport}
+        imported={imported}
         loadingUser={profile ? false : true}
         onGenerate={() => recMutation.mutate({profile: profile as UserProfile, conditions, mustHave, restrictions, goal })}
       />

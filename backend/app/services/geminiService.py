@@ -16,7 +16,7 @@ def to_csv_string(regional):
     return buffer.getvalue()
     
 def call_gemini(constraints: ConstraintInput, regional_list: list, gemini):
-    prompt = f"""You are an expert dietitian specializing in creating therapeutic diets that adhere to specific health conditions (e.g., inflammation, RA) and dietary restrictions (e.g., vegan, vegetarian). Your primary objective is to fulfill the patient's daily macronutrient needs (calories, carbohydrates, fats, proteins, and fibre) based on their specific fitness goals.
+    prompt = f"""You are an expert dietitian and home cook specializing in creating therapeutic diets that adhere to specific health conditions (e.g., inflammation, RA) and dietary restrictions (e.g., vegan, vegetarian). Your primary objective is to hit the patient's goal calorie target for the day, and their macronutrient needs (carbohydrates, fats, proteins, fibre), based on their specific fitness goals.
 
         ### Core Task: Meal Plan Generation
         You will be provided with a CSV list of available food items (regional and global). You must generate 3 distinct daily meal plans based on the user's profile and constraints.
@@ -25,18 +25,21 @@ def call_gemini(constraints: ConstraintInput, regional_list: list, gemini):
         All nutrient values (protein, carbs, fat, calories, fibre) in the provided list are PER 100 GRAMS of the food item. When you specify an `amount` for an ingredient in your output, it must be in GRAMS — this amount will be used to scale the per-100g values (actual contribution = value * amount / 100) to compute real macro totals. Choose amounts that are realistic serving sizes and that cause the plan to hit the daily targets once scaled.
 
         ### Guidelines & Rules
-        1. STRICT INGREDIENT USAGE: Use ONLY ingredients from the provided list, referenced by their exact `id`. Do NOT invent or hallucinate food items or ids.
-        2. MUST-HAVE FOODS: Attempt to include the client's "must-have" foods. If it is impossible or unviable to include them based on macros or availability, skip them and list them in the `skipped_items` array.
-        3. REFERENCING: Reference each ingredient ONLY by its exact `id` from the provided list, mapped as `id` in your output. Do not output ingredient names, macros, or any other fields.
-        4. TARGETS & VARIETY: Each of the 3 plans must independently hit the daily calorie and macro targets once amounts are scaled per the formula above. Ensure the plans are as diverse from each other as possible.
+        1. STRICT INGREDIENT USAGE: Use ONLY ingredients from the provided list, referenced ONLY by their exact `id` from that list — do NOT invent or hallucinate food items or ids, and do not output ingredient names, macros, or any other fields.
+
+        2. THINK LIKE A COOK, NOT A CALCULATOR: For every meal, first decide what the meal actually IS — a real, appetizing, recognizable dish or plate (e.g. "paneer and vegetable stir-fry with rice", "oats with fruit and nuts"), appropriate to the meal slot (breakfast/lunch/dinner/snack), the region, and the dietary restrictions. Only after you've settled on the dish concept should you choose ingredient amounts to bring its macros toward the targets. Never assemble a meal by picking whatever ingredients happen to sum to the right numbers — every meal should read like something a person would actually want to sit down and eat, not a bundle of foods optimized for a spreadsheet.
+
+        3. MUST-HAVE FOODS — HIGH PRIORITY: The client's "must-have" foods matter a lot and should be worked into the plans whenever there is any reasonable way to do so, even if that costs some precision elsewhere. Only skip a must-have and list it in `skipped_items` if it is genuinely incompatible — e.g. it directly conflicts with a dietary restriction or health condition, or including it at all would make it impossible to build a sane meal. Do not skip a must-have just because it makes hitting the calorie/macro targets exactly harder; it's fine for the plan to land a bit off-target in order to keep something like "tea" or "must-have vegetable X" in there.
+
+        4. GOAL CALORIES & MACRO TARGETS: The single most important numeric target is the client's Goal Calories, provided below — get each plan's total as close to this number as you reasonably can. Macro targets (protein, carbs, fat, fibre) matter too, but small deviations in either calories or macros are acceptable, especially when they're the trade-off for including a must-have food or keeping a meal realistic and appetizing — a slightly-off plan someone will actually eat is more useful than a perfectly-optimized one that isn't sustainable. Ensure all 3 plans independently land close to the goal calories and are as diverse from each other as possible in ingredients and dishes.
+
         5. MICRO-NUTRIENTS: Since micro-nutrient data is absent, approximate completeness by ensuring a wide variety of meals and ingredients across the plans.
-        6. PLAN-NAMING: Each plan should be given a name appropriate to the plan's contents, nutritional amounts.
-        
-        LASTLY AND VERY IMPORTANTLY: Make sure that each of the macro-nutrient targets (generated by you, given the constraints) is accurately COMPLETED (including calories, protein, carbs, fats) by scaling 
-        the ingredient amounts appropriately or having a multitude of meals.
-        
-        
+
+        LASTLY AND VERY IMPORTANTLY: Treat the Goal Calories figure below as the target to get as close to as possible for each plan, adjusting protein/carbs/fat/fibre to sensible levels around it — by scaling ingredient amounts appropriately or using a well-chosen set of meals — while still keeping every meal a real, coherent dish.
+
+
         ### User Constraints
+        - Goal calories (target for each plan): {constraints.goal_calories} kcal
         - Fitness goals: {constraints.fitness_goals}
         - Age: {constraints.age} years
         - Biological Sex: {constraints.sex}
@@ -93,6 +96,3 @@ def call_gemini(constraints: ConstraintInput, regional_list: list, gemini):
     except json.JSONDecodeError:
         cleaned = response.text.strip().removeprefix("```json").removesuffix("```").strip()
         return json.loads(cleaned)
-    
-
-    

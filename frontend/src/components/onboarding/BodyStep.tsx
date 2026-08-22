@@ -1,6 +1,6 @@
 "use client"
 
-import { Controller, useForm } from "react-hook-form"
+import { Controller, useForm, useWatch } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -13,14 +13,17 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { bodyStepSchema, type BodyStepFormValues, type BodyStepValues } from "@/auth/authSchemas"
+import { calculateCalorieTarget } from "@/lib/calorieTarget"
 
 interface BodyStepProps {
   defaultValues: BodyStepFormValues
+  goal: string
+  activity: string
   onBack: () => void
   onContinue: (values: BodyStepValues) => void
 }
 
-export function BodyStep({ defaultValues, onBack, onContinue }: BodyStepProps) {
+export function BodyStep({ defaultValues, goal, activity, onBack, onContinue }: BodyStepProps) {
   const {
     register,
     control,
@@ -31,6 +34,12 @@ export function BodyStep({ defaultValues, onBack, onContinue }: BodyStepProps) {
     defaultValues,
   })
 
+  const watched = useWatch({ control })
+  const hasPreview = Number(watched.age) > 0 && Number(watched.weight) > 0 && Number(watched.height) > 0 && Boolean(watched.sex)
+  const calorieTarget = hasPreview
+    ? calculateCalorieTarget({ age: Number(watched.age), weight: Number(watched.weight), height: Number(watched.height), sex: watched.sex, activity_level: activity, fitness_goals: goal })
+    : null
+
   return (
     <form className="space-y-4" onSubmit={handleSubmit(onContinue)}>
       <div className="space-y-2">
@@ -38,6 +47,14 @@ export function BodyStep({ defaultValues, onBack, onContinue }: BodyStepProps) {
         <Input id="onboarding-age" type="number" min="1" step="1" placeholder="e.g. 28" {...register("age")} />
         {errors.age && <p className="text-xs text-destructive">{errors.age.message}</p>}
       </div>
+
+      {calorieTarget && (
+        <div className="rounded-xl border border-primary/20 bg-primary/5 px-3 py-3">
+          <p className="text-xs font-semibold uppercase tracking-wide text-primary">Your daily target</p>
+          <p className="mt-1 font-outfit text-2xl font-bold">{calorieTarget.toLocaleString()} kcal</p>
+          <p className="text-xs text-muted-foreground">Based on your stats, activity, and selected goal.</p>
+        </div>
+      )}
 
       <div className="grid grid-cols-2 gap-3">
         <div className="space-y-2">

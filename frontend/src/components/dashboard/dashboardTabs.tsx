@@ -6,7 +6,9 @@ import { changeUserActivePlan, deleteUserPlan, getAllFoodData } from "@/auth/Pla
 import { toggleUserMealCompletion } from "@/auth/MealService";
 import { useAuth } from "@/auth/AuthContext";
 import { useDebouncedCallback } from "use-debounce";
-import { getActivePlanID } from "@/auth/UserService";
+import { currUserDetails, getActivePlanID } from "@/auth/UserService";
+import { calculateCalorieTarget } from "@/lib/calorieTarget";
+import type { UserProfile } from "@/types/types";
 import type { FullPlanData } from "@/types/types";
 import { useMutation } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
@@ -19,6 +21,7 @@ export function DashboardTabs() {
   const [activePlan, setActivePlan] = useState<FullPlanData | null>(null);
   const [savedPlans, setSavedPlans] = useState<FullPlanData[] | null>(null);
   const [loadingPlans, setLoadingPlans] = useState<boolean>(true);
+  const [profile, setProfile] = useState<UserProfile | null>(null);
 
   const handleDeletePlan = useMutation({
     mutationFn: async (planID: number) => {
@@ -64,6 +67,9 @@ export function DashboardTabs() {
         setLoadingPlans(false);
         return;
       }
+
+      const userProfile = await currUserDetails();
+      setProfile(userProfile ?? null);
 
       const allPlans: FullPlanData[] | null = await getAllFoodData(user.id);
       const activePlanID = await getActivePlanID(user.id);
@@ -123,6 +129,7 @@ export function DashboardTabs() {
         getRecommended={getRecommended}
         loading={loadingPlans}
         onEditPlan={editPlan}
+        calorieTarget={profile ? calculateCalorieTarget(profile) : null}
       />
       <SavedPlansTab
         savedPlans={savedPlans}

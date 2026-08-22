@@ -12,6 +12,7 @@ class ConstraintInput(BaseModel):
     health_conditions: list[str]
     required_food_items: list[str]
     dietary_restrictions: list[str]
+    goal_calories: PositiveInt
 
 
 class Ingredients(BaseModel):

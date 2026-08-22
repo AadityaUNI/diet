@@ -53,7 +53,7 @@ export async function onSignup(
         required_food_items: required_food_items ?? [],
         active_meal_plan_id: null
     })
-    navigate('/')
+    navigate('/after-signup')
     return null
 }
 

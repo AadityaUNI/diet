@@ -4,6 +4,22 @@ export type UserProfile = {
   dietary_restrictions: string[]
   fitness_goals: string;
   health_conditions: string[]
+  height: number | string;
+  id: string;
+  name: string;
+  region: string;
+  required_food_items: string[]
+  sex: string;
+  age: number | string;
+  weight: number | string;
+};
+
+export type NormalizedUserProf = {
+  active_meal_plan_id: number | null;
+  activity_level: string;
+  dietary_restrictions: string[]
+  fitness_goals: string;
+  health_conditions: string[]
   height: number;
   id: string;
   name: string;
@@ -12,10 +28,9 @@ export type UserProfile = {
   sex: string;
   age: number;
   weight: number;
-};
+}
 
-
-export type UpdateUserProfile = {
+export type NormalizedUpdate = {
   name?: string;
   region?: string;
   fitness_goals?: string;
@@ -25,6 +40,21 @@ export type UpdateUserProfile = {
   weight?: number; // kg
   age?: number;
   height?: number;
+  sex?: string;
+  activity_level?: string;
+}
+
+
+export type UpdateUserProfile = {
+  name?: string;
+  region?: string;
+  fitness_goals?: string;
+  dietary_restrictions?: string[];
+  health_conditions?: string[];
+  required_food_items?: string[];
+  weight?: number | string; // kg
+  age?: number | string;
+  height?: number | string;
   sex?: string;
   activity_level?: string;
 };

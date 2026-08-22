@@ -121,6 +121,8 @@ export function OnboardingFlow({
         {step === "BODY" && (
           <BodyStep
             defaultValues={body}
+            goal={goals.goals}
+            activity={goals.activity}
             onBack={() => goTo("GOALS", false)}
             onContinue={(values) => {
               setBody(values)

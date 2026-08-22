@@ -23,6 +23,7 @@ import TagField from "./ui/tag-input"
 import type { UserProfile } from "@/types/types"
 import { ACTIVITY_LEVELS } from "@/lib/predefined"
 import { updateUserDetails } from "@/auth/UserService"
+import { CALORIE_GOAL_OPTIONS } from "@/lib/calorieTarget"
 
 interface EditProfileDialogProps {
   open: boolean
@@ -40,7 +41,14 @@ export function EditProfileDialog({
   userData,
   onSaved,
 }: EditProfileDialogProps) {
-  const [form, setForm] = useState<UserProfile>(userData)
+  const normalizeForm = (profile: UserProfile): UserProfile => ({
+    ...profile,
+    age: String(profile.age ?? ""),
+    weight: String(profile.weight ?? ""),
+    height: String(profile.height ?? ""),
+  })
+
+  const [form, setForm] = useState<UserProfile>(() => normalizeForm(userData))
   const [step, setStep] = useState(0)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -49,7 +57,7 @@ export function EditProfileDialog({
   useEffect(() => {
     if (open) {
       const timeout = window.setTimeout(() => {
-        setForm(userData)
+        setForm(normalizeForm(userData))
         setStep(0)
         setError(null)
       }, 0)
@@ -152,9 +160,9 @@ export function EditProfileDialog({
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectItem value="cut">Cut</SelectItem>
-                  <SelectItem value="bulk">Bulk</SelectItem>
-                  <SelectItem value="maintain">Maintain</SelectItem>
+                  {CALORIE_GOAL_OPTIONS.map(({ value, label }) => (
+                    <SelectItem key={value} value={value}>{label}</SelectItem>
+                  ))}
                 </SelectGroup>
               </SelectContent>
             </Select>
@@ -170,7 +178,7 @@ export function EditProfileDialog({
               <Input
                 type="number"
                 value={form.weight ?? ""}
-                onChange={(e) => update("weight", Number(e.target.value))}
+                onChange={(e) => update("weight", e.target.value)}
                 className="h-9 text-sm"
                 required
               />
@@ -180,7 +188,7 @@ export function EditProfileDialog({
               <Input
                 type="number"
                 value={form.height ?? ""}
-                onChange={(e) => update("height", Number(e.target.value))}
+                onChange={(e) => update("height", e.target.value)}
                 className="h-9 text-sm"
                 required
               />

@@ -1,7 +1,7 @@
 import type { RecommendResponse } from "@/types/generated-plan";
 import type { UserProfile } from "@/types/types";
 
-export async function getAIRec(token: string, constraints: UserProfile)
+export async function getAIRec(token: string, constraints: UserProfile & {goal_calories: Number})
 {
     const response = await fetch(`${import.meta.env.VITE_FASTAPI_URL}/recommend`, {
         method: "POST",

@@ -5,7 +5,7 @@ export type PlanEditorMode = "create" | "edit";
 export type PlanIngredientDraft = {
   id: number;
   name: string;
-  amount: number;
+  amount: string;
   calories: number;
   carbs: number;
   fat: number;
@@ -36,7 +36,7 @@ export type PlanEditorDraft = {
 };
 
 
-function createIngredientDraft(name = "", amount = 0, fat = 0, fibre = 0, calories = 0, protein = 0, carbs = 0) {
+function createIngredientDraft(name = "", amount = "", fat = 0, fibre = 0, calories = 0, protein = 0, carbs = 0) {
   return {
     id: -1,
     name,
@@ -76,7 +76,7 @@ export function planDraftFromSavedPlan(plan: FullPlanData): PlanEditorDraft {
       ingredients: meal.meal_items.map((mealItem) => ({
         id: mealItem.foodID,
         name: mealItem.food_item.name,
-        amount: mealItem.amount,
+        amount: String(mealItem.amount),
         fibre: mealItem.food_item.fibre,
         fat: mealItem.food_item.fat,
         calories: mealItem.food_item.calories,

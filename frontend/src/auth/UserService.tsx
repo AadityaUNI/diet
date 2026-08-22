@@ -1,11 +1,24 @@
 import { supabase } from "@/lib/supabase";
 import { type UpdateUserProfile, type UserProfile } from "@/types/types";
+import type { NormalizedUpdate, NormalizedUserProf } from "@/types/types";
+
+function normalizeProf(profile: UserProfile | UpdateUserProfile) {
+  const {age, weight, height} = profile;
+  return {
+  ...profile,
+  ...(age && { age: Number(age) }),
+  ...(weight && { weight: Number(weight) }),
+  ...(height && { height: Number(height) }),
+};
+
+}
 
 export async function createUser(profile: UserProfile)
 {
+  const numberedProfile = normalizeProf(profile) as NormalizedUserProf;
   const { error } = await supabase
     .from('UserProfiles')
-    .insert([profile])
+    .insert([numberedProfile])
 
     if (error)
     {
@@ -63,9 +76,10 @@ export async function updateUserDetails(
   id: string,
   updates: UpdateUserProfile
 ) {
+  const normUpdates = normalizeProf(updates) as NormalizedUpdate;
   const { error } = await supabase
     .from("UserProfiles")
-    .update(updates)
+    .update(normUpdates)
     .eq("id", id)
 
   if (error)

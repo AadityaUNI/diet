@@ -308,7 +308,7 @@ export function PlanEditor({
                                         updateMeal(draft, meal.id, (current) => ({
                                           ...updateIngredient(current, ingredient.id, (currentIngredient) => ({
                                             ...currentIngredient,
-                                            amount: Math.abs(Number(event.target.value)),
+                                            amount: String(Math.abs(Number(event.target.value))),
                                           })),
                                         })),
                                       )

@@ -15,23 +15,33 @@ export default function RecommendButton() {
 
   return (
     <div className="pointer-events-none fixed bottom-7 left-0 right-0 z-50 flex justify-center px-4">
-      <div className="pointer-events-auto flex w-full max-w-lg flex-col gap-3 sm:flex-row">
-        <Button
-          onClick={recommendClick}
-          className="flex-1 gap-2.5 rounded-full px-6 py-6 text-sm font-bold shadow-sm transition-all duration-200 hover:-translate-y-0.5"
-        >
-          <Sparkles className="h-4 w-4 fill-primary-foreground/30 text-primary-foreground" />
-          Recommend Diet with AI
-        </Button>
+      <div className="pointer-events-auto flex items-end gap-3 sm:w-full sm:max-w-lg">
+        <div className="flex flex-col items-center gap-1 sm:flex-1 sm:flex-row sm:gap-2">
+          <Button
+            onClick={recommendClick}
+            aria-label="Recommend diet with AI"
+            title="Recommend diet with AI"
+            className="size-13 rounded-full p-0 font-bold shadow-sm transition-all duration-200 hover:-translate-y-0.5 sm:h-15 sm:w-15 sm:flex-1 sm:gap-2.5 sm:rounded-full sm:px-6 sm:py-6"
+          >
+            <Sparkles className="h-4 w-4 fill-primary-foreground/30 text-primary-foreground" />
+            <span className="hidden sm:inline">Recommend Diet with AI</span>
+          </Button>
+          <span className="text-[10px] font-medium leading-none text-muted-foreground sm:hidden">AI plan</span>
+        </div>
 
-        <Button
-          onClick={createPlanClick}
-          variant="secondary"
-          className="flex-1 gap-2.5 rounded-full px-6 py-6 text-sm font-semibold"
-        >
-          <PencilLine className="h-4 w-4" />
-          Create your own plan
-        </Button>
+        <div className="flex flex-col items-center gap-1 sm:flex-1 sm:flex-row sm:gap-2">
+          <Button
+            onClick={createPlanClick}
+            variant="secondary"
+            aria-label="Create your own plan"
+            title="Create your own plan"
+            className="size-13 rounded-full p-0 font-semibold sm:h-15 sm:w-15 sm:flex-1 sm:gap-2.5 sm:rounded-full sm:px-6 sm:py-6"
+          >
+            <PencilLine className="h-4 w-4" />
+            <span className="hidden sm:inline">Create your own plan</span>
+          </Button>
+          <span className="text-[10px] font-medium leading-none text-muted-foreground sm:hidden">My plan</span>
+        </div>
       </div>
     </div>
   );

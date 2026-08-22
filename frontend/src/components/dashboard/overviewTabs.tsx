@@ -14,6 +14,7 @@ export interface OverviewTabProps {
   getRecommended: () => void;
   loading: boolean
   onEditPlan: (plan: FullPlanData) => void;
+  calorieTarget: number | null;
 }
 
 type MacroStat = {
@@ -23,7 +24,7 @@ type MacroStat = {
   color: string;
 };
 
-function getNutritionSummary(activePlan: FullPlanData) {
+function getNutritionSummary(activePlan: FullPlanData, calorieTarget: number | null) {
   const completedMeals = activePlan.meals.filter((meal) => meal.meal_completed);
 
   const consumedCalories = Number(completedMeals.reduce((sum, meal) => sum + meal.total_calories, 0).toFixed(2));
@@ -33,7 +34,8 @@ function getNutritionSummary(activePlan: FullPlanData) {
   const consumedFibre = Number(completedMeals.reduce((sum, meal) => sum + meal.total_fibre, 0).toFixed(2));
 
   const goal = {
-    calories: Number(activePlan.total_calories.toFixed(2)),
+    calories: calorieTarget ?? Number(activePlan.total_calories.toFixed(2)),
+    planCalories: Number(activePlan.total_calories.toFixed(2)),
   };
 
   const consumed = {
@@ -69,7 +71,7 @@ export function OverviewTab(props: OverviewTabProps) {
     </TabsContent>)
   }
 
-  const { consumed, goal, macros } = getNutritionSummary(props.activePlan);
+  const { consumed, goal, macros } = getNutritionSummary(props.activePlan, props.calorieTarget);
 
   return (
     <TabsContent value="overview" className="flex flex-col gap-4">

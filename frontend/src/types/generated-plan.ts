@@ -6,7 +6,7 @@
 // come back as (or be mapped to) FullPlanData — this type is purely for the
 // pre-save preview returned by POST /recommend.
 
-export type Goal = "cut" | "maintain" | "bulk";
+export type Goal = "cut" | "bulk" | "light_cut" | "heavy_cut" | "maintain" | "light_bulk" | "heavy_bulk";
 export type View = "form" | "loading" | "results" | "error";
 
 export type GeneratedIngredient = {

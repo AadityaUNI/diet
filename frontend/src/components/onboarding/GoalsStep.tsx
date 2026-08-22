@@ -13,6 +13,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { ACTIVITY_LEVELS } from "@/lib/predefined"
+import { CALORIE_GOAL_OPTIONS } from "@/lib/calorieTarget"
 import { goalsStepSchema, type GoalsStepValues } from "@/auth/authSchemas"
 
 interface GoalsStepProps {
@@ -45,9 +46,14 @@ export function GoalsStep({ defaultValues, onBack, onContinue }: GoalsStepProps)
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectItem value="cut">Cut — Lose fat, keep muscle</SelectItem>
-                  <SelectItem value="bulk">Bulk — Gain muscle mass</SelectItem>
-                  <SelectItem value="maintain">Maintain — Hold current weight</SelectItem>
+                  {CALORIE_GOAL_OPTIONS.map(({ value, label, description }) => (
+                    <SelectItem key={value} value={value}>
+                      <div className="flex flex-col">
+                        <span>{label}</span>
+                        <span className="text-xs text-muted-foreground">{description}</span>
+                      </div>
+                    </SelectItem>
+                  ))}
                 </SelectGroup>
               </SelectContent>
             </Select>

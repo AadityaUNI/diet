@@ -12,7 +12,7 @@ async function insertMealItems(meal: GeneratedMeal | HydratedMeal, mealID: numbe
     }
 
     const mealItems = meal.ingredients.map((ingredient) => ({
-        amount: ingredient.amount ?? 0,
+        amount: Number(ingredient.amount) ?? 0,
         foodID: ingredient.id,
         mealID
     }));
@@ -156,7 +156,7 @@ export async function createMealPlan(plan: GeneratedPlan, userID: string)
     return insertedPlan.id;
 }
 
-export async function createMeal(meal: GeneratedMeal, planID: number)
+export async function createMeal(meal: GeneratedMeal | HydratedMeal, planID: number)
 {
     const mealInsert = {
         name: meal.name,

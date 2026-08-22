@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import TagField from "@/components/ui/tag-input";
 import { AppHeader } from "@/components/header";
 import type { Goal } from "@/types/generated-plan";
+import { CALORIE_GOAL_OPTIONS } from "@/lib/calorieTarget";
 
 interface RecommendFormProps {
   goal: Goal;
@@ -45,11 +46,7 @@ export function RecommendForm({
               <p className="mb-1 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">01 / Direction</p>
               <h2 className="mb-4 font-outfit text-lg font-bold">What are you working toward?</h2>
               <div className="grid gap-2">
-                {([
-                  ["cut", "Cut", "Lose fat while keeping muscle"],
-                  ["maintain", "Maintain", "Hold your current weight"],
-                  ["bulk", "Bulk", "Build muscle and gain mass"],
-                ] as const).map(([value, label, description]) => (
+                {CALORIE_GOAL_OPTIONS.map(({ value, label, description }) => (
                   <button key={value} type="button" onClick={() => setGoal(value)} className={`rounded-xl border p-3 text-left transition-colors ${goal === value ? "border-primary bg-primary/10" : "border-border hover:bg-muted"}`}>
                     <span className="flex items-center justify-between text-sm font-semibold">{label}{goal === value && <Check size={15} className="text-primary" />}</span>
                     <span className="text-xs text-muted-foreground">{description}</span>
@@ -65,7 +62,7 @@ export function RecommendForm({
               <div><p className="mb-1 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">02 / Guardrails</p><h2 className="font-outfit text-lg font-bold">Tune the ingredients</h2></div>
 
               <div className="grid gap-4 sm:grid-cols-2">
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 col-span-2">
             <Label className="text-xs font-semibold">Dietary Restrictions</Label>
             <TagField
               values={restrictions}
@@ -75,7 +72,7 @@ export function RecommendForm({
           </div>
 
           {/* ── Health conditions ── */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 col-span-2">
             <Label className="text-xs font-semibold">Health Conditions</Label>
             <TagField
               values={conditions}
@@ -85,7 +82,7 @@ export function RecommendForm({
           </div>
 
           {/* ── Must-have foods ── */}
-          <div className="flex flex-col gap-2 sm:col-span-2">
+          <div className="flex flex-col gap-2 col-span-2">
             <Label className="text-xs font-semibold">Must-Have Foods</Label>
             <TagField
               values={mustHave}

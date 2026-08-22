@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface CalorieRingCardProps {
   consumed: { calories: number };
-  goal: { calories: number };
+  goal: { calories: number; planCalories: number };
 }
 
 export function CalorieRingCard({ consumed, goal }: CalorieRingCardProps) {
@@ -12,6 +12,7 @@ export function CalorieRingCard({ consumed, goal }: CalorieRingCardProps) {
   const pct = Math.round((consumed.calories / goal.calories) * 100);
   const rows = [
     { label: "Goal", value: goal.calories, color: "bg-foreground/35" },
+    { label: "Plan", value:goal.planCalories, color: "bg-chart-2" },
     { label: "Consumed", value: consumed.calories, color: "bg-chart-1" },
     { label: "Remaining", value: goal.calories - consumed.calories, color: "bg-chart-3" },
   ];

@@ -1,19 +1,16 @@
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar"
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Edit3, Dumbbell, Scale, HeartPulse, Wheat, Utensils } from "lucide-react";
+import { Edit3, Dumbbell, Flame, Scale, HeartPulse, Wheat, Utensils } from "lucide-react";
 import { currUserDetails } from "@/auth/UserService";
 import type { UserProfile } from "@/types/types";
 import { useEffect, useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton"
 import { EditProfileDialog } from "./editProfileDialog"
 import { ACTIVITY_LEVELS } from "@/lib/predefined"
-
-const GOAL_LABELS: Record<string, string> = {
-  cut: "Cut",
-  bulk: "Bulk",
-  maintain: "Maintain",
-}
+import { calculateCalorieTarget, CALORIE_GOAL_OPTIONS } from "@/lib/calorieTarget"
+import { useQuery } from "@tanstack/react-query";
+import { useAuth } from "@/auth/AuthContext";
 
 function ChipRow({
   icon: Icon,
@@ -59,19 +56,21 @@ export function SkeletonAvatar() {
 
 export default function Profile()
 {
+  const {session_token} = useAuth();
   const [userData, setUserData] = useState<UserProfile | null>(null)
   const [editOpen, setEditOpen] = useState(false)
 
+   const profileData = useQuery({
+      queryKey: ["userProfile", session_token],
+      enabled: Boolean(session_token),
+      queryFn: currUserDetails
+    })
+
     useEffect(() => {
-      async function getUserDetails()
-      {
-         const data = await currUserDetails();
-        if (data) {
-         setUserData(data);
-        }
+      if (profileData.data) {
+        setUserData(profileData.data);
       }
-      getUserDetails()
-    }, [])
+    }, [profileData.data]);
 
     const handleSave = (updated: UserProfile) => {
       setUserData(updated)
@@ -81,8 +80,9 @@ export default function Profile()
       ACTIVITY_LEVELS.find((level) => level.value === userData?.activity_level)?.label
       ?? userData?.activity_level
     const goalLabel = userData
-      ? (GOAL_LABELS[userData.fitness_goals] ?? userData.fitness_goals)
+      ? (CALORIE_GOAL_OPTIONS.find((goal) => goal.value === userData.fitness_goals)?.label ?? userData.fitness_goals)
       : ""
+    const calorieTarget = userData ? calculateCalorieTarget(userData) : null
 
     return (
 
@@ -121,6 +121,10 @@ export default function Profile()
                 <Badge variant="secondary" className="h-6 gap-1 font-normal">
                   <Scale className="size-3" />
                   {userData.weight} kg
+                </Badge>
+                <Badge variant="secondary" className="h-6 gap-1 border-primary/25 bg-primary/10 font-semibold text-primary">
+                  <Flame className="size-3" />
+                  {calorieTarget?.toLocaleString()} kcal goal
                 </Badge>
                 <Badge variant="outline" className="h-6 font-normal">
                   {userData.height} cm

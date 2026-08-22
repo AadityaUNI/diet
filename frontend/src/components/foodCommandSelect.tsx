@@ -52,7 +52,7 @@ export function FoodCommandSelect({ value, foods, isLoading, onSelect, onCreateC
                     <FoodCommandItem key={food.id} food={food} value={value} onSelect={onSelect} setOpen={setOpen} />
                 ))) : (
                   <div className="mx-2 my-1 rounded-lg border border-dashed border-border/70 bg-muted/30 px-3 py-3 text-center">
-                    <p className="text-xs font-medium text-foreground/80">No custom foods yet</p>
+                    <p className="text-xs font-medium text-foreground/80">No custom foods added yet</p>
                     <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">
                       Add one below and it will appear here.
                     </p>

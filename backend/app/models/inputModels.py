@@ -13,21 +13,3 @@ class ConstraintInput(BaseModel):
     required_food_items: list[str]
     dietary_restrictions: list[str]
     goal_calories: PositiveInt
-
-
-class Ingredients(BaseModel):
-    id: PositiveInt
-    amount: float
-    
-class Meals(BaseModel):
-    name: str
-    ingredients: list[Ingredients]
-    
-class PlanData(BaseModel):
-    name: str
-    meals: list[Meals]
-
-class GeminiOutput(BaseModel):
-    skipped_items: list[str]
-    plans: list[PlanData]
-    

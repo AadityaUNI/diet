@@ -1,32 +1,20 @@
-- amounts are not the same 
-
 Change AI to something that can handle 1000 users
 
 Make integration test and End to end test on frontend 
 
-- option to optimize current meal plans 
-for each plan, add option to optimize with AI 
-this will pass in the plan to another api on the backend 
-which takes in the plan details, validates structure with pydantic 
-passes in prompt which specifies to change as little as possible in the following 
-priority list: 
-- if amount change is enough to optimize , do it
-- then ingredients change 
-- finally meal changes 
-to take into account: plan macros, goal macros, micronutrients (just overall variety)
-- also display a description as to what the current plan is missing
-- and display the recommended changes proposed with option to 
+make our own web scraper / ai script that gets 
+all the local foods in coles, woolworths for AU 
+and just local foods and generic caloric values like aata, 
+whey protein for india possibly somehow with google searches or something 
+but we can make our own list probably 
 
-- add goal macros like goal calories
-- protein is 1g per lb 
-- fat is 25% of cals 
-- fibre is (cals / 1000) * 14
-- carbs is the remaining amount 
+create an extras section where you just add temporary daily meals to our active plan 
+, for this need to add an extras list to each plan which has a direct delete button on 
+the home page.
 
-These are sliders
+THIS IS IT NO MORE FUCKING ADDITIONS AFTER THIS 
+WE ARE MOVING STRAIGHT INTO THE GOD DAMN TESTING. 
 
-add default configurations - this one (high carb, lower fat) 
-with a description of what it does, like high performance, muscle retention 
-add keto diet, and maybe a maintain health / not gymming config 
+look at http error handling 
 
-these configs should change the slider positions
+add a bit of pink to the theme

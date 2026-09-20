@@ -6,7 +6,7 @@ import { TodaysMealsCard } from "@/components/dashboard/todayMealsCards";
 import { MealSkeleton } from "../MealSkeleton";
 import type { FullPlanData } from "@/types/types";
 import { NoActivePlanEmptyState } from "../emptyPlanStates";
-import { PencilLine } from "lucide-react";
+import { PencilLine, Sparkles } from "lucide-react";
 
 export interface OverviewTabProps {
   activePlan: FullPlanData | null;
@@ -14,7 +14,14 @@ export interface OverviewTabProps {
   getRecommended: () => void;
   loading: boolean
   onEditPlan: (plan: FullPlanData) => void;
+  onOptimizePlan: (plan: FullPlanData) => void;
   calorieTarget: number | null;
+  macroGoals?: {
+    protein_target?: number;
+    carbs_target?: number;
+    fat_target?: number;
+    fiber_target?: number;
+  };
 }
 
 type MacroStat = {
@@ -22,9 +29,15 @@ type MacroStat = {
   value: number;
   max: number;
   color: string;
+  planAmount?: number;
 };
 
-function getNutritionSummary(activePlan: FullPlanData, calorieTarget: number | null) {
+function getNutritionSummary(activePlan: FullPlanData, calorieTarget: number | null, macroGoals?: {
+  protein_target?: number;
+  carbs_target?: number;
+  fat_target?: number;
+  fiber_target?: number;
+}) {
   const completedMeals = activePlan.meals.filter((meal) => meal.meal_completed);
 
   const consumedCalories = Number(completedMeals.reduce((sum, meal) => sum + meal.total_calories, 0).toFixed(2));
@@ -42,11 +55,36 @@ function getNutritionSummary(activePlan: FullPlanData, calorieTarget: number | n
     calories: consumedCalories,
   };
 
+  // Use macro goals if available, otherwise fall back to plan totals
   const macros: MacroStat[] = [
-    { label: "Protein", value: consumedProtein, max: Number(activePlan.total_protein.toFixed(2)), color: "var(--chart-1)" },
-    { label: "Carbohydrates", value: consumedCarbs, max: Number(activePlan.total_carbs.toFixed(2)), color: "var(--chart-2)" },
-    { label: "Fat", value: consumedFat, max: Number(activePlan.total_fats.toFixed(2)), color: "var(--chart-3)" },
-    { label: "Fibre", value: consumedFibre, max: Number(activePlan.total_fibre.toFixed(2)), color: "var(--chart-4)" },
+    { 
+      label: "Protein", 
+      value: consumedProtein, 
+      max: macroGoals?.protein_target ?? Number(activePlan.total_protein.toFixed(2)), 
+      planAmount: macroGoals?.protein_target ? Number(activePlan.total_protein.toFixed(2)) : undefined,
+      color: "var(--chart-1)" 
+    },
+    { 
+      label: "Carbohydrates", 
+      value: consumedCarbs, 
+      max: macroGoals?.carbs_target ?? Number(activePlan.total_carbs.toFixed(2)), 
+      planAmount: macroGoals?.carbs_target ? Number(activePlan.total_carbs.toFixed(2)) : undefined,
+      color: "var(--chart-2)" 
+    },
+    { 
+      label: "Fat", 
+      value: consumedFat, 
+      max: macroGoals?.fat_target ?? Number(activePlan.total_fats.toFixed(2)), 
+      planAmount: macroGoals?.fat_target ? Number(activePlan.total_fats.toFixed(2)) : undefined,
+      color: "var(--chart-3)" 
+    },
+    { 
+      label: "Fibre", 
+      value: consumedFibre, 
+      max: macroGoals?.fiber_target ?? Number(activePlan.total_fibre.toFixed(2)), 
+      planAmount: macroGoals?.fiber_target ? Number(activePlan.total_fibre.toFixed(2)) : undefined,
+      color: "var(--chart-4)" 
+    },
   ];
 
   return { consumed, goal, macros };
@@ -71,7 +109,7 @@ export function OverviewTab(props: OverviewTabProps) {
     </TabsContent>)
   }
 
-  const { consumed, goal, macros } = getNutritionSummary(props.activePlan, props.calorieTarget);
+  const { consumed, goal, macros } = getNutritionSummary(props.activePlan, props.calorieTarget, props.macroGoals);
 
   return (
     <TabsContent value="overview" className="flex flex-col gap-4">
@@ -80,10 +118,16 @@ export function OverviewTab(props: OverviewTabProps) {
           <h2 className="font-outfit text-base font-bold">Today</h2>
           <p className="text-xs text-muted-foreground">Track and refine the active plan</p>
         </div>
-        <Button variant="secondary" size="sm" className="gap-1.5" onClick={() => props.onEditPlan(props.activePlan!)}>
-          <PencilLine size={14} />
-          Edit plan
-        </Button>
+        <div className="flex gap-2">
+          <Button variant="secondary" size="sm" className="gap-1.5" onClick={() => props.onEditPlan(props.activePlan!)}>
+            <PencilLine size={14} />
+            Edit plan
+          </Button>
+          <Button variant="secondary" size="sm" className="gap-1.5" onClick={() => props.onOptimizePlan(props.activePlan!)}>
+            <Sparkles size={14} />
+            Make changes
+          </Button>
+        </div>
       </div>
       <CalorieRingCard consumed={consumed} goal={goal} />
       <MacrosCard macros={macros} />

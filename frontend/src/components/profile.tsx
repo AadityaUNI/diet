@@ -1,7 +1,7 @@
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar"
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Edit3, Dumbbell, Flame, Scale, HeartPulse, Wheat, Utensils } from "lucide-react";
+import { Edit3, Dumbbell, Flame, Scale, HeartPulse, Wheat, Utensils, CircleDot } from "lucide-react";
 import { currUserDetails } from "@/auth/UserService";
 import type { UserProfile } from "@/types/types";
 import { useEffect, useState } from "react";
@@ -11,6 +11,7 @@ import { ACTIVITY_LEVELS } from "@/lib/predefined"
 import { calculateCalorieTarget, CALORIE_GOAL_OPTIONS } from "@/lib/calorieTarget"
 import { useQuery } from "@tanstack/react-query";
 import { useAuth } from "@/auth/AuthContext";
+import { GoalStatsCard } from "./goalStatsCard"
 
 function ChipRow({
   icon: Icon,
@@ -132,9 +133,11 @@ export default function Profile()
                 <Badge variant="outline" className="h-6 font-normal">
                   {activityLabel}
                 </Badge>
+              
               </div>
             </div>
           </div>
+<GoalStatsCard calorieTarget={calorieTarget} goalLabel={goalLabel} userData={userData} />
 
           <div className="mt-4 flex flex-col gap-3 rounded-2xl border border-border/60 bg-card/70 px-3 py-3 dark:bg-card/40">
             <ChipRow icon={HeartPulse} label="Health" values={userData.health_conditions} />

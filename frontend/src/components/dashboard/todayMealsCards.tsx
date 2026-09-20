@@ -11,10 +11,10 @@ export function TodaysMealsCard({ activePlan, toggleMeal }: TodaysMealsCardProps
   return (
     <Card>
       <CardHeader>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <CardTitle>Today's Meals</CardTitle>
-            <Badge variant="secondary" className="text-sm">
+        <div className="flex flex-col items-start gap-2">
+          <CardTitle>Today's Meals</CardTitle>
+          <div className="min-w-0 max-w-full">
+            <Badge variant="secondary" className="h-auto max-w-full overflow-visible whitespace-normal break-words px-2 py-1 text-left text-sm leading-snug">
               {activePlan.name.split("—")[0].trim()}
             </Badge>
           </div>

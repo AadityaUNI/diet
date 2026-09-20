@@ -4,7 +4,7 @@ import { useState } from "react"
 import { FlipCard } from "@/components/flipcard"
 import { OnboardingFlow } from "@/components/onboarding/OnboardingFlow"
 import { Leaf, LineChart, Salad, Zap } from "lucide-react"
-import { onLogin, onSignup } from "@/auth/LoginAuth"
+import { createAuthAccount, onLogin } from "@/auth/LoginAuth"
 import { useNavigate } from "react-router-dom"
 import { ModeToggle } from "@/components/mode-toggle"
 import type { CredentialsValues } from "@/auth/authSchemas"
@@ -30,6 +30,18 @@ const features = [
 export default function Landing() {
   const navigate = useNavigate()
   const [credentials, setCredentials] = useState<CredentialsValues | null>(null)
+  const [accountId, setAccountId] = useState<string | null>(null)
+
+  async function beginSignup(values: CredentialsValues) {
+    try {
+      const account = await createAuthAccount(values)
+      setAccountId(account.userId)
+      setCredentials(values)
+      return null
+    } catch (error) {
+      return error instanceof Error ? error.message : "Unable to create your account."
+    }
+  }
 
   return (
     <main className="min-h-svh bg-transparent">
@@ -75,16 +87,23 @@ export default function Landing() {
         </div>
 
         <div className="flex justify-center lg:justify-end">
-          {credentials ? (
+          {credentials && accountId ? (
             <OnboardingFlow
               credentials={credentials}
-              onBackToCredentials={() => setCredentials(null)}
-              onComplete={(values) => onSignup(values, navigate)}
+              accountId={accountId}
+              onBackToCredentials={() => {
+                setAccountId(null)
+                setCredentials(null)
+              }}
+              onComplete={async () => {
+                navigate('/after-signup')
+                return null
+              }}
             />
           ) : (
             <FlipCard
               onLogin={(e) => onLogin(e, navigate)}
-              onCredentials={setCredentials}
+              onCredentials={beginSignup}
             />
           )}
         </div>

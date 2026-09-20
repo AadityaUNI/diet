@@ -38,6 +38,7 @@ type PlanEditorProps = {
   onSave: () => void;
   onCancel: () => void;
   saving?: boolean;
+  saveError?: string | null;
 };
 
 function updateMeal(draft: PlanEditorDraft, mealId: number, updater: (meal: PlanMealDraft) => PlanMealDraft) {
@@ -99,6 +100,7 @@ export function PlanEditor({
   onSave,
   onCancel,
   saving = false,
+  saveError,
 }: PlanEditorProps) {
   const { data: foods = [], isLoading: foodsLoading } = useFoodCatalog();
   const { user, region } = useAuth();
@@ -339,6 +341,7 @@ export function PlanEditor({
             </Card>
 
             <div className="flex flex-col gap-3 sm:flex-row">
+              {saveError && <p role="alert" className="text-sm text-destructive sm:mr-auto sm:self-center">{saveError}</p>}
               <Button onClick={onSave} className="gap-2 sm:flex-1" disabled={saving}>
                 <Save size={16} />
                 {saving ? "Saving..." : mode === "edit" ? "Save changes" : "Create plan"}

@@ -1,5 +1,5 @@
 import { supabase } from "@/lib/supabase";
-import type { FullPlanData, MealData } from "@/types/types";
+import type { FullPlanData } from "@/types/types";
 import type { GeneratedMeal, GeneratedPlan } from "@/types/generated-plan";
 import type { HydratedMeals, PlanEditorDraft, TotalMacros } from "@/types/plan-editor";
 
@@ -12,7 +12,7 @@ async function insertMealItems(meal: GeneratedMeal | HydratedMeal, mealID: numbe
     }
 
     const mealItems = meal.ingredients.map((ingredient) => ({
-        amount: Number(ingredient.amount) ?? 0,
+        amount: Number(ingredient.amount) || 0,
         foodID: ingredient.id,
         mealID
     }));
@@ -220,7 +220,7 @@ export async function changeUserActivePlan(userID: string, planID: number | null
     }
 }
 
-export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydrated_meals: HydratedMeals, total_macros: TotalMacros)
+export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydrated_meals: HydratedMeals, total_macros: TotalMacros): Promise<boolean>
 {
     const { data: planRow, error: planRowError } = await supabase
         .from("MealPlans")
@@ -231,7 +231,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
     if (planRowError || !planRow)
     {
         console.log("Error fetching plan row", planRowError)
-        return;
+        return false;
     }
 
     const { error: updatePlanError } = await supabase
@@ -242,7 +242,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
     if (updatePlanError)
     {
         console.log("Error updating meal plan", updatePlanError)
-        return;
+        return false;
     }
 
     const { data: currentMeals, error: currentMealsError } = await supabase
@@ -253,7 +253,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
     if (currentMealsError)
     {
         console.log("Error fetching current meals for plan", currentMealsError)
-        return;
+        return false;
     }
 
     const currentMealIDs = (currentMeals ?? []).map((meal) => meal.id);
@@ -270,7 +270,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
         if (deleteRemovedItemsError)
         {
               console.log("Error deleting removed meal items", deleteRemovedItemsError)
-            return;
+                        return false;
         }
 
         const { error: deleteRemovedMealsError } = await supabase
@@ -282,7 +282,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
         if (deleteRemovedMealsError)
         {
               console.log("Error deleting removed meals", deleteRemovedMealsError)
-            return;
+                        return false;
         }
     }
 
@@ -295,7 +295,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
 
         if (!hydratedMeal)
         {
-            return;
+            return false;
         }
 
         if (meal.id > 0)
@@ -317,7 +317,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
             if (updateMealError)
             {
                  console.log("Error updating meal", updateMealError)
-                return;
+                return false;
             }
 
             savedMealIDs.push(meal.id);
@@ -329,7 +329,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
         if (!mealID)
         {
               console.log("Error creating meal", mealID)
-            return;
+                        return false;
         }
 
         savedMealIDs.push(mealID);
@@ -345,7 +345,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
         if (deleteCurrentItemsError)
         {
               console.log("Error deleting current meal items", deleteCurrentItemsError)
-            return;
+                        return false;
         }
 
         for (let index = 0; index < savedMealIDs.length; index += 1)
@@ -355,10 +355,12 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
             if (!mealItemsSaved)
             {
                  console.log("Failed to insert meal items", mealItemsSaved)
-                return;
+                return false;
             }
         }
     }
+
+    return true;
 }
 
 export async function createCustomUserPlan(draft: PlanEditorDraft, userID: string, hydrated_meals: HydratedMeals, total_macros: TotalMacros)

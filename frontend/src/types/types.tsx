@@ -12,6 +12,10 @@ export type UserProfile = {
   sex: string;
   age: number | string;
   weight: number | string;
+  protein_target: number | string;
+  carbs_target: number | string;
+  fat_target: number | string;
+  fibre_target: number | string;
 };
 
 export type NormalizedUserProf = {
@@ -28,6 +32,10 @@ export type NormalizedUserProf = {
   sex: string;
   age: number;
   weight: number;
+  protein_target: number;
+  carbs_target: number;
+  fat_target: number;
+  fibre_target: number;
 }
 
 export type NormalizedUpdate = {
@@ -42,6 +50,10 @@ export type NormalizedUpdate = {
   height?: number;
   sex?: string;
   activity_level?: string;
+  protein_target?: number;
+  carbs_target?: number;
+  fat_target?: number;
+  fibre_target?: number;
 }
 
 
@@ -57,6 +69,10 @@ export type UpdateUserProfile = {
   height?: number | string;
   sex?: string;
   activity_level?: string;
+  protein_target?: number | string;
+  carbs_target?: number | string;
+  fat_target?: number | string;
+  fibre_target?: number | string;
 };
 
 export type FullPlanData = {

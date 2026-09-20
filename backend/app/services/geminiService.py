@@ -1,9 +1,9 @@
 import json 
 import io 
 import csv
-from google.genai import types
-
-from app.models.models import ConstraintInput
+from app.models.inputModels import ConstraintInput
+from app.models.mealModels import AnalyzePlan
+from app.utils.jsonUtils import cleaned_json
 
 def to_csv_string(regional):
     headers = regional[0].keys()
@@ -82,7 +82,7 @@ def call_gemini(constraints: ConstraintInput, regional_list: list, gemini):
     import time
     start = time.time()
     response = gemini.models.generate_content(
-        model="gemini-3.6-flash",
+        model="gemini-3.5-flash",
         contents=prompt,
         # config=types.GenerateContentConfig(
         # thinking_config=types.ThinkingConfig(thinking_level="high")
@@ -91,8 +91,123 @@ def call_gemini(constraints: ConstraintInput, regional_list: list, gemini):
     print(f"GEMINI CALL TOOK: {time.time() - start:.2f}s")
 
 
-    try:
-        return json.loads(response.text)
-    except json.JSONDecodeError:
-        cleaned = response.text.strip().removeprefix("```json").removesuffix("```").strip()
-        return json.loads(cleaned)
+    return cleaned_json(response.text)
+
+    
+def gemini_analyze(planData, gemini):
+    plan = planData["plan"] if isinstance(planData, dict) else planData
+    profile = planData.get("profile", {}) if isinstance(planData, dict) else {}
+    user_prompt = planData.get("user_prompt") if isinstance(planData, dict) else None
+    plan_json = plan.model_dump() if hasattr(plan, "model_dump") else plan
+
+    if user_prompt:
+        task_header = """You are an expert dietitian making a specific requested change to an existing
+daily meal plan.
+
+The client has asked for something specific — apply ONLY that request. Do not go looking for
+unrelated shortcomings (macro drift, variety gaps, etc.) and do not "improve" anything the
+client didn't ask about. If satisfying the request causes a minor, unavoidable side effect
+(e.g. calories shift because a meal changed), that's fine, but it is never a reason to make
+additional changes elsewhere.
+
+Deliver the request in the smallest way that actually satisfies it."""
+        must_have_and_order = """### Required change order
+Apply in this order and stop at the first that satisfies the request:
+1. Adjust ingredient amounts if that is enough.
+2. Change or add individual ingredients only when amount changes are insufficient.
+3. Replace or restructure a whole meal only when necessary to fulfil the request.
+
+This order is a hard constraint, not a suggestion — do not jump to step 2 or 3 if step 1
+would satisfy the request. Preserve every meal and ingredient the request doesn't concern.
+Never make a change that isn't traceable directly to the request.
+
+### Must-have foods
+If a meal contains one or more of the user's must-have foods, do not replace that meal in
+full unless the request specifically requires it. Prefer step 1 or step 2 changes for that
+meal instead."""
+        context_label = "### Request context"
+        instruction_line = f"User request: {user_prompt}"
+        missing_field_doc = '"missing": ["what the current plan lacks relative to the request"],'
+    else:
+        task_header = """You are an expert dietitian reviewing an existing daily meal plan.
+
+Identify meaningful shortcomings in this plan — not cosmetic nitpicks — limited to:
+1. Macro targets not met: calories, protein, carbs, or fat deviate materially from the
+   profile's targets (a 2-3% gap is not meaningful; flag deviations large enough to matter).
+2. Poor variety: a meal or the day leans on a narrow set of foods rather than spanning
+   distinct whole-food groups (vegetables, fruits, whole grains, lean proteins, healthy fats,
+   dairy/alternatives) needed to cover micronutrients.
+
+Then propose the smallest real fix for the most significant shortcoming."""
+        must_have_and_order = """### Required optimization order
+Apply in this order and stop at the first that resolves the shortcoming:
+1. Adjust ingredient amounts if that is enough.
+2. Change individual ingredients only when amount changes are insufficient.
+3. Replace or restructure a whole meal only when necessary.
+
+This order is a hard constraint, not a suggestion — do not jump to step 2 or 3 if step 1
+would fix it. Preserve meals and ingredients that already work. Never make a change that
+isn't traceable to a specific shortcoming you listed.
+
+### Must-have foods
+If a meal contains one or more of the user's must-have foods, do not replace that meal in
+full. Prefer step 1 or step 2 changes for that meal, or leave it untouched and address the
+shortcoming elsewhere in the day."""
+        context_label = "### Optimization context"
+        instruction_line = "(No specific user request — running a general optimization pass.)"
+        missing_field_doc = '"missing": ["specific shortcoming"],'
+
+    prompt = f"""{task_header}
+
+{must_have_and_order}
+
+{context_label}
+Profile and targets: {json.dumps(profile, ensure_ascii=True)}
+{instruction_line}
+
+### Current plan
+{json.dumps(plan_json, ensure_ascii=True)}
+
+### Available food catalog
+{to_csv_string(planData["regional_list"])}
+
+Only use ingredient IDs, names, and nutrition values exactly as they appear in the catalog
+above. Never invent a food ID or nutrition value.
+
+### Output contract
+Return ONLY valid JSON, with no markdown fences and no text outside the JSON, in this exact
+shape:
+{{
+    "summary": "explanations of the main issues",
+    {missing_field_doc}
+    "changes": [
+        {{
+            "category": "amount | ingredient | meal",
+            "title": "short change title",
+            "description": "why this change improves the plan",
+            "meal_name": "affected meal name or null"
+        }}
+    ],
+    "proposed_plan": {{
+        "name": "plan name",
+        "meals": [
+            {{
+                "name": "meal name",
+                "ingredients": [{{"id": 1, "amount": 100}}]
+            }}
+        ]
+    }}
+}}
+
+proposed_plan.meals must be the complete day — every meal from the current plan, whether
+changed or not — not just the ones you modified. Use only IDs from the catalog, and use
+positive gram amounts. Never invent food IDs, nutrition values, or extra fields.
+"""
+    response = gemini.models.generate_content(
+        model="gemini-3.5-flash",
+        contents=prompt,
+        # config=types.GenerateContentConfig(
+        # thinking_config=types.ThinkingConfig(thinking_level="high")
+        # )
+    )
+    return cleaned_json(response.text)

@@ -1,6 +1,6 @@
 from verifyMacros import hydrate_plans
 from mock_test_data import *
-from app.models.models import GeminiOutput
+from diet.backend.app.models.mealModels import GeminiOutput
 import pytest 
 import json
 

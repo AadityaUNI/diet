@@ -3,6 +3,7 @@ import MacroCircle from "./macroCircle";
 interface macroProp {
     fill: number;
     target: number;
+    planAmount?: number;
 }
 
 interface targetBarProps {
@@ -36,6 +37,7 @@ export default function MacroTargetBar(props: targetBarProps) {
                 {Object.entries(colorMap).map(([macro, colorClass]) => {
                     const remaining = props[macro as Macro].target - props[macro as Macro].fill;
                     const unit = macro === "energy" ? "kcal" : "g";
+                    const hasPlanAmount = props[macro as Macro].planAmount !== undefined;
                     
                     return (
                         <div key={macro} className="flex flex-col items-center gap-3">
@@ -58,6 +60,11 @@ export default function MacroTargetBar(props: targetBarProps) {
                                 <span className="text-xs text-slate-500 font-medium uppercase mt-1">
                                     Left
                                 </span>
+                                {hasPlanAmount && (
+                                    <span className="text-[10px] text-slate-600 mt-0.5">
+                                        Plan: {props[macro as Macro].planAmount}{unit}
+                                    </span>
+                                )}
                             </div>
                         </div>
                     );

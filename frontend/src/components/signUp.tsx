@@ -20,11 +20,12 @@ import { credentialsSchema, type CredentialsValues } from "../auth/authSchemas.t
 
 interface SignupFormProps {
   onSwitchToLogin: () => void
-  onSubmit?: (values: CredentialsValues) => void
+  onSubmit?: (values: CredentialsValues) => void | Promise<void>
   disabled: boolean
+  error?: string | null
 }
 
-export function Signup({ onSwitchToLogin, onSubmit, disabled }: SignupFormProps) {
+export function Signup({ onSwitchToLogin, onSubmit, disabled, error }: SignupFormProps) {
   const {
     register,
     control,
@@ -98,12 +99,14 @@ export function Signup({ onSwitchToLogin, onSubmit, disabled }: SignupFormProps)
               {...register("password")}
             />
             {errors.password && <p className="text-xs text-destructive">{errors.password.message}</p>}
+            <p className="text-xs text-muted-foreground">Use at least 8 characters.</p>
           </div>
         </CardContent>
       
         <CardFooter className="mt-2 flex-col gap-4">
+          {error && <p role="alert" className="w-full text-sm text-destructive">{error}</p>}
           <Button type="submit" className="w-full" disabled={disabled}>
-            Continue
+            {disabled ? "Creating account..." : "Continue"}
           </Button>
           <p className="text-center text-sm text-muted-foreground">
             {"Already have an account? "}

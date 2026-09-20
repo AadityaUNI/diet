@@ -34,7 +34,7 @@ const GOAL_ADJUSTMENTS: Record<string, number> = {
 
 export function calculateCalorieTarget({ age, weight, height, sex, activity_level, fitness_goals }: Pick<UserProfile, "age" | "weight" | "height" | "sex" | "activity_level" | "fitness_goals">): number {
   const sexAdjustment = sex.toLowerCase() === "female" ? -161 : 5
-  const bmr = 10 * weight + 6.25 * height - 5 * age + sexAdjustment
+  const bmr = 10 * Number(weight) + 6.25 * Number(height) - 5 * Number(age) + sexAdjustment
   const maintenance = bmr * (ACTIVITY_MULTIPLIERS[activity_level] ?? 1.2)
   const adjusted = maintenance + (GOAL_ADJUSTMENTS[fitness_goals] ?? 0)
 

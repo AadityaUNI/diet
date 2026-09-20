@@ -40,6 +40,7 @@ export function RecommendPage() {
   const [savedPlanIndices,    setSavedPlanIndices]   = useState<Set<number>>(new Set());
   const [expandedPlanIndex,   setExpandedPlanIndex]  = useState<number | null>(null);
   const [savedLoading, setSavedLoading] = useState<boolean>(false)
+  const [lastRequest, setLastRequest] = useState<RecommendVariables | null>(null)
 
   const profileQuery = useQuery({
     queryKey: ["userProfile", session_token],
@@ -84,7 +85,7 @@ const recMutation = useMutation({
     },
 
     onSuccess: (data) => {
-      if (!data || data == -1) {
+      if (!data) {
         setView("error")
         return
       }
@@ -128,7 +129,9 @@ const recMutation = useMutation({
         loadingUser={profileQuery.isLoading}
         onGenerate={() => {
           if (profile && goal_calories !== null) {
-            recMutation.mutate({profile, conditions, mustHave, restrictions, goal, goal_calories })
+            const request = { profile, conditions, mustHave, restrictions, goal, goal_calories };
+            setLastRequest(request)
+            recMutation.mutate(request)
           }
         }}
       />
@@ -151,6 +154,15 @@ const recMutation = useMutation({
             ? recMutation.error.message
             : undefined
         }
+        onRetry={() => {
+          if (lastRequest) {
+            recMutation.reset()
+            recMutation.mutate(lastRequest)
+          } else {
+            setView("form")
+          }
+        }}
+        retrying={recMutation.isPending}
       />
     );
   }

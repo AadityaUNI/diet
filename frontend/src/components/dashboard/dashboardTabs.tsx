@@ -12,6 +12,8 @@ import type { UserProfile } from "@/types/types";
 import type { FullPlanData } from "@/types/types";
 import { useMutation } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
+import { AlertCircle, RotateCcw } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 
 export function DashboardTabs() {
@@ -22,6 +24,8 @@ export function DashboardTabs() {
   const [savedPlans, setSavedPlans] = useState<FullPlanData[] | null>(null);
   const [loadingPlans, setLoadingPlans] = useState<boolean>(true);
   const [profile, setProfile] = useState<UserProfile | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [reloadToken, setReloadToken] = useState(0);
 
   const handleDeletePlan = useMutation({
     mutationFn: async (planID: number) => {
@@ -61,6 +65,8 @@ export function DashboardTabs() {
 
   useEffect(() => {
     async function getPlans() {
+      setLoadError(null);
+      setLoadingPlans(true);
       if (!user?.id) {
         setActivePlan(null);
         setSavedPlans(null);
@@ -68,20 +74,24 @@ export function DashboardTabs() {
         return;
       }
 
-      const userProfile = await currUserDetails();
-      setProfile(userProfile ?? null);
+      try {
+        const userProfile = await currUserDetails();
+        const allPlans: FullPlanData[] | null = await getAllFoodData(user.id);
+        const activePlanID = await getActivePlanID(user.id);
+        const active = allPlans?.find((plan) => plan.id === activePlanID) ?? null;
 
-      const allPlans: FullPlanData[] | null = await getAllFoodData(user.id);
-      const activePlanID = await getActivePlanID(user.id);
-      const active = allPlans?.find((plan) => plan.id === activePlanID) ?? null;
-
-      setActivePlan(active as FullPlanData | null);
-      setSavedPlans(allPlans as FullPlanData[] | null);
-      setLoadingPlans(false);
+        setProfile(userProfile ?? null);
+        setActivePlan(active as FullPlanData | null);
+        setSavedPlans(allPlans as FullPlanData[] | null);
+      } catch (error) {
+        setLoadError(error instanceof Error ? error.message : "Unable to load your dashboard.");
+      } finally {
+        setLoadingPlans(false);
+      }
     }
 
     getPlans();
-  }, [user?.id]);
+  }, [user?.id, reloadToken]);
 
   const debouncedSetActive = useDebouncedCallback((userID: string, planID: number | null) => {
     changeUserActivePlan(userID, planID);
@@ -107,18 +117,37 @@ export function DashboardTabs() {
     navigate(`/plans/${plan.id}/edit`, { state: { plan } });
   };
 
+  const optimizePlan = (plan: FullPlanData) => {
+    if (!profile) {
+      return;
+    }
+    navigate("/optimize", { state: { plan, profile } });
+  };
+
+  if (loadError) {
+    return (
+      <div className="flex flex-col items-center gap-3 rounded-2xl border border-destructive/25 bg-destructive/5 px-5 py-8 text-center">
+        <AlertCircle className="text-destructive" size={24} />
+        <p className="text-sm text-destructive">{loadError}</p>
+        <Button className="min-h-12 gap-2 px-6" onClick={() => setReloadToken((current) => current + 1)}>
+          <RotateCcw size={16} /> Try again
+        </Button>
+      </div>
+    );
+  }
+
   return (
     <Tabs defaultValue="overview">
-      <TabsList className="mb-5 w-full bg-muted dark:bg-white/10">
+      <TabsList className="mb-5 h-12 w-full bg-muted dark:bg-white/10">
         <TabsTrigger
           value="overview"
-          className="data-active:bg-primary data-active:text-white dark:data-active:bg-white dark:data-active:text-black dark:data-active:border-transparent"
+          className="min-h-11 px-4 py-2 text-base data-active:bg-primary data-active:text-white dark:data-active:bg-white dark:data-active:text-black dark:data-active:border-transparent"
         >
           Active
         </TabsTrigger>
         <TabsTrigger
           value="saved"
-          className="data-active:bg-primary data-active:text-white dark:data-active:bg-white dark:data-active:text-black dark:data-active:border-transparent"
+          className="min-h-11 px-4 py-2 text-base data-active:bg-primary data-active:text-white dark:data-active:bg-white dark:data-active:text-black dark:data-active:border-transparent"
         >
           Saved
         </TabsTrigger>
@@ -129,7 +158,14 @@ export function DashboardTabs() {
         getRecommended={getRecommended}
         loading={loadingPlans}
         onEditPlan={editPlan}
+        onOptimizePlan={optimizePlan}
         calorieTarget={profile ? calculateCalorieTarget(profile) : null}
+        macroGoals={profile ? {
+          protein_target: Number(profile.protein_target),
+          carbs_target: Number(profile.carbs_target),
+          fat_target: Number(profile.fat_target),
+          fiber_target: Number(profile.fibre_target),
+        } : undefined}
       />
       <SavedPlansTab
         savedPlans={savedPlans}
@@ -141,6 +177,7 @@ export function DashboardTabs() {
         activePlanID={activePlan?.id ?? null}
         onDeletePlan={(planID) => handleDeletePlan.mutate(planID)}
         onEditPlan={editPlan}
+        onOptimizePlan={optimizePlan}
       />
     </Tabs>
   );

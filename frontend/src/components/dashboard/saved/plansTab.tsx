@@ -16,9 +16,10 @@ export interface SavedPlansTabProps {
   activePlanID: number | null;
   onDeletePlan: (planID: number) => void; 
   onEditPlan: (plan: FullPlanData) => void;
+  onOptimizePlan: (plan: FullPlanData) => void;
 }
 
-export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpandedPlan, loading, getRecommended ,onSetActive, onDeletePlan, onEditPlan }: SavedPlansTabProps) {
+export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpandedPlan, loading, getRecommended ,onSetActive, onDeletePlan, onEditPlan, onOptimizePlan }: SavedPlansTabProps) {
   
   
   if (loading) {
@@ -58,6 +59,7 @@ export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpan
           onSetActive={onSetActive}
           onDeletePlan={onDeletePlan}
           onEditPlan={onEditPlan}
+          onOptimizePlan={onOptimizePlan}
         />
       ))}
     </TabsContent>

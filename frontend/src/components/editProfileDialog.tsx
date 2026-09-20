@@ -18,12 +18,13 @@ import {
   SelectValue,
   SelectGroup
 } from "@/components/ui/select"
-import { Check, ChevronLeft, ChevronRight, CircleUserRound, Dumbbell, Loader2, SlidersHorizontal, Target } from "lucide-react"
+import { Check, ChevronLeft, ChevronRight, CircleUserRound, Dumbbell, Loader2, SlidersHorizontal, Target, Beef, Wheat, CircleDot } from "lucide-react"
 import TagField from "./ui/tag-input"
 import type { UserProfile } from "@/types/types"
-import { ACTIVITY_LEVELS } from "@/lib/predefined"
+import { ACTIVITY_LEVELS, MACRO_PRESETS } from "@/lib/predefined"
 import { updateUserDetails } from "@/auth/UserService"
 import { CALORIE_GOAL_OPTIONS } from "@/lib/calorieTarget"
+import { calculateCalorieTarget } from "@/lib/calorieTarget"
 
 interface EditProfileDialogProps {
   open: boolean
@@ -46,6 +47,10 @@ export function EditProfileDialog({
     age: String(profile.age ?? ""),
     weight: String(profile.weight ?? ""),
     height: String(profile.height ?? ""),
+    protein_target: String(profile.protein_target ?? ""),
+    carbs_target: String(profile.carbs_target ?? ""),
+    fat_target: String(profile.fat_target ?? ""),
+    fibre_target: String(profile.fibre_target ?? ""),
   })
 
   const [form, setForm] = useState<UserProfile>(() => normalizeForm(userData))
@@ -93,7 +98,7 @@ export function EditProfileDialog({
             className="text-lg font-bold"
             style={{ fontFamily: "Outfit, sans-serif", letterSpacing: "-0.02em" }}
           >
-            Edit Profile <span className="text-primary">/ {step + 1} of 4</span>
+            Edit Profile <span className="text-primary">/ {step + 1} of 5</span>
           </DialogTitle>
           <DialogDescription className="text-xs text-foreground/60">
             Update your details to keep your meal plans accurate.
@@ -101,11 +106,12 @@ export function EditProfileDialog({
         </DialogHeader>
 
         <div className="grid gap-5 py-2 sm:grid-cols-[150px_1fr]">
-          <div className="grid h-fit grid-cols-4 gap-2 sm:grid-cols-1 sm:gap-1">
+          <div className="grid h-fit grid-cols-5 gap-2 sm:grid-cols-1 sm:gap-1">
             {([
               ["Basics", CircleUserRound],
               ["Body", Dumbbell],
               ["Goal", Target],
+              ["Macros", SlidersHorizontal],
               ["Preferences", SlidersHorizontal],
             ] as const).map(([label, Icon], index) => (
               <button
@@ -169,6 +175,94 @@ export function EditProfileDialog({
 
            
           </div>
+          </div>}
+
+          {step === 3 && <div className="grid gap-4">
+            <div className="grid gap-1.5">
+              <Label className="text-xs text-foreground/70">Macro Preset</Label>
+              <Select 
+                name="macro_preset" 
+                value="balanced" 
+                onValueChange={(v) => {
+                  const preset = MACRO_PRESETS.find(p => p.value === v)
+                  if (preset) {
+                    const calorieTarget = calculateCalorieTarget(form)
+                    const weightLbs = Number(form.weight) * 2.20462
+                    const targets = preset.getTargets(calorieTarget, weightLbs)
+                    update("protein_target", String(Math.round(targets.protein)))
+                    update("carbs_target", String(Math.round(targets.carbs)))
+                    update("fat_target", String(Math.round(targets.fat)))
+                    update("fibre_target", String(Math.round(targets.fibre)))
+                  }
+                }}
+              >
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Select preset"/>
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectGroup>
+                    {MACRO_PRESETS.map(({ value, label, description }) => (
+                      <SelectItem key={value} value={value}>
+                        <div className="flex flex-col">
+                          <span>{label}</span>
+                          <span className="text-xs text-muted-foreground">{description}</span>
+                        </div>
+                      </SelectItem>
+                    ))}
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <div className="grid gap-1.5">
+                <Label className="text-xs text-foreground/70 flex items-center gap-1">
+                  <Beef size={12} /> Protein (g)
+                </Label>
+                <Input
+                  type="number"
+                  value={form.protein_target ?? ""}
+                  onChange={(e) => update("protein_target", e.target.value)}
+                  className="h-9 text-sm"
+                />
+              </div>
+              <div className="grid gap-1.5">
+                <Label className="text-xs text-foreground/70 flex items-center gap-1">
+                  <Wheat size={12} /> Carbs (g)
+                </Label>
+                <Input
+                  type="number"
+                  value={form.carbs_target ?? ""}
+                  onChange={(e) => update("carbs_target", e.target.value)}
+                  className="h-9 text-sm"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <div className="grid gap-1.5">
+                <Label className="text-xs text-foreground/70 flex items-center gap-1">
+                  <CircleDot size={12} /> Fat (g)
+                </Label>
+                <Input
+                  type="number"
+                  value={form.fat_target ?? ""}
+                  onChange={(e) => update("fat_target", e.target.value)}
+                  className="h-9 text-sm"
+                />
+              </div>
+              <div className="grid gap-1.5">
+                <Label className="text-xs text-foreground/70 flex items-center gap-1">
+                  <CircleDot size={12} /> Fiber (g)
+                </Label>
+                <Input
+                  type="number"
+                  value={form.fibre_target ?? ""}
+                  onChange={(e) => update("fibre_target", e.target.value)}
+                  className="h-9 text-sm"
+                />
+              </div>
+            </div>
           </div>}
 
           {step === 1 && <div className="grid gap-4">
@@ -236,7 +330,7 @@ export function EditProfileDialog({
           </div>
           </div>}
 
-          {step === 3 && <div className="grid gap-4">
+          {step === 4 && <div className="grid gap-4">
           <TagField
             label="Dietary Restrictions"
             values={form.dietary_restrictions ?? []}
@@ -275,7 +369,7 @@ export function EditProfileDialog({
             Cancel
           </Button>
           {step > 0 && <Button variant="outline" size="sm" onClick={() => setStep(step - 1)} disabled={saving} className="gap-1.5"><ChevronLeft size={14} /> Back</Button>}
-          {step < 3 ? (
+          {step < 4 ? (
             <Button size="sm" onClick={() => setStep(step + 1)} disabled={saving} className="gap-1.5">Next <ChevronRight size={14} /></Button>
           ) : (
             <Button size="sm" onClick={handleSave} disabled={saving} className="gap-1.5">

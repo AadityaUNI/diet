@@ -6,42 +6,51 @@ import { Progress } from "@/components/ui/progress"
 import { cn } from "@/lib/utils"
 import { GoalsStep } from "./GoalsStep"
 import { BodyStep } from "./BodyStep"
+import { MacroStep } from "./MacroStep"
 import { HealthStep } from "./HealthStep"
+import { createSignupProfile } from "@/auth/LoginAuth"
 import type {
   BodyStepFormValues,
   BodyStepValues,
   CredentialsValues,
   GoalsStepValues,
   HealthStepValues,
+  MacroStepValues,
   SignupValues,
 } from "@/auth/authSchemas"
 
-const ONBOARDING_STEPS = ["GOALS", "BODY", "HEALTH"] as const
+const ONBOARDING_STEPS = ["GOALS", "BODY", "MACROS", "HEALTH"] as const
 type OnboardingStep = (typeof ONBOARDING_STEPS)[number]
 
 const STEP_COPY: Record<OnboardingStep, { title: string; description: string }> = {
   GOALS: {
     title: "Your fitness goal",
-    description: "We’ll use this to shape calorie and macro targets.",
+    description: "We'll use this to shape calorie and macro targets.",
   },
   BODY: {
     title: "A few body stats",
     description: "Age, height, and weight keep plans realistic.",
   },
+  MACROS: {
+    title: "Your macro targets",
+    description: "Choose a preset or customize your protein, carbs, fat, and fiber goals.",
+  },
   HEALTH: {
     title: "Health and food preferences",
-    description: "Optional — skip anything that doesn’t apply.",
+    description: "Optional — skip anything that doesn't apply.",
   },
 }
 
 interface OnboardingFlowProps {
   credentials: CredentialsValues
+  accountId: string
   onBackToCredentials: () => void
   onComplete: (values: SignupValues) => Promise<string | null>
 }
 
 export function OnboardingFlow({
   credentials,
+  accountId,
   onBackToCredentials,
   onComplete,
 }: OnboardingFlowProps) {
@@ -53,6 +62,13 @@ export function OnboardingFlow({
     weight: "",
     height: "",
     sex: "",
+  })
+  const [macros, setMacros] = useState<MacroStepValues>({
+    macro_preset: "balanced",
+    protein_target: 150,
+    carbs_target: 200,
+    fat_target: 65,
+    fiber_target: 28,
   })
   const [health, setHealth] = useState<HealthStepValues>({
     health_conditions: [],
@@ -78,11 +94,14 @@ export function OnboardingFlow({
       ...credentials,
       ...goals,
       ...(body as BodyStepValues),
+      ...macros,
       ...healthValues,
     }
-    const message = await onComplete(payload)
-    if (message) {
-      setError(message)
+    try {
+      await createSignupProfile(accountId, payload)
+      await onComplete(payload)
+    } catch (completionError) {
+      setError(completionError instanceof Error ? completionError.message : "Unable to save your profile.")
       setSubmitting(false)
     }
   }
@@ -126,6 +145,25 @@ export function OnboardingFlow({
             onBack={() => goTo("GOALS", false)}
             onContinue={(values) => {
               setBody(values)
+              goTo("MACROS", true)
+            }}
+          />
+        )}
+
+        {step === "MACROS" && (
+          <MacroStep
+            defaultValues={macros}
+            profile={{ 
+              age: Number(body.age), 
+              weight: Number(body.weight), 
+              height: Number(body.height), 
+              sex: body.sex, 
+              activity_level: goals.activity, 
+              fitness_goals: goals.goals 
+            }}
+            onBack={() => goTo("BODY", false)}
+            onContinue={(values) => {
+              setMacros(values)
               goTo("HEALTH", true)
             }}
           />
@@ -136,7 +174,7 @@ export function OnboardingFlow({
             defaultValues={health}
             submitting={submitting}
             error={error}
-            onBack={() => goTo("BODY", false)}
+            onBack={() => goTo("MACROS", false)}
             onFinish={finish}
           />
         )}

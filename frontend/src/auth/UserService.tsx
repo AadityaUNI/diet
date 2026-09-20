@@ -3,12 +3,16 @@ import { type UpdateUserProfile, type UserProfile } from "@/types/types";
 import type { NormalizedUpdate, NormalizedUserProf } from "@/types/types";
 
 function normalizeProf(profile: UserProfile | UpdateUserProfile) {
-  const {age, weight, height} = profile;
+  const {age, weight, height, protein_target, carbs_target, fat_target, fibre_target} = profile;
   return {
   ...profile,
   ...(age && { age: Number(age) }),
   ...(weight && { weight: Number(weight) }),
   ...(height && { height: Number(height) }),
+  ...(protein_target && { protein_target: Number(protein_target) }),
+  ...(carbs_target && { carbs_target: Number(carbs_target) }),
+  ...(fat_target && { fat_target: Number(fat_target) }),
+  ...(fibre_target && { fibre_target: Number(fibre_target) }),
 };
 
 }
@@ -23,8 +27,10 @@ export async function createUser(profile: UserProfile)
     if (error)
     {
       console.log("Error inserting user profile", error)
-        return;
+      throw new Error(error.message || "Unable to create your profile.");
     }
+
+    return numberedProfile;
 }
 
 export async function getActivePlanID(userID: string)

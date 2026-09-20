@@ -11,12 +11,13 @@ const COOLDOWN_MS = 3000
 interface AuthFlipCardProps {
   className?: string
   onLogin?: (values: LoginValues) => void
-  onCredentials?: (values: CredentialsValues) => void
+  onCredentials?: (values: CredentialsValues) => void | Promise<string | null>
 }
 
 export function FlipCard({ className, onLogin, onCredentials }: AuthFlipCardProps) {
   const [isFlipped, setIsFlipped] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [signupError, setSignupError] = useState<string | null>(null)
   const cooldownRef = useRef(false)
 
   const withCooldown = useCallback(
@@ -33,6 +34,18 @@ export function FlipCard({ className, onLogin, onCredentials }: AuthFlipCardProp
       },
     []
   )
+
+  async function submitCredentials(values: CredentialsValues) {
+    if (isSubmitting) return;
+    setIsSubmitting(true);
+    setSignupError(null);
+    try {
+      const error = await onCredentials?.(values);
+      if (error) setSignupError(error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
 
   return (
     <div className={cn("w-full max-w-md", className)} style={{ perspective: "2000px" }}>
@@ -64,8 +77,9 @@ export function FlipCard({ className, onLogin, onCredentials }: AuthFlipCardProp
         >
           <Signup
             onSwitchToLogin={() => setIsFlipped(false)}
-            onSubmit={onCredentials}
-            disabled={false}
+            onSubmit={submitCredentials}
+            disabled={isSubmitting}
+            error={signupError}
           />
         </div>
       </div>

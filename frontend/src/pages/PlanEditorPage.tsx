@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { AppHeader } from "@/components/header";
 import { PlanEditor } from "@/components/plan/PlanEditor";
+import { MobilePlanEditor } from "@/components/plan/MobilePlanEditor";
 import type { FullPlanData } from "@/types/types";
 import {
   createBlankIngredientDraft,
@@ -14,6 +15,7 @@ import { useAuth } from "@/auth/AuthContext";
 import { useMutation } from "@tanstack/react-query";
 import { createCustomUserPlan, editUserPlan } from "@/auth/PlanService";
 import { hydrateDraft } from "@/lib/hydratePlanDraft";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 
 type PlanEditorLocationState = {
   plan?: FullPlanData;
@@ -24,6 +26,7 @@ export default function PlanEditorPage() {
   const location = useLocation();
   const params = useParams();
   const { user } = useAuth();
+  const { isMobile, isLoading: mobileCheckLoading } = useIsMobile();
   const routeState = location.state as PlanEditorLocationState | null;
   const isEditMode = params.planId !== undefined;
 
@@ -84,12 +87,33 @@ export default function PlanEditorPage() {
       const {hydrated_meals, total_macros} = hydrateDraft(draft);
       if (isEditMode)
       {
-        editUserPlan(draft.id, draft, hydrated_meals, total_macros)
+        const saved = await editUserPlan(draft.id, draft, hydrated_meals, total_macros);
+        if (!saved) {
+          throw new Error("Unable to save the edited meal plan.");
+        }
       }
-      else createCustomUserPlan(draft, user!.id, hydrated_meals, total_macros)
+      else await createCustomUserPlan(draft, user!.id, hydrated_meals, total_macros)
     },
-    onSettled: () => setSaving(false)
+    onSettled: () => setSaving(false),
+    onSuccess: () => navigate('/'),
   })
+
+  if (isMobile && !mobileCheckLoading) {
+    return (
+      <>
+        <AppHeader loading={false} />
+        <MobilePlanEditor
+          mode={isEditMode ? "edit" : "create"}
+          draft={draft}
+          onChange={setDraft}
+          onSave={() => saveMutation.mutate()}
+          onCancel={() => navigate(-1)}
+          saving={saving}
+          saveError={saveMutation.error instanceof Error ? saveMutation.error.message : null}
+        />
+      </>
+    );
+  }
 
   return (
     <>
@@ -105,6 +129,7 @@ export default function PlanEditorPage() {
         onSave={() => saveMutation.mutate()}
         onCancel={() => navigate(-1)}
         saving={saving}
+        saveError={saveMutation.error instanceof Error ? saveMutation.error.message : null}
       />
     </>
   );

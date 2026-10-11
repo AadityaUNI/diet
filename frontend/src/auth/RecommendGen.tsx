@@ -1,5 +1,6 @@
 import type { RecommendResponse } from "@/types/generated-plan";
 import type { FullPlanData, UserProfile } from "@/types/types";
+import { FASTAPI_URL } from "@/lib/api";
 
 export type AnalyzeRequest = {
     plan: FullPlanData;
@@ -54,7 +55,7 @@ export async function getAIRec(token: string, constraints: UserProfile & {goal_c
 {
     let response: Response;
     try {
-        response = await fetch(`${import.meta.env.VITE_FASTAPI_URL}/recommend`, {
+        response = await fetch(`${FASTAPI_URL}/recommend`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -84,7 +85,7 @@ export async function getAnalyzed(token: string, request: AnalyzeRequest): Promi
 {
     let response: Response;
     try {
-        response = await fetch(`${import.meta.env.VITE_FASTAPI_URL}/analyze`, {
+        response = await fetch(`${FASTAPI_URL}/analyze`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

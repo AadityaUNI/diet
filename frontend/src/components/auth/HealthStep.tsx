@@ -5,7 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { Button } from "@/components/ui/button"
 import TagField from "@/components/ui/tag-input"
 import { healthStepSchema, type HealthStepValues } from "@/auth/authSchemas"
-import { LoginSpinner } from "@/components/loginSpinner"
+import { LoginSpinner } from "@/components/auth/loginSpinner"
 
 interface HealthStepProps {
   defaultValues: HealthStepValues

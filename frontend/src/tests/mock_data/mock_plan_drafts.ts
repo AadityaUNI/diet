@@ -1,89 +1,39 @@
-import type { HydratedMeals, PlanEditorDraft } from "@/types/plan-editor";
+import type { PlanEditorDraft, PlanIngredientDraft } from "@/types/plan-editor";
 
 export const empty_draft: PlanEditorDraft = {id: 1, name: "", meals: []};
 export const expected_empty = {hydrated_meals: [], total_macros: { total_calories: 0, total_protein: 0, total_carbs: 0, total_fats: 0, total_fibre: 0 }};
 
-
-export const general_draft: PlanEditorDraft = {
-    id: 10, 
-    name: "General", 
-    meals: [{
-        id: 1, 
-        name: "",
-        ingredients: [{
-            amount: 100, 
-            name: "apple", 
-            calories: 100, 
-            protein: 100, 
-            carbs: 100, 
-            fat: 100, 
-            fibre: 100,
-            id: 0
-        }, {
-            amount: 0, 
-            name: "", 
-            calories: 100, 
-            protein: 100, 
-            carbs: 100, 
-            fat: 100, 
-            fibre: 100,
-            id: 1
-        }]
-    }, 
-    {
-        id: 2, 
-        name: "",
-        ingredients: [{
-            amount: 50, 
-            name: "mango", 
-            calories: 50.6, 
-            protein: 10.6, 
-            carbs: 0, 
-            fat: 0, 
-            fibre: 0,
-            id: 0
-        }, {
-            amount: 50.5, 
-            name: "", 
-            calories: 100, 
-            protein: 100, 
-            carbs: 100, 
-            fat: 100, 
-            fibre: 100,
-            id: 1
-        }]
-    }
-    ]
+// macros are per 100g and amounts are in grams
+function ingredient(id: number, name: string, amount: string, calories: number, protein: number, carbs: number, fat: number, fibre: number): PlanIngredientDraft {
+    return { id, name, amount, calories, protein, carbs, fat, fibre, cup_serving: null, whole_serving: null, servingUnit: "grams" };
 }
 
-export const expected_general = 
+const meal_1_ingredients = [
+    ingredient(0, "apple", "100", 100, 100, 100, 100, 100),
+    ingredient(1, "", "0", 100, 100, 100, 100, 100),
+];
+
+const meal_2_ingredients = [
+    ingredient(0, "mango", "50", 50.6, 10.6, 0, 0, 0),
+    ingredient(1, "", "50.5", 100, 100, 100, 100, 100),
+];
+
+export const general_draft: PlanEditorDraft = {
+    id: 10,
+    name: "General",
+    meals: [
+        { id: 1, name: "", ingredients: meal_1_ingredients },
+        { id: 2, name: "", ingredients: meal_2_ingredients },
+    ],
+};
+
+export const expected_general =
 {
   hydrated_meals: [
     {
       id: 1,
       name: "",
-      ingredients: [
-        {
-          amount: 100,
-          name: "apple",
-          calories: 100,
-          protein: 100,
-          carbs: 100,
-          fat: 100,
-          fibre: 100,
-          id: 0
-        },
-        {
-          amount: 0,
-          name: "",
-          calories: 100,
-          protein: 100,
-          carbs: 100,
-          fat: 100,
-          fibre: 100,
-          id: 1
-        }
-      ],
+      ingredients: meal_1_ingredients,
       total_calories: 100,
       total_protein: 100,
       total_carbs: 100,
@@ -93,28 +43,7 @@ export const expected_general =
     {
       id: 2,
       name: "",
-      ingredients: [
-        {
-          amount: 50,
-          name: "mango",
-          calories: 50.6,
-          protein: 10.6,
-          carbs: 0,
-          fat: 0,
-          fibre: 0,
-          id: 0
-        },
-        {
-          amount: 50.5,
-          name: "",
-          calories: 100,
-          protein: 100,
-          carbs: 100,
-          fat: 100,
-          fibre: 100,
-          id: 1
-        }
-      ],
+      ingredients: meal_2_ingredients,
       total_calories: 75.8,
       total_protein: 55.8,
       total_carbs: 50.5,

@@ -20,15 +20,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [region, setRegion] = useState<string>("")
 
   useEffect(() => {
-
-    async function fetchRegion() {
-      const profile = await currUserDetails()
-      if (profile) {
-        setRegion(profile.region)
-      }
-    }
-    fetchRegion()
-  
     supabase.auth.getSession().then((data) => {
       setUser(data.data.session?.user ?? null)
       setLoading(false)
@@ -43,7 +34,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => subscription.unsubscribe()
   }, [])
 
-  return <authContext.Provider value={{user, loading, session_token, region}}>{children}</authContext.Provider>
+  // load the region once a user is signed in; there is no profile to read before that
+  useEffect(() => {
+    if (!user?.id) return
+
+    currUserDetails()
+      .then((profile) => setRegion(profile.region))
+      .catch(() => setRegion(""))
+  }, [user?.id])
+
+  return <authContext.Provider value={{user, loading, session_token, region: user ? region : ""}}>{children}</authContext.Provider>
 }
 
 export const useAuth = () => {

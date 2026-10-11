@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import TagField from "@/components/ui/tag-input";
-import { AppHeader } from "@/components/header";
+import { AppHeader } from "@/components/layout/header";
 import type { Goal } from "@/types/generated-plan";
 import { CALORIE_GOAL_OPTIONS } from "@/lib/calorieTarget";
 

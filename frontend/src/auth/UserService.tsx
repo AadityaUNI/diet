@@ -1,4 +1,5 @@
 import { supabase } from "@/lib/supabase";
+import { SupabaseRequestError } from "@/lib/supabaseError";
 import { type UpdateUserProfile, type UserProfile } from "@/types/types";
 import type { NormalizedUpdate, NormalizedUserProf } from "@/types/types";
 
@@ -26,8 +27,7 @@ export async function createUser(profile: UserProfile)
 
     if (error)
     {
-      console.log("Error inserting user profile", error)
-      throw new Error(error.message || "Unable to create your profile.");
+      throw new SupabaseRequestError(error.message || "Unable to create your profile.", error);
     }
 
     return numberedProfile;
@@ -43,14 +43,13 @@ export async function getActivePlanID(userID: string)
 
   if (error)
   {
-    console.log("Error fetching active plan ID", error)
-    return 
+    throw new SupabaseRequestError("Unable to load your active plan.", error)
   }
   return data.active_meal_plan_id
 }
 
 
-export async function currUserDetails(): Promise<UserProfile | undefined>
+export async function currUserDetails(): Promise<UserProfile>
 {
   const { data: users, error } = await supabase
     .from('UserProfiles')
@@ -59,12 +58,11 @@ export async function currUserDetails(): Promise<UserProfile | undefined>
 
     if (error)
     {
-      console.log("Error fetching current user details", error)
-        return
+      throw new SupabaseRequestError("Unable to load your profile.", error)
     }
 
     if (users === null) {
-      return
+      throw new Error("Your profile could not be found.")
     }
 
     const profile = users as UserProfile
@@ -90,8 +88,7 @@ export async function updateUserDetails(
 
   if (error)
   {
-     console.log("Error updating user details", error)
-    return
+    throw new SupabaseRequestError("Unable to save your profile.", error)
   }
 }
 
@@ -100,7 +97,6 @@ export async function logoutUser()
   const { error } = await supabase.auth.signOut()
   if (error)
   {
-     console.log("Error signing out user", error)
-    return
+    throw new SupabaseRequestError("Unable to sign out. Please try again.", error)
   }
 }

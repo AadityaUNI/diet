@@ -20,36 +20,42 @@ export type Database = {
           calories: number
           carbs: number
           created_at: string
+          cup_serving: number | null
           fat: number
           fibre: number
           id: number
           name: string
           protein: number
           region: string
+          whole_serving: number | null
         }
         Insert: {
           added_by?: string | null
           calories: number
           carbs: number
           created_at?: string
+          cup_serving?: number | null
           fat: number
           fibre: number
           id?: number
           name: string
           protein: number
           region?: string
+          whole_serving?: number | null
         }
         Update: {
           added_by?: string | null
           calories?: number
           carbs?: number
           created_at?: string
+          cup_serving?: number | null
           fat?: number
           fibre?: number
           id?: number
           name?: string
           protein?: number
           region?: string
+          whole_serving?: number | null
         }
         Relationships: []
       }

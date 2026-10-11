@@ -3,15 +3,17 @@ import { Button } from "@/components/ui/button";
 import { CalorieRingCard } from "@/components/dashboard/calorieRingCard";
 import { MacrosCard } from "@/components/dashboard/macrosCard";
 import { TodaysMealsCard } from "@/components/dashboard/todayMealsCards";
-import { MealSkeleton } from "../MealSkeleton";
+import { MealSkeleton } from "@/components/dashboard/MealSkeleton";
 import type { FullPlanData } from "@/types/types";
-import { NoActivePlanEmptyState } from "../emptyPlanStates";
+import { NoActivePlanEmptyState } from "@/components/dashboard/emptyPlanStates";
 import { PencilLine, Sparkles } from "lucide-react";
+import type { HydratedMeals } from "@/types/plan-editor";
 
 export interface OverviewTabProps {
   activePlan: FullPlanData | null;
   toggleMeal: (mealID: number) => void;
-  getRecommended: () => void;
+  onCreateTemporaryMeal: (meal: HydratedMeals[number]) => Promise<boolean>;
+  onDeleteTemporaryMeal: (mealID: number) => void;
   loading: boolean
   onEditPlan: (plan: FullPlanData) => void;
   onOptimizePlan: (plan: FullPlanData) => void;
@@ -105,7 +107,7 @@ export function OverviewTab(props: OverviewTabProps) {
   {
     return (
     <TabsContent value="overview" className="flex flex-col gap-4">
-    <NoActivePlanEmptyState onGetRecommended={props.getRecommended} />
+    <NoActivePlanEmptyState />
     </TabsContent>)
   }
 
@@ -113,11 +115,8 @@ export function OverviewTab(props: OverviewTabProps) {
 
   return (
     <TabsContent value="overview" className="flex flex-col gap-4">
-      <div className="flex items-center justify-between gap-3">
-        <div>
-          <h2 className="font-outfit text-base font-bold">Today</h2>
-          <p className="text-xs text-muted-foreground">Track and refine the active plan</p>
-        </div>
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <h2 className="font-outfit text-base font-bold">Today</h2>
         <div className="flex gap-2">
           <Button variant="secondary" size="sm" className="gap-1.5" onClick={() => props.onEditPlan(props.activePlan!)}>
             <PencilLine size={14} />
@@ -134,6 +133,8 @@ export function OverviewTab(props: OverviewTabProps) {
       <TodaysMealsCard
         activePlan={props.activePlan}
         toggleMeal={props.toggleMeal}
+        onCreateTemporaryMeal={props.onCreateTemporaryMeal}
+        onDeleteTemporaryMeal={props.onDeleteTemporaryMeal}
       />
     </TabsContent>
   );

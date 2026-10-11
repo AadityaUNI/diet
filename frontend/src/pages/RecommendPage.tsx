@@ -6,7 +6,7 @@ import { RecommendResultsTab } from "@/components/recommend/recommendResultsTab"
 import type { GeneratedPlan, RecommendResponse } from "@/types/generated-plan";
 import type { UserProfile } from "@/types/types";
 import { currUserDetails } from "@/auth/UserService";
-import HomeButton from "@/components/homeButton";
+import HomeButton from "@/components/layout/homeButton";
 
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { getAIRec } from "@/auth/RecommendGen";
@@ -46,13 +46,7 @@ export function RecommendPage() {
     queryKey: ["userProfile", session_token],
     enabled: Boolean(session_token),
     queryFn: async () => {
-      const loadedProfile = await currUserDetails()
-
-      if (!loadedProfile) {
-        throw new Error("Unable to load user profile.")
-      }
-
-      return loadedProfile
+      return currUserDetails()
     },
   })
 
@@ -100,7 +94,15 @@ const recMutation = useMutation({
       return handleSavePlan(plan, index)
     },
     onSuccess: () => setSavedLoading(false),
-    onError: () => setSavedLoading(false)
+    onError: (_error, { index }) => {
+      // un-mark the plan so the user can retry the save
+      setSavedPlanIndices((prev) => {
+        const next = new Set(prev);
+        next.delete(index);
+        return next;
+      });
+      setSavedLoading(false);
+    }
   })
 
   const handleSavePlan = async (plan: GeneratedPlan, index: number) => {
@@ -109,12 +111,7 @@ const recMutation = useMutation({
     }
     setSavedPlanIndices((prev) => new Set([...prev, index]));
     setSavedLoading(true)
-    const savedPlanID = await createUserPlanFromAI(plan, profile.id);
-
-    if (!savedPlanID) {
-      return;
-    }
-
+    await createUserPlanFromAI(plan, profile.id);
   };
 
   if (view === "form") {

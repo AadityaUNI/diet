@@ -2,7 +2,7 @@ import { AlertCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { RecommendedPlanCard } from "@/components/recommend/recommendedPlanCard";
 import type { RecommendResponse, GeneratedPlan } from "@/types/generated-plan";
-import { AppHeader } from "../header";
+import { AppHeader } from "@/components/layout/header";
 
 interface RecommendResultsTabProps {
   results: RecommendResponse;

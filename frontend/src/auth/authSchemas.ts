@@ -35,7 +35,7 @@ export const healthStepSchema = z.object({
 export const macroStepSchema = z.object({
   macro_preset: z.string().min(1, "Select a macro preset"),
   protein_target: z.coerce.number().positive("Must be greater than 0"),
-  carbs_target: z.coerce.number().positive("Must be greater than 0"),
+  carbs_target: z.coerce.number().nonnegative("Must be 0 or more"),
   fat_target: z.coerce.number().positive("Must be greater than 0"),
   fiber_target: z.coerce.number().positive("Must be greater than 0"),
 })

@@ -18,6 +18,8 @@ export function Logout() {
 
     try {
       await logoutUser?.()
+    } catch {
+      // already logged by SupabaseRequestError; the button re-enables after the cooldown
     } finally {
       setTimeout(() => {
         cooldownRef.current = false

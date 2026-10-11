@@ -1,6 +1,6 @@
 "use client"
 
-import { Controller, useForm, useWatch } from "react-hook-form"
+import { Controller, useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
@@ -40,7 +40,6 @@ export function MacroStep({ defaultValues, profile, onBack, onContinue }: MacroS
     defaultValues,
   })
 
-  const watched = useWatch({ control })
   
   // Calculate weight in lbs (1 kg = 2.20462 lbs)
   const weightLbs = Number(profile.weight || 0) * 2.20462
@@ -73,7 +72,7 @@ export function MacroStep({ defaultValues, profile, onBack, onContinue }: MacroS
           name="macro_preset"
           control={control}
           render={({ field }) => (
-            <Select value={field.value} onValueChange={(value) => {
+            <Select items={MACRO_PRESETS} value={field.value} onValueChange={(value) => {
               field.onChange(value)
               handlePresetChange(value as string)
             }}>

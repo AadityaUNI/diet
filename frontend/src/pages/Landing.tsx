@@ -1,13 +1,13 @@
 "use client"
 
 import { useState } from "react"
-import { FlipCard } from "@/components/flipcard"
-import { OnboardingFlow } from "@/components/onboarding/OnboardingFlow"
+import { FlipCard } from "@/components/auth/flipcard"
+import { OnboardingFlow } from "@/components/auth/OnboardingFlow"
 import { Leaf, LineChart, Salad, Zap } from "lucide-react"
 import { createAuthAccount, onLogin } from "@/auth/LoginAuth"
 import { useNavigate } from "react-router-dom"
-import { ModeToggle } from "@/components/mode-toggle"
-import type { CredentialsValues } from "@/auth/authSchemas"
+import { ModeToggle } from "@/components/layout/mode-toggle"
+import type { CredentialsValues, LoginValues } from "@/auth/authSchemas"
 
 const features = [
   {
@@ -31,6 +31,15 @@ export default function Landing() {
   const navigate = useNavigate()
   const [credentials, setCredentials] = useState<CredentialsValues | null>(null)
   const [accountId, setAccountId] = useState<string | null>(null)
+
+  async function beginLogin(values: LoginValues) {
+    try {
+      await onLogin(values, navigate)
+      return null
+    } catch (error) {
+      return error instanceof Error ? error.message : "Unable to sign in."
+    }
+  }
 
   async function beginSignup(values: CredentialsValues) {
     try {
@@ -102,7 +111,7 @@ export default function Landing() {
             />
           ) : (
             <FlipCard
-              onLogin={(e) => onLogin(e, navigate)}
+              onLogin={beginLogin}
               onCredentials={beginSignup}
             />
           )}

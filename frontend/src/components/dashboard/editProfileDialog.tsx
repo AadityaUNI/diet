@@ -19,7 +19,7 @@ import {
   SelectGroup
 } from "@/components/ui/select"
 import { Check, ChevronLeft, ChevronRight, CircleUserRound, Dumbbell, Loader2, SlidersHorizontal, Target, Beef, Wheat, CircleDot } from "lucide-react"
-import TagField from "./ui/tag-input"
+import TagField from "@/components/ui/tag-input"
 import type { UserProfile } from "@/types/types"
 import { ACTIVITY_LEVELS, MACRO_PRESETS } from "@/lib/predefined"
 import { updateUserDetails } from "@/auth/UserService"
@@ -160,7 +160,7 @@ export function EditProfileDialog({
           {step === 2 && <div className="grid gap-4">
           <div className="grid gap-1.5">
             <Label className="text-xs text-foreground/70">Fitness Goal</Label>
-            <Select name="goals" value={form.fitness_goals ?? ""} onValueChange={(v) => update("fitness_goals", v as string)} required>
+            <Select name="goals" items={CALORIE_GOAL_OPTIONS} value={form.fitness_goals ?? ""} onValueChange={(v) => update("fitness_goals", v as string)} required>
               <SelectTrigger className="w-45">
                 <SelectValue placeholder="Goal"/>
               </SelectTrigger>
@@ -182,6 +182,7 @@ export function EditProfileDialog({
               <Label className="text-xs text-foreground/70">Macro Preset</Label>
               <Select 
                 name="macro_preset" 
+                items={MACRO_PRESETS}
                 value="balanced" 
                 onValueChange={(v) => {
                   const preset = MACRO_PRESETS.find(p => p.value === v)
@@ -252,10 +253,11 @@ export function EditProfileDialog({
                 />
               </div>
               <div className="grid gap-1.5">
-                <Label className="text-xs text-foreground/70 flex items-center gap-1">
+                <Label htmlFor="edit-fibre-target" className="text-xs text-foreground/70 flex items-center gap-1">
                   <CircleDot size={12} /> Fiber (g)
                 </Label>
                 <Input
+                  id="edit-fibre-target"
                   type="number"
                   value={form.fibre_target ?? ""}
                   onChange={(e) => update("fibre_target", e.target.value)}
@@ -271,6 +273,8 @@ export function EditProfileDialog({
               <Label className="text-xs text-foreground/70">Weight (kg)</Label>
               <Input
                 type="number"
+                min="0"
+                step="any"
                 value={form.weight ?? ""}
                 onChange={(e) => update("weight", e.target.value)}
                 className="h-9 text-sm"
@@ -281,6 +285,8 @@ export function EditProfileDialog({
               <Label className="text-xs text-foreground/70">Height (cm)</Label>
               <Input
                 type="number"
+                min="0"
+                step="any"
                 value={form.height ?? ""}
                 onChange={(e) => update("height", e.target.value)}
                 className="h-9 text-sm"
@@ -301,9 +307,8 @@ export function EditProfileDialog({
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="male">Male</SelectItem>
-                  <SelectItem value="female">Female</SelectItem>
-                  <SelectItem value="other">Other</SelectItem>
+                  <SelectItem value="Male">Male</SelectItem>
+                  <SelectItem value="Female">Female</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -311,6 +316,7 @@ export function EditProfileDialog({
             <div className="grid gap-1.5">
               <Label className="text-xs text-foreground/70">Activity Level</Label>
               <Select
+                items={ACTIVITY_LEVELS}
                 value={form.activity_level ?? ""}
                 onValueChange={(v) => update("activity_level", v as string)}
                 required

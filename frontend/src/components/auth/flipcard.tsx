@@ -2,15 +2,15 @@
 
 import { useState, useRef, useCallback } from "react"
 import { cn } from "@/lib/utils"
-import { Login } from "./login"
-import { Signup } from "./signUp"
-import type { LoginValues, CredentialsValues } from "../auth/authSchemas.ts"
+import { Login } from "@/components/auth/login"
+import { Signup } from "@/components/auth/signUp"
+import type { LoginValues, CredentialsValues } from "@/auth/authSchemas.ts"
 
 const COOLDOWN_MS = 3000
 
 interface AuthFlipCardProps {
   className?: string
-  onLogin?: (values: LoginValues) => void
+  onLogin?: (values: LoginValues) => Promise<string | null>
   onCredentials?: (values: CredentialsValues) => void | Promise<string | null>
 }
 
@@ -18,15 +18,18 @@ export function FlipCard({ className, onLogin, onCredentials }: AuthFlipCardProp
   const [isFlipped, setIsFlipped] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [signupError, setSignupError] = useState<string | null>(null)
+  const [loginError, setLoginError] = useState<string | null>(null)
   const cooldownRef = useRef(false)
 
   const withCooldown = useCallback(
-    <T,>(handler?: (values: T) => void) =>
-      (values: T) => {
+    <T,>(handler?: (values: T) => Promise<string | null>) =>
+      async (values: T) => {
         if (cooldownRef.current) return
         cooldownRef.current = true
         setIsSubmitting(true)
-        handler?.(values)
+        setLoginError(null)
+        const error = await handler?.(values)
+        if (error) setLoginError(error)
         setTimeout(() => {
           cooldownRef.current = false
           setIsSubmitting(false)
@@ -64,6 +67,7 @@ export function FlipCard({ className, onLogin, onCredentials }: AuthFlipCardProp
             onSwitchToSignup={() => setIsFlipped(true)}
             onSubmit={withCooldown(onLogin)}
             disabled={isSubmitting}
+            error={loginError}
           />
         </div>
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import { AlertCircle, ArrowLeft } from "lucide-react";
-import { AppHeader } from "@/components/header";
+import { AppHeader } from "@/components/layout/header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useAuth } from "@/auth/AuthContext";
@@ -38,11 +38,7 @@ export default function OptimizePlanPage() {
 
       const draft = planDraftFromSavedPlan(result.proposed_plan);
       const { hydrated_meals, total_macros } = hydrateDraft(draft);
-      const saved = await editUserPlan(draft.id, draft, hydrated_meals, total_macros);
-
-      if (!saved) {
-        throw new Error("Unable to save the analyzed changes.");
-      }
+      await editUserPlan(draft.id, draft, hydrated_meals, total_macros);
     },
     onSuccess: () => navigate("/"),
   });

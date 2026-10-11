@@ -1,17 +1,20 @@
-import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar"
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Edit3, Dumbbell, Flame, Scale, HeartPulse, Wheat, Utensils, CircleDot } from "lucide-react";
+import { Edit3, Dumbbell, Flame, Scale, HeartPulse, Wheat, Utensils } from "lucide-react";
 import { currUserDetails } from "@/auth/UserService";
 import type { UserProfile } from "@/types/types";
 import { useEffect, useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton"
-import { EditProfileDialog } from "./editProfileDialog"
+import { EditProfileDialog } from "@/components/dashboard/editProfileDialog"
 import { ACTIVITY_LEVELS } from "@/lib/predefined"
 import { calculateCalorieTarget, CALORIE_GOAL_OPTIONS } from "@/lib/calorieTarget"
 import { useQuery } from "@tanstack/react-query";
 import { useAuth } from "@/auth/AuthContext";
-import { GoalStatsCard } from "./goalStatsCard"
+import { GoalStatsCard } from "@/components/dashboard/goalStatsCard"
+import { getAvatarUrl, getInitials } from "@/lib/avatar"
+
+const PROFILE_AVATAR_SIZE = 80
 
 function ChipRow({
   icon: Icon,
@@ -57,7 +60,7 @@ export function SkeletonAvatar() {
 
 export default function Profile()
 {
-  const {session_token} = useAuth();
+  const {session_token, user} = useAuth();
   const [userData, setUserData] = useState<UserProfile | null>(null)
   const [editOpen, setEditOpen] = useState(false)
 
@@ -92,12 +95,17 @@ export default function Profile()
           <>
           <div className="flex items-start gap-4">
             <div className="relative shrink-0">
-              <Avatar className="h-20 w-20 ring-2 ring-primary/40 ring-offset-2 ring-offset-background">
+              <Avatar
+                className="ring-2 ring-primary/40 ring-offset-2 ring-offset-background"
+                style={{ width: PROFILE_AVATAR_SIZE, height: PROFILE_AVATAR_SIZE }}
+              >
                 <AvatarImage
-                  src='https://avataaars.io/?avatarStyle=Circle&topType=WinterHat2&accessoriesType=Kurt&hatColor=PastelRed&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=ShirtVNeck&clotheColor=PastelGreen&eyeType=EyeRoll&eyebrowType=Angry&mouthType=ScreamOpen&skinColor=Yellow'
+                  src={getAvatarUrl(user?.id ?? userData.name, PROFILE_AVATAR_SIZE)}
                   alt={userData.name}
+                  width={PROFILE_AVATAR_SIZE}
+                  height={PROFILE_AVATAR_SIZE}
                 />
-                <AvatarFallback>{userData.name}</AvatarFallback>
+                <AvatarFallback className="text-xl font-semibold">{getInitials(userData.name)}</AvatarFallback>
               </Avatar>
               <span className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-background bg-primary text-[10px] text-primary-foreground">
                 ✓

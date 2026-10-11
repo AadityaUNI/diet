@@ -12,6 +12,7 @@ from app.models.outputModels import AnalyzedOutput, GeminiOutput
 from app.services.JWTService import verify_jwt
 from app.services.cfService import get_list
 from app.utils.verifyMacros import hydrate_plan, hydrate_plans
+from app.utils.analyzeUtils import frontend_plan, profile_context
 from app.services.geminiService import call_gemini, gemini_analyze
 load_dotenv()
 
@@ -69,60 +70,6 @@ def recommend(authorization: Annotated[str | None, Header()], constraints: Const
     return {"skipped_items": output.skipped_items, "plans": plans}
 
 
-def _profile_context(profile: dict, region: str) -> dict:
-    return {
-        "fitness_goal": profile.get("fitness_goals", ""),
-        "goal_calories": profile.get("goal_calories", profile.get("calorie_target")),
-        "protein_target": profile.get("protein_target"),
-        "carbs_target": profile.get("carbs_target"),
-        "fat_target": profile.get("fat_target"),
-        "fibre_target": profile.get("fibre_target", profile.get("fiber_target")),
-        "health_conditions": profile.get("health_conditions", []),
-        "dietary_restrictions": profile.get("dietary_restrictions", []),
-        "required_food_items": profile.get("required_food_items", []),
-        "region": region,
-    }
-
-
-def _frontend_plan(original, hydrated: dict, user_id: str) -> dict:
-    proposed = {
-        "id": original.id,
-        "name": hydrated["name"],
-        "total_calories": hydrated["total_calories"],
-        "total_carbs": hydrated["total_carbs"],
-        "total_fats": hydrated["total_fats"],
-        "total_fibre": hydrated["total_fibre"],
-        "total_protein": hydrated["total_protein"],
-        "userID": user_id,
-        "meals": [],
-    }
-
-    for index, meal in enumerate(hydrated["meals"]):
-        source_meal = original.meals[index] if index < len(original.meals) else original.meals[-1]
-        meal_data = {
-            "id": source_meal.id,
-            "name": meal["name"],
-            "total_calories": meal["total_calories"],
-            "total_carbs": meal["total_carbs"],
-            "total_fats": meal["total_fats"],
-            "total_fibre": meal["total_fibre"],
-            "total_protein": meal["total_protein"],
-            "planID": original.id,
-            "meal_completed": False,
-            "meal_items": [],
-        }
-        for ingredient in meal["ingredients"]:
-            food_item = {key: value for key, value in ingredient.items() if key != "amount"}
-            meal_data["meal_items"].append({
-                "amount": ingredient["amount"],
-                "foodID": ingredient["id"],
-                "mealID": source_meal.id,
-                "food_item": food_item,
-            })
-        proposed["meals"].append(meal_data)
-    return proposed
-
-
 # modify current plan, provide insights etc. 
 @app.post("/analyze")
 def analyze(authorization: Annotated[str | None, Header()], request: AnalyzeRequest):
@@ -142,7 +89,7 @@ def analyze(authorization: Annotated[str | None, Header()], request: AnalyzeRequ
 
         raw_analyzed = gemini_analyze({
             "plan": request.plan,
-            "profile": _profile_context(profile, request.profile.region),
+            "profile": profile_context(profile, request.profile.region),
             "user_prompt": request.user_prompt,
             "regional_list": regional,
         }, gemini)
@@ -160,5 +107,5 @@ def analyze(authorization: Annotated[str | None, Header()], request: AnalyzeRequ
         "summary": analyzed.summary,
         "missing": analyzed.missing,
         "changes": [change.model_dump() for change in analyzed.changes],
-        "proposed_plan": _frontend_plan(request.plan, hydrated_proposed, user_id),
+        "proposed_plan": frontend_plan(request.plan, hydrated_proposed, user_id),
     }

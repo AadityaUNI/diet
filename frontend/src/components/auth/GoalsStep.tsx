@@ -40,7 +40,7 @@ export function GoalsStep({ defaultValues, onBack, onContinue }: GoalsStepProps)
           name="goals"
           control={control}
           render={({ field }) => (
-            <Select value={field.value} onValueChange={field.onChange}>
+            <Select items={CALORIE_GOAL_OPTIONS} value={field.value} onValueChange={field.onChange}>
               <SelectTrigger className="w-full" id="onboarding-goals">
                 <SelectValue placeholder="Select a goal" />
               </SelectTrigger>
@@ -68,7 +68,7 @@ export function GoalsStep({ defaultValues, onBack, onContinue }: GoalsStepProps)
           name="activity"
           control={control}
           render={({ field }) => (
-            <Select value={field.value} onValueChange={field.onChange}>
+            <Select items={ACTIVITY_LEVELS} value={field.value} onValueChange={field.onChange}>
               <SelectTrigger className="w-full" id="onboarding-activity">
                 <SelectValue placeholder="Select activity level" />
               </SelectTrigger>

@@ -19,13 +19,13 @@ export const MACRO_PRESETS: Array<{
     label: "Balanced Performance",
     description: "High carb, lower fat - optimized for performance and muscle retention",
     getTargets: (calories, weightLbs) => {
-      const protein = weightLbs * 1; // 1g per lb
+      const protein = weightLbs * 0.8; // 0.8g per lb
       const fat = (calories * 0.25) / 9; // 25% of calories from fat
       const fibre = (calories / 1000) * 14; // 14g per 1000 calories
       const fatCalories = fat * 9;
       const proteinCalories = protein * 4;
       const remainingCalories = calories - fatCalories - proteinCalories;
-      const carbs = remainingCalories / 4;
+      const carbs = Math.max(0, remainingCalories / 4);
       return { protein, fat, fibre, carbs };
     }
   },
@@ -34,7 +34,7 @@ export const MACRO_PRESETS: Array<{
     label: "Ketogenic",
     description: "Very low carb, high fat - for rapid fat burning and ketosis",
     getTargets: (calories, weightLbs) => {
-      const protein = weightLbs * 1.2; // Slightly higher protein for keto
+      const protein = weightLbs * 1; // 1g per lb, higher protein for keto
       const fat = (calories * 0.70) / 9; // 70% of calories from fat
       const fibre = (calories / 1000) * 12; // Slightly lower fibre for keto
       const fatCalories = fat * 9;

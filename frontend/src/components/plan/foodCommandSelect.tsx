@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Check, ChevronsUpDown, Plus } from "lucide-react";
 import {
   Command,
@@ -25,6 +25,7 @@ type FoodCommandSelectProps = {
 
 export function FoodCommandSelect({ value, foods, isLoading, onSelect, onCreateCustom, currentUserId }: FoodCommandSelectProps) {
   const [open, setOpen] = useState(false);
+  const listRef = useRef<HTMLDivElement>(null);
   const customFoods = foods.filter((food) => food.added_by === currentUserId);
   const regionalFoods = foods.filter((food) => food.added_by !== currentUserId);
 
@@ -32,7 +33,14 @@ export function FoodCommandSelect({ value, foods, isLoading, onSelect, onCreateC
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
   render={
-    <Button variant="outline" role="combobox" aria-expanded={open} className="w-full justify-between font-normal" />
+    // comboboxes don't take their accessible name from their content, so label it explicitly
+    <Button
+      variant="outline"
+      role="combobox"
+      aria-expanded={open}
+      aria-label={value ? `Ingredient: ${value}` : "Choose ingredient"}
+      className="w-full justify-between font-normal"
+    />
   }
 >
   <span className={cn("truncate", !value && "text-muted-foreground")}>
@@ -43,8 +51,12 @@ export function FoodCommandSelect({ value, foods, isLoading, onSelect, onCreateC
 
       <PopoverContent className="w-[min(34rem,calc(100vw-2rem))] p-0" align="start">
         <Command>
-          <CommandInput placeholder="Search by ingredient name..." />
-          <CommandList className="max-h-72">
+          <CommandInput
+            placeholder="Search by ingredient name..."
+            // cmdk scrolls its highlighted item into view after re-sorting; pin results to the top instead
+            onValueChange={() => requestAnimationFrame(() => listRef.current?.scrollTo({ top: 0 }))}
+          />
+          <CommandList ref={listRef} className="max-h-72">
             <CommandEmpty>{isLoading ? "Loading catalog..." : "No results found."}</CommandEmpty>
               <CommandGroup heading="Your custom foods">
                 {customFoods.length > 0 ? 

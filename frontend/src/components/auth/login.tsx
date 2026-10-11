@@ -8,17 +8,18 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Leaf } from "lucide-react"
-import { LoginSpinner } from "./loginSpinner"
-import { loginSchema, type LoginValues } from "../auth/authSchemas.ts"
+import { LoginSpinner } from "@/components/auth/loginSpinner"
+import { loginSchema, type LoginValues } from "@/auth/authSchemas.ts"
 
 interface LoginFormProps {
   onSwitchToSignup: () => void
   /** Plug your auth handler in here. */
-  onSubmit?: (values: LoginValues) => void
+  onSubmit?: (values: LoginValues) => void | Promise<void>
   disabled: boolean 
+  error?: string | null
 }
 
-export function Login({ onSwitchToSignup, onSubmit, disabled }: LoginFormProps) {
+export function Login({ onSwitchToSignup, onSubmit, disabled, error }: LoginFormProps) {
   const {
     register,
     handleSubmit,
@@ -70,6 +71,7 @@ export function Login({ onSwitchToSignup, onSubmit, disabled }: LoginFormProps) 
         </CardContent>
 
         <CardFooter className="mt-2 flex-col gap-4">
+          {error && !disabled && <p className="w-full text-center text-sm text-destructive">{error}</p>}
           {disabled ? <LoginSpinner description="Logging you in..." /> : <><Button type="submit" className="w-full">
             Log in
           </Button><p className="text-center text-sm text-muted-foreground">

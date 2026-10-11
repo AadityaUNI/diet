@@ -1,6 +1,7 @@
 import { supabase } from "@/lib/supabase";
 import type { NavigateFunction } from "react-router-dom";
 import { createUser } from "./UserService";
+import { SupabaseRequestError } from "@/lib/supabaseError";
 import type { CredentialsValues, LoginValues, SignupValues } from "./authSchemas.ts";
 
 export type CreatedAccount = {
@@ -79,8 +80,7 @@ export async function onLogin(
     })
     if (error)
     {
-        console.log("Error signing in user", error)
-        return false
+        throw new SupabaseRequestError(error.message || "Unable to sign in.", error)
     }
     navigate("/")
 }

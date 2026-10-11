@@ -5,12 +5,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
-import { FoodCommandSelect } from "@/components/foodCommandSelect";
+import { FoodCommandSelect } from "@/components/plan/foodCommandSelect";
 import { useFoodCatalog } from "@/hooks/useFoodCatalog";
 import { useAuth } from "@/auth/AuthContext";
 import { hydrateDraft } from "@/lib/hydratePlanDraft";
 import type { FoodItem } from "@/types/types";
 import type { PlanEditorDraft } from "@/types/plan-editor";
+import { gramsForIngredient, quantityFromGrams, type ServingUnit } from "@/types/plan-editor";
+import { ServingUnitSelect } from "@/components/plan/ServingUnitSelect";
 
 type MobilePlanEditorProps = {
   mode: "create" | "edit";
@@ -62,7 +64,7 @@ export function MobilePlanEditor({
   const { user } = useAuth();
   const [step, setStep] = useState<Step>("details");
   const [mealIndex, setMealIndex] = useState(0);
-  const [mealCount, setMealCount] = useState(draft.meals.length);
+  const [mealCount, setMealCount] = useState(String(draft.meals.length));
   const [goingForward, setGoingForward] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -101,6 +103,17 @@ export function MobilePlanEditor({
       carbs: food.carbs,
       fat: food.fat,
       fibre: food.fibre,
+      cup_serving: food.cup_serving,
+      whole_serving: food.whole_serving,
+      servingUnit: "grams",
+    })));
+  }
+
+  function updateServingUnit(ingredientIndex: number, unit: ServingUnit) {
+    onChange(updateIngredient(draft, mealIndex, ingredientIndex, (ingredient) => ({
+      ...ingredient,
+      servingUnit: unit,
+      amount: String(quantityFromGrams(gramsForIngredient(ingredient), unit, ingredient.cup_serving, ingredient.whole_serving)),
     })));
   }
 
@@ -124,14 +137,15 @@ export function MobilePlanEditor({
     }
 
     if (step === "count") {
-      if (mealCount < 1 || mealCount > 10) {
+      const count = Number(mealCount);
+      if (!Number.isInteger(count) || count < 1 || count > 10) {
         setError("Choose between 1 and 10 meals.");
         return;
       }
-      if (mealCount < draft.meals.length && !window.confirm("Remove the extra meals from this plan?")) {
+      if (count < draft.meals.length && !window.confirm("Remove the extra meals from this plan?")) {
         return;
       }
-      reconcileMeals(mealCount);
+      reconcileMeals(count);
       moveTo("meal", true, 0);
       return;
     }
@@ -217,7 +231,7 @@ export function MobilePlanEditor({
                 min="1"
                 max="10"
                 value={mealCount}
-                onChange={(event) => setMealCount(Number(event.target.value))}
+                onChange={(event) => setMealCount(event.target.value)}
               />
               <p className="text-xs text-muted-foreground">Choose 1 to 10 meals.</p>
             </div>
@@ -269,9 +283,9 @@ export function MobilePlanEditor({
                           <Trash2 />
                         </Button>
                       </div>
-                      <div className="relative">
+                      <div className="flex gap-2">
                         <Input
-                          aria-label={`${ingredient.name || "Ingredient"} amount in grams`}
+                          aria-label={`${ingredient.name || "Ingredient"} amount in ${ingredient.servingUnit}`}
                           type="number"
                           min="1"
                           value={ingredient.amount}
@@ -280,9 +294,14 @@ export function MobilePlanEditor({
                             amount: event.target.value,
                           })))}
                           placeholder="Amount"
-                          className="pr-8"
+                          className="min-w-0 flex-1"
                         />
-                        <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-xs text-muted-foreground">g</span>
+                        <ServingUnitSelect
+                          value={ingredient.servingUnit}
+                          cupServing={ingredient.cup_serving}
+                          wholeServing={ingredient.whole_serving}
+                          onChange={(unit) => updateServingUnit(ingredientIndex, unit)}
+                        />
                       </div>
                     </div>
                   ))}
@@ -294,7 +313,19 @@ export function MobilePlanEditor({
                   className="mt-3 w-full gap-2"
                   onClick={() => onChange(updateMeal(draft, mealIndex, (current) => ({
                     ...current,
-                    ingredients: [...current.ingredients, { id: -1, name: "", amount: "", calories: 0, carbs: 0, fat: 0, fibre: 0, protein: 0 }],
+                    ingredients: [...current.ingredients, {
+                      id: -1,
+                      name: "",
+                      amount: "",
+                      calories: 0,
+                      carbs: 0,
+                      fat: 0,
+                      fibre: 0,
+                      protein: 0,
+                      cup_serving: null,
+                      whole_serving: null,
+                      servingUnit: "grams",
+                    }],
                   })))}
                 >
                   <Plus />

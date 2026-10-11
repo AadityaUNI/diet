@@ -62,6 +62,7 @@ class PlanIngredientChange(BaseModel):
 
 
 class AnalyzeMeal(BaseModel):
+    id: int
     name: str
     ingredients: list[PlanIngredientChange] = Field(min_length=1)
 

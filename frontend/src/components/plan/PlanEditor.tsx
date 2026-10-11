@@ -19,9 +19,12 @@ import type {
   PlanEditorMode,
   PlanIngredientDraft,
   PlanMealDraft,
+  ServingUnit,
 } from "@/types/plan-editor";
+import { gramsForIngredient, quantityFromGrams } from "@/types/plan-editor";
 import { useFoodCatalog } from "@/hooks/useFoodCatalog";
-import { FoodCommandSelect } from "@/components/foodCommandSelect";
+import { FoodCommandSelect } from "@/components/plan/foodCommandSelect";
+import { ServingUnitSelect } from "@/components/plan/ServingUnitSelect";
 import { hydrateDraft } from "@/lib/hydratePlanDraft";
 import { createCustomFoodItem } from "@/auth/MealService";
 import { useAuth } from "@/auth/AuthContext";
@@ -77,6 +80,8 @@ type CustomFoodForm = {
   carbs: string;
   fat: string;
   fibre: string;
+  cup_serving: string;
+  whole_serving: string;
 };
 
 const emptyCustomFoodForm: CustomFoodForm = {
@@ -86,6 +91,8 @@ const emptyCustomFoodForm: CustomFoodForm = {
   carbs: "",
   fat: "",
   fibre: "",
+  cup_serving: "",
+  whole_serving: "",
 };
 
 
@@ -117,6 +124,8 @@ export function PlanEditor({
       carbs: Number(customFoodForm.carbs),
       fat: Number(customFoodForm.fat),
       fibre: Number(customFoodForm.fibre),
+      cup_serving: customFoodForm.cup_serving === "" ? null : Number(customFoodForm.cup_serving),
+      whole_serving: customFoodForm.whole_serving === "" ? null : Number(customFoodForm.whole_serving),
       region,
       userID: user!.id,
     }),
@@ -150,9 +159,20 @@ export function PlanEditor({
           carbs: food.carbs,
           fat: food.fat,
           fibre: food.fibre,
+          cup_serving: food.cup_serving,
+          whole_serving: food.whole_serving,
+          servingUnit: "grams",
         }),
       )),
     });
+  }
+
+  function updateServingUnit(mealId: number, ingredientId: number, unit: ServingUnit) {
+    onChange(updateMeal(draft, mealId, (current) => updateIngredient(current, ingredientId, (ingredient) => ({
+      ...ingredient,
+      servingUnit: unit,
+      amount: String(quantityFromGrams(gramsForIngredient(ingredient), unit, ingredient.cup_serving, ingredient.whole_serving)),
+    }))));
   }
 
   function openCustomFoodDialog(mealId: number, ingredientId: number) {
@@ -173,10 +193,7 @@ export function PlanEditor({
             <h1 className="mt-1 text-2xl font-bold leading-tight" style={{ fontFamily: "Outfit, sans-serif" }}>
               {mode === "edit" ? "Refine an existing plan" : "Build your own plan"}
             </h1>
-            <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
-              Keep the meal structure simple for now. Ingredients are captured as name and amount,
-              while the macro totals stay visible for later wiring.
-            </p>
+
           </div>
 
           <Button variant="ghost" onClick={onCancel} className="shrink-0 gap-2">
@@ -268,7 +285,7 @@ export function PlanEditor({
                           </div>
 
                           <div className="space-y-2">
-                            <div className="grid grid-cols-[minmax(0,1fr)_120px_40px] gap-2 text-xs text-muted-foreground">
+                            <div className="grid grid-cols-[minmax(0,1fr)_minmax(0,180px)_40px] gap-2 text-xs text-muted-foreground">
                               <span>Name</span>
                               <span>Amount</span>
                               <span />
@@ -277,7 +294,7 @@ export function PlanEditor({
                             {meal.ingredients.map((ingredient) => (
                               <div
                                 key={ingredient.id}
-                                className="grid grid-cols-[minmax(0,1fr)_120px_40px] gap-2"
+                                className="grid grid-cols-[minmax(0,1fr)_minmax(0,180px)_40px] gap-2"
                               >
                                 <FoodCommandSelect
                                   value={ingredient.name}
@@ -295,12 +312,15 @@ export function PlanEditor({
                                         carbs: food.carbs,
                                         fat: food.fat,
                                         fibre: food.fibre,
+                                        cup_serving: food.cup_serving,
+                                        whole_serving: food.whole_serving,
+                                        servingUnit: "grams",
                                       })),
                                     ))
                                   }
                                   onCreateCustom={() => openCustomFoodDialog(meal.id, ingredient.id)}
                                 />
-                                <div className="relative">
+                                <div className="flex gap-1">
                                   <Input
                                     type="number"
                                     min="0"
@@ -310,15 +330,20 @@ export function PlanEditor({
                                         updateMeal(draft, meal.id, (current) => ({
                                           ...updateIngredient(current, ingredient.id, (currentIngredient) => ({
                                             ...currentIngredient,
-                                            amount: String(Math.abs(Number(event.target.value))),
+                                            amount: event.target.value.replace("-", ""),
                                           })),
                                         })),
                                       )
                                     }
                                     placeholder="Amount"
-                                    className="pr-7"
+                                    className="min-w-0 flex-1"
                                   />
-                                  <span className="pointer-events-none absolute inset-y-0 right-2 flex items-center text-xs text-muted-foreground">g</span>
+                                  <ServingUnitSelect
+                                    value={ingredient.servingUnit}
+                                    cupServing={ingredient.cup_serving}
+                                    wholeServing={ingredient.whole_serving}
+                                    onChange={(unit) => updateServingUnit(meal.id, ingredient.id, unit)}
+                                  />
                                 </div>
                                 <Button
                                   type="button"
@@ -409,7 +434,7 @@ export function PlanEditor({
             className="space-y-4"
             onSubmit={(event) => {
               event.preventDefault();
-              if (!customFoodForm.name.trim() || !region || !user || Object.values(customFoodForm).slice(1).some((value) => value === "" || Number(value) < 0)) {
+              if (!customFoodForm.name.trim() || !region || !user || Object.entries(customFoodForm).slice(1, 6).some(([, value]) => value === "" || Number(value) < 0) || Object.entries(customFoodForm).slice(6).some(([, value]) => value !== "" && Number(value) <= 0)) {
                 return;
               }
               customFoodMutation.mutate();
@@ -445,6 +470,28 @@ export function PlanEditor({
                       onChange={(event) => setCustomFoodForm({ ...customFoodForm, [key]: event.target.value })}
                       className="pr-8"
                       required
+                    />
+                    <span className="pointer-events-none absolute inset-y-0 right-2 flex items-center text-xs text-muted-foreground">{unit}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              {([
+                ["cup_serving", "Per cup", "g/cup"],
+                ["whole_serving", "Per piece", "g/piece"],
+              ] as const).map(([key, label, unit]) => (
+                <div className="space-y-2" key={key}>
+                  <Label htmlFor={`custom-food-${key}`}>{label} <span className="text-muted-foreground">(optional)</span></Label>
+                  <div className="relative">
+                    <Input
+                      id={`custom-food-${key}`}
+                      type="number"
+                      min="0"
+                      step="0.1"
+                      value={customFoodForm[key]}
+                      onChange={(event) => setCustomFoodForm({ ...customFoodForm, [key]: event.target.value })}
+                      className="pr-12"
                     />
                     <span className="pointer-events-none absolute inset-y-0 right-2 flex items-center text-xs text-muted-foreground">{unit}</span>
                   </div>

@@ -21,10 +21,10 @@ interface PlanCardProps {
 
 export function PlanCard({ plan, isOpen, onToggleOpen, isActive, onSetActive, onDeletePlan, onEditPlan, onOptimizePlan }: PlanCardProps) {
   const chips = [
-    { label: "Cal", value: plan.total_calories.toFixed(2), color: "text-foreground", chip: "bg-muted" },
-    { label: "Protein", value: `${plan.total_protein.toFixed(2)}g`, color: "text-chart-1", chip: "bg-chart-1/12" },
-    { label: "Carbs", value: `${plan.total_carbs.toFixed(2)}g`, color: "text-chart-2", chip: "bg-chart-2/12" },
-    { label: "Fat", value: `${plan.total_fats.toFixed(2)}g`, color: "text-chart-3", chip: "bg-chart-3/15" },
+    { label: "Cal", value: plan.total_calories.toFixed(0), color: "text-foreground", chip: "bg-muted" },
+    { label: "Protein", value: `${plan.total_protein.toFixed(0)}g`, color: "text-chart-1", chip: "bg-chart-1/12" },
+    { label: "Carbs", value: `${plan.total_carbs.toFixed(0)}g`, color: "text-chart-2", chip: "bg-chart-2/12" },
+    { label: "Fat", value: `${plan.total_fats.toFixed(0)}g`, color: "text-chart-3", chip: "bg-chart-3/15" },
   ];
 
   return (
@@ -67,12 +67,17 @@ export function PlanCard({ plan, isOpen, onToggleOpen, isActive, onSetActive, on
                   key={item.id}
                   name={item.name}
                   totalCalories={item.total_calories}
-                  ingredientNames={item.meal_items.map((mi) => mi.food_item.name)}
+                  ingredients={item.meal_items.map((mealItem) => ({
+                    name: mealItem.food_item.name,
+                    amount: mealItem.amount,
+                    cup_serving: mealItem.food_item.cup_serving,
+                    whole_serving: mealItem.food_item.whole_serving,
+                  }))}
                   accentIndex={idx}
                 />
               ))}
             </div>
-            <div className="mt-4 grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)_auto] gap-2 sm:flex sm:flex-wrap">
+            <div className="mt-4 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
               <Button
                 variant="secondary"
                 size="sm"
@@ -100,18 +105,18 @@ export function PlanCard({ plan, isOpen, onToggleOpen, isActive, onSetActive, on
               {isActive ? (
                 <Button
                   variant="secondary"
-                  className="col-span-3 min-w-0 sm:flex-1 sm:basis-0"
+                  className="min-w-0 sm:flex-1 sm:basis-0"
                   size="sm"
                   onClick={(e) => {
                     e.stopPropagation();
                     onSetActive(null);
                   }}
                 >
-                  De-select Active Plan
+                  Deselect plan
                 </Button>
               ) : (
                 <Button
-                  className="col-span-3 min-w-0 sm:flex-1 sm:basis-0"
+                  className="min-w-0 sm:flex-1 sm:basis-0"
                   size="sm"
                   onClick={(e) => {
                     e.stopPropagation();
@@ -121,8 +126,9 @@ export function PlanCard({ plan, isOpen, onToggleOpen, isActive, onSetActive, on
                   Use this Plan
                 </Button>
               )}
-              <Button variant="destructive" size="icon" className="shrink-0" onClick={() => onDeletePlan(plan.id)}>
-                <Trash2 size={15} />
+              <Button variant="destructive" size="sm" className="min-w-0 gap-1.5 sm:w-auto" aria-label="Delete plan" onClick={() => onDeletePlan(plan.id)}>
+                <Trash2 size={14} />
+                Delete
               </Button>
             </div>
           </div>

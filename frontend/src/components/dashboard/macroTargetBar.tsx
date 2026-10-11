@@ -1,4 +1,4 @@
-import MacroCircle from "./macroCircle";
+import MacroCircle from "@/components/dashboard/macroCircle";
 
 interface macroProp {
     fill: number;

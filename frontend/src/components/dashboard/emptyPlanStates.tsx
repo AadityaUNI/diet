@@ -1,26 +1,16 @@
-import { Sparkles, ClipboardList, Bookmark } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ClipboardList, Bookmark } from "lucide-react";
 import {
   Empty,
-  EmptyContent,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
 } from "@/components/ui/empty";
 
-interface NoActivePlanProps {
-  onGetRecommended: () => void;
-}
-
 /**
  * Shown when the user has no active meal plan.
- * Offers two paths: get a new recommended plan, or
- * activate one they've already saved.
  */
-export function NoActivePlanEmptyState({
-  onGetRecommended,
-}: NoActivePlanProps) {
+export function NoActivePlanEmptyState() {
   return (
     <Empty className="border border-dashed border-border bg-muted font-[Outfit]">
       <EmptyHeader>
@@ -40,18 +30,10 @@ export function NoActivePlanEmptyState({
   );
 }
 
-interface NoSavedPlansProps {
-  onGetRecommended: () => void;
-}
-
 /**
  * Shown when the user has no saved plans at all.
- * There's nothing to activate, so the only path forward
- * is generating a new recommended plan.
  */
-export function NoSavedPlansEmptyState({
-  onGetRecommended,
-}: NoSavedPlansProps) {
+export function NoSavedPlansEmptyState() {
   return (
     <Empty className="border border-dashed border-border bg-secondary font-[Outfit]">
       <EmptyHeader>

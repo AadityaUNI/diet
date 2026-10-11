@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from "react"
 import { ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 
+import type { ServingDisplayItem } from "@/lib/displayServings"
+import { IngredientList } from "@/components/dashboard/ingredientList"
+
 const ROW_ACCENTS = [
   { wash: "bg-muted", bar: "bg-chart-1", kcal: "text-chart-1" },
   { wash: "bg-muted", bar: "bg-chart-2", kcal: "text-chart-2" },
@@ -11,11 +14,11 @@ const ROW_ACCENTS = [
 interface PlanMealRowProps {
   name: string;
   totalCalories: number;
-  ingredientNames: string[];
+  ingredients: ServingDisplayItem[];
   accentIndex?: number;
 }
 
-export function PlanMealRow({ name, totalCalories, ingredientNames, accentIndex = 0 }: PlanMealRowProps) {
+export function PlanMealRow({ name, totalCalories, ingredients, accentIndex = 0 }: PlanMealRowProps) {
   const [showIngredients, setShowIngredients] = useState(false);
   const longPressTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const accent = ROW_ACCENTS[accentIndex % ROW_ACCENTS.length]
@@ -44,9 +47,9 @@ export function PlanMealRow({ name, totalCalories, ingredientNames, accentIndex 
       <span className={cn("mt-1 h-8 w-1 shrink-0 rounded-full", accent.bar)} />
       <div className="min-w-0 flex-1">
         <div className="flex items-center justify-between gap-2">
-          <span className="min-w-0 break-words text-xs font-semibold leading-tight text-foreground sm:text-sm">{name}</span>
+          <span className="min-w-0 break-words text-[13px] font-semibold leading-tight text-foreground">{name}</span>
           <span className={cn("shrink-0 font-mono text-xs font-semibold", accent.kcal)}>
-            {totalCalories.toFixed(2)} kcal
+            {totalCalories.toFixed(0)} kcal
           </span>
         </div>
         <button
@@ -63,9 +66,7 @@ export function PlanMealRow({ name, totalCalories, ingredientNames, accentIndex 
           <ChevronDown size={14} className={cn("transition-transform", showIngredients && "rotate-180")} />
           {showIngredients ? "Hide ingredients" : "Show ingredients"}
         </button>
-        {showIngredients && (
-          <p className="mt-0.5 break-words text-[11px] text-muted-foreground sm:text-xs">{ingredientNames.join(" | ")}</p>
-        )}
+        {showIngredients && <IngredientList ingredients={ingredients} />}
       </div>
     </div>
   );

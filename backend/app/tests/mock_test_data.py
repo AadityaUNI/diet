@@ -130,7 +130,7 @@ TEST_1_EXPECTED = [
     }
 ]
 
-# invalid id (but valid number) and same for amount 
+# invalid id (but valid number) -- passes pydantic, plan dropped by hydrate_plans
 
 TEST_3_INPUT = {
     "skipped_items": [],
@@ -141,8 +141,18 @@ TEST_3_INPUT = {
                 {"name": "Breakfast", "ingredients": [{"id": 10000, "amount": 100}]},
             ],
         },
+    ],
+}
+
+TEST_3_EXPECTED = []
+
+# negative amount -- rejected by pydantic when building GeminiOutput
+
+TEST_4_INPUT = {
+    "skipped_items": [],
+    "plans": [
         {
-            "name": "Plan 2",
+            "name": "Plan 1",
             "meals": [
                 {"name": "Breakfast", "ingredients": [{"id": 3, "amount": -50}]},
             ],
@@ -150,4 +160,3 @@ TEST_3_INPUT = {
     ],
 }
 
-TEST_3_EXPECTED = []

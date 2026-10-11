@@ -18,10 +18,10 @@ interface RecommendedPlanCardProps {
 
 export function RecommendedPlanCard({ plan, isOpen, onToggleOpen, isSaved, onSave, savedLoading }: RecommendedPlanCardProps) {
   const chips = [
-    { label: "Cal", value: plan.total_calories.toFixed(2), color: "text-foreground" },
-    { label: "Protein", value: `${plan.total_protein.toFixed(2)}g`, color: "text-chart-1" },
-    { label: "Carbs", value: `${plan.total_carbs.toFixed(2)}g`, color: "text-chart-2" },
-    { label: "Fat", value: `${plan.total_fats.toFixed(2)}g`, color: "text-chart-3" },
+    { label: "Cal", value: plan.total_calories.toFixed(0), color: "text-foreground" },
+    { label: "Protein", value: `${plan.total_protein.toFixed(0)}g`, color: "text-chart-1" },
+    { label: "Carbs", value: `${plan.total_carbs.toFixed(0)}g`, color: "text-chart-2" },
+    { label: "Fat", value: `${plan.total_fats.toFixed(0)}g`, color: "text-chart-3" },
   ];
 
   return (
@@ -56,7 +56,7 @@ export function RecommendedPlanCard({ plan, isOpen, onToggleOpen, isSaved, onSav
                   key={meal.name}
                   name={meal.name}
                   totalCalories={meal.total_calories}
-                  ingredientNames={meal.ingredients.map((ing) => ing.name)}
+                  ingredients={meal.ingredients}
                 />
               ))}
             </div>

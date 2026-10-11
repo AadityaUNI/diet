@@ -97,13 +97,16 @@ export type MealData = {
   total_protein: number;
   planID: number;
   meal_completed: boolean;
-  meal_items: {
-    amount: number;
-    foodID: number;
-    mealID: number;
-    food_item: FoodItem;
-  }[];
+  temp_meal: boolean;
+  meal_items: MealItem[];
 };
+
+export type MealItem = {
+  amount: number;
+  foodID: number;
+  mealID: number;
+  food_item: FoodItem;
+}
 
 export type FoodItem = {
   added_by: string | null;
@@ -116,5 +119,7 @@ export type FoodItem = {
   name: string;
   protein: number;
   region: string;
+  cup_serving: number | null;
+  whole_serving: number | null;
 };
 

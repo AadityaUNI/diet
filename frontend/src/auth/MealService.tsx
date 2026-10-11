@@ -1,4 +1,5 @@
 import { supabase } from "@/lib/supabase";
+import { SupabaseRequestError } from "@/lib/supabaseError";
 import type { FoodItem } from "@/types/types";
 
 
@@ -12,8 +13,7 @@ export async function toggleUserMealCompletion(mealID: number, planID: number, s
 
     if (error)
     {
-        console.log("Error updating meal completion", error)
-        return
+        throw new SupabaseRequestError("Unable to update this meal.", error)
     }
 }
 
@@ -26,8 +26,7 @@ export async function getItemsInMeal(mealID: number)
 
     if (error)
     {
-        console.log("Error fetching items for meal", error)
-        return 
+        throw new SupabaseRequestError("Unable to load this meal's ingredients.", error)
     }
     // data is collection of amount, food data.
     return data
@@ -41,8 +40,7 @@ export async function fetchFoodCatalog(region: string) {
     
     if (error)
     {
-        console.log("Error fetching food catalog", error)
-        return 
+        throw new SupabaseRequestError("Unable to load the food list.", error)
     }
 
     // data is array of food items for the current region 
@@ -56,17 +54,19 @@ export async function createCustomFoodItem({
     carbs,
     fat,
     fibre,
+    cup_serving,
+    whole_serving,
     region,
     userID,
 }: Omit<FoodItem, "id" | "created_at" | "added_by" | "region"> & { region: string; userID: string }) {
     const { data, error } = await supabase
         .from("FoodItems")
-        .insert({ name, calories, protein, carbs, fat, fibre, region, added_by: userID })
+        .insert({ name, calories, protein, carbs, fat, fibre, cup_serving, whole_serving, region, added_by: userID })
         .select("*")
         .single()
 
     if (error) {
-        throw error
+        throw new SupabaseRequestError("Unable to save this ingredient.", error)
     }
 
     return data as FoodItem

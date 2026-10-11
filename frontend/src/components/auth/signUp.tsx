@@ -16,7 +16,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { credentialsSchema, type CredentialsValues } from "../auth/authSchemas.ts"
+import { credentialsSchema, type CredentialsValues } from "@/auth/authSchemas.ts"
 
 interface SignupFormProps {
   onSwitchToLogin: () => void

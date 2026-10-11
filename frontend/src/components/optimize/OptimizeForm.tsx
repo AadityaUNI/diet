@@ -1,5 +1,5 @@
 import { ArrowRight, MessageSquareText, Sparkles } from "lucide-react";
-import { AppHeader } from "@/components/header";
+import { AppHeader } from "@/components/layout/header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";

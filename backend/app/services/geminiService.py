@@ -5,6 +5,8 @@ from app.models.inputModels import ConstraintInput
 from app.models.mealModels import AnalyzePlan
 from app.utils.jsonUtils import cleaned_json
 
+MODEL = "gemini-3.5-flash"
+
 def to_csv_string(regional):
     headers = regional[0].keys()
     buffer = io.StringIO()
@@ -56,11 +58,13 @@ def call_gemini(constraints: ConstraintInput, regional_list: list, gemini):
         ### Output Format
         Return ONLY a valid JSON object. Do not include markdown formatting, do not include any other text, and do not provide explanations. Each ingredient entry must contain ONLY `foodID` and `amount` (grams) — no other fields. Use the exact schema below:
 
+        Each plan's `name` must start with its position — "Plan 1 - ", "Plan 2 - ", "Plan 3 - " — followed by a short descriptive name (e.g. "Plan 2 - High-Protein South Indian").
+
         {{
         "skipped_items": ["item1", "item2"],
         "plans": [
             {{
-            "name": "Plan 1",
+            "name": "Plan 1 - short descriptive name",
             "meals": [
                 {{
                 "name": "Breakfast",
@@ -82,7 +86,7 @@ def call_gemini(constraints: ConstraintInput, regional_list: list, gemini):
     import time
     start = time.time()
     response = gemini.models.generate_content(
-        model="gemini-3.5-flash",
+        model=MODEL,
         contents=prompt,
         # config=types.GenerateContentConfig(
         # thinking_config=types.ThinkingConfig(thinking_level="high")
@@ -192,6 +196,7 @@ shape:
         "name": "plan name",
         "meals": [
             {{
+                "id": meal id (-1 if new meal),
                 "name": "meal name",
                 "ingredients": [{{"id": 1, "amount": 100}}]
             }}
@@ -204,7 +209,7 @@ changed or not — not just the ones you modified. Use only IDs from the catalog
 positive gram amounts. Never invent food IDs, nutrition values, or extra fields.
 """
     response = gemini.models.generate_content(
-        model="gemini-3.5-flash",
+        model=MODEL,
         contents=prompt,
         # config=types.GenerateContentConfig(
         # thinking_config=types.ThinkingConfig(thinking_level="high")

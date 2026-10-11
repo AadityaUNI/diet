@@ -1,5 +1,5 @@
 import { BrainCircuit, Check } from "lucide-react";
-import { AppHeader } from "@/components/header";
+import { AppHeader } from "@/components/layout/header";
 
 const steps = ["Reading your current plan", "Checking goals and macro balance", "Planning your requested changes"];
 

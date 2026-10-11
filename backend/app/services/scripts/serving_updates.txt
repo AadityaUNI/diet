@@ -1,0 +1,522 @@
+1058: Whey Protein Isolate -> {'whole_serving': None, 'cup_serving': 120}
+2: Gala Apples -> {'whole_serving': 180, 'cup_serving': 110}
+3: Granny Smith Apples -> {'whole_serving': 180, 'cup_serving': 110}
+4: Honeycrisp Apples -> {'whole_serving': 200, 'cup_serving': 120}
+5: Red Delicious Apples -> {'whole_serving': 180, 'cup_serving': 110}
+6: Overripe Bananas -> {'whole_serving': 120, 'cup_serving': 150}
+7: Bananas -> {'whole_serving': 120, 'cup_serving': 150}
+8: Broccoli -> {'whole_serving': 200, 'cup_serving': 90}
+9: Haddock -> {'whole_serving': 150, 'cup_serving': 150}
+10: Garlic -> {'whole_serving': 5, 'cup_serving': 135}
+11: Kale -> {'whole_serving': None, 'cup_serving': 70}
+12: Green Kiwifruit -> {'whole_serving': 75, 'cup_serving': 175}
+13: Romaine Lettuce -> {'whole_serving': 50, 'cup_serving': 50}
+14: Cantaloupe -> {'whole_serving': 1500, 'cup_serving': 170}
+15: Nectarines -> {'whole_serving': 150, 'cup_serving': 160}
+16: Red Onions -> {'whole_serving': 150, 'cup_serving': 160}
+17: White Onions -> {'whole_serving': 150, 'cup_serving': 160}
+18: Yellow Onions -> {'whole_serving': 150, 'cup_serving': 160}
+19: Navel Oranges -> {'whole_serving': 150, 'cup_serving': 180}
+20: Yellow Peaches -> {'whole_serving': 150, 'cup_serving': 160}
+21: Bartlett Pears -> {'whole_serving': 180, 'cup_serving': 160}
+22: Grape Tomatoes -> {'whole_serving': 10, 'cup_serving': 150}
+23: Alaska Pollock -> {'whole_serving': 150, 'cup_serving': 150}
+24: Creamy Almond Butter -> {'whole_serving': None, 'cup_serving': 250}
+25: Plain Almond Milk (Refrigerated) -> {'whole_serving': None, 'cup_serving': 240}
+26: Plain Almond Milk (Shelf-Stable) -> {'whole_serving': None, 'cup_serving': 240}
+27: Canned Anchovies in Olive Oil -> {'whole_serving': None, 'cup_serving': 190}
+28: Apple Juice with Vitamin C from Concentrate -> {'whole_serving': None, 'cup_serving': 250}
+29: Applesauce with Vitamin C -> {'whole_serving': None, 'cup_serving': 250}
+30: Apricots -> {'whole_serving': 35, 'cup_serving': 150}
+31: Baby Arugula -> {'whole_serving': None, 'cup_serving': 20}
+32: Asparagus -> {'whole_serving': 15, 'cup_serving': 130}
+33: Hass Avocado -> {'whole_serving': 200, 'cup_serving': 150}
+34: Canned Baked Beans with Pork -> {'whole_serving': None, 'cup_serving': 250}
+35: Canned Vegetarian Baked Beans -> {'whole_serving': None, 'cup_serving': 250}
+36: Canned Black Beans -> {'whole_serving': None, 'cup_serving': 250}
+37: Canned Cannellini Beans -> {'whole_serving': None, 'cup_serving': 250}
+38: Dry Cannellini Beans -> {'whole_serving': None, 'cup_serving': 180}
+39: Dry Black Beans -> {'whole_serving': None, 'cup_serving': 180}
+40: Dry Brown Beans -> {'whole_serving': None, 'cup_serving': 180}
+41: Dry Carioca Beans -> {'whole_serving': None, 'cup_serving': 180}
+42: Dry Cranberry Beans -> {'whole_serving': None, 'cup_serving': 180}
+43: Dry Dark Red Kidney Beans -> {'whole_serving': None, 'cup_serving': 180}
+44: Dry Flor de Mayo Beans -> {'whole_serving': None, 'cup_serving': 180}
+45: Dry Great Northern Beans -> {'whole_serving': None, 'cup_serving': 180}
+46: Dry Light Red Kidney Beans -> {'whole_serving': None, 'cup_serving': 180}
+47: Dry Light Tan Beans -> {'whole_serving': None, 'cup_serving': 180}
+48: Dry Medium Red Beans -> {'whole_serving': None, 'cup_serving': 180}
+49: Dry Navy Beans -> {'whole_serving': None, 'cup_serving': 180}
+50: Dry Pink Beans -> {'whole_serving': None, 'cup_serving': 180}
+51: Dry Pinto Beans -> {'whole_serving': None, 'cup_serving': 180}
+52: Dry Red Beans -> {'whole_serving': None, 'cup_serving': 180}
+53: Dry Small Red Beans -> {'whole_serving': None, 'cup_serving': 180}
+54: Dry Small White Beans -> {'whole_serving': None, 'cup_serving': 180}
+55: Dry Tan Beans -> {'whole_serving': None, 'cup_serving': 180}
+56: Canned Great Northern Beans -> {'whole_serving': None, 'cup_serving': 250}
+57: Canned Dark Red Kidney Beans -> {'whole_serving': None, 'cup_serving': 250}
+58: Canned Light Red Kidney Beans -> {'whole_serving': None, 'cup_serving': 250}
+59: Canned Navy Beans -> {'whole_serving': None, 'cup_serving': 250}
+60: Canned Pinto Beans -> {'whole_serving': None, 'cup_serving': 250}
+61: Canned Green Beans -> {'whole_serving': None, 'cup_serving': 170}
+62: Green Beans -> {'whole_serving': None, 'cup_serving': 100}
+63: Beef Chuck Roast -> {'whole_serving': None, 'cup_serving': 150}
+64: Beef Flank Steak -> {'whole_serving': None, 'cup_serving': 150}
+65: Ground Beef (80% Lean / 20% Fat) -> {'whole_serving': None, 'cup_serving': 220}
+66: Ground Beef (90% Lean / 10% Fat) -> {'whole_serving': None, 'cup_serving': 220}
+67: Roasted Beef Tenderloin -> {'whole_serving': None, 'cup_serving': 150}
+1059: Whey Protein Concentrate -> {'whole_serving': None, 'cup_serving': 120}
+1060: Wraps -> {'whole_serving': 60, 'cup_serving': None}
+1061: Wheat Bread (White / Wholemeal) -> {'whole_serving': 30, 'cup_serving': None}
+1062: Yoplait strawberry yogurt -> {'whole_serving': 170, 'cup_serving': 240}
+1063: Nutri-grain kellogg's protein cereal -> {'whole_serving': None, 'cup_serving': 40}
+1064: Pork sausage -> {'whole_serving': 50, 'cup_serving': None}
+1065: Chicken sausage -> {'whole_serving': 50, 'cup_serving': None}
+1066: Frozen Vegetable Mix -> {'whole_serving': None, 'cup_serving': 150}
+69: Beef Ribeye Steak -> {'whole_serving': 250, 'cup_serving': None}
+70: Beef Eye of Round Roast -> {'whole_serving': None, 'cup_serving': 150}
+71: Beef Top Round Roast -> {'whole_serving': None, 'cup_serving': 150}
+72: Beef Top Round -> {'whole_serving': None, 'cup_serving': 150}
+73: New York Strip Steak -> {'whole_serving': 250, 'cup_serving': None}
+74: Beef Porterhouse Steak -> {'whole_serving': 300, 'cup_serving': None}
+75: Grilled T-Bone Steak -> {'whole_serving': 300, 'cup_serving': None}
+76: Beef Top Sirloin Steak -> {'whole_serving': 250, 'cup_serving': None}
+77: Beef Tenderloin Steak -> {'whole_serving': 250, 'cup_serving': None}
+78: Beet Greens -> {'whole_serving': None, 'cup_serving': 30}
+79: Beets -> {'whole_serving': 150, 'cup_serving': 170}
+80: Ground Bison -> {'whole_serving': None, 'cup_serving': 220}
+81: Blackberries -> {'whole_serving': None, 'cup_serving': 150}
+82: Canned Black-Eyed Peas -> {'whole_serving': None, 'cup_serving': 250}
+83: Dry Black-Eyed Peas -> {'whole_serving': None, 'cup_serving': 180}
+84: Blueberries -> {'whole_serving': None, 'cup_serving': 150}
+85: Beef Bologna -> {'whole_serving': 28, 'cup_serving': None}
+86: Classic Bologna -> {'whole_serving': 28, 'cup_serving': None}
+87: 100% Whole Wheat Bread -> {'whole_serving': 30, 'cup_serving': None}
+88: Multigrain Bread -> {'whole_serving': 30, 'cup_serving': None}
+89: White Bread -> {'whole_serving': 30, 'cup_serving': None}
+90: Brussels Sprouts -> {'whole_serving': 15, 'cup_serving': 90}
+91: Whole Grain Buckwheat -> {'whole_serving': None, 'cup_serving': 170}
+92: Dry Bulgur -> {'whole_serving': None, 'cup_serving': 150}
+93: Salted Butter -> {'whole_serving': None, 'cup_serving': 225}
+94: Unsalted Butter -> {'whole_serving': None, 'cup_serving': 227}
+95: Low-Fat Buttermilk -> {'whole_serving': None, 'cup_serving': 245}
+96: Bok Choy -> {'whole_serving': 200, 'cup_serving': 70}
+97: Green Cabbage -> {'whole_serving': 900, 'cup_serving': 89}
+98: Napa Cabbage -> {'whole_serving': 500, 'cup_serving': 75}
+99: Red Cabbage -> {'whole_serving': 900, 'cup_serving': 89}
+100: Baby Carrots -> {'whole_serving': 10, 'cup_serving': 128}
+101: Frozen Carrots -> {'whole_serving': None, 'cup_serving': 150}
+102: Carrots -> {'whole_serving': 60, 'cup_serving': 128}
+103: Cauliflower -> {'whole_serving': 500, 'cup_serving': 100}
+104: Celery -> {'whole_serving': 40, 'cup_serving': 100}
+105: American Cheese -> {'whole_serving': 19, 'cup_serving': 113}
+106: Cheddar Cheese -> {'whole_serving': None, 'cup_serving': 113}
+107: Cotija Cheese -> {'whole_serving': None, 'cup_serving': 100}
+108: 2% Low-Fat Cottage Cheese -> {'whole_serving': None, 'cup_serving': 225}
+109: Queso Seco -> {'whole_serving': None, 'cup_serving': 100}
+110: Crumbled Whole Milk Feta Cheese -> {'whole_serving': None, 'cup_serving': 150}
+111: Monterey Jack Cheese -> {'whole_serving': None, 'cup_serving': 113}
+112: Low-Moisture Part-Skim Mozzarella Cheese -> {'whole_serving': None, 'cup_serving': 113}
+113: Oaxaca Cheese -> {'whole_serving': None, 'cup_serving': 113}
+114: Grated Parmesan Cheese -> {'whole_serving': None, 'cup_serving': 100}
+115: Grated Parmesan Cheese (Refrigerated) -> {'whole_serving': None, 'cup_serving': 100}
+116: American Cheese Singles -> {'whole_serving': 19, 'cup_serving': 113}
+117: Processed American Cheese -> {'whole_serving': 28, 'cup_serving': 113}
+118: Sliced Provolone Cheese -> {'whole_serving': 21, 'cup_serving': 113}
+119: Queso Fresco -> {'whole_serving': None, 'cup_serving': 113}
+120: Whole Milk Ricotta Cheese -> {'whole_serving': None, 'cup_serving': 225}
+121: Swiss Cheese -> {'whole_serving': 21, 'cup_serving': 113}
+122: Dark Red Sweet Cherries -> {'whole_serving': 5, 'cup_serving': 150}
+123: Chia Seeds -> {'whole_serving': None, 'cup_serving': 168}
+124: Boneless Skinless Chicken Breast -> {'whole_serving': 170, 'cup_serving': 200}
+125: Chicken Breast (with Skin) -> {'whole_serving': 200, 'cup_serving': 200}
+126: Braised Chicken Breast -> {'whole_serving': 150, 'cup_serving': 200}
+127: Braised Chicken Drumstick -> {'whole_serving': 85, 'cup_serving': 180}
+128: Chicken Drumstick (with Skin) -> {'whole_serving': 100, 'cup_serving': 180}
+129: Ground Chicken -> {'whole_serving': None, 'cup_serving': 220}
+130: Boneless Skinless Chicken Thigh -> {'whole_serving': 115, 'cup_serving': 200}
+131: Chicken Thigh (with Skin) -> {'whole_serving': 130, 'cup_serving': 200}
+132: Chicken Wing (with Skin) -> {'whole_serving': 60, 'cup_serving': 180}
+133: Canned Chickpeas -> {'whole_serving': None, 'cup_serving': 165}
+134: Dried Chickpeas -> {'whole_serving': None, 'cup_serving': 190}
+1067: Sourdough Bread -> {'whole_serving': 50, 'cup_serving': 120}
+1068: Wraps / Flatbreads -> {'whole_serving': 50, 'cup_serving': None}
+1069: Rolled Oats -> {'whole_serving': None, 'cup_serving': 90}
+1070: Pasta (Spaghetti / Penne / Macaroni) -> {'whole_serving': None, 'cup_serving': 140}
+1071: Jasmine Rice -> {'whole_serving': None, 'cup_serving': 185}
+1072: Basmati Rice -> {'whole_serving': None, 'cup_serving': 185}
+1073: Quinoa -> {'whole_serving': None, 'cup_serving': 185}
+1074: Couscous -> {'whole_serving': None, 'cup_serving': 160}
+1075: Cheddar Cheese (Tasty Cheese) -> {'whole_serving': None, 'cup_serving': 113}
+1076: Full Cream Milk -> {'whole_serving': None, 'cup_serving': 244}
+136: Collard Greens -> {'whole_serving': None, 'cup_serving': 75}
+137: Soft Oatmeal Raisin Cookies -> {'whole_serving': 30, 'cup_serving': None}
+138: Masa Harina Corn Flour -> {'whole_serving': None, 'cup_serving': 120}
+139: Sweet Corn -> {'whole_serving': None, 'cup_serving': 150}
+140: Full-Fat Cottage Cheese -> {'whole_serving': None, 'cup_serving': 225}
+141: Sweetened Dried Cranberries -> {'whole_serving': None, 'cup_serving': 130}
+142: Cranberry Juice from Concentrate -> {'whole_serving': None, 'cup_serving': 245}
+143: Cream Cheese -> {'whole_serving': None, 'cup_serving': 230}
+144: Heavy Cream -> {'whole_serving': None, 'cup_serving': 240}
+145: Sour Cream -> {'whole_serving': None, 'cup_serving': 230}
+146: Lump Blue Crab Meat -> {'whole_serving': None, 'cup_serving': 150}
+147: Farm-Raised Shrimp -> {'whole_serving': 15, 'cup_serving': 150}
+148: Cucumber -> {'whole_serving': 300, 'cup_serving': 100}
+149: Ranch Dressing -> {'whole_serving': None, 'cup_serving': 240}
+150: Frozen Edamame -> {'whole_serving': None, 'cup_serving': 155}
+151: Dried Egg Whites -> {'whole_serving': None, 'cup_serving': 40}
+152: Pasteurized Egg Whites -> {'whole_serving': None, 'cup_serving': 245}
+153: Dried Whole Eggs -> {'whole_serving': None, 'cup_serving': 100}
+154: Pasteurized Whole Eggs -> {'whole_serving': None, 'cup_serving': 245}
+155: Dried Egg Yolks -> {'whole_serving': None, 'cup_serving': 100}
+156: Pasteurized Egg Yolks -> {'whole_serving': None, 'cup_serving': 245}
+157: Eggplant -> {'whole_serving': 400, 'cup_serving': 150}
+158: Egg Whites -> {'whole_serving': 30, 'cup_serving': 245}
+159: Eggs -> {'whole_serving': 50, 'cup_serving': 245}
+160: Egg Yolks -> {'whole_serving': 17, 'cup_serving': 245}
+161: Einkorn Grain -> {'whole_serving': None, 'cup_serving': 190}
+162: Pearled Farro -> {'whole_serving': None, 'cup_serving': 190}
+163: Fennel Bulb -> {'whole_serving': 250, 'cup_serving': 85}
+164: Dried Figs -> {'whole_serving': 8, 'cup_serving': 150}
+165: Farm-Raised Catfish -> {'whole_serving': 150, 'cup_serving': 200}
+166: Wild-Caught Atlantic Cod -> {'whole_serving': 150, 'cup_serving': 200}
+167: Farm-Raised Atlantic Salmon -> {'whole_serving': 150, 'cup_serving': 200}
+168: Wild-Caught Sockeye Salmon -> {'whole_serving': 150, 'cup_serving': 200}
+169: Farm-Raised Tilapia -> {'whole_serving': 150, 'cup_serving': 200}
+170: Canned Light Tuna in Water -> {'whole_serving': None, 'cup_serving': 160}
+171: Ground Flaxseed -> {'whole_serving': None, 'cup_serving': 100}
+172: Type 00 Flour -> {'whole_serving': None, 'cup_serving': 125}
+173: Almond Flour -> {'whole_serving': None, 'cup_serving': 96}
+174: Amaranth Flour -> {'whole_serving': None, 'cup_serving': 120}
+175: Barley Flour -> {'whole_serving': None, 'cup_serving': 115}
+176: Unbleached White Bread Flour -> {'whole_serving': None, 'cup_serving': 125}
+177: Buckwheat Flour -> {'whole_serving': None, 'cup_serving': 120}
+178: Cassava Flour -> {'whole_serving': None, 'cup_serving': 130}
+179: Chestnut Flour -> {'whole_serving': None, 'cup_serving': 110}
+180: Coconut Flour -> {'whole_serving': None, 'cup_serving': 90}
+181: Enriched Yellow Corn Flour -> {'whole_serving': None, 'cup_serving': 120}
+182: Whole-Grain Oat Flour -> {'whole_serving': None, 'cup_serving': 90}
+183: Unbleached Pastry Flour -> {'whole_serving': None, 'cup_serving': 125}
+184: Potato Flour -> {'whole_serving': None, 'cup_serving': 130}
+185: Quinoa Flour -> {'whole_serving': None, 'cup_serving': 112}
+186: Brown Rice Flour -> {'whole_serving': None, 'cup_serving': 158}
+187: Glutinous Rice Flour -> {'whole_serving': None, 'cup_serving': 158}
+188: White Rice Flour -> {'whole_serving': None, 'cup_serving': 158}
+189: Rye Flour -> {'whole_serving': None, 'cup_serving': 112}
+190: Coarse Semolina Flour -> {'whole_serving': None, 'cup_serving': 160}
+191: Fine Semolina Flour -> {'whole_serving': None, 'cup_serving': 160}
+192: Sorghum Flour -> {'whole_serving': None, 'cup_serving': 120}
+193: Defatted Soy Flour -> {'whole_serving': None, 'cup_serving': 85}
+194: Full-Fat Soy Flour -> {'whole_serving': None, 'cup_serving': 85}
+195: Whole-Grain Spelt Flour -> {'whole_serving': None, 'cup_serving': 120}
+196: Enriched Bleached All-Purpose Flour -> {'whole_serving': None, 'cup_serving': 125}
+197: Enriched Unbleached All-Purpose Flour -> {'whole_serving': None, 'cup_serving': 125}
+198: Unbleached All-Purpose Flour -> {'whole_serving': None, 'cup_serving': 125}
+199: Whole Wheat Flour -> {'whole_serving': None, 'cup_serving': 120}
+200: Fonio -> {'whole_serving': None, 'cup_serving': 180}
+201: Beef Frankfurter -> {'whole_serving': 57, 'cup_serving': 140}
+202: Purple Grape Juice with Vitamin C -> {'whole_serving': None, 'cup_serving': 250}
+203: White Grape Juice with Vitamin C -> {'whole_serving': None, 'cup_serving': 250}
+1077: Greek Yogurt -> {'whole_serving': None, 'cup_serving': 245}
+1078: Butter -> {'whole_serving': 14, 'cup_serving': 227}
+1079: Feta Cheese -> {'whole_serving': None, 'cup_serving': 150}
+1080: Cream -> {'whole_serving': None, 'cup_serving': 240}
+1081: Parmesan Cheese -> {'whole_serving': None, 'cup_serving': 100}
+1082: Potatoes -> {'whole_serving': 213, 'cup_serving': 150}
+205: Canned White Grapefruit Juice -> {'whole_serving': None, 'cup_serving': 245}
+206: Grapefruit -> {'whole_serving': 300, 'cup_serving': 245}
+207: Seedless Green Grapes -> {'whole_serving': 5, 'cup_serving': 150}
+208: Seedless Red Grapes -> {'whole_serving': 5, 'cup_serving': 150}
+209: Green Onion (Scallion) -> {'whole_serving': 15, 'cup_serving': 100}
+210: Frozen Wild-Caught Halibut -> {'whole_serving': 170, 'cup_serving': 150}
+211: 96% Fat-Free Sliced Ham -> {'whole_serving': 28, 'cup_serving': 140}
+212: Sliced Ham -> {'whole_serving': 28, 'cup_serving': 140}
+213: Hummus -> {'whole_serving': None, 'cup_serving': 240}
+214: Pomegranate Juice -> {'whole_serving': None, 'cup_serving': 250}
+215: Prune Juice -> {'whole_serving': None, 'cup_serving': 250}
+216: Tart Cherry Juice -> {'whole_serving': None, 'cup_serving': 250}
+217: Frozen Kale -> {'whole_serving': None, 'cup_serving': 130}
+218: Ketchup -> {'whole_serving': None, 'cup_serving': 280}
+219: Khorasan Grain -> {'whole_serving': None, 'cup_serving': 190}
+220: Green Kiwi -> {'whole_serving': 75, 'cup_serving': 180}
+221: Ground Lamb -> {'whole_serving': None, 'cup_serving': 225}
+222: Leeks -> {'whole_serving': 50, 'cup_serving': 100}
+223: Lentils -> {'whole_serving': None, 'cup_serving': 195}
+224: Iceberg Lettuce -> {'whole_serving': 500, 'cup_serving': 75}
+225: Green Leaf Lettuce -> {'whole_serving': 50, 'cup_serving': 50}
+226: Red Leaf Lettuce -> {'whole_serving': 50, 'cup_serving': 50}
+227: Romaine Lettuce -> {'whole_serving': 50, 'cup_serving': 75}
+228: Frozen Wild-Caught Lobster Tail -> {'whole_serving': 113, 'cup_serving': 150}
+229: Sliced Chicken Breast -> {'whole_serving': 28, 'cup_serving': 140}
+230: Sliced Black Forest Ham -> {'whole_serving': 28, 'cup_serving': 140}
+231: Sliced Roast Beef -> {'whole_serving': 28, 'cup_serving': 140}
+232: Oven-Roasted Sliced Turkey -> {'whole_serving': 28, 'cup_serving': 140}
+233: Frozen Wild-Caught Mahi Mahi -> {'whole_serving': 170, 'cup_serving': 150}
+234: Seedless Mandarin -> {'whole_serving': 80, 'cup_serving': 190}
+235: Ataulfo Mango -> {'whole_serving': 200, 'cup_serving': 165}
+236: Tommy Atkins Mango -> {'whole_serving': 300, 'cup_serving': 165}
+237: Mayonnaise -> {'whole_serving': None, 'cup_serving': 220}
+238: Honeydew Melon -> {'whole_serving': 500, 'cup_serving': 175}
+239: 1% Low-Fat Milk -> {'whole_serving': None, 'cup_serving': 245}
+240: Fat-Free Milk -> {'whole_serving': None, 'cup_serving': 245}
+241: 2% Reduced-Fat Milk -> {'whole_serving': None, 'cup_serving': 245}
+242: Whole Milk -> {'whole_serving': None, 'cup_serving': 245}
+243: Whole-Grain Millet -> {'whole_serving': None, 'cup_serving': 190}
+244: Beech Mushroom -> {'whole_serving': 100, 'cup_serving': 70}
+245: Crimini Mushroom -> {'whole_serving': 15, 'cup_serving': 85}
+246: Enoki Mushroom -> {'whole_serving': 100, 'cup_serving': 70}
+247: King Oyster Mushroom -> {'whole_serving': 150, 'cup_serving': 80}
+248: Lion's Mane Mushroom -> {'whole_serving': 200, 'cup_serving': 70}
+249: Maitake Mushroom -> {'whole_serving': 100, 'cup_serving': 70}
+250: Oyster Mushroom -> {'whole_serving': 100, 'cup_serving': 70}
+251: Pioppini Mushroom -> {'whole_serving': 100, 'cup_serving': 70}
+252: Portabella Mushroom -> {'whole_serving': 120, 'cup_serving': 85}
+253: Shiitake Mushrooms -> {'whole_serving': 15, 'cup_serving': 75}
+254: White Button Mushrooms -> {'whole_serving': 20, 'cup_serving': 85}
+255: Yellow Mustard -> {'whole_serving': None, 'cup_serving': 240}
+256: Salted Dry-Roasted Almonds -> {'whole_serving': 1, 'cup_serving': 140}
+257: Almonds -> {'whole_serving': 1, 'cup_serving': 140}
+258: Brazil Nuts -> {'whole_serving': 5, 'cup_serving': 140}
+259: Cashews -> {'whole_serving': 1, 'cup_serving': 135}
+260: Hazelnuts -> {'whole_serving': 1, 'cup_serving': 135}
+261: Macadamia Nuts -> {'whole_serving': 3, 'cup_serving': 135}
+262: Pecans -> {'whole_serving': 3, 'cup_serving': 115}
+263: Pine Nuts -> {'whole_serving': 0.5, 'cup_serving': 135}
+264: Pistachios -> {'whole_serving': 1, 'cup_serving': 125}
+265: English Walnuts -> {'whole_serving': 3, 'cup_serving': 100}
+266: Plain Oat Milk -> {'whole_serving': None, 'cup_serving': 240}
+267: Old-Fashioned Rolled Oats -> {'whole_serving': None, 'cup_serving': 90}
+268: Steel-Cut Oats -> {'whole_serving': None, 'cup_serving': 160}
+269: Canola Oil -> {'whole_serving': None, 'cup_serving': 220}
+270: Coconut Oil -> {'whole_serving': None, 'cup_serving': 220}
+271: Corn Oil -> {'whole_serving': None, 'cup_serving': 220}
+272: Extra Light Olive Oil -> {'whole_serving': None, 'cup_serving': 220}
+1083: Sweet Potatoes -> {'whole_serving': 150, 'cup_serving': 200}
+1084: Pumpkin (Butternut / Kent) -> {'whole_serving': 500, 'cup_serving': 205}
+1085: Tomatoes -> {'whole_serving': 150, 'cup_serving': 180}
+1086: Capsicum -> {'whole_serving': 150, 'cup_serving': 150}
+1087: Mushrooms (Button / Portobello) -> {'whole_serving': 20, 'cup_serving': 85}
+1088: Green Peas -> {'whole_serving': None, 'cup_serving': 150}
+1089: Green Beans -> {'whole_serving': None, 'cup_serving': 125}
+1090: Corn / Sweetcorn -> {'whole_serving': 80, 'cup_serving': 150}
+274: Peanut Oil -> {'whole_serving': None, 'cup_serving': 218}
+275: Safflower Oil -> {'whole_serving': None, 'cup_serving': 218}
+276: Soybean Oil -> {'whole_serving': None, 'cup_serving': 218}
+277: Sunflower Oil -> {'whole_serving': None, 'cup_serving': 218}
+278: Manzanilla Green Olives Stuffed with Pimiento -> {'whole_serving': 5, 'cup_serving': 150}
+279: Frozen Breaded Onion Rings -> {'whole_serving': 20, 'cup_serving': 80}
+280: No-Pulp Orange Juice -> {'whole_serving': None, 'cup_serving': 248}
+281: No-Pulp Orange Juice (Not from Concentrate) -> {'whole_serving': None, 'cup_serving': 248}
+282: Parsnips -> {'whole_serving': 150, 'cup_serving': 130}
+283: Spaghetti -> {'whole_serving': None, 'cup_serving': 140}
+284: Whole-Grain Spaghetti -> {'whole_serving': None, 'cup_serving': 140}
+285: Pawpaw -> {'whole_serving': 300, 'cup_serving': 170}
+286: Creamy Peanut Butter -> {'whole_serving': None, 'cup_serving': 260}
+287: Creamy Peanut Butter -> {'whole_serving': None, 'cup_serving': 260}
+288: Peanuts -> {'whole_serving': 1, 'cup_serving': 145}
+289: Green Anjou Pear -> {'whole_serving': 180, 'cup_serving': 150}
+290: Canned Sweet Green Peas -> {'whole_serving': None, 'cup_serving': 250}
+291: Sliced Pepperoni -> {'whole_serving': 3, 'cup_serving': 110}
+292: Banana Peppers -> {'whole_serving': 15, 'cup_serving': 100}
+293: Green Bell Pepper -> {'whole_serving': 150, 'cup_serving': 150}
+294: Orange Bell Pepper -> {'whole_serving': 150, 'cup_serving': 150}
+295: Red Bell Pepper -> {'whole_serving': 150, 'cup_serving': 150}
+296: Yellow Bell Pepper -> {'whole_serving': 150, 'cup_serving': 150}
+297: Jalapeño Peppers -> {'whole_serving': 15, 'cup_serving': 100}
+298: Poblano Peppers -> {'whole_serving': 60, 'cup_serving': 100}
+299: Serrano Peppers -> {'whole_serving': 10, 'cup_serving': 100}
+300: Dill Pickles -> {'whole_serving': 30, 'cup_serving': 150}
+301: Pineapple -> {'whole_serving': 900, 'cup_serving': 165}
+302: Overripe Plantains -> {'whole_serving': 250, 'cup_serving': 150}
+303: Ripe Plantains -> {'whole_serving': 250, 'cup_serving': 150}
+304: Underripe Plantains -> {'whole_serving': 250, 'cup_serving': 150}
+305: Black Plum -> {'whole_serving': 65, 'cup_serving': 165}
+306: Dried Plums (Prunes) -> {'whole_serving': 8, 'cup_serving': 170}
+307: Pork Belly -> {'whole_serving': 100, 'cup_serving': 150}
+308: Center-Cut Pork Chop -> {'whole_serving': 220, 'cup_serving': None}
+309: Restaurant Bacon -> {'whole_serving': 15, 'cup_serving': None}
+310: Ground Pork -> {'whole_serving': None, 'cup_serving': 220}
+311: Boneless Pork Loin -> {'whole_serving': 200, 'cup_serving': None}
+312: Boneless Pork Tenderloin -> {'whole_serving': 180, 'cup_serving': None}
+313: Gold Potatoes -> {'whole_serving': 150, 'cup_serving': 150}
+314: Red Potatoes -> {'whole_serving': 150, 'cup_serving': 150}
+315: Russet Potatoes -> {'whole_serving': 200, 'cup_serving': 150}
+316: Radicchio -> {'whole_serving': 200, 'cup_serving': 40}
+317: Red Radishes -> {'whole_serving': 20, 'cup_serving': 120}
+318: Seedless Dark Raisins -> {'whole_serving': 1, 'cup_serving': 165}
+319: Seedless Golden Raisins -> {'whole_serving': 1, 'cup_serving': 165}
+320: Raspberries -> {'whole_serving': 3, 'cup_serving': 125}
+321: Canned Pinto Refried Beans -> {'whole_serving': None, 'cup_serving': 260}
+322: Canned Vegetarian Refried Beans -> {'whole_serving': None, 'cup_serving': 260}
+323: Chinese Restaurant Fried Rice (No Meat) -> {'whole_serving': None, 'cup_serving': 200}
+324: Chinese Restaurant Sweet and Sour Pork -> {'whole_serving': None, 'cup_serving': 250}
+325: Latino Restaurant Bean Pupusas -> {'whole_serving': 120, 'cup_serving': None}
+326: Latino Restaurant Pork Tamale -> {'whole_serving': 150, 'cup_serving': None}
+327: Rhubarb -> {'whole_serving': 50, 'cup_serving': 120}
+328: Black Rice -> {'whole_serving': None, 'cup_serving': 195}
+329: Long-Grain Brown Rice -> {'whole_serving': None, 'cup_serving': 195}
+330: Red Rice -> {'whole_serving': None, 'cup_serving': 195}
+331: Long-Grain White Rice -> {'whole_serving': None, 'cup_serving': 195}
+332: Rutabaga -> {'whole_serving': 300, 'cup_serving': 130}
+333: Italian Salad Dressing -> {'whole_serving': None, 'cup_serving': 240}
+334: Sliced Hard Salami -> {'whole_serving': 8, 'cup_serving': 110}
+335: Iodized Table Salt -> {'whole_serving': None, 'cup_serving': 290}
+336: Marinara Pasta Sauce -> {'whole_serving': None, 'cup_serving': 250}
+337: Salsa -> {'whole_serving': None, 'cup_serving': 260}
+338: Beef Breakfast Sausage -> {'whole_serving': 45, 'cup_serving': 150}
+339: Mild Italian Pork Sausage -> {'whole_serving': 85, 'cup_serving': 150}
+340: Pork Chorizo -> {'whole_serving': None, 'cup_serving': 150}
+341: Mild Turkey Breakfast Sausage Links -> {'whole_serving': 40, 'cup_serving': 150}
+1091: Cauliflower -> {'whole_serving': 500, 'cup_serving': 100}
+1092: Beef (Mince / Steak / Roast) -> {'whole_serving': 115, 'cup_serving': 150}
+1093: Chicken (Breast / Thigh / Whole) -> {'whole_serving': 115, 'cup_serving': 140}
+1094: Lamb (Chops / Roast) -> {'whole_serving': 115, 'cup_serving': 150}
+1095: Pork (Chops / Mince / Roast) -> {'whole_serving': 115, 'cup_serving': 150}
+1096: Bacon -> {'whole_serving': 15, 'cup_serving': None}
+1097: Sausages -> {'whole_serving': 85, 'cup_serving': None}
+370: Sweetened Condensed Milk -> {'whole_serving': None, 'cup_serving': 300}
+1098: Salmon (Fresh / Smoked) -> {'whole_serving': 115, 'cup_serving': 150}
+1099: Canned Tuna -> {'whole_serving': None, 'cup_serving': 170}
+1100: White Fish (Barramundi / Basa / Snapper) -> {'whole_serving': 115, 'cup_serving': 150}
+1101: Prawns -> {'whole_serving': 15, 'cup_serving': 150}
+1102: Baked Beans -> {'whole_serving': None, 'cup_serving': 260}
+1103: Brown / Red Lentils -> {'whole_serving': None, 'cup_serving': 190}
+1104: Tofu -> {'whole_serving': 100, 'cup_serving': 240}
+1105: Vegetable Oil -> {'whole_serving': None, 'cup_serving': 218}
+1106: Margarine -> {'whole_serving': None, 'cup_serving': 225}
+1107: Vegemite -> {'whole_serving': None, 'cup_serving': 280}
+1108: Tomato Sauce -> {'whole_serving': None, 'cup_serving': 250}
+1109: Barbecue (BBQ) Sauce -> {'whole_serving': None, 'cup_serving': 280}
+1110: Peanut Butter -> {'whole_serving': None, 'cup_serving': 260}
+1111: Honey -> {'whole_serving': None, 'cup_serving': 340}
+1112: Liquid Stock / Stock Cubes (Chicken / Beef) -> {'whole_serving': None, 'cup_serving': 240}
+1113: Atta -> {'whole_serving': None, 'cup_serving': 125}
+343: Wild-Caught Frozen Sea Scallops -> {'whole_serving': 30, 'cup_serving': 150}
+344: Wild-Caught Frozen Chilean Sea Bass -> {'whole_serving': 150, 'cup_serving': None}
+345: Pumpkin Seeds (Pepitas) -> {'whole_serving': None, 'cup_serving': 130}
+346: Salted Dry-Roasted Sunflower Seed Kernels -> {'whole_serving': None, 'cup_serving': 130}
+347: Sunflower Seed Kernels -> {'whole_serving': None, 'cup_serving': 130}
+348: Creamy Sesame Butter -> {'whole_serving': None, 'cup_serving': 260}
+349: Shallots -> {'whole_serving': 15, 'cup_serving': 150}
+350: Wild-Caught Frozen Snapper -> {'whole_serving': 170, 'cup_serving': 150}
+351: Frozen Snow Crab Legs -> {'whole_serving': 150, 'cup_serving': 140}
+352: White Sorghum Bran -> {'whole_serving': None, 'cup_serving': 60}
+353: White Pearled Sorghum Flour -> {'whole_serving': None, 'cup_serving': 120}
+354: White Pearled Sorghum Grain -> {'whole_serving': None, 'cup_serving': 190}
+355: Whole-Grain White Sorghum -> {'whole_serving': None, 'cup_serving': 190}
+356: Sweetened Plain Soy Milk -> {'whole_serving': None, 'cup_serving': 240}
+357: Unsweetened Plain Soy Milk -> {'whole_serving': None, 'cup_serving': 240}
+358: Baby Spinach -> {'whole_serving': None, 'cup_serving': 30}
+359: Mature Spinach -> {'whole_serving': None, 'cup_serving': 180}
+360: Pie Pumpkin Squash -> {'whole_serving': 1200, 'cup_serving': 200}
+361: Spaghetti Squash -> {'whole_serving': 1500, 'cup_serving': 150}
+362: Zucchini -> {'whole_serving': 200, 'cup_serving': 120}
+363: Yellow Summer Squash -> {'whole_serving': 200, 'cup_serving': 120}
+364: Acorn Squash -> {'whole_serving': 800, 'cup_serving': 200}
+365: Butternut Squash -> {'whole_serving': 1000, 'cup_serving': 200}
+366: Frozen Calamari Tubes -> {'whole_serving': 150, 'cup_serving': 140}
+367: Strawberries -> {'whole_serving': 12, 'cup_serving': 150}
+368: Granulated Sugar -> {'whole_serving': None, 'cup_serving': 200}
+369: Orange Sweet Potatoes -> {'whole_serving': 150, 'cup_serving': 200}
+371: Wild-Caught Frozen Swordfish -> {'whole_serving': 170, 'cup_serving': 150}
+372: Tomatillos -> {'whole_serving': 50, 'cup_serving': 150}
+373: Tomato Juice from Concentrate -> {'whole_serving': None, 'cup_serving': 240}
+374: Canned Unsalted Tomato Paste -> {'whole_serving': None, 'cup_serving': 260}
+375: Canned Tomato Puree -> {'whole_serving': None, 'cup_serving': 240}
+376: Roma Tomato -> {'whole_serving': 60, 'cup_serving': 180}
+377: Canned Tomato Sauce -> {'whole_serving': None, 'cup_serving': 240}
+378: Canned Diced Tomatoes -> {'whole_serving': None, 'cup_serving': 240}
+379: Canned Crushed Tomatoes -> {'whole_serving': None, 'cup_serving': 240}
+380: Canned Whole Tomatoes -> {'whole_serving': None, 'cup_serving': 240}
+381: Corn Tortilla -> {'whole_serving': 25, 'cup_serving': 120}
+382: Wheat Flour Tortilla -> {'whole_serving': 50, 'cup_serving': 120}
+383: Wild-Caught Frozen Yellowfin (Ahi) Tuna -> {'whole_serving': 170, 'cup_serving': 150}
+384: 93% Lean Ground Turkey Crumbles -> {'whole_serving': None, 'cup_serving': 140}
+385: 93% Lean Ground Turkey -> {'whole_serving': None, 'cup_serving': 140}
+386: Turnips -> {'whole_serving': 150, 'cup_serving': 130}
+387: Seedless Watermelon -> {'whole_serving': 3000, 'cup_serving': 150}
+388: Seedless Watermelon Rind -> {'whole_serving': None, 'cup_serving': 100}
+389: Wild Rice -> {'whole_serving': None, 'cup_serving': 170}
+390: Plain Nonfat Greek Yogurt -> {'whole_serving': None, 'cup_serving': 245}
+391: Plain Whole-Milk Greek Yogurt -> {'whole_serving': None, 'cup_serving': 245}
+392: Strawberry Nonfat Greek Yogurt -> {'whole_serving': None, 'cup_serving': 225}
+393: Plain Nonfat Yogurt -> {'whole_serving': None, 'cup_serving': 245}
+394: Plain Whole-Milk Yogurt -> {'whole_serving': None, 'cup_serving': 245}
+1114: Sona Masoori Chawal -> {'whole_serving': None, 'cup_serving': 185}
+1115: Ponni Chawal -> {'whole_serving': None, 'cup_serving': 185}
+1116: Matta Chawal -> {'whole_serving': None, 'cup_serving': 185}
+1117: Basmati Chawal -> {'whole_serving': None, 'cup_serving': 185}
+1118: Besan -> {'whole_serving': None, 'cup_serving': 120}
+1119: Poha -> {'whole_serving': None, 'cup_serving': 100}
+1120: Suji / Rava -> {'whole_serving': None, 'cup_serving': 160}
+1121: Jowar -> {'whole_serving': None, 'cup_serving': 190}
+1122: Bajra -> {'whole_serving': None, 'cup_serving': 190}
+1123: Ragi -> {'whole_serving': None, 'cup_serving': 170}
+1124: Maida -> {'whole_serving': None, 'cup_serving': 125}
+1125: Murmura -> {'whole_serving': None, 'cup_serving': 30}
+1126: Sabudana -> {'whole_serving': None, 'cup_serving': 160}
+1127: Sevai -> {'whole_serving': None, 'cup_serving': 140}
+1128: Toor Dal / Arhar Dal -> {'whole_serving': None, 'cup_serving': 190}
+1129: Dhuli Moong Dal -> {'whole_serving': None, 'cup_serving': 190}
+1130: Sabut Moong -> {'whole_serving': None, 'cup_serving': 190}
+1131: Chana Dal -> {'whole_serving': None, 'cup_serving': 190}
+1132: Kabuli Chana -> {'whole_serving': None, 'cup_serving': 190}
+1133: Kala Chana -> {'whole_serving': None, 'cup_serving': 190}
+1134: Rajma -> {'whole_serving': None, 'cup_serving': 190}
+1135: Urad Dal -> {'whole_serving': None, 'cup_serving': 190}
+1136: Masoor Dal -> {'whole_serving': None, 'cup_serving': 190}
+1137: Lobiya -> {'whole_serving': None, 'cup_serving': 190}
+1138: Paneer -> {'whole_serving': None, 'cup_serving': 225}
+1139: Dahi -> {'whole_serving': None, 'cup_serving': 245}
+1140: Ghee -> {'whole_serving': None, 'cup_serving': 200}
+1141: Doodh -> {'whole_serving': None, 'cup_serving': 240}
+1142: Malai -> {'whole_serving': None, 'cup_serving': 230}
+1143: Makhan -> {'whole_serving': None, 'cup_serving': 225}
+1144: Aloo -> {'whole_serving': 150, 'cup_serving': 150}
+1145: Tamatar -> {'whole_serving': 60, 'cup_serving': 180}
+1146: Phool Gobi -> {'whole_serving': 500, 'cup_serving': 100}
+1147: Matar -> {'whole_serving': None, 'cup_serving': 140}
+1148: Palak -> {'whole_serving': None, 'cup_serving': 50}
+1149: Sarson Saag -> {'whole_serving': None, 'cup_serving': 50}
+1150: Methi -> {'whole_serving': None, 'cup_serving': 50}
+1151: Lauki / Ghiya -> {'whole_serving': 400, 'cup_serving': 150}
+1152: Karela -> {'whole_serving': 100, 'cup_serving': 120}
+1153: Torai -> {'whole_serving': 100, 'cup_serving': 120}
+1154: Kaddu -> {'whole_serving': 1000, 'cup_serving': 150}
+1155: Baingan -> {'whole_serving': 200, 'cup_serving': 120}
+1156: Bhindi -> {'whole_serving': 15, 'cup_serving': 100}
+1157: Patta Gobi -> {'whole_serving': 1000, 'cup_serving': 80}
+1158: Phali -> {'whole_serving': None, 'cup_serving': 100}
+1159: Gajar -> {'whole_serving': 100, 'cup_serving': 130}
+1160: Mooli -> {'whole_serving': 200, 'cup_serving': 130}
+1161: Sahjan -> {'whole_serving': 100, 'cup_serving': 100}
+1162: Shimla Mirch -> {'whole_serving': 150, 'cup_serving': 120}
+1163: Anda -> {'whole_serving': 50, 'cup_serving': 240}
+1164: Murgh -> {'whole_serving': 150, 'cup_serving': 140}
+1165: Gosht / Mutton -> {'whole_serving': 150, 'cup_serving': 140}
+1166: Rohu Machhli -> {'whole_serving': 150, 'cup_serving': 140}
+1167: Katla Machhli -> {'whole_serving': 150, 'cup_serving': 140}
+1168: Hilsa Machhli -> {'whole_serving': 150, 'cup_serving': 140}
+1169: Surmai -> {'whole_serving': 150, 'cup_serving': 140}
+1170: Pomfret -> {'whole_serving': 200, 'cup_serving': 150}
+1171: Bangda -> {'whole_serving': 100, 'cup_serving': 150}
+1172: Jhinga -> {'whole_serving': 10, 'cup_serving': 150}
+1173: Sarson ka Tel -> {'whole_serving': None, 'cup_serving': 218}
+1174: Nariyal Tel -> {'whole_serving': None, 'cup_serving': 218}
+1175: Til ka Tel -> {'whole_serving': None, 'cup_serving': 218}
+1176: Moongphali ka Tel -> {'whole_serving': None, 'cup_serving': 218}
+1177: Refined / Surajmukhi Tel -> {'whole_serving': None, 'cup_serving': 218}
+1178: Imli -> {'whole_serving': 5, 'cup_serving': 120}
+1179: Amchur -> {'whole_serving': None, 'cup_serving': 100}
+1180: Nimbu ka Ras -> {'whole_serving': 45, 'cup_serving': 245}
+1181: Kokum -> {'whole_serving': 2, 'cup_serving': 100}
+1182: Nariyal / Nariyal Doodh -> {'whole_serving': None, 'cup_serving': 240}
+1183: Papad -> {'whole_serving': 15, 'cup_serving': 30}
+1184: Achaar -> {'whole_serving': None, 'cup_serving': 250}
+1185: Gud -> {'whole_serving': 20, 'cup_serving': 250}
+1: Fuji Apples -> {'whole_serving': 180, 'cup_serving': 125}
+68: Beef Top Loin Steak -> {'whole_serving': 225, 'cup_serving': 160}
+135: Wild-Caught Pacific Cod -> {'whole_serving': 150, 'cup_serving': 150}
+204: Red Grapefruit Juice -> {'whole_serving': None, 'cup_serving': 247}
+273: Extra Virgin Olive Oil -> {'whole_serving': None, 'cup_serving': 216}
+342: Wild-Caught Frozen Patagonian Bay Scallops -> {'whole_serving': 20, 'cup_serving': 150}

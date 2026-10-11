@@ -1,6 +1,6 @@
 import { AlertTriangle, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import HomeButton from "@/components/homeButton";
+import HomeButton from "@/components/layout/homeButton";
 
 interface RecommendErrorProps {
   message?: string;

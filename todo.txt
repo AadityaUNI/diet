@@ -1,20 +1,3 @@
-Change AI to something that can handle 1000 users
+make concurrency tests 
 
 Make integration test and End to end test on frontend 
-
-make our own web scraper / ai script that gets 
-all the local foods in coles, woolworths for AU 
-and just local foods and generic caloric values like aata, 
-whey protein for india possibly somehow with google searches or something 
-but we can make our own list probably 
-
-create an extras section where you just add temporary daily meals to our active plan 
-, for this need to add an extras list to each plan which has a direct delete button on 
-the home page.
-
-THIS IS IT NO MORE FUCKING ADDITIONS AFTER THIS 
-WE ARE MOVING STRAIGHT INTO THE GOD DAMN TESTING. 
-
-look at http error handling 
-
-add a bit of pink to the theme

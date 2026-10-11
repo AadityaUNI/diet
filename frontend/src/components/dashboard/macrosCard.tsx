@@ -27,11 +27,11 @@ export function MacrosCard({ macros }: MacrosCardProps) {
                 <span className="text-xs text-muted-foreground">{m.label}</span>
                 <div className="flex items-center gap-2">
                   <span className="font-mono text-xs font-semibold" style={{ color: m.color }}>
-                    {m.value}g / {m.max}g
+                    {Math.round(m.value)}g / {Math.round(m.max)}g
                   </span>
                   {m.planAmount !== undefined && (
                     <span className="text-[10px] text-muted-foreground">
-                      (Plan: {m.planAmount}g)
+                      (Plan: {Math.round(m.planAmount)}g)
                     </span>
                   )}
                 </div>

@@ -8,6 +8,10 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 import { useAuth } from "@/auth/AuthContext"
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
+import { getAvatarUrl } from "@/lib/avatar"
+
+const NAV_AVATAR_SIZE = 32
 
 export function TopNav() {
   const { user } = useAuth()
@@ -45,9 +49,19 @@ export function TopNav() {
 
       {/* Profile avatar */}
       <Link to="/profile">
-        <div className="w-8 h-8 rounded-full bg-secondary border border-border flex items-center justify-center text-sm font-semibold text-primary">
-          {user?.email?.[0].toUpperCase() ?? "?"}
-        </div>
+        <Avatar style={{ width: NAV_AVATAR_SIZE, height: NAV_AVATAR_SIZE }}>
+          {user && (
+            <AvatarImage
+              src={getAvatarUrl(user.id, NAV_AVATAR_SIZE)}
+              alt="Profile"
+              width={NAV_AVATAR_SIZE}
+              height={NAV_AVATAR_SIZE}
+            />
+          )}
+          <AvatarFallback className="bg-secondary font-semibold text-primary">
+            {user?.email?.[0].toUpperCase() ?? "?"}
+          </AvatarFallback>
+        </Avatar>
       </Link>
 
     </nav>

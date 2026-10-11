@@ -1,6 +1,6 @@
 from copy import deepcopy
 
-from app.models.mealModels import AnalyzePlan, PlanData
+from app.models.mealModels import AnalyzeMeal, AnalyzePlan, PlanData
 from app.models.outputModels import GeminiOutput
 
 
@@ -38,6 +38,8 @@ def hydrate_plan(plan: PlanData | AnalyzePlan, regional: list[dict]) -> dict:
             "total_protein": 0.0,
             "total_fibre": 0.0,
         }
+        if isinstance(meal, AnalyzeMeal):
+            meal_data["id"] = meal.id
 
         for ingredient in meal.ingredients:
             food = lookup.get(int(ingredient.id))

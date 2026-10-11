@@ -1,8 +1,8 @@
 // components/layout/app-header.tsx
 import { Bolt } from "lucide-react";
-import { Logout } from "./logout";
+import { Logout } from "@/components/layout/logout";
 import { Link } from "react-router";
-import { ModeToggle } from "./mode-toggle";
+import { ModeToggle } from "@/components/layout/mode-toggle";
 
 export function AppHeader({ loading = false }: { loading?: boolean }) {
 

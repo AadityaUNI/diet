@@ -1,18 +1,19 @@
 import { supabase } from "@/lib/supabase";
+import { SupabaseRequestError } from "@/lib/supabaseError";
 import type { FullPlanData } from "@/types/types";
 import type { GeneratedMeal, GeneratedPlan } from "@/types/generated-plan";
-import type { HydratedMeals, PlanEditorDraft, TotalMacros } from "@/types/plan-editor";
+import { gramsForIngredient, type HydratedMeals, type PlanEditorDraft, type TotalMacros } from "@/types/plan-editor";
 
 type HydratedMeal = HydratedMeals[number];
 
 async function insertMealItems(meal: GeneratedMeal | HydratedMeal, mealID: number)
 {
     if (meal.ingredients.length === 0) {
-        return true;
+        return;
     }
 
     const mealItems = meal.ingredients.map((ingredient) => ({
-        amount: Number(ingredient.amount) || 0,
+        amount: gramsForIngredient(ingredient),
         foodID: ingredient.id,
         mealID
     }));
@@ -21,7 +22,9 @@ async function insertMealItems(meal: GeneratedMeal | HydratedMeal, mealID: numbe
         .from("MealItems")
         .insert(mealItems);
 
-    return !error;
+    if (error) {
+        throw new SupabaseRequestError("Unable to save the meal's ingredients.", error);
+    }
 }
 
 export async function getAllFoodData(userID: string)
@@ -37,8 +40,7 @@ export async function getAllFoodData(userID: string)
 
     if (error)
     {
-        console.log("Error fetching meal plan data for user", error)
-        return null;
+        throw new SupabaseRequestError("Unable to load your meal plans.", error);
     }
 
     return data as FullPlanData[];
@@ -53,8 +55,7 @@ export async function deleteUserPlan(planID: number, isActive: boolean, userID: 
 
     if (mealsError)
     {
-        console.log("Error selecting meals for plan", mealsError)
-        return;
+        throw new SupabaseRequestError("Unable to delete this meal plan.", mealsError);
     }
 
     const mealIDs = (meals ?? []).map((meal) => meal.id);
@@ -68,8 +69,7 @@ export async function deleteUserPlan(planID: number, isActive: boolean, userID: 
 
         if (mealItemsError)
         {
-              console.log("Error deleting meal items for plan", mealItemsError)
-            return;
+            throw new SupabaseRequestError("Unable to delete this meal plan.", mealItemsError);
         }
 
         const { error: mealsDeleteError } = await supabase
@@ -79,8 +79,7 @@ export async function deleteUserPlan(planID: number, isActive: boolean, userID: 
 
         if (mealsDeleteError)
         {
-              console.log("Error deleting meals for plan", mealsDeleteError)
-            return;
+            throw new SupabaseRequestError("Unable to delete this meal plan.", mealsDeleteError);
         }
     }
 
@@ -92,8 +91,7 @@ export async function deleteUserPlan(planID: number, isActive: boolean, userID: 
 
     if (error)
     {
-           console.log("Error deleting meal plan", error)
-        return;
+        throw new SupabaseRequestError("Unable to delete this meal plan.", error);
     }
 
     if (isActive)
@@ -105,8 +103,7 @@ export async function deleteUserPlan(planID: number, isActive: boolean, userID: 
 
         if (updateError)
         {
-              console.log("Error clearing active meal plan on user profile", updateError)
-            return;
+            throw new SupabaseRequestError("The plan was deleted, but your active plan could not be cleared.", updateError);
         }
     }
 }
@@ -150,13 +147,13 @@ export async function createMealPlan(plan: GeneratedPlan, userID: string)
         .single();
 
     if (planError || !insertedPlan) {
-        return null;
+        throw new SupabaseRequestError("Unable to save the meal plan.", planError);
     }
 
-    return insertedPlan.id;
+    return insertedPlan.id as number;
 }
 
-export async function createMeal(meal: GeneratedMeal | HydratedMeal, planID: number)
+export async function createMeal(meal: GeneratedMeal | HydratedMeal, planID: number, tempMeal = false)
 {
     const mealInsert = {
         name: meal.name,
@@ -167,6 +164,7 @@ export async function createMeal(meal: GeneratedMeal | HydratedMeal, planID: num
         total_protein: meal.total_protein,
         planID,
         meal_completed: false,
+        temp_meal: tempMeal,
     };
 
     const { data: insertedMeal, error: mealError } = await supabase
@@ -176,32 +174,78 @@ export async function createMeal(meal: GeneratedMeal | HydratedMeal, planID: num
         .single();
 
     if (mealError || !insertedMeal) {
-        return null;
+        throw new SupabaseRequestError(`Unable to save the meal "${meal.name}".`, mealError);
     }
 
-    return insertedMeal.id;
+    return insertedMeal.id as number;
+}
+
+export async function createTemporaryMeal(meal: HydratedMeal, planID: number)
+{
+    if (meal.ingredients.length === 0 || meal.ingredients.some((ingredient) => !ingredient.id || Number(ingredient.amount) <= 0)) {
+        throw new Error("Choose a food and enter a positive amount for every ingredient.");
+    }
+
+    const mealID = await createMeal({ ...meal }, planID, true);
+
+    try {
+        await insertMealItems(meal, mealID);
+    } catch (error) {
+        // best-effort cleanup so a half-saved meal doesn't linger
+        await supabase.from("MealItems").delete().eq("mealID", mealID);
+        await supabase.from("Meals").delete().eq("id", mealID).eq("planID", planID);
+        throw error;
+    }
+
+    return mealID;
+}
+
+export async function deleteTemporaryMeal(mealID: number, planID: number)
+{
+    const { data: meal, error: mealLookupError } = await supabase
+        .from("Meals")
+        .select("id")
+        .eq("id", mealID)
+        .eq("planID", planID)
+        .eq("temp_meal", true)
+        .maybeSingle();
+
+    if (mealLookupError) {
+        throw new SupabaseRequestError("Unable to remove this meal.", mealLookupError);
+    }
+
+    if (!meal) {
+        throw new Error("This meal no longer exists.");
+    }
+
+    const { error: mealItemsError } = await supabase
+        .from("MealItems")
+        .delete()
+        .eq("mealID", mealID);
+
+    if (mealItemsError) {
+        throw new SupabaseRequestError("Unable to remove this meal.", mealItemsError);
+    }
+
+    const { error: mealError } = await supabase
+        .from("Meals")
+        .delete()
+        .eq("id", mealID)
+        .eq("planID", planID)
+        .eq("temp_meal", true);
+
+    if (mealError) {
+        throw new SupabaseRequestError("Unable to remove this meal.", mealError);
+    }
 }
 
 export async function createUserPlanFromAI(plan: GeneratedPlan, userID: string)
 {
     const planID = await createMealPlan(plan, userID);
 
-    if (!planID) {
-        return null;
-    }
-
     for (const meal of plan.meals) {
         const mealID = await createMeal(meal, planID);
-
-        if (!mealID) {
-            return null;
-        }
-
-        const mealItemsSaved = await insertMealItems(meal, mealID);
-
-        if (!mealItemsSaved) {
-            return null;
-        }
+        await insertMealItems(meal, mealID);
     }
 
     return planID;
@@ -216,11 +260,11 @@ export async function changeUserActivePlan(userID: string, planID: number | null
 
     if (error)
     {
-        return;
+        throw new SupabaseRequestError("Unable to change your active plan.", error);
     }
 }
 
-export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydrated_meals: HydratedMeals, total_macros: TotalMacros): Promise<boolean>
+export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydrated_meals: HydratedMeals, total_macros: TotalMacros): Promise<void>
 {
     const { data: planRow, error: planRowError } = await supabase
         .from("MealPlans")
@@ -230,8 +274,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
 
     if (planRowError || !planRow)
     {
-        console.log("Error fetching plan row", planRowError)
-        return false;
+        throw new SupabaseRequestError("Unable to save the edited meal plan.", planRowError);
     }
 
     const { error: updatePlanError } = await supabase
@@ -241,19 +284,18 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
 
     if (updatePlanError)
     {
-        console.log("Error updating meal plan", updatePlanError)
-        return false;
+        throw new SupabaseRequestError("Unable to save the edited meal plan.", updatePlanError);
     }
 
     const { data: currentMeals, error: currentMealsError } = await supabase
         .from("Meals")
         .select("id")
-        .eq("planID", planID);
+        .eq("planID", planID)
+        .eq("temp_meal", false);
 
     if (currentMealsError)
     {
-        console.log("Error fetching current meals for plan", currentMealsError)
-        return false;
+        throw new SupabaseRequestError("Unable to save the edited meal plan.", currentMealsError);
     }
 
     const currentMealIDs = (currentMeals ?? []).map((meal) => meal.id);
@@ -269,8 +311,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
 
         if (deleteRemovedItemsError)
         {
-              console.log("Error deleting removed meal items", deleteRemovedItemsError)
-                        return false;
+            throw new SupabaseRequestError("Unable to save the edited meal plan.", deleteRemovedItemsError);
         }
 
         const { error: deleteRemovedMealsError } = await supabase
@@ -281,8 +322,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
 
         if (deleteRemovedMealsError)
         {
-              console.log("Error deleting removed meals", deleteRemovedMealsError)
-                        return false;
+            throw new SupabaseRequestError("Unable to save the edited meal plan.", deleteRemovedMealsError);
         }
     }
 
@@ -295,7 +335,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
 
         if (!hydratedMeal)
         {
-            return false;
+            throw new Error(`Meal "${meal.name}" is missing its ingredient data.`);
         }
 
         if (meal.id > 0)
@@ -316,8 +356,7 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
 
             if (updateMealError)
             {
-                 console.log("Error updating meal", updateMealError)
-                return false;
+                throw new SupabaseRequestError("Unable to save the edited meal plan.", updateMealError);
             }
 
             savedMealIDs.push(meal.id);
@@ -325,13 +364,6 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
         }
 
         const mealID = await createMeal(hydratedMeal, planID);
-
-        if (!mealID)
-        {
-              console.log("Error creating meal", mealID)
-                        return false;
-        }
-
         savedMealIDs.push(mealID);
     }
 
@@ -344,23 +376,14 @@ export async function editUserPlan(planID: number, draft: PlanEditorDraft, hydra
 
         if (deleteCurrentItemsError)
         {
-              console.log("Error deleting current meal items", deleteCurrentItemsError)
-                        return false;
+            throw new SupabaseRequestError("Unable to save the edited meal plan.", deleteCurrentItemsError);
         }
 
         for (let index = 0; index < savedMealIDs.length; index += 1)
         {
-            const mealItemsSaved = await insertMealItems(hydrated_meals[index], savedMealIDs[index]);
-
-            if (!mealItemsSaved)
-            {
-                 console.log("Failed to insert meal items", mealItemsSaved)
-                return false;
-            }
+            await insertMealItems(hydrated_meals[index], savedMealIDs[index]);
         }
     }
-
-    return true;
 }
 
 export async function createCustomUserPlan(draft: PlanEditorDraft, userID: string, hydrated_meals: HydratedMeals, total_macros: TotalMacros)
@@ -382,26 +405,14 @@ export async function createCustomUserPlan(draft: PlanEditorDraft, userID: strin
         .single();
 
     if (planError || !insertedPlan) {
-        return null;
+        throw new SupabaseRequestError("Unable to save the meal plan.", planError);
     }
 
-    for (let index = 0; index < hydrated_meals.length; index += 1)
+    for (const meal of hydrated_meals)
     {
-        const meal = hydrated_meals[index];
         const mealID = await createMeal(meal, insertedPlan.id);
-
-        if (!mealID)
-        {
-            return null;
-        }
-
-        const mealItemsSaved = await insertMealItems(meal, mealID);
-
-        if (!mealItemsSaved)
-        {
-            return null;
-        }
+        await insertMealItems(meal, mealID);
     }
 
-    return insertedPlan.id;
+    return insertedPlan.id as number;
 }

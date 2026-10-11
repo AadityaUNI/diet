@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { CheckCircle2, Circle, ChevronDown } from "lucide-react";
+import { CheckCircle2, Circle, ChevronDown, Trash2 } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import type { MealData } from "@/types/types";
+import { toServingDisplayItem } from "@/lib/displayServings";
+import { IngredientList } from "@/components/dashboard/ingredientList";
 
 const ROW_ACCENTS = [
   { bar: "bg-chart-1", wash: "bg-chart-1/10", check: "text-chart-1", deco: "decoration-chart-1/40" },
@@ -16,17 +18,17 @@ interface MealRowProps {
   isLast: boolean;
   accentIndex?: number;
   onToggle: (mealID: number) => void;
+  onDelete?: (mealID: number) => void;
 }
 
-export function MealRow({ mealData, eaten, isLast, accentIndex = 0, onToggle}: MealRowProps) {
+export function MealRow({ mealData, eaten, isLast, accentIndex = 0, onToggle, onDelete}: MealRowProps) {
   const [showIngredients, setShowIngredients] = useState(false);
   const longPressTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const accent = ROW_ACCENTS[accentIndex % ROW_ACCENTS.length]
   const pills = [
-    { v: mealData.total_calories.toFixed(2), u: "kcal", c: "bg-secondary text-foreground/80" },
-    { v: `${mealData.total_protein.toFixed(2)}g`, u: "P", c: "bg-chart-1/15 text-chart-1" },
-    { v: `${mealData.total_carbs.toFixed(2)}g`, u: "C", c: "bg-chart-2/15 text-chart-2" },
-    { v: `${mealData.total_fats.toFixed(2)}g`, u: "F", c: "bg-chart-3/20 text-chart-3" },
+    { v: `${mealData.total_protein.toFixed(0)}g`, u: "P", c: "bg-chart-1/15 text-chart-1" },
+    { v: `${mealData.total_carbs.toFixed(0)}g`, u: "C", c: "bg-chart-2/15 text-chart-2" },
+    { v: `${mealData.total_fats.toFixed(0)}g`, u: "F", c: "bg-chart-3/20 text-chart-3" },
   ];
   const ingredients = mealData.meal_items
 
@@ -101,25 +103,42 @@ export function MealRow({ mealData, eaten, isLast, accentIndex = 0, onToggle}: M
               {showIngredients ? "Hide ingredients" : "Show ingredients"}
             </button>
           </div>
-          {showIngredients && ingredients.map((meal_item) => (
-            <p key={meal_item.food_item.id} className="mt-0.5 break-words text-xs text-muted-foreground sm:text-sm">
-              {meal_item.food_item.name} ({meal_item.amount}g)
-            </p>
-          ))}
-          
-          <div className="mt-1.5 flex flex-wrap gap-1.5">
+          <div className="mt-1.5 flex flex-wrap items-center gap-1">
+            <span className="mr-0.5 font-mono text-[11px] font-semibold text-foreground/80">
+              {mealData.total_calories.toFixed(0)}<span className="font-normal opacity-70"> kcal</span>
+            </span>
             {pills.map((p) => (
-              <span key={p.u} className={cn("rounded-full px-2 py-0.5 font-mono text-[11px] font-semibold", p.c)}>
+              <span key={p.u} className={cn("rounded-full px-1.5 py-0.5 font-mono text-[11px] font-semibold", p.c)}>
                 {p.v}<span className="font-normal opacity-70"> {p.u}</span>
               </span>
             ))}
           </div>
         </div>
 
-        <div className={cn("shrink-0 transition-colors", eaten ? accent.check : "text-muted-foreground/40")}>
-          {eaten ? <CheckCircle2 size={20} /> : <Circle size={20} />}
+        <div className="flex shrink-0 items-center gap-1">
+          {onDelete && (
+            <button
+              type="button"
+              aria-label={`Delete ${mealData.name}`}
+              className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
+              onClick={(event) => {
+                event.stopPropagation();
+                onDelete(mealData.id);
+              }}
+            >
+              <Trash2 size={16} />
+            </button>
+          )}
+          <div className={cn("transition-colors", eaten ? accent.check : "text-muted-foreground/40")}>
+            {eaten ? <CheckCircle2 size={20} /> : <Circle size={20} />}
+          </div>
         </div>
       </div>
+      {showIngredients && (
+        <div className="pb-3 pl-5 pr-2">
+          <IngredientList ingredients={ingredients.map(toServingDisplayItem)} />
+        </div>
+      )}
       {!isLast && <Separator />}
     </div>
   );

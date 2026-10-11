@@ -1,6 +1,8 @@
 import json 
 import cloudflare
 
+TTL_S = 5*3600
+
 def get_list(cloudflare:cloudflare.Cloudflare, region:str, cl_account_id:str, cl_namespace_id:str, supabase):
     try: 
         regional_list = cloudflare.kv.namespaces.values.get(f"r-{region}", account_id=cl_account_id, namespace_id=cl_namespace_id)
@@ -18,6 +20,6 @@ def get_list(cloudflare:cloudflare.Cloudflare, region:str, cl_account_id:str, cl
 
 def put_key_in_kv(key, val, cloudflare, cl_account_id:str, cl_namespace_id:str):
     try:
-        cloudflare.kv.namespaces.values.update(key, account_id=cl_account_id, namespace_id=cl_namespace_id, value=val)
+        cloudflare.kv.namespaces.values.update(key, account_id=cl_account_id, namespace_id=cl_namespace_id, value=val, expiration_ttl = TTL_S)
     except Exception as e:
         print("Unable to put key in kv", e)

@@ -1,7 +1,7 @@
-import Profile from "@/components/profile";
-import { AppHeader } from "@/components/header";
+import Profile from "@/components/dashboard/profile";
+import { AppHeader } from "@/components/layout/header";
 import { DashboardTabs } from "@/components/dashboard/dashboardTabs";
-import RecommendButton from "@/components/recommendButton";
+import RecommendButton from "@/components/dashboard/recommendButton";
 
 // ─── App ──────────────────────────────────────────────────────────────────────
 export default function Home() {

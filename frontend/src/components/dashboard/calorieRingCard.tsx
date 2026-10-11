@@ -61,7 +61,7 @@ export function CalorieRingCard({ consumed, goal }: CalorieRingCardProps) {
                 <span className={`h-2 w-2 rounded-full ${row.color}`} />
                 <span className="text-xs text-muted-foreground">{row.label}</span>
               </div>
-              <span className="font-mono text-xs font-bold">{row.value.toLocaleString()}</span>
+              <span className="font-mono text-xs font-bold">{Math.round(row.value).toLocaleString()}</span>
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 import { ArrowRight, Calculator, Leaf } from "lucide-react"
 import { useNavigate } from "react-router-dom"
-import { AppHeader } from "@/components/header"
+import { AppHeader } from "@/components/layout/header"
 import { Button } from "@/components/ui/button"
 
 export default function AfterSignupPage() {

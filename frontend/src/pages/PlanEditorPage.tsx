@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import { AppHeader } from "@/components/header";
+import { AppHeader } from "@/components/layout/header";
 import { PlanEditor } from "@/components/plan/PlanEditor";
 import { MobilePlanEditor } from "@/components/plan/MobilePlanEditor";
 import type { FullPlanData } from "@/types/types";
@@ -11,6 +11,7 @@ import {
   planDraftFromSavedPlan,
   type PlanEditorDraft,
 } from "@/types/plan-editor";
+import { gramsForIngredient } from "@/types/plan-editor";
 import { useAuth } from "@/auth/AuthContext";
 import { useMutation } from "@tanstack/react-query";
 import { createCustomUserPlan, editUserPlan } from "@/auth/PlanService";
@@ -84,13 +85,17 @@ export default function PlanEditorPage() {
   const saveMutation = useMutation({
     mutationFn: async () => {
       setSaving(true);
+      if (draft.meals.some((meal) =>
+        !meal.name.trim() ||
+        meal.ingredients.length === 0 ||
+        meal.ingredients.some((ingredient) => ingredient.id <= 0 || gramsForIngredient(ingredient) <= 0)
+      )) {
+        throw new Error("Choose a food and enter a positive amount for every ingredient.");
+      }
       const {hydrated_meals, total_macros} = hydrateDraft(draft);
       if (isEditMode)
       {
-        const saved = await editUserPlan(draft.id, draft, hydrated_meals, total_macros);
-        if (!saved) {
-          throw new Error("Unable to save the edited meal plan.");
-        }
+        await editUserPlan(draft.id, draft, hydrated_meals, total_macros);
       }
       else await createCustomUserPlan(draft, user!.id, hydrated_meals, total_macros)
     },

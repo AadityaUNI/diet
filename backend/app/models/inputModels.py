@@ -1,12 +1,12 @@
-from pydantic import BaseModel, PositiveInt
+from pydantic import BaseModel, PositiveFloat, PositiveInt
 from typing import Literal
 
 class ConstraintInput(BaseModel):
     fitness_goals: str
     age: PositiveInt
     sex: Literal["Male", "Female"]
-    height: PositiveInt
-    weight: PositiveInt
+    height: PositiveFloat
+    weight: PositiveFloat
     region: str
     activity_level: str 
     health_conditions: list[str]

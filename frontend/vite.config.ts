@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config'
+import { configDefaults, defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from "path"
@@ -6,10 +6,15 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    host: true,
+    allowedHosts: [".trycloudflare.com"],
+  },
   test: {
     environment: 'jsdom',
     globals: true, 
-    setupFiles: "./src/tests/setup.js"
+    setupFiles: "./src/tests/setup.js",
+    exclude: [...configDefaults.exclude, 'e2e/**'],
   },
   plugins: [react(), tailwindcss(), 
     VitePWA({

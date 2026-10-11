@@ -1,4 +1,4 @@
-import type { PlanEditorDraft } from "@/types/plan-editor";
+import { gramsForIngredient, type PlanEditorDraft } from "@/types/plan-editor";
 
 function scale(macro: number | null, amount: number | null)
 {
@@ -10,11 +10,12 @@ export function hydrateDraft(draft: PlanEditorDraft)
 {
     const hydrated_meals = draft.meals.map((meal) => {
         const meal_macros = meal.ingredients.reduce((acc, ing) => {
-        acc.total_calories += scale(ing.calories, ing.amount)
-        acc.total_protein += scale(ing.protein, ing.amount);
-        acc.total_carbs += scale(ing.carbs, ing.amount);
-        acc.total_fats += scale(ing.fat, ing.amount);
-        acc.total_fibre += scale(ing.fibre, ing.amount);
+        const grams = gramsForIngredient(ing);
+        acc.total_calories += scale(ing.calories, grams)
+        acc.total_protein += scale(ing.protein, grams);
+        acc.total_carbs += scale(ing.carbs, grams);
+        acc.total_fats += scale(ing.fat, grams);
+        acc.total_fibre += scale(ing.fibre, grams);
         return acc;
         }, { total_calories: 0, total_protein: 0, total_carbs: 0, total_fats: 0, total_fibre: 0 });
     return {...meal, ...meal_macros};

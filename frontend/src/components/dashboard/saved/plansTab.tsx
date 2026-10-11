@@ -1,8 +1,8 @@
 import { TabsContent } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { PlanCard } from "@/components/dashboard/saved/planCard";
-import { MealSkeleton } from "@/components/MealSkeleton";
-import { NoSavedPlansEmptyState } from "@/components/emptyPlanStates";
+import { MealSkeleton } from "@/components/dashboard/MealSkeleton";
+import { NoSavedPlansEmptyState } from "@/components/dashboard/emptyPlanStates";
 import type { FullPlanData } from "@/types/types";
 
 
@@ -11,7 +11,6 @@ export interface SavedPlansTabProps {
   expandedPlan: number | null;
   setExpandedPlan: (id: number | null) => void;
   loading: boolean;
-  getRecommended: () => void;
   onSetActive: (id: number | null) => void;
   activePlanID: number | null;
   onDeletePlan: (planID: number) => void; 
@@ -19,7 +18,7 @@ export interface SavedPlansTabProps {
   onOptimizePlan: (plan: FullPlanData) => void;
 }
 
-export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpandedPlan, loading, getRecommended ,onSetActive, onDeletePlan, onEditPlan, onOptimizePlan }: SavedPlansTabProps) {
+export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpandedPlan, loading, onSetActive, onDeletePlan, onEditPlan, onOptimizePlan }: SavedPlansTabProps) {
   
   
   if (loading) {
@@ -33,7 +32,7 @@ export function SavedPlansTab({ activePlanID, savedPlans, expandedPlan, setExpan
   if (!savedPlans || savedPlans.length === 0) {
     return (
       <TabsContent value="saved" className="flex flex-col gap-4">
-        <NoSavedPlansEmptyState onGetRecommended={getRecommended} />
+        <NoSavedPlansEmptyState />
       </TabsContent>
     );
   }

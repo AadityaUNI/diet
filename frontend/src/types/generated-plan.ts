@@ -18,6 +18,8 @@ export type GeneratedIngredient = {
   fat: number;
   calories: number;
   fibre: number;
+  cup_serving: number | null;
+  whole_serving: number | null;
 };
 
 export type GeneratedMeal = {

@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { FlipCard } from "@/components/auth/flipcard"
 import { OnboardingFlow } from "@/components/auth/OnboardingFlow"
-import { Leaf, LineChart, Salad, Zap } from "lucide-react"
+import { CalendarCheck, Leaf, Sparkles, UtensilsCrossed, Wand2 } from "lucide-react"
 import { createAuthAccount, onLogin } from "@/auth/LoginAuth"
 import { useNavigate } from "react-router-dom"
 import { ModeToggle } from "@/components/layout/mode-toggle"
@@ -11,19 +11,24 @@ import type { CredentialsValues, LoginValues } from "@/auth/authSchemas"
 
 const features = [
   {
-    icon: Salad,
-    title: "Personalized diet plans",
-    description: "Generate plans around health restrictions, conditions, and dietary choices.",
+    icon: Sparkles,
+    title: "AI meal plans",
+    description: "Generate plans from your goal, dietary restrictions, health conditions, and foods you want included.",
   },
   {
-    icon: LineChart,
-    title: "Visual tracking",
-    description: "See your meals, macros, and progress in a clear daily view.",
+    icon: Wand2,
+    title: "Improve a plan",
+    description: "Have AI review a saved plan, point out what's missing, and suggest changes. You can also just ask for one.",
   },
   {
-    icon: Zap,
-    title: "Flexible dietary options",
-    description: "Support for different eating patterns, allergies, and other meal preferences.",
+    icon: UtensilsCrossed,
+    title: "Build your own",
+    description: "Put plans together yourself, meal by meal. Add your own ingredients when something's missing.",
+  },
+  {
+    icon: CalendarCheck,
+    title: "Track your day",
+    description: "Tick off meals as you eat them, log extras, and see calories and macros against your targets.",
   },
 ]
 
@@ -72,12 +77,12 @@ export default function Landing() {
           </span>
 
           <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Eat smarter with a grid built for your goals
+            Meal planning that fits your goals
           </h1>
 
           <p className="max-w-md text-pretty text-lg leading-relaxed text-muted-foreground">
-            DietGrid turns messy food logs into a clear, daily view of your macros, calories, and progress, so healthy
-            choices feel effortless.
+            Plan meals around your macros and dietary needs, with AI when you want it and by hand when you
+            don't.
           </p>
 
           <ul id="features" className="mt-2 grid gap-5 sm:grid-cols-1">

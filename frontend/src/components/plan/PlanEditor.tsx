@@ -21,7 +21,7 @@ import type {
   PlanMealDraft,
   ServingUnit,
 } from "@/types/plan-editor";
-import { gramsForIngredient, quantityFromGrams } from "@/types/plan-editor";
+import { gramsForIngredient, otherFoodIds, quantityFromGrams } from "@/types/plan-editor";
 import { useFoodCatalog } from "@/hooks/useFoodCatalog";
 import { FoodCommandSelect } from "@/components/plan/foodCommandSelect";
 import { ServingUnitSelect } from "@/components/plan/ServingUnitSelect";
@@ -291,7 +291,7 @@ export function PlanEditor({
                               <span />
                             </div>
 
-                            {meal.ingredients.map((ingredient) => (
+                            {meal.ingredients.map((ingredient, ingredientIndex) => (
                               <div
                                 key={ingredient.id}
                                 className="grid grid-cols-[minmax(0,1fr)_minmax(0,180px)_40px] gap-2"
@@ -301,6 +301,7 @@ export function PlanEditor({
                                   foods={foods}
                                   isLoading={foodsLoading}
                                   currentUserId={user?.id}
+                                  excludedFoodIds={otherFoodIds(meal, ingredientIndex)}
                                   onSelect={(food) =>
                                     onChange(updateMeal(draft, meal.id, (current) =>
                                       updateIngredient(current, ingredient.id, (currentIngredient) => ({
@@ -382,7 +383,6 @@ export function PlanEditor({
               <CardContent className="space-y-4 p-4">
                 <div>
                   <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Macro summary</p>
-                  <p className="mt-1 text-sm text-muted-foreground">Visible now, wired up later.</p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-3">

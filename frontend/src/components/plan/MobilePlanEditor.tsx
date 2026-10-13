@@ -11,7 +11,7 @@ import { useAuth } from "@/auth/AuthContext";
 import { hydrateDraft } from "@/lib/hydratePlanDraft";
 import type { FoodItem } from "@/types/types";
 import type { PlanEditorDraft } from "@/types/plan-editor";
-import { gramsForIngredient, quantityFromGrams, type ServingUnit } from "@/types/plan-editor";
+import { gramsForIngredient, otherFoodIds, quantityFromGrams, type ServingUnit } from "@/types/plan-editor";
 import { ServingUnitSelect } from "@/components/plan/ServingUnitSelect";
 
 type MobilePlanEditorProps = {
@@ -268,6 +268,7 @@ export function MobilePlanEditor({
                           foods={foods}
                           isLoading={foodsLoading}
                           currentUserId={user?.id}
+                          excludedFoodIds={otherFoodIds(meal, ingredientIndex)}
                           onSelect={(food) => selectFood(food, ingredientIndex)}
                         />
                         <Button

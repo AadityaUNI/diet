@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { FoodCommandSelect } from "@/components/plan/foodCommandSelect";
 import { useFoodCatalog } from "@/hooks/useFoodCatalog";
 import { useAuth } from "@/auth/AuthContext";
-import { createBlankIngredientDraft, createBlankMealDraft, type PlanIngredientDraft, type PlanMealDraft } from "@/types/plan-editor";
+import { createBlankIngredientDraft, createBlankMealDraft, otherFoodIds, type PlanIngredientDraft, type PlanMealDraft } from "@/types/plan-editor";
 import { hydrateDraft } from "@/lib/hydratePlanDraft";
 import type { FoodItem } from "@/types/types";
 import type { HydratedMeals } from "@/types/plan-editor";
@@ -142,6 +142,7 @@ export function AddTemporaryMealDialog({ open, onOpenChange, onCreate }: AddTemp
                     foods={foods}
                     isLoading={foodsLoading}
                     currentUserId={user?.id}
+                    excludedFoodIds={otherFoodIds(meal, index)}
                     onSelect={(food) => selectFood(ingredient.id, food)}
                   />
                   <div className="space-y-1.5">

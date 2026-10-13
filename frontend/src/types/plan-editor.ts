@@ -56,9 +56,13 @@ export function quantityFromGrams(grams: number, unit: ServingUnit, cupServing: 
   return factor && factor > 0 ? grams / factor : grams;
 }
 
+// Blank ingredients get unique negative ids until a food is picked, then the id becomes the food's id.
+// Saving treats id <= 0 as "no food chosen yet".
+let nextDraftIngredientId = -1;
+
 function createIngredientDraft(name = "", amount = "", fat = 0, fibre = 0, calories = 0, protein = 0, carbs = 0, cup_serving = null, whole_serving = null) {
   return {
-    id: -1,
+    id: nextDraftIngredientId--,
     name,
     amount,
     fat,
@@ -72,9 +76,13 @@ function createIngredientDraft(name = "", amount = "", fat = 0, fibre = 0, calor
   } satisfies PlanIngredientDraft;
 }
 
+// Unsaved meals need unique ids so editing one doesn't match the others.
+// Kept negative because saving treats id > 0 as an existing DB meal.
+let nextDraftMealId = -1;
+
 function createMealDraft(name = "Meal", ingredientCount = 1) {
   return {
-    id: -1,
+    id: nextDraftMealId--,
     name,
     ingredients: Array.from({ length: ingredientCount }, () => createIngredientDraft()),
   } satisfies PlanMealDraft;
@@ -115,6 +123,13 @@ export function planDraftFromSavedPlan(plan: FullPlanData): PlanEditorDraft {
 
 export function createBlankMealDraft() {
   return createMealDraft();
+}
+
+// Food ids already picked by the meal's other ingredients, so the same food can't be added twice.
+export function otherFoodIds(meal: PlanMealDraft, ingredientIndex: number) {
+  return meal.ingredients
+    .filter((ingredient, index) => index !== ingredientIndex && ingredient.id > 0)
+    .map((ingredient) => ingredient.id);
 }
 
 export function createBlankIngredientDraft() {

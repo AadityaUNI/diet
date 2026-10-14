@@ -4,8 +4,20 @@ import csv
 from app.models.inputModels import ConstraintInput
 from app.models.mealModels import AnalyzePlan
 from app.utils.jsonUtils import cleaned_json
+from google.genai import errors
 
-MODEL = "gemini-3.5-flash"
+# Tried in order; the next model is used when one is overloaded, rate-limited or missing
+MODELS = ["gemini-flash-latest", "gemini-flash-lite-latest"]
+RETRYABLE_CODES = {404, 429, 500, 503, 504}
+
+def generate_with_fallback(gemini, prompt):
+    for i, model in enumerate(MODELS):
+        try:
+            return gemini.models.generate_content(model=model, contents=prompt)
+        except errors.APIError as error:
+            if error.code not in RETRYABLE_CODES or i == len(MODELS) - 1:
+                raise
+            print(f"GEMINI {model} FAILED ({error.code}), FALLING BACK TO {MODELS[i + 1]}")
 
 def to_csv_string(regional):
     headers = regional[0].keys()
@@ -85,13 +97,7 @@ def call_gemini(constraints: ConstraintInput, regional_list: list, gemini):
 
     import time
     start = time.time()
-    response = gemini.models.generate_content(
-        model=MODEL,
-        contents=prompt,
-        # config=types.GenerateContentConfig(
-        # thinking_config=types.ThinkingConfig(thinking_level="high")
-        # )
-    )
+    response = generate_with_fallback(gemini, prompt)
     print(f"GEMINI CALL TOOK: {time.time() - start:.2f}s")
 
 
@@ -208,11 +214,5 @@ proposed_plan.meals must be the complete day — every meal from the current pla
 changed or not — not just the ones you modified. Use only IDs from the catalog, and use
 positive gram amounts. Never invent food IDs, nutrition values, or extra fields.
 """
-    response = gemini.models.generate_content(
-        model=MODEL,
-        contents=prompt,
-        # config=types.GenerateContentConfig(
-        # thinking_config=types.ThinkingConfig(thinking_level="high")
-        # )
-    )
+    response = generate_with_fallback(gemini, prompt)
     return cleaned_json(response.text)

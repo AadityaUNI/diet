@@ -18,8 +18,9 @@ export default defineConfig({
   },
   plugins: [react(), tailwindcss(), 
     VitePWA({
+      registerType: "autoUpdate",
       manifest: {
-        display: "standalone",
+        display: "fullscreen",
         prefer_related_applications: false,
         short_name: "dietgrid",
         start_url: "/",

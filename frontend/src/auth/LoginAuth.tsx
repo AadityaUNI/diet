@@ -27,7 +27,7 @@ export async function createAuthAccount(values: CredentialsValues): Promise<Crea
 
 export async function createSignupProfile(userId: string, values: SignupValues) {
         const {
-                age, name, region, goals, height, sex, weight, activity: activity_level,
+                age, name, region, goals, height, sex, weight, activity: activity_level, custom_maintainance,
                 health_conditions, dietary_restrictions, required_food_items,
                 protein_target, carbs_target, fat_target, fiber_target,
         } = values;
@@ -41,6 +41,7 @@ export async function createSignupProfile(userId: string, values: SignupValues) 
         weight: weight,
         sex: sex,
         activity_level: activity_level,
+        custom_maintainance: custom_maintainance ?? null,
         age: age,
         health_conditions: health_conditions ?? [],
         dietary_restrictions: dietary_restrictions ?? [],

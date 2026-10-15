@@ -13,6 +13,18 @@ describe("calculateCalorieTarget", () => {
     })).toBe(2270)
   })
 
+  it("uses custom maintenance calories instead of the activity estimate", () => {
+    expect(calculateCalorieTarget({
+      age: 28,
+      weight: 68,
+      height: 175,
+      sex: "Male",
+      activity_level: "extra_active",
+      fitness_goals: "light_cut",
+      custom_maintainance: 2500,
+    })).toBe(2230)
+  })
+
   it("keeps targets within a reasonable minimum", () => {
     expect(calculateCalorieTarget({
       age: 90,

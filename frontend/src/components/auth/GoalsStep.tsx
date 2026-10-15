@@ -4,6 +4,7 @@ import { Controller, useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
+import { Input } from "@/components/ui/input"
 import {
   Select,
   SelectContent,
@@ -15,6 +16,7 @@ import {
 import { ACTIVITY_LEVELS } from "@/lib/predefined"
 import { CALORIE_GOAL_OPTIONS } from "@/lib/calorieTarget"
 import { goalsStepSchema, type GoalsStepValues } from "@/auth/authSchemas"
+import { z } from "zod"
 
 interface GoalsStepProps {
   defaultValues: GoalsStepValues
@@ -25,9 +27,10 @@ interface GoalsStepProps {
 export function GoalsStep({ defaultValues, onBack, onContinue }: GoalsStepProps) {
   const {
     control,
+    register,
     handleSubmit,
     formState: { errors },
-  } = useForm<GoalsStepValues>({
+  } = useForm<z.input<typeof goalsStepSchema>, unknown, GoalsStepValues>({
     resolver: zodResolver(goalsStepSchema),
     defaultValues,
   })
@@ -88,6 +91,13 @@ export function GoalsStep({ defaultValues, onBack, onContinue }: GoalsStepProps)
           )}
         />
         {errors.activity && <p className="text-xs text-destructive">{errors.activity.message}</p>}
+      </div>
+
+      <div className="space-y-2">
+        <Label htmlFor="onboarding-maintenance">Maintenance calories (optional)</Label>
+        <Input id="onboarding-maintenance" type="number" min="1000" max="6000" step="1" placeholder="e.g. 2500" {...register("custom_maintainance")} />
+        <p className="text-xs text-muted-foreground">Know your maintenance? It overrides the activity-based estimate.</p>
+        {errors.custom_maintainance && <p className="text-xs text-destructive">{errors.custom_maintainance.message}</p>}
       </div>
 
       <div className="flex gap-2 pt-2">

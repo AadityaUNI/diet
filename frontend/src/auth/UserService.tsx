@@ -14,6 +14,7 @@ function normalizeProf(profile: UserProfile | UpdateUserProfile) {
   ...(carbs_target && { carbs_target: Number(carbs_target) }),
   ...(fat_target && { fat_target: Number(fat_target) }),
   ...(fibre_target && { fibre_target: Number(fibre_target) }),
+  ...("custom_maintainance" in profile && { custom_maintainance: Number(profile.custom_maintainance) || null }),
 };
 
 }

@@ -17,6 +17,10 @@ export const credentialsSchema = z.object({
 export const goalsStepSchema = z.object({
   goals: z.string().min(1, "Select a goal"),
   activity: z.string().min(1, "Select activity level"),
+  custom_maintainance: z.preprocess(
+    (value) => (value === "" || value === null || Number.isNaN(value) ? undefined : value),
+    z.coerce.number().int("Must be a whole number").min(1000, "Must be at least 1000").max(6000, "Must be at most 6000").optional()
+  ),
 })
 
 export const bodyStepSchema = z.object({

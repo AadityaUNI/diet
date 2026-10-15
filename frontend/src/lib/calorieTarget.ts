@@ -32,10 +32,12 @@ const GOAL_ADJUSTMENTS: Record<string, number> = {
   heavy_bulk: 550,
 }
 
-export function calculateCalorieTarget({ age, weight, height, sex, activity_level, fitness_goals }: Pick<UserProfile, "age" | "weight" | "height" | "sex" | "activity_level" | "fitness_goals">): number {
+export function calculateCalorieTarget({ age, weight, height, sex, activity_level, fitness_goals, custom_maintainance }: Pick<UserProfile, "age" | "weight" | "height" | "sex" | "activity_level" | "fitness_goals" | "custom_maintainance">): number {
   const sexAdjustment = sex.toLowerCase() === "female" ? -161 : 5
   const bmr = 10 * Number(weight) + 6.25 * Number(height) - 5 * Number(age) + sexAdjustment
-  const maintenance = bmr * (ACTIVITY_MULTIPLIERS[activity_level] ?? 1.2)
+  const maintenance = Number(custom_maintainance) > 0
+    ? Number(custom_maintainance)
+    : bmr * (ACTIVITY_MULTIPLIERS[activity_level] ?? 1.2)
   const adjusted = maintenance + (GOAL_ADJUSTMENTS[fitness_goals] ?? 0)
 
   return Math.max(1200, Math.round(adjusted / 10) * 10)

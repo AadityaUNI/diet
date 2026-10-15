@@ -19,11 +19,12 @@ interface BodyStepProps {
   defaultValues: BodyStepFormValues
   goal: string
   activity: string
+  maintenanceCalories?: number
   onBack: () => void
   onContinue: (values: BodyStepValues) => void
 }
 
-export function BodyStep({ defaultValues, goal, activity, onBack, onContinue }: BodyStepProps) {
+export function BodyStep({ defaultValues, goal, activity, maintenanceCalories, onBack, onContinue }: BodyStepProps) {
   const {
     register,
     control,
@@ -37,7 +38,7 @@ export function BodyStep({ defaultValues, goal, activity, onBack, onContinue }: 
   const watched = useWatch({ control })
   const hasPreview = Number(watched.age) > 0 && Number(watched.weight) > 0 && Number(watched.height) > 0 && Boolean(watched.sex)
   const calorieTarget = hasPreview
-    ? calculateCalorieTarget({ age: Number(watched.age), weight: Number(watched.weight), height: Number(watched.height), sex: watched.sex as string, activity_level: activity, fitness_goals: goal })
+    ? calculateCalorieTarget({ age: Number(watched.age), weight: Number(watched.weight), height: Number(watched.height), sex: watched.sex as string, activity_level: activity, fitness_goals: goal, custom_maintainance: maintenanceCalories })
     : null
 
   return (

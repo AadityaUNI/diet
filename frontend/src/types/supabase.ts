@@ -221,6 +221,7 @@ export type Database = {
           activity_level: string
           age: number
           carbs_target: number
+          custom_maintainance: number | null
           dietary_restrictions: string[]
           fat_target: number
           fibre_target: number
@@ -240,6 +241,7 @@ export type Database = {
           activity_level: string
           age: number
           carbs_target?: number
+          custom_maintainance?: number | null
           dietary_restrictions?: string[]
           fat_target?: number
           fibre_target?: number
@@ -259,6 +261,7 @@ export type Database = {
           activity_level?: string
           age?: number
           carbs_target?: number
+          custom_maintainance?: number | null
           dietary_restrictions?: string[]
           fat_target?: number
           fibre_target?: number

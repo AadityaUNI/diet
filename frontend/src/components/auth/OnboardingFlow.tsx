@@ -56,7 +56,7 @@ export function OnboardingFlow({
 }: OnboardingFlowProps) {
   const [step, setStep] = useState<OnboardingStep>("GOALS")
   const [goingForward, setGoingForward] = useState(true)
-  const [goals, setGoals] = useState<GoalsStepValues>({ goals: "", activity: "" })
+  const [goals, setGoals] = useState<GoalsStepValues>({ goals: "", activity: "", custom_maintainance: undefined })
   const [body, setBody] = useState<BodyStepFormValues>({
     age: "",
     weight: "",
@@ -142,6 +142,7 @@ export function OnboardingFlow({
             defaultValues={body}
             goal={goals.goals}
             activity={goals.activity}
+            maintenanceCalories={goals.custom_maintainance}
             onBack={() => goTo("GOALS", false)}
             onContinue={(values) => {
               setBody(values)
@@ -159,7 +160,8 @@ export function OnboardingFlow({
               height: Number(body.height), 
               sex: body.sex, 
               activity_level: goals.activity, 
-              fitness_goals: goals.goals 
+              fitness_goals: goals.goals,
+              custom_maintainance: goals.custom_maintainance,
             }}
             onBack={() => goTo("BODY", false)}
             onContinue={(values) => {

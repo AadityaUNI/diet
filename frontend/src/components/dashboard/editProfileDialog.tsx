@@ -51,6 +51,7 @@ export function EditProfileDialog({
     carbs_target: String(profile.carbs_target ?? ""),
     fat_target: String(profile.fat_target ?? ""),
     fibre_target: String(profile.fibre_target ?? ""),
+    custom_maintainance: String(profile.custom_maintainance ?? ""),
   })
 
   const [form, setForm] = useState<UserProfile>(() => normalizeForm(userData))
@@ -332,6 +333,19 @@ export function EditProfileDialog({
                   ))}
                 </SelectContent>
               </Select>
+            </div>
+
+            <div className="grid gap-1.5">
+              <Label className="text-xs text-foreground/70">Maintenance Calories (optional)</Label>
+              <Input
+                type="number"
+                min="1000"
+                max="6000"
+                placeholder="Leave blank to estimate from activity"
+                value={form.custom_maintainance ?? ""}
+                onChange={(e) => update("custom_maintainance", e.target.value)}
+                className="h-9 text-sm"
+              />
             </div>
           </div>
           </div>}

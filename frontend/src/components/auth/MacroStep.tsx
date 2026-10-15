@@ -21,7 +21,7 @@ import {z} from "zod"
 
 interface MacroStepProps {
   defaultValues: MacroStepValues
-  profile: Pick<UserProfile, "age" | "weight" | "height" | "sex" | "activity_level" | "fitness_goals">
+  profile: Pick<UserProfile, "age" | "weight" | "height" | "sex" | "activity_level" | "fitness_goals" | "custom_maintainance">
   onBack: () => void
   onContinue: (values: MacroStepValues) => void
 }
@@ -49,7 +49,8 @@ export function MacroStep({ defaultValues, profile, onBack, onContinue }: MacroS
     height: Number(profile.height || 0),
     sex: profile.sex || "Male",
     activity_level: profile.activity_level || "moderate",
-    fitness_goals: profile.fitness_goals || "maintain"
+    fitness_goals: profile.fitness_goals || "maintain",
+    custom_maintainance: profile.custom_maintainance
   }
   const calorieTarget = calculateCalorieTarget(normalizedProfile)
 

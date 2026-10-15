@@ -16,6 +16,7 @@ export type UserProfile = {
   carbs_target: number | string;
   fat_target: number | string;
   fibre_target: number | string;
+  custom_maintainance?: number | string | null;
 };
 
 export type NormalizedUserProf = {
@@ -36,6 +37,7 @@ export type NormalizedUserProf = {
   carbs_target: number;
   fat_target: number;
   fibre_target: number;
+  custom_maintainance?: number | null;
 }
 
 export type NormalizedUpdate = {
@@ -54,6 +56,7 @@ export type NormalizedUpdate = {
   carbs_target?: number;
   fat_target?: number;
   fibre_target?: number;
+  custom_maintainance?: number | null;
 }
 
 
@@ -73,6 +76,7 @@ export type UpdateUserProfile = {
   carbs_target?: number | string;
   fat_target?: number | string;
   fibre_target?: number | string;
+  custom_maintainance?: number | string | null;
 };
 
 export type FullPlanData = {
